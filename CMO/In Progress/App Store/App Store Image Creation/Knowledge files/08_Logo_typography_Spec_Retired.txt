@@ -1,0 +1,5 @@
+1. Set visible logo height to 2.39% of canvas height.
+2. Preserve the logo’s original aspect ratio.
+3. Centre the visible artwork at 49.53% of canvas width.
+4. Place its visible top edge at 4.93% of canvas height.
+5. Never let its visible width exceed 61.08% of canvas width.

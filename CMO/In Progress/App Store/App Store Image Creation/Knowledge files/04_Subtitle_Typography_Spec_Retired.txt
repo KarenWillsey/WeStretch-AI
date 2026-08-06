@@ -1,0 +1,19 @@
+SUBTITLE TYPOGRAPHY SPECIFICATION
+
+Font family: Inter
+Font file or verified system font name: Inter
+Font weight: Semi Bold 600
+Text colour: #FFFFFF
+Alignment: Centered
+Capitalization rule: Use exact user wording
+Maximum text-box width: min(90% of canvas width, 30% of canvas height)
+Font size — Output Size 1: 2.75% of canvas height
+Font size — Output Size 2: 2.75% of canvas height
+Line advance / baseline-to-baseline distance: 2.93% of canvas height
+Equivalent line-height multiplier: 1.065 × font size
+Equivalent line height: 106.5%
+Tracking / letter spacing: 0%
+Maximum lines: 3
+Minimum readable font size: 12
+
+Use the fewest natural lines that fit. Do not move the logo. Do not rewrite or shorten the title.

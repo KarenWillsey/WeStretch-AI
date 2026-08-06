@@ -1,0 +1,41 @@
+WESTRETCH LOGO PLACEMENT SPECIFICATION — APPROVED PICKLEBALL DESIGN
+
+Authoritative files:
+01_Approved_Pickleball_Design.png
+02_WeStretch_Logo_Do_Not_Modify.png
+
+ASSET RULE
+Use the original logo knowledge file exactly as supplied.
+Never regenerate, redraw, recolour, crop, stretch, compress, retype, or otherwise modify the logo.
+Preserve transparency and original aspect ratio.
+
+PLACEMENT REFERENCE
+Measurements are based on the visible logo artwork in the approved 853 × 1844 reference.
+
+Visible logo top edge: 4.93% of canvas height
+Visible logo horizontal centre: 49.53% of canvas width
+Target visible logo height: 2.39% of canvas height
+Target visible logo width on the approved phone aspect ratio: approximately 61.08% of canvas width
+
+RESPONSIVE SIZE RULE
+Scale the logo by height, not by width:
+
+1. Set the visible logo artwork height to 2.39% of canvas height.
+2. Preserve the logo’s original aspect ratio.
+3. Centre it at 49.53% of canvas width.
+4. Place its visible top edge at 4.93% of canvas height.
+5. Never allow its visible width to exceed 61.08% of canvas width.
+
+This height-based rule keeps the logo from becoming oversized on the wider 13-inch output while matching the approved phone design.
+
+CLEAR SPACE
+Keep the area around the logo free of title text, subtitle text, photographs, highlights, and decorative elements.
+In the approved design, the visible logo bottom is approximately 7.32% of canvas height.
+The visible title begins at approximately 11.93% of canvas height.
+Preserve this visual separation.
+
+QUALITY CHECK
+The logo must be identical in every variation.
+The logo must occupy the same position in matched outputs.
+Check the visible artwork bounds, not merely the transparent PNG canvas bounds.
+Do not use a generated approximation of the logo.

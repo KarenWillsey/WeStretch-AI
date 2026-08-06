@@ -1,0 +1,20 @@
+OUTPUT SIZE REQUIREMENTS
+
+OUTPUT SIZE 1
+Device label: iPhone 6.9-inch
+Width: 1320 pixels
+Height: 2868 pixels
+Orientation: Portrait
+Format: PNG
+
+OUTPUT SIZE 2
+Device label: iPad 13-inch
+Width: 2064 pixels
+Height: 2752 pixels
+Orientation: Portrait
+Format: PNG
+
+DELIVERY
+Create three matched photographic variations in both sizes.
+Total final images: 6 PNG files.
+

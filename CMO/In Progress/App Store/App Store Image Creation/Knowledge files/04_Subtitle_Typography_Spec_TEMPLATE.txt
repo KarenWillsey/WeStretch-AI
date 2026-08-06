@@ -1,0 +1,49 @@
+SUBTITLE TYPOGRAPHY SPECIFICATION — UPDATED FROM APPROVED PICKLEBALL DESIGN
+
+Authoritative visual reference:
+01_Approved_Pickleball_Design.png
+
+Font family: Inter
+Font file or verified system font name: Inter
+Font weight: SemiBold 600
+Text colour: #FFFFFF
+Alignment: Centered
+Capitalization rule: Use exact user wording
+
+RESPONSIVE TEXT-BOX WIDTH
+Maximum text-box width:
+min(90% of canvas width, 30% of canvas height)
+
+Reason:
+This preserves the approved subtitle line length on both narrow phone and wider tablet outputs instead of allowing the subtitle to become excessively wide on a tablet.
+
+FONT SIZE
+Font size — Output Size 1: 2.75% of canvas height
+Font size — Output Size 2: 2.75% of canvas height
+
+LINE SPACING
+Line advance / baseline-to-baseline distance: 2.93% of canvas height
+Equivalent line-height multiplier: approximately 1.065 × font size
+Equivalent line height: 106.5%
+
+TRACKING
+Tracking / letter spacing: 0%
+
+LINE LIMITS
+Maximum lines: 3
+Target font size: 2.75% of canvas height
+Minimum allowed font size: 2.50% of canvas height
+
+If the subtitle cannot fit within 3 lines at the minimum allowed size, do not shrink it further. Ask the user to shorten it.
+
+PLACEMENT
+Horizontal centre: 50% of canvas width
+Top of visible subtitle lettering: approximately 23.16% of canvas height
+Keep the approved visual gap below the title.
+Use the fewest natural lines that fit.
+Do not rewrite, shorten, correct, or change the user’s subtitle.
+
+QUALITY CHECK
+The subtitle must remain visually subordinate to the title.
+It must remain readable at App Store thumbnail size.
+It must not overlap the title or the photograph’s important facial details.

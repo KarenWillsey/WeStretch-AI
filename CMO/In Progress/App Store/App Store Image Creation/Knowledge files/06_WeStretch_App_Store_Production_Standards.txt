@@ -1,0 +1,303 @@
+WESTRETCH APP STORE IMAGE PRODUCTION STANDARDS
+Version 1.0
+
+1. PURPOSE
+This document is the detailed production reference for the WeStretch App Store Image Builder. It supports complete portrait App Store screenshots that combine a photorealistic lifestyle scene with the approved WeStretch logo, exact title, exact subtitle, black fade and locked template arrangement.
+
+The intended audience is approximately age 50–65. Every image should communicate: “This could be me. I can continue enjoying the things I love.” The visual should reinforce staying able, preserving independence, moving comfortably and continuing meaningful activities.
+
+2. PRODUCTION ARCHITECTURE
+Use two separate production stages:
+
+Stage A — Lifestyle photography
+Create a text-free photorealistic base image with Image Generation. Do not ask the image generator to reproduce the WeStretch logo or final title/subtitle. Generate three distinct photographic concepts.
+
+Stage B — Deterministic assembly
+Use Code Interpreter & Data Analysis to create the final images. Programmatically crop the base photo, apply the fade, place the original transparent logo file, render the exact title and subtitle, export exact pixel dimensions and package the six files.
+
+This two-stage method is required whenever logo and typography consistency matter.
+
+3. AUTHORITATIVE FILES AND PRECEDENCE
+Use the following file names in the GPT Knowledge area:
+
+01_Approved_Pickleball_Design.png
+Master visual reference for layout, black upper field, fade, spacing and overall balance.
+
+02_WeStretch_Logo_Do_Not_Modify.png
+Only approved logo asset. It must have a transparent background and should be the highest-resolution master available.
+
+03_Title_Typography_Spec.txt
+Must state the exact title font family, file/name, weight, colour, alignment, line height, tracking and size rule.
+
+04_Subtitle_Typography_Spec.txt
+Must state the exact subtitle font family, file/name, weight, colour, alignment, line height, tracking and size rule.
+
+05_Output_Size_Requirements.txt
+Must list the two exact pixel dimensions and PNG output requirement. Do not use only device labels such as “6.9-inch” or “13-inch.”
+
+06_WeStretch_App_Store_Production_Standards.txt
+This document.
+
+When sources conflict, follow this order:
+1. Approved pickleball design.
+2. Output size requirements.
+3. Original logo asset.
+4. Title and subtitle typography specifications.
+5. This production guide.
+6. Current job brief.
+
+The current job brief controls the human, activity, setting, clothing and exact wording. It does not silently change the locked logo or brand layout.
+
+4. CALIBRATED MASTER TEMPLATE COORDINATES
+The approved pickleball design used for initial calibration is 853 × 1844 pixels. Coordinates below are normalized so they can be applied to every output size.
+
+Logo visible bounds:
+- Left: 19.11% of canvas width
+- Right: 80.07% of canvas width
+- Top: 4.93% of canvas height
+- Bottom: 7.27% of canvas height
+- Horizontal centre: 49.59%
+- Displayed width: 60.96% of canvas width
+
+Title visible bounds in approved example:
+- Left: 11.72%
+- Right: 88.51%
+- Top: 11.88%
+- Bottom: 19.85%
+- Horizontal centre: 50.12%
+- Approved visible width: 76.79%
+
+Subtitle visible bounds in approved example:
+- Left: 19.11%
+- Right: 81.59%
+- Top: 23.16%
+- Bottom: 28.20%
+- Horizontal centre: 50.35%
+- Approved visible width: 62.49%
+
+Use these values as the starting coordinate system. The original logo asset should be centred at the logo centre and scaled to the approved displayed width. The title and subtitle should remain centred within their approved areas. Use the fewest natural lines that fit while preserving the logo position and text hierarchy.
+
+Important: visible text bounds are not a substitute for exact typography specifications. The font name, weight and line-height must still be supplied in the typography files.
+
+5. FADE AND IMAGE TRANSITION
+The top branding field should read as deep black or very dark charcoal. The photo should emerge gradually below the subtitle.
+
+Initial fade calibration:
+- Maintain a predominantly black field through approximately 24% of canvas height.
+- Transition smoothly from black into the photograph between approximately 24% and 36% of canvas height.
+- Keep the title and subtitle fully readable.
+- Avoid a hard rectangular edge.
+- Do not let the darkest part of the fade obscure the subject’s face, hands, equipment or main action.
+
+The fade may be adjusted slightly to suit a particular photograph, but the logo and typography positions remain locked.
+
+6. NEW JOB BRIEF
+Collect only information that is missing:
+- Exact title.
+- Exact subtitle, or “none.”
+- Human reference photograph.
+- Activity.
+- Location or setting.
+- Clothing direction.
+- Human details that must remain unchanged.
+- Activity-specific equipment or movement requirements.
+
+Do not ask the user to restate logo placement, title placement, subtitle placement, fonts, fade position or output dimensions.
+
+7. HUMAN IDENTITY AND AGE
+Use the uploaded person as the identity reference. Preserve recognizable facial structure, age, skin tone, hair, body type and overall appearance unless the user explicitly requests a change.
+
+The subject should look like a real adult over 50 enjoying an active life. Preserve natural signs of age. Avoid artificial skin, excessive beauty retouching, extreme muscularity, frailty unless requested, or a young fitness model made to look older.
+
+Identity can vary somewhat in generated imagery. Select and refine the base images that best preserve the supplied human. Do not claim exact identity preservation when it is visibly inconsistent.
+
+8. COMPOSITION
+The person’s face must be easy to see at the final display size. Show enough body to understand the action and enough environment to identify the activity. Avoid extremely wide scenes where the person becomes small and avoid close facial portraits that hide the activity.
+
+The subject should generally occupy a strong portion of the middle and lower canvas. Leave the locked upper branding field uncluttered. Important equipment should remain visible after cropping to both output ratios.
+
+Examples of identifying context:
+- Pickleball: court, paddle, perforated ball and net.
+- Golf: club, course and credible swing or setup.
+- Hiking: trail and landscape.
+- Gardening: garden and recognizable tools.
+- Travel: airport, destination or luggage context.
+- Kayaking: kayak, paddle and water.
+- Family activity: clearly understandable interaction and setting.
+- Cooking: kitchen and credible food-preparation action.
+
+9. CLOTHING
+Clothing should look like something an active adult would already own. Use attractive general-purpose clothing rather than professional uniforms.
+
+Suitable examples:
+- Neat athletic polo.
+- Performance T-shirt.
+- Comfortable athletic shorts.
+- Well-fitting athletic pants.
+- Light jacket.
+- Appropriate everyday athletic shoes.
+
+Avoid prominent clothing logos, sponsorship marks and flashy professional team styling unless explicitly requested.
+
+10. PHOTOGRAPHIC STYLE
+Use:
+- Photorealistic premium commercial lifestyle photography.
+- Natural indoor or outdoor light.
+- Realistic skin and clothing texture.
+- Attractive but believable environments.
+- Depth of field that keeps the face and action clear.
+- Clean, uncluttered composition.
+- Inspirational but believable colour and contrast.
+
+Avoid:
+- Illustration or cartoon styling.
+- Plastic or artificial skin.
+- Overly dramatic cinema lighting.
+- Unrealistically perfect environments.
+- Crowded backgrounds.
+- Unnecessary secondary people.
+- Generated text.
+- Watermarks.
+- Device mockups.
+
+11. ACTIVITY ACCURACY
+All actions, anatomy and equipment must be credible.
+
+For pickleball:
+- Use a recognizable pickleball paddle.
+- Use a perforated pickleball.
+- Show a pickleball court and net.
+- Show a credible forehand, backhand, volley, serve or return.
+- Orient the eyes, paddle, torso and feet consistently with the shot.
+
+For every other activity, apply equivalent equipment and movement accuracy.
+
+12. VARIATION RULES
+Create three meaningfully different photographic concepts. Keep the same uploaded human identity, exact title, exact subtitle, requested activity, general clothing direction and WeStretch template.
+
+Valid variation dimensions include:
+- Different action moment.
+- Camera angle.
+- Body position.
+- Facial expression.
+- Composition and crop.
+- Background details.
+- Lighting direction.
+- Equipment placement.
+- Amount of visible environment.
+
+A tiny crop, minor facial change or colour shift does not count as a separate variation.
+
+13. TWO-SIZE RULE
+Each of the three base photos must produce both exact output sizes, for six final PNGs.
+
+The two sizes for one variation must use the same base photograph and concept. Create the alternate size by reframing or cropping. Do not regenerate a different scene. Never distort the person, logo, court, environment or equipment.
+
+When aspect ratios differ, protect these priorities in order:
+1. Logo and typography positions.
+2. Face visibility.
+3. Activity readability.
+4. Important equipment.
+5. Environmental context.
+
+14. TYPOGRAPHY
+Use the exact title and subtitle supplied by the user. Do not rewrite, correct, shorten, change capitalization or add punctuation.
+
+Render final typography programmatically, not through image generation.
+
+Title typography file must include:
+- Font family: [REQUIRED]
+- Font file or verified system font name: [REQUIRED]
+- Weight: [REQUIRED]
+- Colour: [REQUIRED]
+- Alignment: centred
+- Maximum width rule: [REQUIRED]
+- Size rule for each output: [REQUIRED]
+- Line height: [REQUIRED]
+- Tracking/letter spacing: [REQUIRED]
+
+Subtitle typography file must include the same fields.
+
+If only screenshot samples are provided, the GPT may visually approximate the type but cannot guarantee an exact font match. Exact typography requires a verified font name and an available font asset or installed font.
+
+15. LOGO HANDLING
+Use only `02_WeStretch_Logo_Do_Not_Modify.png`.
+
+Permitted operations:
+- Uniform scaling.
+- Placement on the canvas.
+
+Prohibited operations:
+- Redrawing or regenerating.
+- Recolouring.
+- Cropping.
+- Non-uniform stretching.
+- Compression that visibly degrades quality.
+- Shadows, glows, outlines or other effects.
+- Placing objects over the logo.
+
+16. OUTPUT AND FILE NAMES
+Produce six PNG files and one ZIP.
+
+Recommended names:
+- V1_[width]x[height].png
+- V1_[width]x[height].png
+- V2_[width]x[height].png
+- V2_[width]x[height].png
+- V3_[width]x[height].png
+- V3_[width]x[height].png
+
+The actual dimensions replace the placeholders. To avoid duplicate names, each of the two size strings must be different.
+
+17. FINAL QUALITY CONTROL
+Branding:
+- Original logo file used without alteration.
+- Logo position, width and clear space match the locked template.
+- Title and subtitle wording are exact.
+- Typography matches the specification.
+- Text and logo remain readable and free from photographic interference.
+
+Photography:
+- Human resembles the uploaded reference.
+- Age, hair, skin tone and body type are preserved.
+- Face remains clear at display size.
+- Activity is immediately understandable.
+- Hands, limbs and equipment are believable.
+- Mood conveys enjoyment, confidence and an active life.
+
+Output:
+- All six PNGs are present.
+- Both dimensions are exact.
+- Three variations are genuinely distinct.
+- Each size pair uses the same base image.
+- No extra text, labels, watermarks or device frames.
+
+Fix any failed check before delivery.
+
+18. REVISION STANDARD
+Change only what the user requests. Preserve all unmentioned elements. Never alter the logo, locked layout, title/subtitle styling or output dimensions unless the user explicitly replaces an authoritative source file. When one variation changes, update both sizes in that variation.
+
+19. SAMPLE USER BRIEF
+TITLE:
+Stay Active for the Life You Love
+
+SUBTITLE:
+Personalized stretching for better daily movement.
+
+HUMAN:
+Use the attached person as the identity reference.
+
+ACTIVITY:
+Playing pickleball outdoors on a beautiful day.
+
+SETTING:
+A clean, attractive public pickleball court with a visible net.
+
+CLOTHING:
+Tasteful general racket-sport clothing that looks like something the person already owns.
+
+MUST PRESERVE:
+Face, age, skin tone, hair, body type and overall appearance.
+
+ACTION ACCURACY:
+Show a credible shot with a pickleball paddle and perforated ball.

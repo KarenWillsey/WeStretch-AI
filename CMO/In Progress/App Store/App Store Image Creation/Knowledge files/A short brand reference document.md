@@ -1,0 +1,1 @@
+WeStretch helps adults 50-65 remain active, mobile and able to enjoy the lives they love. Images should be warm, photorealistic, optimistic and relatable. People should look healthy and active without looking like professional athletes or fitness models. The visual message is independence, enjoyment, confidence and continuing to do what matters.
