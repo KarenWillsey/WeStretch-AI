@@ -39,11 +39,26 @@ Use this file to keep the current work context, decisions, and chat-summary note
 - Fixed filename mismatches between `GPT_INSTRUCTIONS.md` and the actual `Knowledge files/` names (03/04/05 need `_TEMPLATE` suffix; logo placement spec renamed to `08_Logo_Placement_Spec_TEMPLATE.txt`).
 - Reconciled small numeric drift between `06_..._Production_Standards.txt` and `08_Logo_Placement_Spec_TEMPLATE.txt`/`03_Title_Typography_Spec_TEMPLATE.txt` (logo centre/width/bottom, title top) — `08` and `03` are now the sole numeric source of truth; `06` mirrors them and must be corrected to match if they ever diverge again.
 
-## Current brief (2026-08-06)
+## Current brief (2026-08-07)
 - Title: Physio-Informed, Adaptive Intelligence
-- Subtitle: Always get teh right pose at the right time.
-- Human reference: uploaded model in green outfit, matching the stretch pose of the woman in the pink shirt.
-- Activity: stretch/mobility pose in a clean minimalist home living room.
-- Output: 3 unique iPhone images and 3 unique iPad images.
-- Set: Default A / Run_01.
-- Note: workspace does not contain an image generation/compositing pipeline, so the final PNG assets must be produced externally or via a new script.
+- Subtitle: Always get the right pose at the right time. (typo "teh" from the 2026-08-06 brief corrected by the user)
+- Source photo: `SourceImages/source image one.png` (single photo, three crop/zoom framings per size so the user can pick).
+- Output: 6 PNGs delivered to `Output/Default A/` (V1/V2/V3 x iPhone 1320x2868 + iPad 2064x2752) plus `verification_report.txt`.
+
+## Standing decisions (2026-08-07)
+- **Calibrated template numbers** (pixel-measured from the authorized `Output/Default A/Screen 2.png`, 853x1844): title Inter ExtraBold 3.85%H (NOT the old 4.60%), advance 4.93%H, visible ink top 11.88%H; subtitle Inter SemiBold 2.22%H (NOT 2.75%), advance 2.87%H, ink top 23.16%H; logo visible height 2.33%H, top 4.93%H, centre 49.53%W; fade = charcoal gradient RGB(12,13,14)->RGB(30,30,31) opaque to 28%H, smoothstep to transparent by 42%H (not pure black). Specs 03/04/06/08 updated to match.
+- **Text-box width rules are % of canvas HEIGHT** (title min(90%W, 41%H); subtitle min(90%W, 30%H)) — the Run_01 failure came from applying them to width. Specs now include worked pixel examples.
+- **Title line limit**: 2 lines when a subtitle is present (3-line titles collide with the fixed subtitle position); 3 only with no subtitle.
+- **Inter static fonts live in `Fonts/`** (Inter-ExtraBold.ttf, Inter-SemiBold.ttf, from the official Inter 4.1 release). Rendering with a fallback font is forbidden — the build script hard-fails if they're missing.
+- **`build_app_store_images.py` rewritten**: implements the calibrated template, supports `--source-image` (3 crop/zoom variants from one photo; pan variants for phone, zoom variants for tablet since the tablet canvas has no horizontal slack) and `--source-dir` (3 photos), and self-verifies every export against the authorized targets into `verification_report.txt`; any FAIL blocks delivery.
+- **Spelling/grammar gate**: if a supplied title/subtitle looks misspelled or ungrammatical, ask the user to confirm exact wording BEFORE production (added to `GPT_INSTRUCTIONS.md` and `06` §6).
+- **Review before delivery**: outputs must be visually inspected and measured before being saved into an Output folder — never deliver unreviewed images (added to `GPT_INSTRUCTIONS.md` quality check and `06` §17).
+- ~~Logo asset SHA-256: F63C9C9F...094E~~ superseded same day, see below.
+
+## Standing decisions (2026-08-07, afternoon — brand colors & crop rules)
+- **Brand colors source of truth** = `Globial Knowledge Content/Brand Guildeline.pdf`: Fire Red #FC4850, WHITE #FFFFFF, Midnight Grey #1F1F1F (+ Dark Grey #4C4C4C; secondary Light Grey #E4E4E4, Sunshine Gold #FBBC05, Lavender Blue #667FD4, Medium Grey #ADACAC). That PDF is never edited unless Karen explicitly instructs; branding changes flow FROM it. Assets that disagree get flagged, not silently used.
+- **Logo asset corrected to brand red**: the "WE" was off-brand #F05556; recolored to #FC4850 (white was already #FFFFFF). Old file kept as `Knowledge files/Retired_02_WeStretch_Logo_OffBrand_Red_F05556.png` (Retired = never authoritative). New SHA-256 in spec 08: 8B8C89D92516C072B1259AD307B4D49D65B0E0B6E7F20476DD840AB7048CD7FF.
+- **Fade bottom tone snapped to brand Midnight Grey #1F1F1F** (was measured 30,30,31 — imperceptible 1/255 change).
+- **Crop rules (hard limits)**: at most half a foot may be cropped; no other body part; head + ALL hair always fully visible. Exceptions need explicit per-job permission recorded in run notes. If a source can't comply for an output size, stop and ask (added to GPT_INSTRUCTIONS.md and 06 §8).
+- **Recorded permission for this run**: Karen permitted cropping the raised leg on the iPhone crops of `source image one.png` (lying pose spans 76.5% of source width; iPhone window is 57.5%, so head/hair + half-foot cannot both fit). iPad crops comply without exception.
+- Final delivery re-rendered with brand-red logo and compliant crops → `Output/Default A/` (2026-08-07 afternoon files).

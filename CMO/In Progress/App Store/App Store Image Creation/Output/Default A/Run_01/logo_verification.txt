@@ -1,0 +1,69 @@
+Logo Placement Verification Report
+=================================
+
+V1_1320x2868.png
+Logo placement verification:
+  Output size: 1320x2868
+  Logo top: 0.04916 of canvas height
+  Logo center: 0.49470 of canvas width
+  Logo visible width: 0.61061 of canvas width
+  Logo visible height: 0.02301 of canvas height
+  Logo max width allowed: 0.61080 of canvas width
+  Expected logo top: 0.04930 of canvas height
+  Expected logo center: 0.49530 of canvas width
+
+V1_2064x2752.png
+Logo placement verification:
+  Output size: 2064x2752
+  Logo top: 0.04906 of canvas height
+  Logo center: 0.49491 of canvas width
+  Logo visible width: 0.38808 of canvas width
+  Logo visible height: 0.02362 of canvas height
+  Logo max width allowed: 0.61080 of canvas width
+  Expected logo top: 0.04930 of canvas height
+  Expected logo center: 0.49530 of canvas width
+
+V2_1320x2868.png
+Logo placement verification:
+  Output size: 1320x2868
+  Logo top: 0.04916 of canvas height
+  Logo center: 0.49470 of canvas width
+  Logo visible width: 0.61061 of canvas width
+  Logo visible height: 0.02301 of canvas height
+  Logo max width allowed: 0.61080 of canvas width
+  Expected logo top: 0.04930 of canvas height
+  Expected logo center: 0.49530 of canvas width
+
+V2_2064x2752.png
+Logo placement verification:
+  Output size: 2064x2752
+  Logo top: 0.04906 of canvas height
+  Logo center: 0.49491 of canvas width
+  Logo visible width: 0.38808 of canvas width
+  Logo visible height: 0.02362 of canvas height
+  Logo max width allowed: 0.61080 of canvas width
+  Expected logo top: 0.04930 of canvas height
+  Expected logo center: 0.49530 of canvas width
+
+V3_1320x2868.png
+Logo placement verification:
+  Output size: 1320x2868
+  Logo top: 0.04916 of canvas height
+  Logo center: 0.49470 of canvas width
+  Logo visible width: 0.61061 of canvas width
+  Logo visible height: 0.02301 of canvas height
+  Logo max width allowed: 0.61080 of canvas width
+  Expected logo top: 0.04930 of canvas height
+  Expected logo center: 0.49530 of canvas width
+
+V3_2064x2752.png
+Logo placement verification:
+  Output size: 2064x2752
+  Logo top: 0.04906 of canvas height
+  Logo center: 0.49491 of canvas width
+  Logo visible width: 0.38808 of canvas width
+  Logo visible height: 0.02362 of canvas height
+  Logo max width allowed: 0.61080 of canvas width
+  Expected logo top: 0.04930 of canvas height
+  Expected logo center: 0.49530 of canvas width
+

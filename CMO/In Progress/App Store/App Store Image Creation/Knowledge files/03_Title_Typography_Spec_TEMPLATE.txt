@@ -6,41 +6,55 @@ Authoritative visual reference:
 Font family: Inter
 Font file or verified system font name: Inter
 Font weight: ExtraBold 800
-Text colour: #FFFFFF
+Text colour: #FFFFFF (brand WHITE — Globial Knowledge Content/Brand Guildeline.pdf)
 Alignment: Centered
 Capitalization rule: Use exact user wording
 
+FONT FILE LOCATION
+Fonts/Inter-ExtraBold.ttf (relative to the App Store Image Creation folder).
+Rendering with a substitute/fallback font is FORBIDDEN. If the font file is
+missing, stop and report — never export with another font.
+
 RESPONSIVE TEXT-BOX WIDTH
 Maximum text-box width:
-min(90% of canvas width, 36% of canvas height)
+min(90% of canvas WIDTH, 41% of canvas HEIGHT)
 
-Reason:
-The approved design’s widest title line occupies approximately 76.8% of the phone canvas width. Using a height-based cap preserves similar line wrapping on both narrow phone and wider tablet outputs.
+IMPORTANT: the 41% is a percentage of canvas HEIGHT, not width. Worked examples:
+- iPhone 1320x2868: min(0.90*1320, 0.41*2868) = min(1188, 1176) = 1176 px
+- iPad  2064x2752: min(0.90*2064, 0.41*2752) = min(1858, 1128) = 1128 px
+The height basis keeps line wrapping consistent between phone and tablet.
+(The approved design's widest title line is 35.5% of canvas height; longer
+titles may run up to 41% before wrapping.)
 
-FONT SIZE
-Font size — Output Size 1: 4.60% of canvas height
-Font size — Output Size 2: 4.60% of canvas height
+FONT SIZE (calibrated 2026-08-07 by pixel-measuring the approved design)
+Font size — all output sizes: 3.85% of canvas height
+- iPhone 1320x2868: 110 px
+- iPad  2064x2752: 106 px
 
 LINE SPACING
-Line advance / baseline-to-baseline distance: 4.94% of canvas height
-Equivalent line-height multiplier: approximately 1.075 × font size
-Equivalent line height: 107.5%
+Line advance / baseline-to-baseline distance: 4.93% of canvas height
+Equivalent line-height multiplier: approximately 1.282 × font size
 
-Do not interpret “line height” as adding 5% to the font size. Use the explicit baseline-to-baseline distance above.
+Do not interpret “line height” as adding 5% to the font size. Use the explicit
+baseline-to-baseline distance above.
 
 TRACKING
 Tracking / letter spacing: 0%
 
 LINE LIMITS
-Maximum lines: 3
-Target font size: 4.60% of canvas height
-Minimum allowed font size: 4.25% of canvas height
+Maximum lines: 2 when a subtitle is present (a 3-line title collides with the
+fixed subtitle position); 3 only when there is no subtitle.
+Target font size: 3.85% of canvas height
+Minimum allowed font size: 3.56% of canvas height
 
-If the title cannot fit naturally within 3 lines at the minimum allowed size, do not shrink it further. Ask the user to shorten the title.
+If the title cannot fit naturally within the line limit at the minimum allowed
+size, do not shrink it further. Ask the user to shorten the title.
 
 PLACEMENT
 Horizontal centre: 50% of canvas width
-Top of visible title lettering: approximately 11.93% of canvas height
+Top of VISIBLE title lettering (ink, not the font bounding box): 11.88% of
+canvas height. Position by measuring the rendered ink top of the first line,
+not by placing the text box origin there.
 Keep the logo fixed.
 Keep the title centred.
 Use the fewest natural lines that fit.

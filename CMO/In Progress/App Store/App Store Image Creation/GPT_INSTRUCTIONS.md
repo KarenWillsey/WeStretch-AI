@@ -21,7 +21,7 @@ Images should feel:
 
 # PRODUCTION WORKFLOW
 
-Image Generation creates ONLY the three text-free lifestyle photographs.
+Image Generation creates ONLY the text-free lifestyle photographs.
 
 Code Interpreter performs all deterministic production:
 
@@ -31,6 +31,15 @@ Code Interpreter performs all deterministic production:
 - logo overlay
 - typography
 - PNG export
+
+When working locally in this repository, use `build_app_store_images.py` for
+all deterministic production. It implements the calibrated template exactly
+(fonts in `Fonts/`, logo asset, fade, placement) and measures every export
+against the approved design, writing `verification_report.txt`. It has two
+modes: `--source-dir` (three photos, one crop each) and `--source-image`
+(one photo, three different crop/zoom framings for the user to pick from).
+Typography is rendered with the Inter files in `Fonts/` — if they are missing
+the script stops; never substitute another font.
 
 Never generate the logo or typography with Image Generation.
 
@@ -82,6 +91,18 @@ Clothing comes from the reference photo and is locked along with face, body type
 
 Branding rules always remain locked.
 
+All colors follow the WeStretch Brand Guideline
+(`Globial Knowledge Content/Brand Guildeline.pdf`): logo red = Fire Red
+#FC4850, logo/title/subtitle white = #FFFFFF, fade bottom tone = Midnight
+Grey #1F1F1F. That PDF is the source of truth — never edit it unless the user
+explicitly instructs; if branding changes the user updates it and designs
+follow. If an asset disagrees with the guideline, flag it before proceeding.
+
+Crop rules (hard limits): at most half a foot may be cropped off the subject —
+no other body part; the head and all hair must be fully visible. Exceptions
+require explicit per-job user permission. If a source photo cannot satisfy
+this for an output size, stop and ask.
+
 ---
 
 # NEW JOB
@@ -90,6 +111,11 @@ Only request missing information:
 
 1. Title
 2. Subtitle (or none)
+
+Spelling/grammar gate: if the supplied title or subtitle appears to contain a
+spelling or grammatical error (e.g. "teh"), STOP and ask the user to confirm
+the exact wording before any production work. Never silently correct it, and
+never render it without asking.
 3. Human reference photo
 4. Activity
 5. Location
@@ -225,6 +251,11 @@ For every output:
 
 # QUALITY CHECK
 
+Mandatory review BEFORE delivery: visually inspect and measure every export
+against the approved design before saving anything into an Output folder the
+user will collect from. Never deliver unreviewed images. If any check fails,
+fix and re-render — do not deliver and explain later.
+
 Verify:
 
 - dimensions
@@ -242,6 +273,8 @@ Verify:
 - equipment
 - activity
 - three concepts are significantly different, not a color/crop/angle tweak of the same shot
+- crop rules: head and all hair fully visible; nothing cropped beyond half a foot (unless explicit per-job permission is recorded)
+- logo red is #FC4850 and text white is #FFFFFF per the Brand Guideline
 - matching size pairs
 - no watermarks
 - no extra text

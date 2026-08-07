@@ -26,7 +26,11 @@ ASSET VERIFICATION
 Before placing or exporting the logo, verify:
 
 1. The original file 02_WeStretch_Logo_Do_Not_Modify.png was opened directly.
-2. SHA-256 of the opened file matches: [REPLACE WITH ACTUAL HASH]
+2. SHA-256 of the opened file matches: 8B8C89D92516C072B1259AD307B4D49D65B0E0B6E7F20476DD840AB7048CD7FF
+   (Asset corrected 2026-08-07: red recolored from off-brand #F05556 to brand
+   Fire Red #FC4850 per Globial Knowledge Content/Brand Guildeline.pdf; white
+   is brand WHITE #FFFFFF. Previous asset kept as
+   Retired_02_WeStretch_Logo_OffBrand_Red_F05556.png — never use it.)
 3. Transparency is preserved.
 4. Colours are unchanged.
 5. Aspect ratio is preserved.
@@ -52,7 +56,9 @@ Measure from visible logo artwork — NOT from transparent PNG bounds.
 
 Visible logo top edge:          4.93% of canvas height
 Visible logo horizontal centre: 49.53% of canvas width
-Target visible logo height:     2.39% of canvas height
+Target visible logo height:     2.33% of canvas height (calibrated 2026-08-07:
+                                scaling the alpha-bbox to 2.33%H reproduces the
+                                approved 61.08% width exactly)
 Maximum visible logo width:     61.08% of canvas width
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -64,7 +70,7 @@ approved phone design at all sizes.
 
 Steps:
 1. Detect the non-transparent visible artwork bounds of the logo PNG.
-2. Scale uniformly until visible artwork height = 2.39% of canvas height.
+2. Scale uniformly until visible artwork height = 2.33% of canvas height.
 3. Preserve aspect ratio throughout.
 4. Centre the visible artwork at 49.53% of canvas width.
 5. Position the visible artwork top edge at 4.93% of canvas height.
@@ -78,8 +84,8 @@ CLEAR SPACE
 Keep all photography, title text, subtitle text, and decorative elements
 outside the logo clear space zone.
 
-Visible logo bottom:  ≈ 7.32% of canvas height
-Title text begins:    ≈ 11.93% of canvas height
+Visible logo bottom:  ≈ 7.27% of canvas height
+Title text begins:    ≈ 11.88% of canvas height
 
 Preserve this separation on every output.
 

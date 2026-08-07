@@ -19,6 +19,20 @@ This two-stage method is required whenever logo and typography consistency matte
 
 Before compositing, inspect every Image Generation output. If it contains anything resembling a logo, wordmark, title text, subtitle text or any generated lettering, discard it and regenerate a clean photograph instead of cropping or painting over the unwanted mark. The final logo pixels in every export must come only from 02_WeStretch_Logo_Do_Not_Modify.png placed by Code Interpreter. If the logo mark itself (not just its position) visibly differs between variations, the job has failed and must be redone.
 
+2b. BRAND COLORS — SOURCE OF TRUTH
+All colors used in these images come from the WeStretch Brand Guideline:
+"Globial Knowledge Content/Brand Guildeline.pdf" (repo root).
+
+- Logo "WE" red:            Fire Red #FC4850
+- Logo "STRETCH" / text:    WHITE #FFFFFF (title and subtitle too)
+- Fade field bottom tone:   Midnight Grey #1F1F1F
+
+The Brand Guideline PDF is NEVER edited, replaced, or "corrected" unless the
+user explicitly instructs it. If branding changes, the user updates that
+document and all designs going forward follow it. If any asset (including the
+logo file) is found to disagree with the Brand Guideline, flag it to the user
+before proceeding — the guideline wins.
+
 3. AUTHORITATIVE FILES AND PRECEDENCE
 Use the following file names in the GPT Knowledge area:
 
@@ -61,14 +75,15 @@ The approved pickleball design used for initial calibration is 853 × 1844 pixel
 
 Logo visible bounds (must match 08_Logo_Placement_Spec_TEMPLATE.txt exactly — see that file for the authoritative values and verification steps):
 - Top: 4.93% of canvas height
-- Bottom: ≈7.32% of canvas height
+- Bottom: ≈7.27% of canvas height
 - Horizontal centre: 49.53% of canvas width
 - Maximum visible width: 61.08% of canvas width
+- Visible artwork height: 2.33% of canvas height
 
 Title visible bounds in approved example (top must match 03_Title_Typography_Spec_TEMPLATE.txt exactly):
 - Left: 11.72%
 - Right: 88.51%
-- Top: 11.93%
+- Top: 11.88%
 - Bottom: 19.85%
 - Horizontal centre: 50.12%
 - Approved visible width: 76.79%
@@ -86,13 +101,13 @@ Use these values as the starting coordinate system. The original logo asset shou
 Important: visible text bounds are not a substitute for exact typography specifications. The font name, weight and line-height must still be supplied in the typography files.
 
 5. FADE AND IMAGE TRANSITION
-The top branding field should read as deep black or very dark charcoal. The photo should emerge gradually below the subtitle.
+The top branding field is dark charcoal, NOT pure black. The photo should emerge gradually below the subtitle.
 
-Initial fade calibration:
-- Maintain a predominantly black field through approximately 24% of canvas height.
-- Transition smoothly from black into the photograph between approximately 24% and 36% of canvas height.
+Calibrated fade (pixel-measured from the approved design, 2026-08-07):
+- The field runs a subtle vertical gradient from approximately RGB(12,13,14) at the very top to brand Midnight Grey #1F1F1F / RGB(31,31,31) at 28% of canvas height, fully opaque.
+- From 28% to 42% of canvas height the field fades smoothly (smoothstep, no hard edge) from fully opaque to fully transparent, holding the #1F1F1F tone.
+- Below 42% the photograph is fully visible.
 - Keep the title and subtitle fully readable.
-- Avoid a hard rectangular edge.
 - Do not let the darkest part of the fade obscure the subject’s face, hands, equipment or main action.
 
 The fade may be adjusted slightly to suit a particular photograph, but the logo and typography positions remain locked.
@@ -101,6 +116,11 @@ The fade may be adjusted slightly to suit a particular photograph, but the logo 
 Collect only information that is missing:
 - Exact title.
 - Exact subtitle, or “none.”
+
+Spelling/grammar gate: if the supplied title or subtitle appears to contain a
+spelling or grammatical error (e.g. "teh"), pause and ask the user to confirm
+the exact wording BEFORE any production work. Never silently correct it, and
+never render it without asking.
 - Human reference photograph.
 - Activity.
 - Location or setting.
@@ -122,6 +142,17 @@ Identity can vary somewhat in generated imagery. Select and refine the base imag
 The person’s face must be easy to see at the final display size. Show enough body to understand the action and enough environment to identify the activity. Avoid extremely wide scenes where the person becomes small and avoid close facial portraits that hide the activity.
 
 The subject should generally occupy a strong portion of the middle and lower canvas. Leave the locked upper branding field uncluttered. Important equipment should remain visible after cropping to both output ratios.
+
+CROP RULES (hard limits, apply to every output size):
+- At most HALF A FOOT of the subject may be cropped out of frame. No other
+  body part may be cropped.
+- The head must be fully visible, including ALL hair.
+- Exceptions require the user's explicit permission, granted per job and
+  recorded in the job brief/run notes.
+- If a source photograph cannot satisfy these rules for a required output
+  size (e.g. a wide lying pose in a tall phone crop), STOP and ask the user
+  whether to permit a specific crop, use a different source photo, or skip
+  that size. Never silently violate the crop rules.
 
 Examples of identifying context:
 - Pickleball: court, paddle, perforated ball and net.
@@ -261,6 +292,13 @@ Recommended names:
 The actual dimensions replace the placeholders. To avoid duplicate names, each of the two size strings must be different.
 
 17. FINAL QUALITY CONTROL
+Mandatory review before delivery: every export must be VISUALLY INSPECTED and
+MEASURED against the approved design before it is saved into any Output
+folder. Never place unreviewed images where the user will collect them. The
+local build script (build_app_store_images.py) measures every export's logo,
+title and subtitle bands against the approved-design targets and writes
+verification_report.txt; a FAIL on any check blocks delivery.
+
 Branding:
 - Original logo file used without alteration.
 - Logo position, width and clear space match the locked template.

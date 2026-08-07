@@ -6,39 +6,49 @@ Authoritative visual reference:
 Font family: Inter
 Font file or verified system font name: Inter
 Font weight: SemiBold 600
-Text colour: #FFFFFF
+Text colour: #FFFFFF (brand WHITE — Globial Knowledge Content/Brand Guildeline.pdf)
 Alignment: Centered
 Capitalization rule: Use exact user wording
 
+FONT FILE LOCATION
+Fonts/Inter-SemiBold.ttf (relative to the App Store Image Creation folder).
+Rendering with a substitute/fallback font is FORBIDDEN. If the font file is
+missing, stop and report — never export with another font.
+
 RESPONSIVE TEXT-BOX WIDTH
 Maximum text-box width:
-min(90% of canvas width, 30% of canvas height)
+min(90% of canvas WIDTH, 30% of canvas HEIGHT)
 
-Reason:
-This preserves the approved subtitle line length on both narrow phone and wider tablet outputs instead of allowing the subtitle to become excessively wide on a tablet.
+IMPORTANT: the 30% is a percentage of canvas HEIGHT, not width. Worked examples:
+- iPhone 1320x2868: min(0.90*1320, 0.30*2868) = min(1188, 860) = 860 px
+- iPad  2064x2752: min(0.90*2064, 0.30*2752) = min(1858, 826) = 826 px
+This preserves the approved subtitle line length on both narrow phone and wider
+tablet outputs instead of allowing the subtitle to become excessively wide on a
+tablet.
 
-FONT SIZE
-Font size — Output Size 1: 2.75% of canvas height
-Font size — Output Size 2: 2.75% of canvas height
+FONT SIZE (calibrated 2026-08-07 by pixel-measuring the approved design)
+Font size — all output sizes: 2.22% of canvas height
+- iPhone 1320x2868: 64 px
+- iPad  2064x2752: 61 px
 
 LINE SPACING
-Line advance / baseline-to-baseline distance: 2.93% of canvas height
-Equivalent line-height multiplier: approximately 1.065 × font size
-Equivalent line height: 106.5%
+Line advance / baseline-to-baseline distance: 2.87% of canvas height
+Equivalent line-height multiplier: approximately 1.293 × font size
 
 TRACKING
 Tracking / letter spacing: 0%
 
 LINE LIMITS
 Maximum lines: 3
-Target font size: 2.75% of canvas height
-Minimum allowed font size: 2.50% of canvas height
+Target font size: 2.22% of canvas height
+Minimum allowed font size: 2.02% of canvas height
 
 If the subtitle cannot fit within 3 lines at the minimum allowed size, do not shrink it further. Ask the user to shorten it.
 
 PLACEMENT
 Horizontal centre: 50% of canvas width
-Top of visible subtitle lettering: approximately 23.16% of canvas height
+Top of VISIBLE subtitle lettering (ink, not the font bounding box): 23.16% of
+canvas height. Position by measuring the rendered ink top of the first line.
 Keep the approved visual gap below the title.
 Use the fewest natural lines that fit.
 Do not rewrite, shorten, correct, or change the user’s subtitle.
