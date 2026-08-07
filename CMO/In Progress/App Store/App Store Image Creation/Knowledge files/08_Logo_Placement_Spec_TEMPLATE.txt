@@ -1,41 +1,98 @@
 WESTRETCH LOGO PLACEMENT SPECIFICATION — APPROVED PICKLEBALL DESIGN
 
-Authoritative files:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AUTHORITATIVE FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 01_Approved_Pickleball_Design.png
 02_WeStretch_Logo_Do_Not_Modify.png
 
-ASSET RULE
-Use the original logo knowledge file exactly as supplied.
-Never regenerate, redraw, recolour, crop, stretch, compress, retype, or otherwise modify the logo.
-Preserve transparency and original aspect ratio.
+Both files are authoritative. Do not substitute, regenerate, or approximate either.
 
-PLACEMENT REFERENCE
-Measurements are based on the visible logo artwork in the approved 853 × 1844 reference.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LOGO ASSET RULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Use 02_WeStretch_Logo_Do_Not_Modify.png exactly as supplied.
+Never regenerate, redraw, recreate, approximate, retype, recolour, crop,
+stretch, compress, sharpen, blur, outline, or otherwise modify the logo.
 
-Visible logo top edge: 4.93% of canvas height
+Preserve:
+- transparency
+- original colours
+- original aspect ratio
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ASSET VERIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Before placing or exporting the logo, verify:
+
+1. The original file 02_WeStretch_Logo_Do_Not_Modify.png was opened directly.
+2. SHA-256 of the opened file matches: [REPLACE WITH ACTUAL HASH]
+3. Transparency is preserved.
+4. Colours are unchanged.
+5. Aspect ratio is preserved.
+6. No cropping has occurred.
+7. No regeneration has occurred.
+8. Only uniform scaling has been applied.
+
+Record on export:
+- Filename used
+- SHA-256 of file used
+- Verified placement values (top, centre, width, height)
+
+Do not claim the official logo was used unless all verification steps pass.
+Any failure prevents export.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PLACEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Reference canvas: 853 × 1844 px (approved pickleball phone design).
+All percentages are derived from this reference.
+
+Measure from visible logo artwork — NOT from transparent PNG bounds.
+
+Visible logo top edge:          4.93% of canvas height
 Visible logo horizontal centre: 49.53% of canvas width
-Target visible logo height: 2.39% of canvas height
-Target visible logo width on the approved phone aspect ratio: approximately 61.08% of canvas width
+Target visible logo height:     2.39% of canvas height
+Maximum visible logo width:     61.08% of canvas width
 
-RESPONSIVE SIZE RULE
-Scale the logo by height, not by width:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RESPONSIVE SCALING RULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Scale by height, not by width. This prevents the logo from becoming
+oversized on wider outputs (e.g. 13-inch canvas) while matching the
+approved phone design at all sizes.
 
-1. Set the visible logo artwork height to 2.39% of canvas height.
-2. Preserve the logo’s original aspect ratio.
-3. Centre it at 49.53% of canvas width.
-4. Place its visible top edge at 4.93% of canvas height.
-5. Never allow its visible width to exceed 61.08% of canvas width.
+Steps:
+1. Detect the non-transparent visible artwork bounds of the logo PNG.
+2. Scale uniformly until visible artwork height = 2.39% of canvas height.
+3. Preserve aspect ratio throughout.
+4. Centre the visible artwork at 49.53% of canvas width.
+5. Position the visible artwork top edge at 4.93% of canvas height.
+6. Confirm visible width does not exceed 61.08% of canvas width.
 
-This height-based rule keeps the logo from becoming oversized on the wider 13-inch output while matching the approved phone design.
+Never estimate placement visually. Always calculate from canvas dimensions.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CLEAR SPACE
-Keep the area around the logo free of title text, subtitle text, photographs, highlights, and decorative elements.
-In the approved design, the visible logo bottom is approximately 7.32% of canvas height.
-The visible title begins at approximately 11.93% of canvas height.
-Preserve this visual separation.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Keep all photography, title text, subtitle text, and decorative elements
+outside the logo clear space zone.
 
+Visible logo bottom:  ≈ 7.32% of canvas height
+Title text begins:    ≈ 11.93% of canvas height
+
+Preserve this separation on every output.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 QUALITY CHECK
-The logo must be identical in every variation.
-The logo must occupy the same position in matched outputs.
-Check the visible artwork bounds, not merely the transparent PNG canvas bounds.
-Do not use a generated approximation of the logo.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The logo must be visually identical across every variation and every output size.
+Check visible artwork bounds — not transparent PNG canvas bounds.
+
+Confirm:
+- Logo file is original (not regenerated or approximated)
+- Placement percentages match specification
+- Clear space is maintained
+- Logo appears identical in all matched outputs
+
+Any failure prevents export.
