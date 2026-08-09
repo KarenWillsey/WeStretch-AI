@@ -50,8 +50,26 @@ The "Unsubscribe" folder is populated by Karen's existing mail rule (subject/bod
    - **Needs reply** — see §3.
    - **Spam / low value** — collect id for `outlook_batch_delete_messages` to Deleted, list under **Deleted** using the same `**Sender** — summary.` format as §1.
    - **Follow-up** — Karen is only waiting on someone else; determine this from the thread's own state (is the most recent message in the thread from Karen, with no reply yet?), not from any external tracking.
-   - Everything else (FYI, no action needed, already effectively resolved) — still gets a one-line summary; nothing is silently rolled into a count. List under **Other Inbox Mail**.
+   - Everything else (FYI, no action needed, already effectively resolved) — see the fuller-detail treatment below. List under **Other Inbox Mail**.
 3. Build **Threads Waiting On You** as the Needs Reply + Follow-up items combined — this is the direct answer to "what in my inbox needs me to read and deal with."
+
+### Other Inbox Mail — full detail, not a one-liner (Karen's explicit ask, 2026-08-09)
+
+Only "Other Inbox Mail" gets this treatment — **Needs My Attention** (§1, Unsubscribe folder value items) and **Threads Waiting On You** keep their existing one-line-per-item format.
+
+For each item (or thread) in this category:
+- Bold the subject/thread name as a header line, same as elsewhere.
+- Under it, a bullet per distinct fact — dates, numbers, names, asks, decisions, deadlines. Nothing gets dropped or compressed away; if in doubt, add another bullet rather than omit. Each bullet stays a single short line (this is what keeps it scannable despite being more detail than other sections).
+- **If the item is part of a multi-message thread, summarize the whole thread as one consolidated section** — one bold header, then bullets pulling from every message in the thread — not one entry per message. Read the full thread (not just the latest message) before summarizing it.
+
+Example:
+```
+**Q3 Vendor Renewal — Acme Corp**
+- Renewal due Sept 15, current rate $400/mo
+- 10% discount offered if signed by Aug 30
+- Contact: Jane Doe, jane@acme.com
+- No response needed unless we want the discount
+```
 
 ## 3. Voice-matched reply drafting
 
@@ -86,7 +104,7 @@ The "Unsubscribe" folder is populated by Karen's existing mail rule (subject/bod
 ```
 mailbox: <address>
 threads_waiting_on_you: [{subject, sender, thread_ref, kind: needs_reply|follow_up, draft_exists: bool, note?}]
-other_inbox: [{subject, sender, summary}]
+other_inbox: [{subject, sender, thread_ref, is_thread: bool, detail_bullets: [string, ...]}]
 needs_my_attention: [{subject, sender, why}]           # from Unsubscribe folder
 deleted: [{subject, sender, summary, source: inbox|unsubscribe}]
 sent_rollup_to_kari: {sent: bool, count: N}

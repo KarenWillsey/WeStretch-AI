@@ -1,10 +1,15 @@
 # Daily Brief — Implementation Spec (v1)
 
-Status (2026-08-08): V1 skills built (`daily-brief-email-triage`, `daily-brief-asana`, `daily-brief-compose`, `daily-brief` orchestrator — all under `.claude/skills/`). Email triage has been run live and confirmed working end to end: Unsubscribe folder + inbox scanned, spam deleted, one reply draft created, Kari's sent-rollup sent, digest emailed to Karen. State file for the Kari rollup is at `state/kari-sent-summary.json`.
+Status (2026-08-09): All four V1 skills built and wired together (`daily-brief-email-triage`, `daily-brief-asana`, `daily-brief-jira`, `daily-brief-compose`, `daily-brief` orchestrator — all under `.claude/skills/`).
 
-**Next step:** run the Asana pass (`daily-brief-asana`) — not yet executed live. After that: build `daily-brief-jira`, then wire up scheduling.
+- Email triage: run live and confirmed working end to end (Unsubscribe + inbox scanned, spam deleted, one reply draft created, Kari's sent-rollup sent, digest emailed). State file: `state/kari-sent-summary.json`.
+- Asana: run live and confirmed working end to end; `get_my_tasks` + client-side section filtering verified against Karen's actual app counts (26 Recently Assigned, 17 Today, 2026-08-09). No inbox-notifications tool exists in the connector, so that step is skipped and reported as `couldnt_check` until one does.
+- Jira: built 2026-08-09. No Jira MCP exists, so this calls the Jira Cloud REST API directly (site `webananas.atlassian.net`, project `WEMVP`). Credentials live in `state/.jira-credentials.json` (gitignored — see `.gitignore` at repo root — never commit this file). "Assigned to Karen" is a verified live query (22 open tickets on first check). "New @mentions" uses a text-match + updated-since heuristic (documented as a caveat in the skill and surfaced in every report) because the API has no dedicated mentions endpoint; state file `state/jira-mentions-state.json` tracks the delta. Not yet run end-to-end through the full orchestrator.
+- Compose: updated to include the Jira section unconditionally (previously gated on Jira not existing yet).
 
-To resume in a new session: just say "continue the daily brief, run Asana next" (or open this file — it has everything needed). No special setup required; the skills are already discoverable by Claude Code in this project.
+**Next step:** run one full live end-to-end test of `daily-brief` (all three sources → compose → send), then wire up the 5:00am America/Edmonton daily schedule via the `schedule` skill. Confirm with Karen before the first unattended scheduled run per the orchestrator's "First run caution."
+
+To resume in a new session: say "continue the daily brief" (or open this file — it has everything needed). No special setup required; the skills are already discoverable by Claude Code in this project.
 
 ## Core problem
 
@@ -94,7 +99,7 @@ A top-level orchestration runs all of the above in sequence, then composes. Sche
 
 ## Build order
 
-1. `daily-brief-email-triage` + `daily-brief-asana` (both have working connectors today) → get one real, reliable report running.
-2. Add `daily-brief-jira`.
-3. Wire up scheduling.
+1. ✅ `daily-brief-email-triage` + `daily-brief-asana` — built, both run live and confirmed.
+2. ✅ `daily-brief-jira` — built 2026-08-09, `myself`/assigned-tickets queries verified live; not yet run through the full orchestrator.
+3. Wire up scheduling — next.
 4. V2: Mattermost, Cozi, Gmail.

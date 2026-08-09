@@ -16,13 +16,21 @@ Ground rule: only clear an Asana inbox notification if it was actually resolved 
    `COULDN'T CHECK: Asana — connector unavailable ([error]).`
    Do not fabricate task data or reuse a previous run's list.
 
-## 1. Today's tasks
+## 1. Today's tasks + 2. Recently Assigned tasks
 
-Pull tasks in Karen's "My Tasks" that are due today or sit in the "Today" section, via `get_my_tasks` / `search_tasks`. List each with task name, project, due date, and a link.
+Both pull from the same real Asana My Tasks sections Karen actually uses day to day — this is the literal "Today" and "Recently Assigned" section she sees in the Asana app, not a due-date heuristic.
 
-## 2. Recently Assigned tasks
+**Correct method (fixed 2026-08-09, live-verified):** call
+`get_my_tasks(completed_since="now", opt_fields="name,due_on,assignee_section.name,permalink_url", limit=100)`,
+paginate via the returned `next_page.offset` as needed, and filter client-side for `assignee_section.name == "Today"` and `== "Recently Assigned"`. This has been verified to exactly match Karen's own Asana app counts (26 Recently Assigned, 17 Today). Section membership is not clustered in the default sort order, so keep paginating until both sections' tasks have all been found — don't stop after page 1 assuming the rest live elsewhere. In practice both sections combined have been under 50 tasks, well within 1-2 pages.
 
-Pull tasks assigned to Karen within the last 24–48 hours (by assignment date, not creation date — a task created last week but just handed to Karen today still counts). List each with task name, project, who assigned it, and a link.
+**Do not use these fields for this purpose — both were tried and are wrong:**
+- `assignee_status` — a legacy 4-value enum (today/upcoming/later/new) that cannot see Karen's custom sections ("Track It or FAIL," "Daily 20 minute chunks," "Waiting On ~ Review Daily") and returned the same generic value for every task regardless of its real section.
+- `task.memberships` — only reflects section membership within real *projects*; tasks living only in My Tasks (no other project) return an empty array.
+
+List each task with task name, due date (if any), and a link (`permalink_url`). For "Recently Assigned," note who assigned it if that's derivable; most of Karen's tasks are self-assigned, so this will often just be Karen herself — don't guess otherwise.
+
+Report the total open-task count in Karen's My Tasks (across all sections) as a headline stat too — as of 2026-08-09 it was 200+, most with no due date or wildly inconsistent ones (years in the future, months overdue). This is useful backlog-size context distinct from Today/Recently Assigned.
 
 ## 3. Urgency flags (starting heuristic — expect to tune after real use)
 
@@ -35,6 +43,9 @@ List each flagged task with the specific reason it was flagged (not just "urgent
 
 ## 4. Inbox cleanup
 
+**Capability gap found in the first live run (2026-08-09):** the Asana MCP connector available in this project does not expose any inbox/notifications endpoint — there is no tool to list or clear Asana inbox notifications. Until such a tool becomes available, skip this step entirely and report it as `couldnt_check: "Asana inbox cleanup — no notifications tool exposed by the connector"` rather than silently omitting it. Do not attempt a workaround (e.g. inferring "read" state from task activity) — that would risk clearing something Karen hasn't actually seen.
+
+Original design (restore once a notifications tool exists):
 1. Pull Karen's Asana inbox notifications.
 2. For each notification that maps to a task already surfaced in §1–§3 of this run, mark it read/archived.
 3. For any notification that doesn't clearly map to a reviewed task, leave it as-is and list it under a short "Unresolved Asana notifications" note — don't guess at what it's about.

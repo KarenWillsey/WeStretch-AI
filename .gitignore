@@ -1,0 +1,4 @@
+# Secrets — never commit
+**/.jira-credentials.json
+.env
+.env.*

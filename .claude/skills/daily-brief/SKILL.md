@@ -1,22 +1,22 @@
 ---
 name: daily-brief
-description: Use when running Karen's full daily brief (V1 — Outlook + Asana) end to end, whether triggered on schedule or manually — runs each source skill in sequence and hands their output to compose for the final email.
+description: Use when running Karen's full daily brief (V1 — Outlook + Asana + Jira) end to end, whether triggered on schedule or manually — runs each source skill in sequence and hands their output to compose for the final email.
 ---
 
 # Daily Brief — Orchestrator (V1)
 
 Reference: `CEO/In Progress/Set up Daily housing/Implementation Spec.md`.
 
-V1 covers Outlook + Asana only. Jira is planned but not yet built — do not attempt to invent Jira data; when `daily-brief-jira` exists, add it to step 2 below.
+V1 covers Outlook + Asana + Jira.
 
 ## Sequence
 
 1. Invoke `daily-brief-email-triage`. Capture its full output contract.
 2. Invoke `daily-brief-asana`. Capture its full output contract.
-3. *(Once it exists)* Invoke `daily-brief-jira`. Capture its output contract.
+3. Invoke `daily-brief-jira`. Capture its output contract.
 4. Invoke `daily-brief-compose`, passing all captured output. This produces and sends the final report.
 
-Run steps 1–2 (and 3, once it exists) independently — a failure in one must not block or corrupt the other. Both/all still hand off to compose even if one reported nothing but `couldnt_check` entries; compose is responsible for surfacing that clearly (see `daily-brief-compose` §1).
+Run steps 1–3 independently — a failure in one must not block or corrupt the others. All three still hand off to compose even if one reported nothing but `couldnt_check` entries; compose is responsible for surfacing that clearly (see `daily-brief-compose` §1).
 
 ## Manual vs scheduled use
 
