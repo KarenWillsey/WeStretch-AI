@@ -9,15 +9,17 @@ Return the result in this structure. Keep it markdown so it can feed the next sk
 A few lines: the FATE lever(s) chosen for this theme, the identity it builds, the Six-Axis read of the audience, and why this angle fits. Where an outcome cannot be honestly claimed, use self-generated proof: challenge the user to give it honest daily time and notice the change themselves.
 
 ## Part 1, opening video (6 to 8 cards, ~30s)
+Each card is a single title line, no subtitle, maximum 60 characters.
+
 ### Final card sequence
-1. [card 1]
-2. [card 2]
+1. [card 1] (chars: N/60)
+2. [card 2] (chars: N/60)
 ...
 
 ### Per-card scoreboard
-| Card | Attn | Speak | Believe | Act | Honest | Avg | Grade | Role |
-|------|------|-------|---------|-----|--------|-----|-------|------|
-| 1. … | …    | …     | …       | …   | …      | …   | …     | opener |
+| Card | Chars | Attn | Speak | Believe | Act | Honest | Avg | Grade | Role |
+|------|-------|------|-------|---------|-----|--------|-----|-------|------|
+| 1. … | N/60  | …    | …     | …       | …   | …      | …   | …     | opener |
 ...
 
 ### Loop log (brief), card bank, honest ceilings
@@ -29,9 +31,11 @@ A few lines: the FATE lever(s) chosen for this theme, the identity it builds, th
 Deliver as caption overlays on real in-app footage, not a text slideshow.
 
 ## Part 2, still screens (up to 9)
-| Screen | Title | Subtitle (optional) | Avg | Grade | Note |
-|--------|-------|---------------------|-----|-------|------|
-| 2 | … | … | … | … | … |
+Title maximum 42 characters. Subtitle (optional) maximum 65 characters.
+
+| Screen | Title | Chars | Subtitle (optional) | Chars | Avg | Grade | Note |
+|--------|-------|-------|---------------------|-------|-----|-------|------|
+| 2 | … | N/42 | … | N/65 | … | … | … |
 ...
 
 ### Loop log (brief) and honest ceilings
@@ -46,3 +50,4 @@ Deliver as caption overlays on real in-app footage, not a text slideshow.
 - Never use em dashes. Use commas, periods, colons, or parentheses.
 - Every claim passes the honesty guardrail. Leave clearly marked blanks for proof that does not exist yet.
 - Grade honestly. Name honest ceilings rather than inflating.
+- Hard length limits: Part 1 cards, single title, no subtitle, maximum 60 characters. Part 2 titles, maximum 42 characters. Part 2 subtitles, maximum 65 characters. Show a character count next to every card, title, and subtitle so limits are verifiable at a glance. Cut the idea to fit; never pad or exceed the limit.

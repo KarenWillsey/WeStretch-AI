@@ -29,10 +29,12 @@ The first App Store asset is an app-preview video (~30 s). Treat it as a **6–8
 3. **Marg** grades it **per card** (see per-card grading in `grading-and-loop.md`), the loop runs to target, and you produce a **card bank** (every card graded, with role tags) so cards can be A/B tested individually.
 4. Note the honest ceiling and the strongest opener / closer / transplant cards.
 
+**Format constraint:** each card is a **single title line, no subtitle**, **maximum 60 characters** (spaces and punctuation included). If a card cannot carry the idea honestly within 60 characters, cut the idea down rather than padding or running past the limit; flag it in the loop log instead of exceeding it.
+
 Reminder: the Apple video must be **real in-app footage with the titles as caption overlays**, not a slideshow of text cards. State this so the design team builds it compliantly.
 
 ## Part 2, the still screens
-The remaining Apple screenshots (up to 9 more, for 10 total incl. the video). For each screen: a **title** and an **optional subtitle** (use a subtitle only when the title needs the extra room). Run the Expert × Marg loop across the set, executing the Chase strategy set above; grade each screen; keep them distinct (no three screens making the same point); comply with the store rules.
+The remaining Apple screenshots (up to 9 more, for 10 total incl. the video). For each screen: a **title** (**maximum 42 characters**) and an **optional subtitle** (**maximum 65 characters**), used only when the title needs the extra room. Run the Expert × Marg loop across the set, executing the Chase strategy set above; grade each screen; keep them distinct (no three screens making the same point); comply with the store rules. If a title or subtitle cannot carry the idea honestly within its limit, cut the idea down rather than padding or running past the limit; flag it in the loop log instead of exceeding it.
 
 ## Competitor-driven CPP goals
 Competitor names may be used as **hidden ASO keywords / in ads**, never in visible on-screen title or subtitle text. For a competitor-driven CPP, focus the on-screen copy entirely on WeStretch's differentiators.
