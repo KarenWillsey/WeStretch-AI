@@ -1,13 +1,13 @@
 ---
 name: daily-brief-asana
-description: Use when running Karen's daily Asana review as part of the daily brief — pulls Recently Assigned and Today's tasks, flags emerging urgency, and clears Asana inbox notifications that were actually reviewed in the report.
+description: Use when running Karen's daily Asana review as part of the daily brief — pulls Recently Assigned and Today's tasks and flags emerging urgency.
 ---
 
 # Daily Brief — Asana
 
 Reference: `CEO/In Progress/Set up Daily housing/Implementation Spec.md` for the full problem/spec this serves.
 
-Ground rule: only clear an Asana inbox notification if it was actually resolved to a specific task and included in this run's report. If a notification can't be matched to a task, leave it and flag it — never clear something you didn't actually surface to Karen.
+**Note (2026-08-09):** Asana inbox-notification clearing was in scope for V1 but the Asana MCP connector available in this project has no inbox/notifications endpoint — there's no tool to list or clear them. That feature has been dropped from this skill entirely rather than left as a permanent `couldnt_check` stub; if a notifications tool becomes available later, it can be re-added as a new step.
 
 ## 0. Setup
 
@@ -41,23 +41,14 @@ Flag a task as trending urgent if any of:
 
 List each flagged task with the specific reason it was flagged (not just "urgent") so Karen can sanity-check the heuristic and we can tune false positives/negatives over time.
 
-## 4. Inbox cleanup
-
-**Capability gap found in the first live run (2026-08-09):** the Asana MCP connector available in this project does not expose any inbox/notifications endpoint — there is no tool to list or clear Asana inbox notifications. Until such a tool becomes available, skip this step entirely and report it as `couldnt_check: "Asana inbox cleanup — no notifications tool exposed by the connector"` rather than silently omitting it. Do not attempt a workaround (e.g. inferring "read" state from task activity) — that would risk clearing something Karen hasn't actually seen.
-
-Original design (restore once a notifications tool exists):
-1. Pull Karen's Asana inbox notifications.
-2. For each notification that maps to a task already surfaced in §1–§3 of this run, mark it read/archived.
-3. For any notification that doesn't clearly map to a reviewed task, leave it as-is and list it under a short "Unresolved Asana notifications" note — don't guess at what it's about.
-
-## 5. Verification pass
+## 4. Verification pass
 
 - The count of tasks pulled from each query must match the count reported (nothing summarized away).
 - Every task name/project/date in the output must come from this run's actual API results.
 
-## 6. Failure handling
+## 5. Failure handling
 
-- Any individual call failure: include a `COULDN'T CHECK: [what]` line with the real error, and don't clear any inbox notifications this run (fail loud, don't half-complete cleanup).
+- Any individual call failure: include a `COULDN'T CHECK: [what]` line with the real error.
 
 ## Output contract (consumed by `daily-brief-compose`)
 
@@ -65,7 +56,5 @@ Original design (restore once a notifications tool exists):
 today: [{task, project, due, url}]
 recently_assigned: [{task, project, assigned_by, url}]
 urgent_flags: [{task, reason}]
-inbox_cleared_count: N
-unresolved_notifications: [{summary}]
 couldnt_check: [string, ...]
 ```

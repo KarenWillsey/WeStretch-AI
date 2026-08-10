@@ -1,15 +1,17 @@
 # Daily Brief — Implementation Spec (v1)
 
-Status (2026-08-09): All four V1 skills built and wired together (`daily-brief-email-triage`, `daily-brief-asana`, `daily-brief-jira`, `daily-brief-compose`, `daily-brief` orchestrator — all under `.claude/skills/`).
+Status (2026-08-10): **V1 complete and scheduled.** All four skills built (`daily-brief-email-triage`, `daily-brief-asana`, `daily-brief-jira`, `daily-brief-compose`, `daily-brief` orchestrator — all under `.claude/skills/`), one full live end-to-end run completed 2026-08-09, and refined further 2026-08-10 based on that live run's real output. A local Windows Scheduled Task now fires the brief unattended every morning at 5:00am.
 
-- Email triage: run live and confirmed working end to end (Unsubscribe + inbox scanned, spam deleted, one reply draft created, Kari's sent-rollup sent, digest emailed). State file: `state/kari-sent-summary.json`.
-- Asana: run live and confirmed working end to end; `get_my_tasks` + client-side section filtering verified against Karen's actual app counts (26 Recently Assigned, 17 Today, 2026-08-09). No inbox-notifications tool exists in the connector, so that step is skipped and reported as `couldnt_check` until one does.
-- Jira: built 2026-08-09. No Jira MCP exists, so this calls the Jira Cloud REST API directly (site `webananas.atlassian.net`, project `WEMVP`). Credentials live in `state/.jira-credentials.json` (gitignored — see `.gitignore` at repo root — never commit this file). "Assigned to Karen" is a verified live query (22 open tickets on first check). "New @mentions" uses a text-match + updated-since heuristic (documented as a caveat in the skill and surfaced in every report) because the API has no dedicated mentions endpoint; state file `state/jira-mentions-state.json` tracks the delta. Not yet run end-to-end through the full orchestrator.
-- Compose: updated to include the Jira section unconditionally (previously gated on Jira not existing yet).
+- **Email triage:** run live and confirmed working end to end (Unsubscribe + inbox scanned, spam deleted, threads flagged, digest emailed). Kari's rollup expanded 2026-08-09/10 from sent-mail-only to full Outlook activity — sent mail, plus inbox items Karen filed to a subfolder or deleted herself (excluding this automation's own spam cleanup, and excluding pure junk) — because Kari co-runs the family enterprise office and needs knowledge parity, personal and corporate. State file: `state/kari-activity-summary.json`.
+- **Asana:** run live and confirmed working end to end; `get_my_tasks` + client-side section filtering verified against Karen's actual app counts (26 Recently Assigned, 17 Today, 2026-08-09). Inbox-notification clearing was dropped from scope entirely 2026-08-10 — the Asana MCP connector has no endpoint for it, and there's no value in carrying a permanent `couldnt_check` stub for something structurally unavailable.
+- **Jira:** built 2026-08-09, refined 2026-08-10 after the first live run showed the original design was too broad (22 assigned tickets, mostly stale backlog to 2019). No Jira MCP exists, so this calls the Jira Cloud REST API directly (site `webananas.atlassian.net`). Credentials live in `state/.jira-credentials.json` (gitignored — see `.gitignore` at repo root — never commit this file).
+  - "Assigned to Karen" now scopes to tickets assigned to her in whatever sprint(s) are currently active (discovered live via the Agile REST API each run), not the full backlog. Verified live: WEMVP's active sprint has 50+ tickets, zero assigned to Karen — an empty section here is a correct, expected result.
+  - "New @mentions" still uses a text-match heuristic (no mentions API exists), now capped to a rolling 7-day window and excluding threads Karen has already commented on, so it can't dump stale backlog or re-surface things she's already replied to.
+  - State file: `state/jira-mentions-state.json`.
+- **Compose:** includes the Jira section unconditionally, reflects the Asana/Jira scope changes above.
+- **Scheduling:** NOT via the cloud `/schedule` skill — that runs in an isolated cloud git clone with no access to the gitignored Jira credentials and no way to persist state-file updates back to this repo, so it would break Jira entirely and silently corrupt dedup tracking. Instead: a Windows Scheduled Task ("WeStretch Daily Brief," registered 2026-08-10) runs `CEO/In Progress/Set up Daily housing/run-daily-brief.ps1` daily at 5:00am, which invokes the Claude Code CLI bundled inside the VS Code extension (path resolved dynamically each run, not hardcoded to a version) with `--print --dangerously-skip-permissions`, logging to `state/last-run.log`. Only fires if Karen's machine is on and she's logged in at 5am.
 
-**Next step:** run one full live end-to-end test of `daily-brief` (all three sources → compose → send), then wire up the 5:00am America/Edmonton daily schedule via the `schedule` skill. Confirm with Karen before the first unattended scheduled run per the orchestrator's "First run caution."
-
-To resume in a new session: say "continue the daily brief" (or open this file — it has everything needed). No special setup required; the skills are already discoverable by Claude Code in this project.
+To resume in a new session: say "continue the daily brief" (or open this file — it has everything needed). No special setup required; the skills are already discoverable by Claude Code in this project. To check whether the scheduled run actually fired, read `state/last-run.log`.
 
 ## Core problem
 
@@ -43,11 +45,11 @@ Karen has a reading disability that makes high email/task volume overwhelming. T
 **2. Asana** (Asana MCP)
 - Recently Assigned tasks + Today's tasks.
 - Flag anything trending urgent (starting heuristic: due-date proximity / staleness — tuned after real use).
-- Clear Asana inbox notifications once reviewed in the report.
+- Inbox-notification clearing was in the original scope but dropped 2026-08-10 — no endpoint exists in the connector.
 
 **3. Jira**
-- Tickets assigned to Karen + new @mentions.
-- No MCP exists yet for this — small custom integration (Jira REST API + API token) is part of the V1 build, not a prerequisite blocking it.
+- Tickets assigned to Karen **in the currently active sprint(s)** (narrowed 2026-08-10 from "all assigned unresolved tickets," which was mostly years-old backlog noise) + recent @mentions (7-day window, excludes threads already replied to).
+- No MCP exists for this — a small custom integration (Jira REST API + API token) is part of the V1 build.
 
 **4. Priorities pass**
 - After the housekeeping sections: a short "what actually matters today" synthesis across everything above. Not a separate data source.
@@ -67,7 +69,7 @@ Karen has a reading disability that makes high email/task volume overwhelming. T
 
 ## State tracking
 
-**Recommendation:** a small state file in this repo, e.g. `CEO/In Progress/Set up Daily housing/state/kari-sent-summary.json`, storing the timestamp/message-IDs of the last sent-mail rollup reported to Kari.
+**Recommendation:** a small state file in this repo, e.g. `CEO/In Progress/Set up Daily housing/state/kari-activity-summary.json`, storing the timestamp/message-IDs/inbox-snapshot of the last activity rollup reported to Kari (sent mail plus inbox items Karen filed away or deleted herself).
 
 **Why a repo file instead of querying Outlook for "since last run":** it's git-versioned, so there's an inspectable history of exactly what was reported and when — which matters given the "no unverified content" bar. It also avoids writing tracking flags back onto live mailbox items.
 
@@ -77,12 +79,12 @@ Build as real Claude Code **project skills** under `.claude/skills/daily-brief-*
 
 Proposed skill breakdown (one focused skill per source, matching this repo's "one skill = one task" convention):
 
-- `daily-brief-email-triage` — Outlook classification, draft generation, spam move, sent-rollup delta.
-- `daily-brief-asana` — Asana pull, urgency flagging, inbox clear.
-- `daily-brief-jira` — Jira pull (once the integration exists).
+- `daily-brief-email-triage` — Outlook classification, draft generation, spam move, Kari activity-rollup delta.
+- `daily-brief-asana` — Asana pull, urgency flagging.
+- `daily-brief-jira` — Jira pull via direct REST API (no MCP connector exists).
 - `daily-brief-compose` — merges outputs from the above into the final scannable report, runs the verification/fail-loud pass, sends the email.
 
-A top-level orchestration runs all of the above in sequence, then composes. Scheduling via the `schedule` skill (cron-backed), replacing the old Codex automation entirely — this is what actually satisfies "runs every time."
+A top-level orchestration runs all of the above in sequence, then composes. Scheduling is a local Windows Scheduled Task (see Status above) — the cloud `/schedule` skill was evaluated and rejected because it can't reach the gitignored Jira credentials or persist state-file updates back to this repo. This replaces the old Codex automation entirely, which is what actually satisfies "runs every time."
 
 ## Open items — assumed defaults, flag if wrong
 
@@ -100,6 +102,7 @@ A top-level orchestration runs all of the above in sequence, then composes. Sche
 ## Build order
 
 1. ✅ `daily-brief-email-triage` + `daily-brief-asana` — built, both run live and confirmed.
-2. ✅ `daily-brief-jira` — built 2026-08-09, `myself`/assigned-tickets queries verified live; not yet run through the full orchestrator.
-3. Wire up scheduling — next.
-4. V2: Mattermost, Cozi, Gmail.
+2. ✅ `daily-brief-jira` — built 2026-08-09, refined 2026-08-10 (active-sprint scope, capped mentions) after live feedback.
+3. ✅ Full orchestrator live end-to-end run — completed 2026-08-09.
+4. ✅ Scheduling — local Windows Scheduled Task registered 2026-08-10, next fire 2026-08-11 5:00am.
+5. V2 (not started): Mattermost, Cozi, Gmail.

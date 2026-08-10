@@ -7,7 +7,7 @@ description: Use when merging daily-brief-email-triage, daily-brief-asana, and d
 
 Reference: `CEO/In Progress/Set up Daily housing/Implementation Spec.md`.
 
-This skill does not pull any data itself — it only merges structured output already produced by the source skills (`daily-brief-email-triage`, `daily-brief-asana`, and `daily-brief-jira`) and sends the final report.
+This skill does not pull any data itself — it only merges structured output already produced by the source skills (`daily-brief-email-triage`, `daily-brief-asana`, and `daily-brief-jira`), plus the `data_gathering_tokens` figure the orchestrator captured from those calls (see §4a), and sends the final report.
 
 ## Format requirement — this is the whole point of the brief
 
@@ -30,7 +30,7 @@ Karen has a reading disability; the brief must be **scanned, not read**. Every s
 ## 2. Report structure
 
 ```
-Subject: Daily Brief — [date]
+Subject: Daily Brief — [date] — [token cost suffix, see §4a]
 
 [Couldn't Check Today]        <- only if non-empty, but check first, show first
 
@@ -42,10 +42,9 @@ Deleted                        <- few-word summaries of what got moved to Delete
 Asana — Today
 Asana — Recently Assigned
 Asana — Urgent flags
-Asana — Unresolved notifications (if any)
 
-Jira — Assigned to Karen
-Jira — New mentions (include the `mentions_caveat` string from the source output right under this header — it's a heuristic, say so every time)
+Jira — Assigned to Karen (active sprint only — name the sprint(s) checked from `active_sprints`, even when the list is empty; an empty sprint-assignment list is a normal, correct result, not a gap)
+Jira — New mentions (include the `mentions_caveat` string from the source output right under this header — it's a heuristic, say so every time; if `mentions_excluded_replied_count` > 0, note it inline, e.g. "3 mentions found, 2 already replied to — 1 below")
 
 Today's Priorities            <- synthesis, not a new data source (see §3)
 ```
@@ -58,7 +57,15 @@ After all housekeeping sections are composed, write a short "what actually matte
 
 - Recipient: Karen's own mailbox (the same address confirmed via `get_me` in `daily-brief-email-triage`).
 - Send via the Microsoft 365 MCP mail-send tool.
-- The Kari sent-mail rollup is **not** sent from here — `daily-brief-email-triage` already sends that separately to kari@kasa.ca in its own step.
+- The Kari activity rollup is **not** sent from here — `daily-brief-email-triage` already sends that separately to kari@kasa.ca in its own step.
+
+## 4a. Token cost in the subject line (2026-08-10)
+
+The orchestrator (`daily-brief`) passes either `data_gathering_tokens` (a number) or `data_gathering_tokens_partial: true` (one of the three source calls didn't report a figure) alongside the source output contracts. This number covers steps 1–3 (email-triage, Asana, Jira) only — it never includes this compose step's own token cost, which can't be known before compose finishes running.
+
+- `data_gathering_tokens` present → subject suffix: `~{N} tokens (excl. compose)`.
+- `data_gathering_tokens_partial: true` instead → subject suffix: `tokens: partial (some steps unreported)`. Never guess a number to fill the gap.
+- Neither passed (e.g. an older orchestrator run predating this feature) → omit the suffix entirely rather than inventing one.
 
 ## 5. Failure handling
 

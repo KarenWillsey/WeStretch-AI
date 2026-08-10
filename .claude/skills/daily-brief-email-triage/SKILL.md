@@ -1,6 +1,6 @@
 ---
 name: daily-brief-email-triage
-description: Use when running Karen's daily email triage over Outlook (via the Microsoft 365 MCP connector) as part of the daily brief — classifies the inbox and the unsubscribe folder, drafts replies in Karen's voice, moves spam to Deleted, and produces the sent-mail delta rollup for Kari (kari@kasa.ca).
+description: Use when running Karen's daily email triage over Outlook (via the Microsoft 365 MCP connector) as part of the daily brief — classifies the inbox and the unsubscribe folder, drafts replies in Karen's voice, moves spam to Deleted, and produces the Outlook activity delta rollup for Kari (kari@kasa.ca).
 ---
 
 # Daily Brief — Email Triage (Outlook)
@@ -20,7 +20,7 @@ The one exception: don't create a *second* Outlook reply draft for a thread that
 - Moving inbox spam/low-value messages to Deleted — **confirmed by Karen**.
 - Moving Unsubscribe-folder junk to Deleted — confirmed.
 - Creating reply drafts in Karen's voice — confirmed, but **never send them**.
-- Sending the sent-mail rollup to kari@kasa.ca automatically — confirmed.
+- Sending the Outlook activity rollup to kari@kasa.ca automatically — confirmed.
 
 All moves-to-Deleted use `outlook_batch_delete_messages` (soft delete, recoverable from Deleted Items, up to 50 message ids per call, no full-message read required) — not a permanent delete. `outlook_modify_labels` cannot be used for this; it explicitly refuses Trash-family destinations. Avoid `outlook_trash_thread` for this purpose: it requires a conversationId that can only be obtained by reading each message's full body first, which is needlessly expensive for routine spam cleanup.
 
@@ -80,14 +80,32 @@ Example:
    - Reply requires a decision, commitment, or fact only Karen has → do **not** draft full text. List the item with a one-line note on what's needed from her ("needs your call on X") instead of guessing.
 4. List every Needs Reply item with subject, sender, thread reference, and whether a full draft exists.
 
-## 4. Sent-mail rollup for Kari
+## 4. Outlook activity rollup for Kari
 
-1. Read the state file `CEO/In Progress/Set up Daily housing/state/kari-sent-summary.json` for `last_report_sent_at`. (This is the one and only state file this skill uses — it exists because "what have we already told Kari" isn't answerable from Outlook's own state the way inbox/Unsubscribe dedup is.)
-2. Search Sent for messages after that timestamp.
-3. Build headline-only lines: subject + recipient only, no body content.
-4. If there are zero new sent messages, still send a one-line "No new outbound messages since [timestamp]" note — silence would be indistinguishable from the automation being broken.
+**Scope (Karen's ask, 2026-08-09):** Kari runs the family enterprise office alongside Karen — personal and corporate both — and needs her own knowledge of what happened in the mailbox to stay equal to Karen's, not just what Karen sent. This rollup now covers **sent mail** and **inbox items Karen filed into a subfolder or deleted herself**. It deliberately excludes anything this automation's own spam cleanup (§1/§2) already moved to Deleted — Kari doesn't need to hear about junk mail cleanup, only about Karen's own actions/decisions.
+
+State file: `CEO/In Progress/Set up Daily housing/state/kari-activity-summary.json` — the one and only state file this skill uses. It exists because "what have we already told Kari" isn't answerable from Outlook's own state the way inbox/Unsubscribe dedup is. Shape:
+```
+{
+  "last_report_sent_at": "<ISO timestamp>",
+  "last_message_ids": [...],
+  "last_inbox_snapshot": [{"id": "...", "subject": "...", "sender": "..."}, ...]
+}
+```
+
+1. **Sent-mail delta** (unchanged from before): read `last_report_sent_at`, search Sent for messages after it, build headline-only lines (subject + recipient, no body).
+2. **Inbox activity delta** (new): compare `last_inbox_snapshot` against the current Inbox contents already pulled in §2 of this run.
+   - Any snapshot id no longer present in the current Inbox has left the inbox since the last check — either Karen filed it somewhere, Karen deleted it herself, or this run's own spam cleanup moved it to Deleted.
+   - Drop any id that appears in **this run's own** `deleted` list (§1/§2) — that's automation cleanup, not a Karen action, and stays out of Kari's rollup.
+   - For every remaining id, call `read_resource` on `mail:///messages/{id}` and read `parentFolderId`, matched against the folder list already fetched in setup:
+     - Resolves to a real subfolder (not Inbox, not Deleted Items) → report as "filed into **[Folder]**."
+     - Resolves to Deleted Items → report as "deleted by Karen" (distinct from this run's automated spam sweep, which is silent).
+     - Read fails entirely (message no longer resolvable) → report as "left the inbox, folder untraceable" rather than guessing where it went.
+   - This only tracks the Inbox folder, not every folder in the mailbox — Karen's ask was specifically about things landing in the inbox and then getting filed away, not a full-mailbox audit trail.
+3. Build one combined activity list: sent items, filed items, Karen-deleted items — headline-only lines throughout (subject/recipient/destination, no body content).
+4. If there's nothing new in either category, still send a one-line "No new activity since [timestamp]" note — silence would be indistinguishable from the automation being broken.
 5. Send via `outlook_send_mail` to `kari@kasa.ca` — sent automatically, not drafted (see Confirmed authorizations).
-6. Only after a confirmed successful send: update `kari-sent-summary.json` with the new timestamp and message IDs. If the send fails, leave the state file untouched.
+6. Only after a confirmed successful send: update `kari-activity-summary.json` with the new `last_report_sent_at`, `last_message_ids`, and a fresh `last_inbox_snapshot` (current Inbox ids/subjects/senders from this run). If the send fails, leave the state file untouched entirely.
 
 ## 5. Verification pass (required before handing off to compose)
 
@@ -107,6 +125,6 @@ threads_waiting_on_you: [{subject, sender, thread_ref, kind: needs_reply|follow_
 other_inbox: [{subject, sender, thread_ref, is_thread: bool, detail_bullets: [string, ...]}]
 needs_my_attention: [{subject, sender, why}]           # from Unsubscribe folder
 deleted: [{subject, sender, summary, source: inbox|unsubscribe}]
-sent_rollup_to_kari: {sent: bool, count: N}
+kari_rollup: {sent: bool, sent_count: N, filed_count: N, deleted_by_karen_count: N}
 couldnt_check: [string, ...]
 ```
