@@ -84,6 +84,8 @@ Example:
 
 **Scope (Karen's ask, 2026-08-09):** Kari runs the family enterprise office alongside Karen — personal and corporate both — and needs her own knowledge of what happened in the mailbox to stay equal to Karen's, not just what Karen sent. This rollup now covers **sent mail** and **inbox items Karen filed into a subfolder or deleted herself**. It deliberately excludes anything this automation's own spam cleanup (§1/§2) already moved to Deleted — Kari doesn't need to hear about junk mail cleanup, only about Karen's own actions/decisions.
 
+**Per-line description (Karen's ask, 2026-08-10):** every line in this rollup — sent, filed, or deleted-by-Karen — gets one sentence after the email address giving Kari context: what the thread was about, what outcome or decision was reached, and enough frame of reference to place it without opening the email herself. Pull this from the actual message body/thread content (read it via the relevant `outlook_email_search`/`read_resource` call), never guess it from the subject line alone. One sentence is the target; go to two or three only when a single sentence genuinely can't hold the necessary facts — that's the exception, not the default. This does not relax the "headline, no body content" rule below into a full recap — it's one added sentence of synthesis, not a quote or paraphrase of the whole message.
+
 State file: `CEO/In Progress/Set up Daily housing/state/kari-activity-summary.json` — the one and only state file this skill uses. It exists because "what have we already told Kari" isn't answerable from Outlook's own state the way inbox/Unsubscribe dedup is. Shape:
 ```
 {
@@ -93,16 +95,17 @@ State file: `CEO/In Progress/Set up Daily housing/state/kari-activity-summary.js
 }
 ```
 
-1. **Sent-mail delta** (unchanged from before): read `last_report_sent_at`, search Sent for messages after it, build headline-only lines (subject + recipient, no body).
+1. **Sent-mail delta** (unchanged from before): read `last_report_sent_at`, search Sent for messages after it, build one line per message: subject + recipient email address, then the one-sentence context/outcome/frame-of-reference description defined above.
 2. **Inbox activity delta** (new): compare `last_inbox_snapshot` against the current Inbox contents already pulled in §2 of this run.
    - Any snapshot id no longer present in the current Inbox has left the inbox since the last check — either Karen filed it somewhere, Karen deleted it herself, or this run's own spam cleanup moved it to Deleted.
    - Drop any id that appears in **this run's own** `deleted` list (§1/§2) — that's automation cleanup, not a Karen action, and stays out of Kari's rollup.
    - For every remaining id, call `read_resource` on `mail:///messages/{id}` and read `parentFolderId`, matched against the folder list already fetched in setup:
-     - Resolves to a real subfolder (not Inbox, not Deleted Items) → report as "filed into **[Folder]**."
-     - Resolves to Deleted Items → report as "deleted by Karen" (distinct from this run's automated spam sweep, which is silent).
-     - Read fails entirely (message no longer resolvable) → report as "left the inbox, folder untraceable" rather than guessing where it went.
+     - Resolves to a real subfolder (not Inbox, not Deleted Items) → report as "filed into **[Folder]**" with the sender's email address and a one-sentence description.
+     - Resolves to Deleted Items → report as "deleted by Karen" (distinct from this run's automated spam sweep, which is silent) with the sender's email address and a one-sentence description.
+     - Read fails entirely (message no longer resolvable) → report as "left the inbox, folder untraceable" rather than guessing where it went; if the message itself is unreadable, the one-sentence description is impossible too — say so ("content unavailable") rather than fabricating it.
    - This only tracks the Inbox folder, not every folder in the mailbox — Karen's ask was specifically about things landing in the inbox and then getting filed away, not a full-mailbox audit trail.
-3. Build one combined activity list: sent items, filed items, Karen-deleted items — headline-only lines throughout (subject/recipient/destination, no body content).
+3. Build one combined activity list: sent items, filed items, Karen-deleted items. Each line: subject, the relevant email address (recipient for sent, sender for inbox items), then the one-sentence description. Still headline-first and scannable — the description is a single added sentence per line, not a body dump.
+   - Example: `**Q3 Vendor Renewal — sent to jane@acme.com** — Confirmed WeStretch will take the 10% early-renewal discount; signed rate locked at $360/mo through Sept 2027.`
 4. If there's nothing new in either category, still send a one-line "No new activity since [timestamp]" note — silence would be indistinguishable from the automation being broken.
 5. Send via `outlook_send_mail` to `kari@kasa.ca` — sent automatically, not drafted (see Confirmed authorizations).
 6. Only after a confirmed successful send: update `kari-activity-summary.json` with the new `last_report_sent_at`, `last_message_ids`, and a fresh `last_inbox_snapshot` (current Inbox ids/subjects/senders from this run). If the send fails, leave the state file untouched entirely.
