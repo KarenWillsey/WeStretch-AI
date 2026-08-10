@@ -18,6 +18,7 @@ Verified from Apple developer documentation. (Google Play differs and will be ad
 - No absolute safety claims ("every pose is safe"), use honest safety-by-design language ("works around your injuries and problem areas").
 - No fabricated testimonials, ratings, or outcome claims on the screens.
 - Keep competitor names out of visible text (ASO keywords/ads only).
+- Attribute claims to the right actor. Physiotherapists mapped the general safe-movement framework; the algorithm personalizes it per user. Do not credit the physiotherapists themselves with a personal, per-user assessment ("mapped what's safe for you"), that misstates who does the personalizing and counts as misleading. See the review log in `grading-and-loop.md` for the confirmed case.
 
 ## Where real proof belongs
 Real testimonials, streak numbers, and before/afters that stores restrict in screenshots belong on the **website and in emails**, where these rules don't apply. Drive store visitors there rather than crowding the screens with claims.

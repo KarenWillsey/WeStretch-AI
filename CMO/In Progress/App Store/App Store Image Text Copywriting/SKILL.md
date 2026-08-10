@@ -31,6 +31,8 @@ The first App Store asset is an app-preview video (~30 s). Treat it as a **6–8
 
 **Format constraint:** each card is a **single title line, no subtitle**, **maximum 60 characters** (spaces and punctuation included). If a card cannot carry the idea honestly within 60 characters, cut the idea down rather than padding or running past the limit; flag it in the loop log instead of exceeding it.
 
+**Standalone constraint:** on the actual product page the video displays as a continuous loop, roughly 6 seconds per card, not a single start-to-finish watch. A viewer can land on any card first and never see its neighbors. **Every card must be fully understandable on its own**, no card may depend on the card before or after it for its meaning, its antecedent, or its comparison. Before trimming for length, re-read the card alone, with no other card visible, and confirm it still makes complete sense. See "Known failure patterns from real review feedback" in `grading-and-loop.md`, it documents specific ways trimming has broken this in the past.
+
 Reminder: the Apple video must be **real in-app footage with the titles as caption overlays**, not a slideshow of text cards. State this so the design team builds it compliantly.
 
 ## Part 2, the still screens
