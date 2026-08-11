@@ -1,4 +1,0 @@
-Target location requested by Karen:
-C:\Users\karen\Documents\WeStretch AI\WeStretch-AI\CMO\Ada-Stretching-Phone-Image
-
-Copy the entire Ada-Stretching-Phone-Image folder into the CMO folder above.
