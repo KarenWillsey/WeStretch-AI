@@ -28,6 +28,8 @@ A real generation run ("knee tuck leg raise") failed on exactly the things this 
 
 If a candidate does either of these, it is not a minor touch-up — treat it as a failed logo generation and run the dedicated logo-correction edit pass described in § Logo before showing anything to the user.
 
+A second run (also 2026-08-11, a reclined stretch pose) re-failed the leg logo in a new way even after the chest logo was corrected: **the leg logo landed on the hip/glute/side of the leg instead of the front of the thigh**, and was mirrored/upside-down with its dots on the wrong side. This is why `ada-side-profile-leg-stripe-logo-reference.png` (see Logo below) now exists as an explicit, unambiguous placement reference — when the leg logo is in frame, check it against that image specifically, not just the written description.
+
 ## Known gaps (read before starting)
 
 1. **No approved exemplar yet** — there is no single "this is the target output" image to match against. Once the user approves a generated image, save it into `assets/approved-exemplars/` with a short filename describing the pose/mode, so future runs have a real north star instead of only prose rules.
@@ -59,6 +61,12 @@ Both sizes are required per approved pose/mode, not a pick-one. Generate at the 
 
 Save every delivered PNG directly into `CMO/In Progress/App Store/Ada Stretching Phone Image/output/` — flat, no subfolders, no scratch/working files. Filename pattern: `<pose-slug>-<mode>-<size-label>.png`, e.g. `forward-fold-inside-phone-iphone-6.9.png` and `forward-fold-inside-phone-ipad-13.png`. Keep intermediate crops, comparison renders, or rejected candidates out of this folder entirely — use your own scratch space for those, never `output/`. See `output/README.md`.
 
+## Review staging folder (pre-approval candidates)
+
+While a candidate is awaiting the mandatory Pre-delivery review gate below, save it as a real file into `CMO/In Progress/App Store/Ada Stretching Phone Image/waiting for approval/` (flat, no subfolders) — not just described or embedded in chat — so Karen can open it directly as a file for review. Use a filename that identifies the attempt, e.g. `<pose-slug>-<mode>-candidate-<n>.png`. This folder is working space, not delivery space:
+- Once a candidate is approved, canvas-fit it to both required sizes and save those into `output/` per the naming pattern above; the working candidate can stay in `waiting for approval/` or be removed at that point — it is never itself a delivered size.
+- Rejected/superseded candidates should be cleared out of this folder once a review cycle ends, so it always reflects what's currently awaiting a decision, not a growing archive.
+
 ## Locked reference assets
 
 All paths below are inside `CMO/In Progress/App Store/Ada Stretching Phone Image/assets/` (see `reference-map.md` in that same folder for the full table and caveats).
@@ -81,10 +89,12 @@ All paths below are inside `CMO/In Progress/App Store/Ada Stretching Phone Image
 
 - `westretch-logo-reference.png` — **exact chest-logo artwork.** A flat, single horizontal line: red "WE" + white "STRETCH" + red dots. Preview on a dark canvas; the "STRETCH" lettering is white and disappears on light backgrounds.
 - `westretch-logo-secondary-leg-reference.png` — **exact leg-logo artwork.** The "WE" mark alone (no "STRETCH"), slim rounded strokes, same red as the chest mark, with four dots beneath it.
+- `ada-side-profile-leg-stripe-logo-reference.png` — **exact leg-logo and leg-stripe placement, side-on.** Feed this alongside the two artwork files above whenever the leg is in frame; it removes any ambiguity the written description below leaves room for.
 
-**Placement (verified against `ada-front.png`):**
+**Placement (verified against `ada-front.png` and `ada-side-profile-leg-stripe-logo-reference.png`):**
 - **Chest logo** — centered on the front of the tank top, below the neckline/collar seam, roughly mid-chest. It sits on stretch fabric over a curved, moving 3D surface, so it *must* deform with the garment: it can bend gently around the chest curvature and pick up fabric folds/highlights/shadows like a real screen-print. What it must **not** do is change layout — it stays one horizontal line, "WE" then "STRETCH" left to right, not stacked, not wrapped vertically, not re-kerned into a new shape. If the surface curvature is too extreme (e.g. a very foreshortened or side-on torso) for the full wordmark to read cleanly, it's fine for it to look partially foreshortened by perspective — it is not fine for it to be re-lettered into a different arrangement to "fit."
-- **Leg logo** — on the front of Ada's **left thigh** (her left, screen-right when she's facing camera), upper-outer area, just below the waistband edge, above/beside the red side stripe. It is small — don't enlarge it into a hero element. **Only include it if that specific zone of the leg is actually in frame and roughly facing the camera** in the generated pose/angle/crop. If the pose, angle, or crop doesn't show that zone, no leg logo appears anywhere in the image — do not relocate it to the knee, calf, hip, or the other leg to force it into view.
+- **Leg logo** — on the **front** of Ada's **left thigh** (her left, screen-right when she's facing camera), upper area, just below the waistband edge, sitting beside where the red side stripe begins. It is small — don't enlarge it into a hero element. It belongs on the flat front plane of the thigh, **not** on the hip, the side of the leg, or the glute — see `ada-side-profile-leg-stripe-logo-reference.png` for exactly where "front of thigh" means on this body. **Only include it if that specific zone of the leg is actually in frame and roughly facing the camera** in the generated pose/angle/crop. If the pose, angle, or crop doesn't show that zone, no leg logo appears anywhere in the image — do not relocate it to the knee, calf, hip, glute, or the other leg to force it into view.
+- **Leg stripe** — the coral/red stripe on the leggings runs the **full length of the leg**, from the waistband all the way down to the ankle/shoe — it is not a short accent confined to the upper thigh. See `ada-side-profile-leg-stripe-logo-reference.png`.
 
 Both logos must trace back to their reference file exactly — do not invent, abbreviate, restyle, re-letter, change stroke weight, or approximate either mark, and do not substitute one mark for the other. Preserve letterforms, spacing, dot placement, and brand red.
 
@@ -232,7 +242,7 @@ If any of these fail, revise before presenting the result. A failed chest/leg lo
 Passing the checklist above is necessary but not sufficient — it's a self-check, and there's no approved exemplar yet to catch what the checklist misses (see Known gaps). Before calling the task done:
 
 1. Run through the Quality gate checklist explicitly, point by point.
-2. Present one candidate (a single size is enough at this stage) to the user with a short note on what to look at first (anything you were less confident about — a bezel-crossing hand, a tight crop on the leg-logo area, an unusual pose adaptation and why it was necessary).
+2. Save the candidate (a single size is enough at this stage) into `waiting for approval/` (see Review staging folder above) and present it to the user with a short note on what to look at first (anything you were less confident about — a bezel-crossing hand, a tight crop on the leg-logo area, an unusual pose adaptation and why it was necessary).
 3. Treat the task as **not complete** until the user confirms. Don't mark it delivered, don't move on to a next variant, and don't clean up/discard intermediate candidates until you have that confirmation.
 4. On approval, canvas-fit to both required sizes (see Output sizes) and save both into `output/` following the naming pattern in Output folder.
 5. Ask whether this should also be saved to `assets/approved-exemplars/` as a new reference point (see Known gaps) — this is how the skill accumulates the "perfect expected output" it doesn't have yet.

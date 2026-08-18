@@ -1,0 +1,14 @@
+interface:
+  display_name: 4K Master for Cropping
+  short_description: Create flexible 4K masters for device cropping
+  default_prompt: Use $create-4k-crop-master to turn this image into a flexible 4K
+    master for iPad and iPhone cropping.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
