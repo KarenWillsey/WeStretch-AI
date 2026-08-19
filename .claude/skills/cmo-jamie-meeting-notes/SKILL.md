@@ -9,7 +9,7 @@ Update the WeStretch team's running action-item Markdown using the newest meetin
 
 ## Inputs
 
-1. The previous running action-item Markdown (check `CMO/In Progress/Jamie meeting notes/Output/` for the most recent dated file if Karen doesn't paste one directly).
+1. The previous running action-item Markdown (check `Team/CMO/In Progress/Jamie meeting notes/Output/` for the most recent dated file if Karen doesn't paste one directly).
 2. The newest Zoom transcript, preferably SRT, VTT, TXT, or Markdown.
 
 ## Required process
@@ -41,7 +41,7 @@ Update the WeStretch team's running action-item Markdown using the newest meetin
 - Include a deadline in the task only when it was explicitly stated.
 - Do not include completed checkboxes, commentary, explanations, or a meeting summary unless requested.
 - Prefer concise wording while preserving enough context for the team to act without reopening the transcript.
-- Save the file to `CMO/In Progress/Jamie meeting notes/Output/`, named `WeStretch-Team-Zoom-Remaining-Action-Items-YYYY-MM-DD.md` (same date as the title). This becomes the new baseline for the next run — do not overwrite prior dated files.
+- Save the file to `Team/CMO/In Progress/Jamie meeting notes/Output/`, named `WeStretch-Team-Zoom-Remaining-Action-Items-YYYY-MM-DD.md` (same date as the title). This becomes the new baseline for the next run — do not overwrite prior dated files.
 
 ## Quality check
 

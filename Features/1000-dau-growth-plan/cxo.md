@@ -1,6 +1,6 @@
 # CXO — Customer Journey & Activation: Path to 1,000 DAU
 
-_Skills applied: `CXO/skills/customer-journey-audit`, `CXO/skills/ux-design-review`_
+_Skills applied: `Team/CXO/skills/customer-journey-audit`, `Team/CXO/skills/ux-design-review`_
 
 ## Customer journey audit
 

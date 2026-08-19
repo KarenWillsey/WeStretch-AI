@@ -1,6 +1,6 @@
 # CIO — Data Governance Review: Multiplayer Stretching
 
-_Skill applied: `CIO/skills/data-governance-review`_
+_Skill applied: `Team/CIO/skills/data-governance-review`_
 
 ## What data is collected and why
 

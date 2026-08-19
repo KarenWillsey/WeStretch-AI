@@ -1,6 +1,6 @@
 # CTO — Engineering Roadmap & Architecture: Path to 1,000 DAU
 
-_Skills applied: `CTO/skills/tech-architecture-review`, `CTO/skills/engineering-roadmap`_
+_Skills applied: `Team/CTO/skills/tech-architecture-review`, `Team/CTO/skills/engineering-roadmap`_
 
 ## Tech architecture review
 

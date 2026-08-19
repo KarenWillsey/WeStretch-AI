@@ -1,6 +1,6 @@
 # CFO — Budget & Financial Model: Path to 1,000 DAU
 
-_Skills applied: `CFO/skills/budget-planning`, `CFO/skills/financial-model-review`_
+_Skills applied: `Team/CFO/skills/budget-planning`, `Team/CFO/skills/financial-model-review`_
 
 ## Budget planning
 

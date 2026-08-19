@@ -2,13 +2,13 @@
 
 ## Project Structure & Module Organization
 
-This repository is WeStretch's business-planning workspace; it does not contain application source code. Top-level executive folders (`CFO/`, `CTO/`, `CXO/`, and others) contain task-specific skills under `skills/<skill-name>/SKILL.md`. Each skill should address one decision or review rather than define a broad persona.
+This repository is WeStretch's business-planning workspace; it does not contain application source code. The repo root is the Manager (orchestrator/delegator); the 11 C-suite executive folders (`Team/CFO/`, `Team/CTO/`, `Team/CXO/`, and others) live under `Team/` and contain task-specific skills under `skills/<skill-name>/SKILL.md`. Each skill should address one decision or review rather than define a broad persona.
 
 Cross-functional plans live in `Features/<feature-name>/`. A feature folder normally includes `README.md`, one lowercase role document per function (for example, `cto.md`), and `synthesis.md`. Read the synthesis first for decisions and open questions. Shared voice guidance belongs in `ToneManager/`, while repository-wide context is documented in `README.md`, `CLAUDE.md`, and `CHATTY_REVIEW.md`.
 
 ## App Store Image Creation and CMO content guidance
 
-This repo also contains a CMO production asset area at `CMO/In Progress/App Store/App Store Image Creation/`. That folder is content- and asset-focused, not software code. When working there:
+This repo also contains a CMO production asset area at `Team/CMO/In Progress/App Store/App Store Image Creation/`. That folder is content- and asset-focused, not software code. When working there:
 
 - Treat `Knowledge files/` as the authoritative source for brand, layout, typography, template, and output requirements.
 - Do not invent new logo placements, pixel dimensions, typography rules, or asset standards. Use the existing files such as `06_WeStretch_App_Store_Production_Standards.txt`, `02_WeStretch_Logo_Do_Not_Modify.png`, and the title/subtitle typography spec templates.

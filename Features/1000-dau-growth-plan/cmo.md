@@ -1,6 +1,6 @@
 # CMO — Campaign Plan: Path to 1,000 DAU (Bootstrap)
 
-_Skills applied: `CMO/skills/campaign-planning`, `CMO/skills/brand-messaging-review`_
+_Skills applied: `Team/CMO/skills/campaign-planning`, `Team/CMO/skills/brand-messaging-review`_
 
 ## Campaign plan
 

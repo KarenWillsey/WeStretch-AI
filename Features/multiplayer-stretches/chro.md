@@ -1,6 +1,6 @@
 # CHRO — Hiring Plan: Multiplayer Stretching
 
-_Skill applied: `CHRO/skills/hiring-plan`_
+_Skill applied: `Team/CHRO/skills/hiring-plan`_
 
 ## Role justification
 

@@ -1,6 +1,6 @@
 # CTO — Tech Architecture Review: Multiplayer Stretching
 
-_Skill applied: `CTO/skills/tech-architecture-review`_
+_Skill applied: `Team/CTO/skills/tech-architecture-review`_
 
 ## Current state
 

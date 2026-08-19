@@ -1,6 +1,6 @@
 # CPO — Roadmap & Research: Path to 1,000 DAU
 
-_Skills applied: `CPO/skills/user-research-synthesis`, `CPO/skills/roadmap-prioritization`_
+_Skills applied: `Team/CPO/skills/user-research-synthesis`, `Team/CPO/skills/roadmap-prioritization`_
 
 ## User research synthesis
 

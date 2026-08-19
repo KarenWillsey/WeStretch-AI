@@ -1,6 +1,6 @@
 # CIO — Data Systems & Governance: Path to 1,000 DAU
 
-_Skills applied: `CIO/skills/data-systems-audit`, `CIO/skills/data-governance-review`_
+_Skills applied: `Team/CIO/skills/data-systems-audit`, `Team/CIO/skills/data-governance-review`_
 
 ## Data systems audit
 

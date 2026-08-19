@@ -1,6 +1,6 @@
 # CGO — Growth Experiment Design: Multiplayer Stretching
 
-_Skill applied: `CGO/skills/growth-experiment-design`_
+_Skill applied: `Team/CGO/skills/growth-experiment-design`_
 
 ## Hypothesis
 

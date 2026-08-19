@@ -1,6 +1,6 @@
 # CHRO — Org & Hiring: Path to 1,000 DAU
 
-_Skills applied: `CHRO/skills/hiring-plan`, `CHRO/skills/org-culture-review`_
+_Skills applied: `Team/CHRO/skills/hiring-plan`, `Team/CHRO/skills/org-culture-review`_
 
 ## Hiring plan
 

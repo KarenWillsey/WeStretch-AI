@@ -5,7 +5,7 @@ description: Use when running Karen's daily Asana review as part of the daily br
 
 # Daily Brief — Asana
 
-Reference: `CEO/In Progress/Set up Daily housing/Implementation Spec.md` for the full problem/spec this serves.
+Reference: `Team/CEO/In Progress/Set up Daily housing/Implementation Spec.md` for the full problem/spec this serves.
 
 **Note (2026-08-09):** Asana inbox-notification clearing was in scope for V1 but the Asana MCP connector available in this project has no inbox/notifications endpoint — there's no tool to list or clear them. That feature has been dropped from this skill entirely rather than left as a permanent `couldnt_check` stub; if a notifications tool becomes available later, it can be re-added as a new step.
 

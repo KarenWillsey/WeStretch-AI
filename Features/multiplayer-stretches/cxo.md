@@ -1,6 +1,6 @@
 # CXO — UX Design Review: Multiplayer Stretching
 
-_Skill applied: `CXO/skills/ux-design-review`_
+_Skill applied: `Team/CXO/skills/ux-design-review`_
 
 Reviewing the proposed async "stretch party" flow: invite friends → shared routine within a 24h window → shared completion/streak view.
 

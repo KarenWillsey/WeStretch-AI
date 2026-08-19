@@ -1,6 +1,6 @@
 # CFO — Budget Planning: Multiplayer Stretching
 
-_Skill applied: `CFO/skills/budget-planning`_
+_Skill applied: `Team/CFO/skills/budget-planning`_
 
 ## Budget breakdown
 

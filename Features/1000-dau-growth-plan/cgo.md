@@ -1,6 +1,6 @@
 # CGO — Growth & Retention: Path to 1,000 DAU
 
-_Skills applied: `CGO/skills/retention-funnel-analysis`, `CGO/skills/growth-experiment-design`_
+_Skills applied: `Team/CGO/skills/retention-funnel-analysis`, `Team/CGO/skills/growth-experiment-design`_
 
 ## Retention funnel analysis
 

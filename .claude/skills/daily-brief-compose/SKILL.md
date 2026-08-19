@@ -5,7 +5,7 @@ description: Use when merging daily-brief-email-triage, daily-brief-asana, and d
 
 # Daily Brief — Compose
 
-Reference: `CEO/In Progress/Set up Daily housing/Implementation Spec.md`.
+Reference: `Team/CEO/In Progress/Set up Daily housing/Implementation Spec.md`.
 
 This skill does not pull any data itself — it only merges structured output already produced by the source skills (`daily-brief-email-triage`, `daily-brief-asana`, and `daily-brief-jira`), plus the `data_gathering_tokens` figure the orchestrator captured from those calls (see §4a), and sends the final report.
 

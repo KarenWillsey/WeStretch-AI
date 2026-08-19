@@ -1,6 +1,6 @@
 # CRO — Pricing & Revenue: Path to 1,000 DAU
 
-_Skills applied: `CRO/skills/pricing-strategy`, `CRO/skills/revenue-pipeline-review`_
+_Skills applied: `Team/CRO/skills/pricing-strategy`, `Team/CRO/skills/revenue-pipeline-review`_
 
 ## Pricing strategy
 

@@ -5,13 +5,13 @@ description: Use when running Karen's daily Jira review as part of the daily bri
 
 # Daily Brief — Jira
 
-Reference: `CEO/In Progress/Set up Daily housing/Implementation Spec.md` for the full problem/spec this serves.
+Reference: `Team/CEO/In Progress/Set up Daily housing/Implementation Spec.md` for the full problem/spec this serves.
 
 No Jira MCP connector exists in this project. This skill calls the Jira Cloud REST API directly (e.g. via `curl`) using HTTP Basic Auth.
 
 ## 0. Setup
 
-1. Read credentials from `CEO/In Progress/Set up Daily housing/state/.jira-credentials.json` — keys: `site`, `email`, `api_token`, `account_id`. This file is gitignored; never print the `api_token` in full, never write it into the report, and never commit it.
+1. Read credentials from `Team/CEO/In Progress/Set up Daily housing/state/.jira-credentials.json` — keys: `site`, `email`, `api_token`, `account_id`. This file is gitignored; never print the `api_token` in full, never write it into the report, and never commit it.
 2. Auth header: HTTP Basic, `email:api_token` base64-encoded (`curl -u "email:token"` handles this automatically).
 3. Base URL for all calls: `{site}/rest/api/3`.
 4. Sanity-check the connection with `GET {site}/rest/api/3/myself` before querying. If it doesn't return 200, or the credentials file is missing, stop and emit only:
@@ -37,7 +37,7 @@ No Jira MCP connector exists in this project. This skill calls the Jira Cloud RE
 
 Karen's ask, to keep this from becoming noise: don't re-surface a mention forever, and don't show her a thread she's already responded to.
 
-1. Read `last_checked_at` from `CEO/In Progress/Set up Daily housing/state/jira-mentions-state.json`.
+1. Read `last_checked_at` from `Team/CEO/In Progress/Set up Daily housing/state/jira-mentions-state.json`.
 2. Compute the effective floor as `MAX(last_checked_at, now - 7 days)` — this caps the lookback at 7 days even if the brief hasn't run in a while (e.g. after downtime), so a gap in runs never dumps a backlog of old mentions.
 3. Endpoint: `GET {site}/rest/api/3/search/jql`
    JQL: `text ~ "accountId:{account_id}" AND updated >= "{effective_floor as 'YYYY-MM-DD HH:MM'}" ORDER BY updated DESC`

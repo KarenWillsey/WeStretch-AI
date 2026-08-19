@@ -1,6 +1,6 @@
 # CPO — Roadmap Prioritization: Multiplayer Stretching
 
-_Skill applied: `CPO/skills/roadmap-prioritization`_
+_Skill applied: `Team/CPO/skills/roadmap-prioritization`_
 
 ## Scoring
 

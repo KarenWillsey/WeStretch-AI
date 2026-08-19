@@ -1,6 +1,6 @@
 # COO — Cross-Team Execution Plan: Multiplayer Stretching
 
-_Skill applied: `COO/skills/cross-team-execution-plan`_
+_Skill applied: `Team/COO/skills/cross-team-execution-plan`_
 
 ## Workstreams
 

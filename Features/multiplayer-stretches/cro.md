@@ -1,6 +1,6 @@
 # CRO — Pricing Strategy: Multiplayer Stretching
 
-_Skill applied: `CRO/skills/pricing-strategy`_
+_Skill applied: `Team/CRO/skills/pricing-strategy`_
 
 ## Current state
 

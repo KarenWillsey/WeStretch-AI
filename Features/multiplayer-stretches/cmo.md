@@ -1,6 +1,6 @@
 # CMO — Campaign Planning: Multiplayer Stretching
 
-_Skill applied: `CMO/skills/campaign-planning`_
+_Skill applied: `Team/CMO/skills/campaign-planning`_
 
 ## Objective and audience
 
