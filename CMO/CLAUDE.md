@@ -18,6 +18,13 @@ website copy).
   phone-image generation.
 - `CMO/skills/app-store-image-creation/` — App Store screenshot pipeline.
 - `CMO/skills/create-4k-crop-master/` — source-image crop mastering.
+- `.claude/skills/cmo-app-store-image-creation/` — CMO-persona review/guidance
+  companion to the app-store-image-creation pipeline; discoverable as a slash
+  command (see `CHATTY_REVIEW.md` on why this lives under `.claude/skills/`
+  instead of `CMO/skills/`).
+- `.claude/skills/cmo-jamie-meeting-notes/` — updates the running WeStretch
+  team action-item list from Karen/Jamie Zoom transcripts; writes dated
+  output to `CMO/In Progress/Jamie meeting notes/Output/`.
 
 The original `brand-messaging-review`, `campaign-planning`, and `jokes`
 SKILL.md files were removed from this folder; the App Store image-creation
@@ -33,8 +40,11 @@ that generic review/planning function is needed again.
   - `App Store Specialist/App Store Image Text Copywriting/`
   - `Email Funnels Specialist/`
   - `App Store Specialist/App Store Description Copywriting/`, `Website/` — stub folders, no content yet.
-  - `Jamie meeting notes/`, `Radio Specialist/5 x 30 second radio copy/` — contain
-    skill definitions, not project notes; not given a memory pair.
+  - `Jamie meeting notes/Output/` — dated running action-item lists produced
+    by the `cmo-jamie-meeting-notes` skill (`.claude/skills/`); this folder
+    holds output only, not a skill definition; not given a memory pair.
+  - `Radio Specialist/5 x 30 second radio copy/` — contains a skill
+    definition, not project notes; not given a memory pair.
 - `Ready/` — finished/decided initiatives, kept for reference. Empty for now.
 
 ## Memory
