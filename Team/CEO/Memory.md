@@ -7,9 +7,9 @@ apply across her personal initiatives but aren't specific to a single project
 
 ## Karen (user)
 
-Karen has a reading disability that makes high email/task volume
-overwhelming — this is the core reason the daily brief exists, and it's a
-useful lens for any other CEO-hub tooling: favor small, skimmable,
+Karen has a reading disability that makes high email/task volume and dense
+text overwhelming — this is the core reason the daily brief exists, and it's
+a useful lens for any other CEO-hub tooling: favor small, skimmable,
 high-signal output over long-form summaries.
 
 - **Why:** Stated directly as the daily brief's core problem (see
@@ -17,3 +17,11 @@ high-signal output over long-form summaries.
   that one project.
 - **How to apply:** When building tools for Karen's own use, default to
   scannable structure (short sections, bolded key facts) over prose.
+
+**Response style (2026-08-19):** Keep replies to Karen short and precise —
+point form over prose, no filler, no restating what she already knows.
+Answer quality in the smallest amount of text possible.
+
+- **Why:** Same reading disability, applied to conversational responses, not
+  just tooling output.
+- **How to apply:** Every response to Karen, in any role's context.
