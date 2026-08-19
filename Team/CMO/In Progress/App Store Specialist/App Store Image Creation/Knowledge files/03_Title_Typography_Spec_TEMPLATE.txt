@@ -6,7 +6,7 @@ Authoritative visual reference:
 Font family: Inter
 Font file or verified system font name: Inter
 Font weight: ExtraBold 800
-Text colour: #FFFFFF (brand WHITE — Globial Knowledge Content/Brand Guildeline.pdf)
+Text colour: #FFFFFF (brand WHITE — Knowledge Base/Brand Guildeline.pdf)
 Alignment: Centered
 Capitalization rule: Use exact user wording
 

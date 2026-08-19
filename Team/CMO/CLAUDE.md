@@ -20,8 +20,8 @@ website copy).
 - `Team/CMO/skills/create-4k-crop-master/` — source-image crop mastering.
 - `.claude/skills/cmo-app-store-image-creation/` — CMO-persona review/guidance
   companion to the app-store-image-creation pipeline; discoverable as a slash
-  command (see `CHATTY_REVIEW.md` on why this lives under `.claude/skills/`
-  instead of `Team/CMO/skills/`).
+  command (see the root `CLAUDE.md` "Known issue" note on why this lives under
+  `.claude/skills/` instead of `Team/CMO/skills/`).
 - `.claude/skills/cmo-jamie-meeting-notes/` — updates the running WeStretch
   team action-item list from Karen/Jamie Zoom transcripts; writes dated
   output to `Team/CMO/In Progress/Jamie meeting notes/Output/`.

@@ -6,7 +6,7 @@ _Skills applied: `Team/CRO/skills/pricing-strategy`, `Team/CRO/skills/revenue-pi
 
 ### Current state
 
-**Unconfirmed.** No pricing tiers, conversion, ARPU, or churn-by-tier data exist in this repo. The prior planning pass on multiplayer stretching ([`Features/multiplayer-stretches/cro.md`](../multiplayer-stretches/cro.md)) assumed a free/paid split existed without confirming it — [`CHATTY_REVIEW.md`](../../CHATTY_REVIEW.md) flagged that as unverified. Same flag applies here: **confirm actual pricing structure before acting on anything below.**
+**Unconfirmed.** No pricing tiers, conversion, ARPU, or churn-by-tier data exist in this repo. The prior planning pass on multiplayer stretching ([`Features/multiplayer-stretches/cro.md`](../multiplayer-stretches/cro.md)) assumed a free/paid split existed without confirming it — [`CHATTY_REVIEW.md`](../multiplayer-stretches/CHATTY_REVIEW.md) flagged that as unverified. Same flag applies here: **confirm actual pricing structure before acting on anything below.**
 
 ### Proposal
 

@@ -30,7 +30,7 @@ Candidates scored against the specific goal of **DAU growth in 12 weeks**, not g
 
 ### Cut list
 
-- **Social/community feature (leaderboard, friend graph, live sessions)** — explicitly deprioritized for this 12-week window. A near-identical feature was scoped in [`Features/multiplayer-stretches/`](../multiplayer-stretches/) and the independent review in [`CHATTY_REVIEW.md`](../../CHATTY_REVIEW.md) found the effort estimate for exactly this kind of feature was made without confirming whether a friend/contact graph even exists. That open question is still unresolved. Building this now, under a hard 3-month deadline with no discovery done, repeats a mistake already on record — cut it from this window and revisit only after the referral loop is validated.
+- **Social/community feature (leaderboard, friend graph, live sessions)** — explicitly deprioritized for this 12-week window. A near-identical feature was scoped in [`Features/multiplayer-stretches/`](../multiplayer-stretches/) and the independent review in [`CHATTY_REVIEW.md`](../multiplayer-stretches/CHATTY_REVIEW.md) found the effort estimate for exactly this kind of feature was made without confirming whether a friend/contact graph even exists. That open question is still unresolved. Building this now, under a hard 3-month deadline with no discovery done, repeats a mistake already on record — cut it from this window and revisit only after the referral loop is validated.
 - **Any new subscription tier or paywall restructuring** — see the disagreement preserved in [cro.md](cro.md)/[synthesis.md](synthesis.md); this is a distraction from the DAU goal this quarter.
 
 ### Dependencies

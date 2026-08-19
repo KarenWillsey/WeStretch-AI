@@ -6,7 +6,7 @@ _Skills applied: `Team/CTO/skills/tech-architecture-review`, `Team/CTO/skills/en
 
 ### Current state
 
-**Unknown to this planning pass.** No repo describes WeStretch's actual mobile/backend/infra stack, whether push notifications are wired up, or whether deep-linking/attribution exists. Every estimate below is provisional pending a real codebase/infra review — this repeats, deliberately, the exact caution [`CHATTY_REVIEW.md`](../../CHATTY_REVIEW.md) raised about the prior multiplayer-stretches pass, which handed down firm effort estimates without ever confirming the underlying architecture.
+**Unknown to this planning pass.** No repo describes WeStretch's actual mobile/backend/infra stack, whether push notifications are wired up, or whether deep-linking/attribution exists. Every estimate below is provisional pending a real codebase/infra review — this repeats, deliberately, the exact caution [`CHATTY_REVIEW.md`](../multiplayer-stretches/CHATTY_REVIEW.md) raised about the prior multiplayer-stretches pass, which handed down firm effort estimates without ever confirming the underlying architecture.
 
 ### Options
 

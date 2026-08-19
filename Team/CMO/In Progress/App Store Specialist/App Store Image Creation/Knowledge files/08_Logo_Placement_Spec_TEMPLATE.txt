@@ -28,7 +28,7 @@ Before placing or exporting the logo, verify:
 1. The original file 02_WeStretch_Logo_Do_Not_Modify.png was opened directly.
 2. SHA-256 of the opened file matches: 8B8C89D92516C072B1259AD307B4D49D65B0E0B6E7F20476DD840AB7048CD7FF
    (Asset corrected 2026-08-07: red recolored from off-brand #F05556 to brand
-   Fire Red #FC4850 per Globial Knowledge Content/Brand Guildeline.pdf; white
+   Fire Red #FC4850 per Knowledge Base/Brand Guildeline.pdf; white
    is brand WHITE #FFFFFF. Previous asset kept as
    Retired_02_WeStretch_Logo_OffBrand_Red_F05556.png — never use it.)
 3. Transparency is preserved.

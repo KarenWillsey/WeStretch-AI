@@ -17,7 +17,7 @@ Each skill is scoped to a single decision or review task, not a general "be the
 CIO" persona — invoke the specific skill that matches the task. New skills follow
 the existing `SKILL.md` frontmatter pattern (`name`, `description` starting
 with "Use when...") and a short structured output format. Note the repo-wide
-skill-discovery caveat in the root `CLAUDE.md` / `CHATTY_REVIEW.md` — these
+skill-discovery caveat in the root `CLAUDE.md` — these
 `skills/` files are read by convention/reference, not auto-invoked as slash
 commands.
 

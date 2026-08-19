@@ -8,6 +8,11 @@ for individual initiatives. See `CLAUDE.md` under "Memory" for the full model.
 
 ## Karen's workflow preferences (feedback)
 
+**Communication style — established 2026-08-19, applies to every response, every role, always:**
+Karen has a reading disability and is easily overwhelmed by large volumes of text.
+- **Why:** Long or dense responses are hard for her to process.
+- **How to apply:** Keep responses short and precise. Point form over prose. No unnecessary sentences, no restating context she already knows, no padding. Prioritize answer quality in the smallest quantity of text possible. This applies to every officer and the Manager, not just CEO/Karen's-own-work.
+
 Two standing rules from Karen (established 2026-08-07, App Store image work —
 originated in CMO but apply to any deliverable-producing work across roles):
 
@@ -53,3 +58,13 @@ skills/mandate.
   automation were repointed at `Team/CEO/In Progress/Set up Daily
   housing/run-daily-brief.ps1` as part of this move — if daily brief state
   files ever seem stale, check the scheduled task's action path first.
+
+## Root-folder cleanup (project)
+
+On 2026-08-19: `Features/` moved to `Team/CPO/Ideas/Features/` (a not-yet-started
+feature is a CPO roadmap idea, even if cross-role). `CHATTY_REVIEW.md` moved
+into `Team/CPO/Ideas/Features/multiplayer-stretches/` (the feature it critiques
+— its P1 findings on that feature's experiment design are still unaddressed).
+`ToneManager/` (empty file, no content) and `tmp/` (empty, untracked) were
+deleted. `Globial Knowledge Content/` renamed to `Knowledge Base/` (typo fix +
+standard term).

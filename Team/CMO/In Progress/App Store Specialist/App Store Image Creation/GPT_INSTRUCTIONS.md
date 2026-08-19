@@ -92,7 +92,7 @@ Clothing comes from the reference photo and is locked along with face, body type
 Branding rules always remain locked.
 
 All colors follow the WeStretch Brand Guideline
-(`Globial Knowledge Content/Brand Guildeline.pdf`): logo red = Fire Red
+(`Knowledge Base/Brand Guildeline.pdf`): logo red = Fire Red
 #FC4850, logo/title/subtitle white = #FFFFFF, fade bottom tone = Midnight
 Grey #1F1F1F. That PDF is the source of truth — never edit it unless the user
 explicitly instructs; if branding changes the user updates it and designs

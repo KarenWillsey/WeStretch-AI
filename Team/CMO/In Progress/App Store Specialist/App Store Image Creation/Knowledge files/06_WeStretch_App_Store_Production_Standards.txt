@@ -21,7 +21,7 @@ Before compositing, inspect every Image Generation output. If it contains anythi
 
 2b. BRAND COLORS — SOURCE OF TRUTH
 All colors used in these images come from the WeStretch Brand Guideline:
-"Globial Knowledge Content/Brand Guildeline.pdf" (repo root).
+"Knowledge Base/Brand Guildeline.pdf" (repo root).
 
 - Logo "WE" red:            Fire Red #FC4850
 - Logo "STRETCH" / text:    WHITE #FFFFFF (title and subtitle too)

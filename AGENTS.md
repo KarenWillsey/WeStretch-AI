@@ -4,7 +4,7 @@
 
 This repository is WeStretch's business-planning workspace; it does not contain application source code. The repo root is the Manager (orchestrator/delegator); the 11 C-suite executive folders (`Team/CFO/`, `Team/CTO/`, `Team/CXO/`, and others) live under `Team/` and contain task-specific skills under `skills/<skill-name>/SKILL.md`. Each skill should address one decision or review rather than define a broad persona.
 
-Cross-functional plans live in `Features/<feature-name>/`. A feature folder normally includes `README.md`, one lowercase role document per function (for example, `cto.md`), and `synthesis.md`. Read the synthesis first for decisions and open questions. Shared voice guidance belongs in `ToneManager/`, while repository-wide context is documented in `README.md`, `CLAUDE.md`, and `CHATTY_REVIEW.md`.
+Cross-functional plans live in `Team/CPO/Ideas/Features/<feature-name>/`, since a not-yet-started feature is a CPO roadmap idea even when it touches other roles. A feature folder normally includes `README.md`, one lowercase role document per function (for example, `cto.md`), and `synthesis.md`. Read the synthesis first for decisions and open questions. Repository-wide context is documented in `README.md` and `CLAUDE.md`.
 
 ## App Store Image Creation and CMO content guidance
 

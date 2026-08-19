@@ -8,7 +8,7 @@ Claude produced a clear first-pass structure, but I would not use the skills or 
 
 ### [P0] The 30 skills are stored in the wrong location
 
-[`CLAUDE.md`](CLAUDE.md) describes `ROLE/skills/...` as invokable Claude Code skills. Claude Code discovers project skills from `.claude/skills/<skill>/SKILL.md`; arbitrary `ROLE/skills` directories are not discovered. Plugin `skills/` directories only work when contained in an installed plugin.
+[`CLAUDE.md`](../../../../../CLAUDE.md) describes `ROLE/skills/...` as invokable Claude Code skills. Claude Code discovers project skills from `.claude/skills/<skill>/SKILL.md`; arbitrary `ROLE/skills` directories are not discovered. Plugin `skills/` directories only work when contained in an installed plugin.
 
 Reference: [Anthropic's skill documentation](https://code.claude.com/docs/en/slash-commands)
 
@@ -18,12 +18,12 @@ All ten joke skills also use `name: jokes`. They will conflict if moved into the
 
 ### [P1] The retention experiment cannot answer its stated question
 
-[`cgo.md`](Features/multiplayer-stretches/cgo.md) compares party completers with non-completers. Completion happens after treatment and is self-selected, so that comparison cannot establish the feature's effect.
+[`cgo.md`](cgo.md) compares party completers with non-completers. Completion happens after treatment and is self-selected, so that comparison cannot establish the feature's effect.
 
 Additional conflicts:
 
 - Control users can receive invitations; segmenting them afterward does not restore randomization.
-- [`coo.md`](Features/multiplayer-stretches/coo.md) says launch to all users while the experiment requires a control group.
+- [`coo.md`](coo.md) says launch to all users while the experiment requires a control group.
 - CMO targets users with seven-day streaks, while CGO starts exposure on day three.
 - A checkpoint exactly 30 days after launch does not provide complete D30 data for users enrolled after launch day.
 - There is no baseline, minimum detectable effect, sample-size calculation, eligibility definition, guardrail metric, or experiment duration.
@@ -32,7 +32,7 @@ Recommendation: use intention-to-treat on eligible users assigned to see the inv
 
 ### [P1] The invitation architecture contradicts the acquisition plan
 
-[`cpo.md`](Features/multiplayer-stretches/cpo.md) assumes a friend graph and push notifications. [`cmo.md`](Features/multiplayer-stretches/cmo.md) expects invitations to convert non-users. Non-users do not have an app push token or friend record.
+[`cpo.md`](cpo.md) assumes a friend graph and push notifications. [`cmo.md`](cmo.md) expects invitations to convert non-users. Non-users do not have an app push token or friend record.
 
 The MVP needs an explicit decision about:
 
@@ -46,7 +46,7 @@ A shareable invitation link may remove the friend-graph requirement from the MVP
 
 ### [P1] The greenlight is based on assumptions rather than discovery
 
-[`cto.md`](Features/multiplayer-stretches/cto.md) explicitly assumes the entire current architecture. Despite that, [`synthesis.md`](Features/multiplayer-stretches/synthesis.md) concludes that existing infrastructure is sufficient and no hiring is required.
+[`cto.md`](cto.md) explicitly assumes the entire current architecture. Despite that, [`synthesis.md`](synthesis.md) concludes that existing infrastructure is sufficient and no hiring is required.
 
 The 3-5 engineer-week estimate, 1-2 designer-week estimate, additional 2-3 weeks for a friend graph, and "minor internal" legal review have no supporting implementation or capacity data.
 
@@ -54,7 +54,7 @@ Recommendation: replace the current greenlight with a short discovery phase cove
 
 ### [P1] Privacy and security coverage is incomplete
 
-[`cio.md`](Features/multiplayer-stretches/cio.md) concludes that no new regional obligations appear likely without knowing jurisdictions, age groups, or the exact data source. [`cfo.md`](Features/multiplayer-stretches/cfo.md) then assumes legal review is minor.
+[`cio.md`](cio.md) concludes that no new regional obligations appear likely without knowing jurisdictions, age groups, or the exact data source. [`cfo.md`](cfo.md) then assumes legal review is minor.
 
 Missing areas include retention and deletion, account deletion, historical visibility after leaving, authorization rules, invite-token security, unwanted invitations, blocking/reporting, minors, and privacy-store disclosures. Muting notifications should not implicitly revoke membership or data access; leaving and muting need separate semantics.
 
@@ -64,7 +64,7 @@ Reference: [Google Play health-permissions guidance](https://support.google.com/
 
 ### [P2] The claimed independent consensus is not independent evidence
 
-[`synthesis.md`](Features/multiplayer-stretches/synthesis.md) says the roles converged independently. The transcript shows that one Claude session wrote every document sequentially from the same initial premise. The agreement is useful organization, but it is not separate validation.
+[`synthesis.md`](synthesis.md) says the roles converged independently. The transcript shows that one Claude session wrote every document sequentially from the same initial premise. The agreement is useful organization, but it is not separate validation.
 
 Recommendation: require each review to identify evidence, assumptions, blockers, confidence, and explicit disagreement. The synthesis should preserve disagreements rather than treating repetition as confirmation.
 

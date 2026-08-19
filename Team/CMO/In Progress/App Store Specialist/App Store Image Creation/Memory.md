@@ -65,7 +65,7 @@ Pixel-measured from the authorized reference:
 
 ## Brand source of truth
 
-- **Brand colors** come from `Globial Knowledge Content/Brand Guildeline.pdf`
+- **Brand colors** come from `Knowledge Base/Brand Guildeline.pdf`
   — Fire Red #FC4850, White #FFFFFF, Midnight Grey #1F1F1F (+ Dark Grey
   #4C4C4C; secondary Light Grey #E4E4E4, Sunshine Gold #FBBC05, Lavender Blue
   #667FD4, Medium Grey #ADACAC). That PDF is never edited without Karen's
