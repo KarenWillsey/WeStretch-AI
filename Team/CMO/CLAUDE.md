@@ -43,8 +43,12 @@ that generic review/planning function is needed again.
   - `Jamie meeting notes/Output/` — dated running action-item lists produced
     by the `cmo-jamie-meeting-notes` skill (`.claude/skills/`); this folder
     holds output only, not a skill definition; not given a memory pair.
-  - `Radio Specialist/5 x 30 second radio copy/` — contains a skill
-    definition, not project notes; not given a memory pair.
+  - `Radio Specialist/5 x 30 second radio copy/` — generates a fresh batch
+    of 5 new 30-second radio scripts on distinct angles; has `CLAUDE.md` +
+    `Memory.md`.
+  - `Radio Specialist/Single Radio Ad Revision/` — revises/polishes one
+    existing radio ad script for natural read-aloud delivery; has
+    `CLAUDE.md` + `Memory.md`.
 - `Ready/` — finished/decided initiatives, kept for reference. Empty for now.
 
 ## Memory

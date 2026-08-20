@@ -19,6 +19,10 @@ originated in CMO but apply to any deliverable-producing work across roles):
    - **Why:** The template rules said "render exactly as given," which shipped a typo; she wants a confirmation gate instead.
    - **How to apply:** This gate is written into the App Store image pipeline's own docs (see `Team/CMO/In Progress/App Store/App Store Image Creation/Memory.md`) and should be applied by analogy anywhere else copy is rendered verbatim into a deliverable.
 
+3. **No em dashes anywhere in any company output, full stop.**
+   - **Why:** Company-wide style rule set by Karen at the Manager level (2026-08-20) — applies to every role and every deliverable, not just one project.
+   - **How to apply:** Never write an em dash (—) in any generated copy, doc, or code comment across this repo. Use a period, comma, or restructure the sentence instead. Applies even inside text supplied by someone else (e.g. a draft from Kari or another teammate) — strip or replace any em dash found in source material before it ships.
+
 ## Repo restructure (project)
 
 On 2026-08-17, the repo moved from one root `CLAUDE.md`/`Memory.md` to a
