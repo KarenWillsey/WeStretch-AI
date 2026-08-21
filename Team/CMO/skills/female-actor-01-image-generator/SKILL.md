@@ -73,7 +73,7 @@ Regenerate or make a targeted correction before showing it if any check fails:
 
 ## Output location
 
-- Save every reviewed image to `Team/CMO/Review/` by default.
+- Save every reviewed image to `Team/CMO/Review ToDo/` by default.
 - Use a different folder only when the user explicitly specifies one.
 - Create the destination folder when it does not exist.
 - Honor the user's requested file format. If none is specified, use PNG.

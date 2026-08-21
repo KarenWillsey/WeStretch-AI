@@ -1,4 +1,4 @@
-# Set up Daily housing — CLAUDE.md
+# Set Up Daily Housekeeping — CLAUDE.md
 
 Scope: Karen's daily brief automation — Outlook email triage, Asana review,
 Jira review, composed into one skimmable morning email. Read `Memory.md`

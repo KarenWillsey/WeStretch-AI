@@ -10,6 +10,25 @@ This repository contains no application source code, build system, test suite, o
 
 This repo models WeStretch's business/org structure as Claude Code skills rather than as application code. When application code is eventually added, update this file with the actual build/lint/test commands and architecture notes at that point — do not invent them ahead of time.
 
+## Work Tracker
+
+`WORK-TRACKER.md` (repo root) lists every open task across all roles/
+projects, so nothing gets lost across chats or people. Check it at the
+start of any session. Any open item you create (decision needed, gap,
+blocked task) in `In Progress/` or `Ready/` work gets a line there in the
+same session, in addition to noting it in that project's own `Memory.md`,
+not instead of. **Never add items from `Ideas/` folders** — not active
+work yet; surface those separately, only when asked to find new work.
+
+**Editing a project's own open-item file (`USER_TODO.md`, `Backlog.md`, or
+similar) is not sufficient on its own.** If you resolve, add, or change an
+item there, update `WORK-TRACKER.md` to match in that same turn — treat
+the two as one edit, not two separate tasks. A project's own tracker going
+out of sync with `WORK-TRACKER.md` is exactly the failure mode this file
+exists to prevent (caught and fixed 2026-08-21, see `WORK-TRACKER.md`
+history). Same rule for `Review ToDo/` folders: check every role's for new
+files at session start, not just the ones already listed.
+
 ## The Manager (this level) and the Team (`Team/`)
 
 This root — the repo top level, this `CLAUDE.md` — is **the Manager**: the orchestrator/delegator. It doesn't do officer-specific work itself. When Karen says "tell the Manager to do X," the job is to read the request, figure out which officer(s) under `Team/` have the relevant skills/mandate, and delegate to their `CLAUDE.md` + `skills/` (routing to multiple officers and synthesizing their output when a request is genuinely cross-functional — see "Cross-functional feature planning" below).
@@ -40,9 +59,16 @@ Team/ROLE/
   Ideas/            # early-stage concepts, not yet started
   In Progress/      # active initiatives — each gets its own subfolder
   Ready/            # finished/decided initiatives, kept for reference
+  Review ToDo/      # optional — done, waiting on Karen's sign-off before moving to Ready/
 ```
 
-Each real project inside `Ideas/`, `In Progress/`, or `Ready/` (e.g. `Team/CMO/In Progress/App Store/App Store Image Creation/`) gets its own `CLAUDE.md` (what this project is, how to work on it) + `Memory.md` (durable decisions, calibrated values, standing rules for that project only) pair, the same way roles do. Claude Code auto-loads nested `CLAUDE.md` files as you work within a subtree, so these are picked up automatically — no manual pointer needed. Empty `Ideas/In Progress/Ready` folders just hold a `README.md` explaining their purpose until a real project starts there.
+`Review ToDo/` is optional and only exists in a role once that role has
+something pending approval — don't pre-create it empty. Name sorts after
+`Ready/` alphabetically on purpose (Karen's preference). Once Karen
+approves an item in `Review ToDo/`, move it wherever it actually belongs
+(not always `Ready/`) and remove its line from `WORK-TRACKER.md`.
+
+Each real project inside `Ideas/`, `In Progress/`, `Review ToDo/`, or `Ready/` (e.g. `Team/CMO/In Progress/App Store/App Store Image Creation/`) gets its own `CLAUDE.md` (what this project is, how to work on it) + `Memory.md` (durable decisions, calibrated values, standing rules for that project only) pair, the same way roles do. Claude Code auto-loads nested `CLAUDE.md` files as you work within a subtree, so these are picked up automatically — no manual pointer needed. Empty `Ideas/In Progress/Ready` folders just hold a `README.md` explaining their purpose until a real project starts there.
 
 Each skill is scoped to a single decision or review task for that function (e.g. `Team/CFO/skills/budget-planning`), not a general-purpose "be the CFO" persona — invoke the specific skill that matches the task at hand. When adding a new skill, follow the existing `SKILL.md` frontmatter pattern (`name`, `description` starting with "Use when...") and keep the body to a short, structured output format rather than open-ended prose.
 
@@ -52,9 +78,17 @@ Each skill is scoped to a single decision or review task for that function (e.g.
 
 **Git submodules:** a project folder can be a real application-code repo (as opposed to the planning-doc folders the rest of `Team/` holds) checked in as a git submodule, e.g. `Team/CMO/Ready/website-repo` → `git@github.com:WeBananas/westretch-website-astro.git`. `.gitmodules` at repo root tracks these. A fresh clone needs `git submodule update --init --recursive` to populate them — an empty submodule folder after cloning is expected, not broken. Treat the submodule's own `CLAUDE.md`/`AGENTS.md` (if it has one) as authoritative for that codebase; this repo's `CLAUDE.md`/`Memory.md` files describe the business/org layer, not the application code inside the submodule.
 
+## Naming convention
+
+`NAMING-CONVENTION.md` (repo root) is the rule for every folder and skill
+name: folders are Title Case With Spaces, skills are dash-separated
+lowercase. Read it before creating or renaming any folder — it also lists
+what's exempt (role codes, tool/working subfolders, vendored skills) and
+what's still flagged pending Karen's call.
+
 ## Cross-functional feature planning: `Team/CPO/Ideas/Features/`
 
-`Team/CPO/Ideas/Features/<feature-name>/` holds multi-role planning docs for a proposed product feature, e.g. `multiplayer-stretches/` and `1000-dau-growth-plan/`. It lives under CPO because a not-yet-started feature is a roadmap idea — CPO's mandate — even though building it out means pulling in other roles. Pattern per feature folder:
+`Team/CPO/Ideas/Features/<Feature Name>/` holds multi-role planning docs for a proposed product feature, e.g. `Multiplayer Stretches/` and `1000 DAU Growth Plan/`. It lives under CPO because a not-yet-started feature is a roadmap idea — CPO's mandate — even though building it out means pulling in other roles. Pattern per feature folder:
 
 - `README.md` — what the feature is, why it matters, and a table mapping each role doc to the skill used to produce it.
 - One doc per role (`cto.md`, `cmo.md`, `cfo.md`, ...) — that role's output from applying its skill(s) to the feature.

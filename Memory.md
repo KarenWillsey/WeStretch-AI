@@ -19,7 +19,11 @@ originated in CMO but apply to any deliverable-producing work across roles):
    - **Why:** The template rules said "render exactly as given," which shipped a typo; she wants a confirmation gate instead.
    - **How to apply:** This gate is written into the App Store image pipeline's own docs (see `Team/CMO/In Progress/App Store/App Store Image Creation/Memory.md`) and should be applied by analogy anywhere else copy is rendered verbatim into a deliverable.
 
-3. **No em dashes anywhere in any company output, full stop.**
+3. **Be token-efficient in every task, always** — short responses, no fluff/analogies, use the most direct tool for the job, avoid redundant work.
+   - **Why:** Karen said (2026-08-21) that "don't worry about the credit limit" on a specific task is never permission to be verbose generally — token efficiency is a constant default, not situational.
+   - **How to apply:** Applies to chat responses (short, plain, no filler) and to how work gets done (pick the right tool/skill first time, don't re-read files already in context, don't over-dispatch agents). Not worrying about a budget for one task means "don't stall the work," not "spend freely."
+
+4. **No em dashes anywhere in any company output, full stop.**
    - **Why:** Company-wide style rule set by Karen at the Manager level (2026-08-20) — applies to every role and every deliverable, not just one project.
    - **How to apply:** Never write an em dash (—) in any generated copy, doc, or code comment across this repo. Use a period, comma, or restructure the sentence instead. Applies even inside text supplied by someone else (e.g. a draft from Kari or another teammate) — strip or replace any em dash found in source material before it ships.
 
@@ -62,7 +66,7 @@ skills/mandate.
 
 On 2026-08-19: `Features/` moved to `Team/CPO/Ideas/Features/` (a not-yet-started
 feature is a CPO roadmap idea, even if cross-role). `CHATTY_REVIEW.md` moved
-into `Team/CPO/Ideas/Features/multiplayer-stretches/` (the feature it critiques
+into `Team/CPO/Ideas/Features/Multiplayer Stretches/` (the feature it critiques
 — its P1 findings on that feature's experiment design are still unaddressed).
 `ToneManager/` (empty file, no content) and `tmp/` (empty, untracked) were
 deleted. `Globial Knowledge Content/` renamed to `Knowledge Base/` (typo fix +

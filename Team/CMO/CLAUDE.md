@@ -12,7 +12,7 @@ website copy).
 
 ## Skills
 
-- `Team/CMO/skills/WeStretch-Core/` — shared brand personas, strategic thesis, and
+- `Team/CMO/skills/westretch-core/` — shared brand personas, strategic thesis, and
   guardrails other CMO skills depend on; load this first.
 - `Team/CMO/skills/ada-stretching-phone-image/` — Ada (brand character) stretching
   phone-image generation.
@@ -26,7 +26,7 @@ website copy).
   `.claude/skills/` instead of `Team/CMO/skills/`).
 - `.claude/skills/cmo-jamie-meeting-notes/` — updates the running WeStretch
   team action-item list from Karen/Jamie Zoom transcripts; writes dated
-  output to `Team/CMO/In Progress/Jamie meeting notes/Output/`.
+  output to `Team/CMO/In Progress/Jamie Meeting Notes/Output/`.
 
 The original `brand-messaging-review`, `campaign-planning`, and `jokes`
 SKILL.md files were removed from this folder; the App Store image-creation
@@ -35,16 +35,25 @@ that generic review/planning function is needed again.
 
 ## Project pipeline
 
-- `Review/` - shared staging area for reviewed CMO image assets awaiting Karen's
-  approval. The `female-actor-01-image-generator` skill saves here by default.
-- `Ideas/App Stores/App Sore Keyword Creation/` — not yet started (empty).
+- `Review ToDo/` - shared staging area for reviewed CMO image assets awaiting
+  Karen's approval. The `female-actor-01-image-generator` skill saves here by
+  default.
+- `Ideas/App Stores/App Store Keyword Creation/` — not yet started (empty).
 - `In Progress/` — active initiatives, each with its own `CLAUDE.md` + `Memory.md`:
-  - `App Store Specialist/Ada Stretching Phone Image/`
-  - `App Store Specialist/App Store Image Creation/`
-  - `App Store Specialist/App Store Image Text Copywriting/`
+  - `App Store Specialist/` — has its own `CLAUDE.md` orienting across its
+    sub-projects (grouping folder, not a project itself):
+    - `App Store Specialist/Ada Stretching Phone Image/`
+    - `App Store Specialist/App Store Image Creation/`
+    - `App Store Specialist/App Store Image Text Copywriting/`
+    - `App Store Specialist/Apple Opportunity Radar/` — **planning spec
+      only, not built** (2026-08-21): a standing capability to track every
+      Apple App Store marketing lever, refresh monthly from
+      developer.apple.com, and work a nightly opportunity backlog. See its
+      `Implementation Spec.md` before building/scheduling anything.
+    - `App Store Specialist/App Store Description Copywriting/` — stub, no content yet.
   - `Email Funnels Specialist/`
-  - `App Store Specialist/App Store Description Copywriting/`, `Website/` — stub folders, no content yet.
-  - `Jamie meeting notes/Output/` — dated running action-item lists produced
+  - `Website/` — stub folder, no content yet.
+  - `Jamie Meeting Notes/Output/` — dated running action-item lists produced
     by the `cmo-jamie-meeting-notes` skill (`.claude/skills/`); this folder
     holds output only, not a skill definition; not given a memory pair.
   - `Radio Specialist/5 x 30 second radio copy/` — generates a fresh batch

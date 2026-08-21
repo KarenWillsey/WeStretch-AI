@@ -2,7 +2,7 @@
 # Invoked by a Windows Scheduled Task at 5:00 AM daily (America/Edmonton).
 $ErrorActionPreference = "Stop"
 $repoRoot = "C:\Users\karen\Documents\WeStretch AI\WeStretch-AI"
-$logFile = Join-Path $repoRoot "Team\CEO\In Progress\Set up Daily housing\state\last-run.log"
+$logFile = Join-Path $repoRoot "Team\CEO\In Progress\Set Up Daily Housekeeping\state\last-run.log"
 
 # Resolve the currently installed Claude Code VS Code extension's bundled CLI.
 # Not hardcoded to a version, since the extension auto-updates and the folder name changes with it.

@@ -8,8 +8,8 @@ Lock a single definition of DAU and instrument it (CIO/CTO), fix the biggest ass
 
 ## Where every role agrees
 
-- **No new hires, no new cash spend this quarter**: CHRO, CFO, and CMO independently converge on treating bootstrap as a hard constraint rather than a soft one — push back on hiring or paid-spend requests that would emerge naturally from deadline pressure. This is the same "start small, prove before spending" pattern the prior [multiplayer-stretches synthesis](../multiplayer-stretches/synthesis.md) found across roles — it recurs here independently.
-- **Referral/invite loop over any new social/community feature**: CGO, CPO, and CTO all land on the same cheap loop as the primary lever, and CPO's cut list explicitly rejects building a bigger social feature this quarter — citing the same open "does a friend graph even exist" question that [`CHATTY_REVIEW.md`](../multiplayer-stretches/CHATTY_REVIEW.md) flagged as unresolved for the prior multiplayer effort. That question is still unanswered; this plan avoids depending on its answer instead of re-guessing it.
+- **No new hires, no new cash spend this quarter**: CHRO, CFO, and CMO independently converge on treating bootstrap as a hard constraint rather than a soft one — push back on hiring or paid-spend requests that would emerge naturally from deadline pressure. This is the same "start small, prove before spending" pattern the prior [Multiplayer Stretches synthesis](../Multiplayer Stretches/synthesis.md) found across roles — it recurs here independently.
+- **Referral/invite loop over any new social/community feature**: CGO, CPO, and CTO all land on the same cheap loop as the primary lever, and CPO's cut list explicitly rejects building a bigger social feature this quarter — citing the same open "does a friend graph even exist" question that [`CHATTY_REVIEW.md`](../Multiplayer Stretches/CHATTY_REVIEW.md) flagged as unresolved for the prior multiplayer effort. That question is still unanswered; this plan avoids depending on its answer instead of re-guessing it.
 - **Measurement before tactics**: CIO, CTO, CGO, and COO all treat instrumentation and a locked DAU definition as the actual week-1 blocker, not a nice-to-have running in parallel.
 
 ## Disagreement, preserved rather than resolved
@@ -20,7 +20,7 @@ CRO's mandate is revenue; this plan asks CRO to deprioritize it and possibly loo
 
 1. **What is WeStretch's actual current DAU?** This plan used the "~200" end of the stated 1–200 range as a working assumption — confirm the real number, since it changes how aggressive the 3-month target actually is.
 2. **Does any analytics/instrumentation exist today?** If yes, this is a much shorter workstream than [cio.md](cio.md)/[cto.md](cto.md) assumed; if no, it's the real critical path.
-3. **Does deep-linking, push infrastructure, or a friend/contact graph already exist?** Same category of hidden-dependency question the prior multiplayer-stretches review flagged and never got answered — flagging it again here so it doesn't silently repeat.
+3. **Does deep-linking, push infrastructure, or a friend/contact graph already exist?** Same category of hidden-dependency question the prior Multiplayer Stretches review flagged and never got answered — flagging it again here so it doesn't silently repeat.
 4. **Does a pricing/paywall structure currently exist, and where?** [cro.md](cro.md)'s proposal is meaningless without knowing what, if anything, is actually gating usage today.
 
 ## Recommended next step

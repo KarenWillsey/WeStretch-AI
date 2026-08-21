@@ -35,7 +35,7 @@ Cannot be assessed without a system inventory (see above). Flagged as unknown, n
 
 ### Compliance exposure
 
-The referral/invite flow and any push-notification targeting introduce new handling of user contact data; if the app connects to wearables or health platforms at all, note that **Android restricts socially sharing data obtained through health permissions without informed consent** (same point raised in [`CHATTY_REVIEW.md`](../multiplayer-stretches/CHATTY_REVIEW.md) for the prior multiplayer effort) — this applies here too if the invite/share flow touches any workout data sourced from a health permission. Confirm data sourcing before shipping the share/invite feature, don't assume it's clear.
+The referral/invite flow and any push-notification targeting introduce new handling of user contact data; if the app connects to wearables or health platforms at all, note that **Android restricts socially sharing data obtained through health permissions without informed consent** (same point raised in [`CHATTY_REVIEW.md`](../Multiplayer Stretches/CHATTY_REVIEW.md) for the prior multiplayer effort) — this applies here too if the invite/share flow touches any workout data sourced from a health permission. Confirm data sourcing before shipping the share/invite feature, don't assume it's clear.
 
 ### Recommendations
 

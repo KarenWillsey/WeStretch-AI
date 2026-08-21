@@ -5,7 +5,7 @@ description: Use when running Karen's daily email triage over Outlook (via the M
 
 # Daily Brief — Email Triage (Outlook)
 
-Reference: `Team/CEO/In Progress/Set up Daily housing/Implementation Spec.md` for the full problem/spec this serves.
+Reference: `Team/CEO/In Progress/Set Up Daily Housekeeping/Implementation Spec.md` for the full problem/spec this serves.
 
 Ground rule for everything below: **when in doubt, don't act.** If you can't tell whether something is spam or has value, treat it as having value (list under "Needs My Attention" or "Threads Waiting On You"), never delete it. If you can't tell what a reply should say, don't invent one — flag it for Karen instead of guessing.
 
@@ -86,7 +86,7 @@ Example:
 
 **Per-line description (Karen's ask, 2026-08-10):** every line in this rollup — sent, filed, or deleted-by-Karen — gets one sentence after the email address giving Kari context: what the thread was about, what outcome or decision was reached, and enough frame of reference to place it without opening the email herself. Pull this from the actual message body/thread content (read it via the relevant `outlook_email_search`/`read_resource` call), never guess it from the subject line alone. One sentence is the target; go to two or three only when a single sentence genuinely can't hold the necessary facts — that's the exception, not the default. This does not relax the "headline, no body content" rule below into a full recap — it's one added sentence of synthesis, not a quote or paraphrase of the whole message.
 
-State file: `Team/CEO/In Progress/Set up Daily housing/state/kari-activity-summary.json` — the one and only state file this skill uses. It exists because "what have we already told Kari" isn't answerable from Outlook's own state the way inbox/Unsubscribe dedup is. Shape:
+State file: `Team/CEO/In Progress/Set Up Daily Housekeeping/state/kari-activity-summary.json` — the one and only state file this skill uses. It exists because "what have we already told Kari" isn't answerable from Outlook's own state the way inbox/Unsubscribe dedup is. Shape:
 ```
 {
   "last_report_sent_at": "<ISO timestamp>",

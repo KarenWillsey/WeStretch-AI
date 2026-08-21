@@ -1,4 +1,4 @@
-# Set up Daily housing — Memory
+# Set Up Daily Housekeeping — Memory
 
 ## Status (project)
 

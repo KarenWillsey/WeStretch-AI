@@ -9,7 +9,7 @@ Status (2026-08-10): **V1 complete and scheduled.** All four skills built (`dail
   - "New @mentions" still uses a text-match heuristic (no mentions API exists), now capped to a rolling 7-day window and excluding threads Karen has already commented on, so it can't dump stale backlog or re-surface things she's already replied to.
   - State file: `state/jira-mentions-state.json`.
 - **Compose:** includes the Jira section unconditionally, reflects the Asana/Jira scope changes above.
-- **Scheduling:** NOT via the cloud `/schedule` skill — that runs in an isolated cloud git clone with no access to the gitignored Jira credentials and no way to persist state-file updates back to this repo, so it would break Jira entirely and silently corrupt dedup tracking. Instead: a Windows Scheduled Task ("WeStretch Daily Brief," registered 2026-08-10) runs `Team/CEO/In Progress/Set up Daily housing/run-daily-brief.ps1` daily at 5:00am, which invokes the Claude Code CLI bundled inside the VS Code extension (path resolved dynamically each run, not hardcoded to a version) with `--print --dangerously-skip-permissions`, logging to `state/last-run.log`. Only fires if Karen's machine is on and she's logged in at 5am.
+- **Scheduling:** NOT via the cloud `/schedule` skill — that runs in an isolated cloud git clone with no access to the gitignored Jira credentials and no way to persist state-file updates back to this repo, so it would break Jira entirely and silently corrupt dedup tracking. Instead: a Windows Scheduled Task ("WeStretch Daily Brief," registered 2026-08-10) runs `Team/CEO/In Progress/Set Up Daily Housekeeping/run-daily-brief.ps1` daily at 5:00am, which invokes the Claude Code CLI bundled inside the VS Code extension (path resolved dynamically each run, not hardcoded to a version) with `--print --dangerously-skip-permissions`, logging to `state/last-run.log`. Only fires if Karen's machine is on and she's logged in at 5am.
 
 To resume in a new session: say "continue the daily brief" (or open this file — it has everything needed). No special setup required; the skills are already discoverable by Claude Code in this project. To check whether the scheduled run actually fired, read `state/last-run.log`.
 
@@ -69,7 +69,7 @@ Karen has a reading disability that makes high email/task volume overwhelming. T
 
 ## State tracking
 
-**Recommendation:** a small state file in this repo, e.g. `Team/CEO/In Progress/Set up Daily housing/state/kari-activity-summary.json`, storing the timestamp/message-IDs/inbox-snapshot of the last activity rollup reported to Kari (sent mail plus inbox items Karen filed away or deleted herself).
+**Recommendation:** a small state file in this repo, e.g. `Team/CEO/In Progress/Set Up Daily Housekeeping/state/kari-activity-summary.json`, storing the timestamp/message-IDs/inbox-snapshot of the last activity rollup reported to Kari (sent mail plus inbox items Karen filed away or deleted herself).
 
 **Why a repo file instead of querying Outlook for "since last run":** it's git-versioned, so there's an inspectable history of exactly what was reported and when — which matters given the "no unverified content" bar. It also avoids writing tracking flags back onto live mailbox items.
 

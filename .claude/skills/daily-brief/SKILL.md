@@ -5,7 +5,7 @@ description: Use when running Karen's full daily brief (V1 — Outlook + Asana +
 
 # Daily Brief — Orchestrator (V1)
 
-Reference: `Team/CEO/In Progress/Set up Daily housing/Implementation Spec.md`.
+Reference: `Team/CEO/In Progress/Set Up Daily Housekeeping/Implementation Spec.md`.
 
 V1 covers Outlook + Asana + Jira.
 
@@ -28,7 +28,7 @@ Karen wants the run's token cost visible in the subject line. What's actually ob
 
 ## Manual vs scheduled use
 
-- **Scheduled**: invoked automatically each morning by a local Windows Scheduled Task ("WeStretch Daily Brief," 5:00am, running `Team/CEO/In Progress/Set up Daily housing/run-daily-brief.ps1`) — not the cloud `/schedule` skill, which can't reach the gitignored Jira credentials or persist state-file updates back to this repo (see Implementation Spec → Architecture). Runs unattended end to end, including the M365/Asana actions each source skill performs (drafts, moves to Deleted, Kari rollup).
+- **Scheduled**: invoked automatically each morning by a local Windows Scheduled Task ("WeStretch Daily Brief," 5:00am, running `Team/CEO/In Progress/Set Up Daily Housekeeping/run-daily-brief.ps1`) — not the cloud `/schedule` skill, which can't reach the gitignored Jira credentials or persist state-file updates back to this repo (see Implementation Spec → Architecture). Runs unattended end to end, including the M365/Asana actions each source skill performs (drafts, moves to Deleted, Kari rollup).
 - **Manual / live session**: Karen can invoke this directly and then work through the resulting report interactively in the same session — the report's reference IDs (thread refs, task URLs) exist specifically to support that follow-up work without re-searching.
 
 ## First run caution

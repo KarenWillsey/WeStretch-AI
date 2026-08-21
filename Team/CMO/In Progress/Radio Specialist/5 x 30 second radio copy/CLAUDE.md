@@ -8,8 +8,8 @@ Read `Memory.md` alongside this file before running the skill.
 
 ## Where things live
 
-- `SKILL.md` — the `westretch-radio-ads` skill: depends on `WeStretch-Core`
-  (`Team/CMO/skills/WeStretch-Core/`, load first for personas/Strategic
+- `SKILL.md` — the `westretch-radio-ads` skill: depends on `westretch-core`
+  (`Team/CMO/skills/westretch-core/`, load first for personas/Strategic
   Thesis/honesty guardrail). Scans this project's `Output/` for angles
   already covered, then runs Chase (strategy) → Expert (copy) → Marg
   (grading) to produce 5 new scripts before saving.

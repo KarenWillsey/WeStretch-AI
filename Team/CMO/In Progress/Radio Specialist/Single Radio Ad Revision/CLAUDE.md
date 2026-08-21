@@ -8,8 +8,8 @@ holds the read-aloud house-style rules learned from real revision rounds.
 
 ## Where things live
 
-- `SKILL.md` — the `radio-ad-revise` skill: depends on `WeStretch-Core`
-  (`Team/CMO/skills/WeStretch-Core/`, load first for guardrail compliance).
+- `SKILL.md` — the `radio-ad-revise` skill: depends on `westretch-core`
+  (`Team/CMO/skills/westretch-core/`, load first for guardrail compliance).
   Applies the read-aloud checklist in `Memory.md` to a supplied draft and
   fits it to a target spot length (default 30 sec).
 - `Output/` — all revision output lands here, dated/versioned, with a short

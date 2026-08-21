@@ -16,10 +16,10 @@ role-specific review/planning skills the other 10 C-suite folders produce.
 
 - `Ideas/` — early-stage concepts Karen hasn't started yet:
   - `About Me Web Site/`
-  - `Build an Advisotry Board/`
-  - `Nich Dashboard.txt`
+  - `Build An Advisory Board/`
+  - `Niche Dashboard/`
 - `In Progress/` — active initiatives, each with its own `CLAUDE.md` + `Memory.md`:
-  - `Set up Daily housing/` — the daily brief automation (Outlook + Asana + Jira).
+  - `Set Up Daily Housekeeping/` — the daily brief automation (Outlook + Asana + Jira).
 - `Ready/` — finished/decided initiatives, kept for reference. Empty for now.
 
 Give each `Ideas/` concept a `CLAUDE.md` + `Memory.md` pair once it moves into
