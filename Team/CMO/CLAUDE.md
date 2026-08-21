@@ -18,6 +18,8 @@ website copy).
   phone-image generation.
 - `Team/CMO/skills/app-store-image-creation/` — App Store screenshot pipeline.
 - `Team/CMO/skills/create-4k-crop-master/` — source-image crop mastering.
+- `Team/CMO/skills/female-actor-01-image-generator/` - reference-locked lifestyle
+  image generation for Female Actor 01 in a user-supplied pose.
 - `.claude/skills/cmo-app-store-image-creation/` — CMO-persona review/guidance
   companion to the app-store-image-creation pipeline; discoverable as a slash
   command (see the root `CLAUDE.md` "Known issue" note on why this lives under
@@ -33,6 +35,8 @@ that generic review/planning function is needed again.
 
 ## Project pipeline
 
+- `Review/` - shared staging area for reviewed CMO image assets awaiting Karen's
+  approval. The `female-actor-01-image-generator` skill saves here by default.
 - `Ideas/App Stores/App Sore Keyword Creation/` — not yet started (empty).
 - `In Progress/` — active initiatives, each with its own `CLAUDE.md` + `Memory.md`:
   - `App Store Specialist/Ada Stretching Phone Image/`
@@ -49,7 +53,15 @@ that generic review/planning function is needed again.
   - `Radio Specialist/Single Radio Ad Revision/` — revises/polishes one
     existing radio ad script for natural read-aloud delivery; has
     `CLAUDE.md` + `Memory.md`.
-- `Ready/` — finished/decided initiatives, kept for reference. Empty for now.
+- `Ready/website-repo/` — git submodule tracking the live WeStretch marketing
+  site codebase (`git@github.com:WeBananas/westretch-website-astro.git`, an
+  Astro app). This is real application code, not a planning doc, so it has
+  no `CLAUDE.md`/`Memory.md` pair here — defer to whatever guidance file
+  ships inside the submodule itself. Relates to `In Progress/Website/`
+  (currently an empty stub): that folder is where website *copy/planning*
+  work happens; this submodule is the deployed implementation. If
+  `Ready/website-repo/` appears empty after a fresh clone, run
+  `git submodule update --init --recursive` from the repo root.
 
 ## Memory
 

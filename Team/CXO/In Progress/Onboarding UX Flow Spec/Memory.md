@@ -94,6 +94,29 @@ based user-flow to engineering/design:
      Dev Mode MCP Server as a custom connector. Once connected, prefer it
      over screenshots for any new-screen mockup work.
 
+8. **Brand voice/positioning rules live in their own `Brand-Voice-Principles.md`,
+   referenced by every book instead of restated per screen.**
+   - **Why:** Karen dictated 5 standing rules (intelligent/personalized,
+     Ada advancing the user, daily-stretching motivation, invested-progress
+     FOMO toward Pro, ego-forward copy) as applying "everywhere," not to
+     one screen.
+   - **How to apply:** Every new `Screens/*.md` book and every
+     `Storyline.md` sheet should note `Applies Brand-Voice-Principles` and
+     draft copy consistent with it, rather than re-deriving tone per screen.
+
+9. **Structural insight: free-user flow collapses to one screen
+   (`Routine Type 2`) starting at routine 7.** Routines 1–6 use the full
+   step-by-step wizard (First Screen → Second → pain/sport →
+   standing/floor → Base Positions → Body Filter → Time); routine 7
+   onward, `First Screen` routes straight into `Routine Type 2` instead.
+   - **Why:** Karen's own dictated structure — this is a big enough shift
+     in the flow's shape that it's worth remembering explicitly rather
+     than re-deriving it from scattered chapter conditions later.
+   - **How to apply:** Any change to the wizard screens (Second, pain,
+     sport, standing, floor, Base Positions, Body Filter, Time) should
+     consider whether `Routine Type 2` needs the equivalent field, since
+     it's the wizard's replacement for returning free users.
+
 ## Open items (project)
 
 - Master list of state variables is still growing — see

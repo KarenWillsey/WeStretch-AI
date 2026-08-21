@@ -1,0 +1,3 @@
+[submodule "Team/CMO/Ready/website-repo"]
+	path = Team/CMO/Ready/website-repo
+	url = git@github.com:WeBananas/westretch-website-astro.git

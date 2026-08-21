@@ -60,3 +60,41 @@ it, that's a gap to flag, not something to quietly drop.
 
 - Home screen (with summary cards) isn't among the uploaded wireframes —
   needs its own mockup/book since Goal 1 depends on it.
+
+## Session 2026-08-20: full flow dictated, coverage vs. these goals
+
+Karen dictated the full onboarding-through-paywall flow (see
+`Screens/First Screen.md`, `Time.md`, `Rating.md`, `Do Routine.md`,
+`Post Rating.md`, `Routine Type 2.md`, and `Storyline.md`). Rough read on
+goal coverage so far:
+
+- **Goal 1 (leaderboard dead-end)** — still open. The dictated flow
+  confirms the current gap explicitly (leaderboard → nothing routes
+  onward) but no fix has been designed yet; `Home` screen itself doesn't
+  exist as a mockup.
+- **Goal 2 (guest → account conversion)** — covered by the S1 "routine
+  recap + login prompt" sheet (session 1) and the recurring guest sign-up
+  nudge (every 3 days), plus the device-bound/library-size framing.
+- **Goal 3 (free → pro conversion)** — covered by multiple mechanisms
+  (Routine Type 2 lock banner, day-5 offer, day-8/day-14 paywalls, random
+  reactivation gift, Turn Pro banner) but these mechanisms conflict with
+  each other on trial length/timing — see the new open item below.
+- **Goal 4 (drip-feed engagement)** — the ~25 topical sheets are cataloged
+  in `Storyline.md` but have no confirmed sequence yet, so "actually gets
+  seen/completed" can't be assessed until sequencing is resolved.
+
+## New open items (session 2026-08-20)
+
+- **Trial/paywall model conflict**: guest gets 7 Pro days, +7 more on
+  signup, but free-tier messaging separately references "11 routines," "14
+  routines/14 days," a day-8 paywall, and a day-14 paywall. These need to
+  resolve to one coherent model before Goal 3's mechanisms can be
+  finalized. See `State-Variables.md` and `Storyline.md` for where this
+  surfaces.
+- **Sharing/referral offers**: two share mechanics were described (day-5
+  one-time offer: sharer gets coins + friend gets 60 days for $2; and a
+  separate 30-day gift-for-gift mechanic) — confirm if these are the same
+  promotion described twice or genuinely two different features.
+- **"Leader board" wireframe (#22) vs. the real, already-live leaderboard
+  screen** Karen referenced as existing elsewhere — confirm whether #22 is
+  meant to become that screen's new design or is unrelated.

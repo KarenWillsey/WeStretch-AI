@@ -23,7 +23,7 @@ Source images: `Images/Screenshot 2026-08-19 151826.png` (oldest) through
 | 10 | Body Filter | 151837 | ☐ | 12-part body diagram on/off — name confirmed by Karen |
 | 11 | time | 151837 | ☐ | "How long would you like your routine to be?" 5 / 10 / Custom Length |
 | 12 | Minutes | 151837 | ☐ | "Minutes Per Day" dial, Daily Stretch Goal |
-| 13 | Routine Type 2 | 151851 | ☐ | full customize-routine summary sheet (length, type, body filter, base positions) — "Let's Go" |
+| 13 | Routine Type 2 | 151851 | ☐ | full customize-routine summary sheet (length, type, body filter, base positions) — button relabeled "Let's Go" pre-routine-7 / "Let's stretch" once it becomes the standard entry point at routine 7+. Free users: only Full Body routine type is tappable, other type cards shown blurred/greyed and route to paywall if tapped; add an info banner "Fully unlock every customization" |
 | 14 | Rating | 151851 | ☐ | pre-routine "while your routine is being built" check-in |
 | 15 | Do routine | 151851 | ☐ | placeholder — the actual routine-playback screen |
 | 16 | Post Rating | 151851 | ☐ | "Congratulations! Let's check in on how you feel" — pain/stiffness/pace sliders |
@@ -33,7 +33,17 @@ Source images: `Images/Screenshot 2026-08-19 151826.png` (oldest) through
 | 20 | Goal Reached | 151900 | ☐ | placeholder, conditional on `daily_goal_reached` |
 | 21 | Rate us | 151900 | ☐ | placeholder |
 | 22 | Leader board | 151900 | ☐ | placeholder — flagged as a current dead-end (see Global-Goals.md) |
-| 23 | paywall place holder | 151900 | ☐ | placeholder |
+| 23 | paywall place holder | 151900 | ☐ | placeholder — now has real copy detail, see Storyline.md paywall steps |
+| 24 | Home | *(not uploaded)* | ☐ | top banner for guests ("You are a guest user. Sign up anytime to save your history" → tap → Sign Up); tapping the top widget opens a calendar of stretch history; bottom nav includes at least Leaderboard, Notifications, Settings (confirm full nav list); persistent "Turn Pro" banner for free users → paywall. **Needed for Goal 1 (leaderboard dead-end fix) — no mockup exists yet.** |
+| 25 | Set Your Goal | *(not uploaded)* | ☐ | first-visit explainer: set default routine length (revisit every few weeks to add minutes); toggle: Everyday Stretcher vs. Weekday Stretcher (streaks tied to Everyday) |
+| 26 | Streak Saver Offer | *(not uploaded)* | ☐ | conditional sheet: offered on return after a missed day that follows a 5-day streak — "use your streak freeze?" |
+| 27 | Sign Up | *(existing app screen)* | — | not part of this spec — Karen confirmed this is the existing login/signup structure already live in the app; every book's "Login"/"Sign up" button target just links out to it |
+| 28 | Leaderboard (real) | *(existing app screen)* | — | Karen clarified the actual leaderboard (with live rankings) already exists elsewhere in the app, separate from the `Leader board` placeholder wireframe (#22) uploaded here — **confirm whether #22 is meant to become this real screen's new design, or whether it's unrelated and can be dropped from this spec** |
+
+**Drip/education sheets** (~28 distinct topics Karen dictated, most not
+wireframed) are cataloged in `Storyline.md` rather than duplicated here as
+individual rows, per the project's format decision that the drip layer
+owns its own sequence separate from the core screen inventory.
 
 ## Known gaps vs. Karen's dictated live-app flow
 
