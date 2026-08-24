@@ -1,0 +1,46 @@
+[
+  {
+    "run_at": "2026-08-21T00:00:00-06:00",
+    "run_type": "manual_test",
+    "urls_checked": [
+      {"url": "https://developer.apple.com/app-store/product-page/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/app-store/ratings-and-reviews/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/custom-product-pages/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/product-page-optimization/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/app-store/in-app-events/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/subscriptions/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/small-business-program/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/videos/play/tech-talks/111433/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/user-privacy-and-data-use/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/app-store/review/guidelines/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/distribute/app-review/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/getting-featured/", "status": "ok", "changed": true}
+    ],
+    "changes_found": [
+      "Ratings and Reviews: marketing use of star rating/reviews requires accuracy/permission; report concerns via Report a Concern",
+      "Custom Product Pages: deep links require iOS/iPadOS 18+; added Apple's own conversion stats and case studies; CPPs compatible with Apple Search Ads and StoreKit-rendered ads",
+      "App Store Events: full 7-badge-type list (not just Challenge); added creative restriction list",
+      "Subscriptions and Free Trials: billed amount must be most prominent price on sign-up screen",
+      "Billing Recovery: grace period/renewal extensions don't count against the 85%-proceeds one-year tenure clock",
+      "Revenue and Apple Commissions: $1M threshold checked both prior-year and current-year; enrollment steps and 15-day-after-month-end effective-date timing; EU alternative terms (10% commission, incl. subscriptions after year one)",
+      "Accessibility: named 'Accessibility Nutrition Labels' mechanism with 9 declarable categories; Dynamic Type 200%/310% scaling requirement",
+      "Privacy and Customer Accounts: device-fingerprinting prohibition under the Developer Program License Agreement; IDFV same-vendor exception",
+      "Health and Fitness Claims: hard redline on device-sensor-only medical measurement claims (Guideline 1.4.1)",
+      "App Review and Releases: 90%-under-24h review stat, expedited review option, appeals process, consolidated §2.3 metadata rejection-trigger table",
+      "Getting Featured by Apple: Apple's own stated evaluation criteria list"
+    ],
+    "new_backlog_items": [
+      "Get reviewer permission before quoting any App Store review in marketing materials",
+      "Confirm iOS 18+ deployment target before committing to deep-linked CPPs",
+      "Audit ad/analytics SDKs against device-fingerprinting prohibition",
+      "Evaluate EU alternative business terms (10% commission) applicability"
+    ],
+    "candidate_urls_found": [
+      "https://developer.apple.com/testflight/ (TestFlight overview -- solid candidate)",
+      "https://developer.apple.com/app-clips/ (App Clips overview -- solid candidate)",
+      "https://developer.apple.com/news/ (Apple Developer News feed -- solid candidate, general not App-Store-specific)",
+      "Apple Search Ads: no clean developer.apple.com canonical page found (product site is searchads.apple.com, different domain) -- needs a human decision"
+    ]
+  }
+]

@@ -1,10 +1,12 @@
 # state/
 
-Not created yet. Once built, this folder holds machine-written runtime
-state only — never hand-edit it as if it were documentation, same rule as
+Machine-written runtime state only — never hand-edit it as if it were
+documentation, same rule as
 `Team/CEO/In Progress/Set Up Daily Housekeeping/state/`:
 
-- `last-run.log` — nightly run history.
-- `monthly-refresh-log.json` — monthly refresh run history.
+- `last-run.log` — shared banner/summary log for both scheduled runs,
+  lines prefixed `[nightly-action]` or `[monthly-refresh]`.
+- `monthly-refresh-log.json` — structured per-run history for the monthly
+  refresh only (URLs checked, changes found).
 
 See `../Implementation Spec.md` "State tracking" and "Reliability bar."

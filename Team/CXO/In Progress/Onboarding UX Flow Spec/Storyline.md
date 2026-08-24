@@ -47,21 +47,31 @@ for that day.
 
 ---
 
-## Trial & paywall structure (needs reconciliation — see open items)
+## Trial & paywall structure — confirmed 2026-08-20
 
-- Guest: 7 days of Pro-level access unlocked from the start.
-- Guest → Free (signs up): +7 *more* days on top of whatever's left.
-- Free tier messaging also references **11 fully-unlocked routines as a
-  gift** (stated at routines_completed==3) and **14 routines/14 days**
-  (stated as a rough duration for the countdown pattern) and a first real
-  **paywall around day 8**, with a harder paywall on **day 14** ("that was
-  your last fully unlocked routine").
-- **These day-based and routine-based framings don't obviously reconcile
-  into one model — flagged in State-Variables.md and Global-Goals.md as an
-  open item for Karen to resolve before this section can be finalized.**
+- Measured in **completed routines, not calendar days** (earlier "day 8"/
+  "day 14" language was actually the 8th/14th completed routine).
+- Guest: pool of 7 Pro-level completed routines (`trial_routines_remaining`).
+- Guest → Free (signs up): +7 more added *on top of* whatever's currently
+  left in the pool (not reset to a flat number).
+- Typical path (signs up before using any guest routines) yields a
+  14-routine total budget — this is why "11 routines left" at
+  `routines_completed==3` and "10 routines left" at `routines_completed==4`
+  both check out (14 − 3 = 11, 14 − 4 = 10).
+- Fixed messaging checkpoints, keyed to total `routines_completed`: a
+  **soft paywall/upsell after the 8th completed routine**, a **hard
+  paywall after the 14th** ("that was your last fully unlocked routine" —
+  offers coins-for-Pro-for-a-day or the yearly-billed-monthly option, with
+  reduced coins/streak-savers as a softer consolation tier).
+- **Resolved 2026-08-21**: a guest who passes their 7-routine pool without
+  signing up gets the same gating as a free user past budget — access to
+  the single "Full Body" routine style only, no customization; locked
+  features are visible but blurred, and tapping any of them → {Screen:
+  paywall place holder}. Same behavior as `Routine Type 2`'s
+  `account_type == 'free'` chapter — applies to guests past-budget too.
 - Free users should keep getting recurring Pro-upsell prompts on a regular
-  cadence, not just at the milestones above (persistent "Turn Pro" banner
-  on Home, the Routine Type 2 lock banner, etc.)
+  cadence too, not just at the two checkpoints above (persistent "Turn
+  Pro" banner on Home, the Routine Type 2 lock banner, etc.)
 
 ---
 
@@ -152,16 +162,69 @@ sequence with Karen.**
   screen for free users, tapping it → {Screen: paywall place holder}.
 
 ### One-time offers / paywall milestones
-- **Day-5 one-time offer** — "best offer" framing: 60 days of Pro for $2,
-  then regular price after; includes bonus coins and bonus streak savers.
-  **Confirm vs. the Routine Type 2 share-to-friend offer — same promotion
-  or a second one?** (see State-Variables.md open items)
-- **Paywall, ~day 8** — first real paywall appearance for free users.
-- **Paywall, day 14** — "that was your last fully unlocked routine";
-  offers coins-for-Pro-for-a-day, or a yearly-billed-monthly subscription
-  option; gives reduced coins/streak-savers as a softer consolation tier.
+- **Day-5 (≈routine 5) one-time offer** — "best offer" framing: 60 days of
+  Pro for $2, then regular price after; includes bonus coins and bonus
+  streak savers. **Confirmed 2026-08-20: same offer as the Routine Type 2
+  lock banner's share-to-friend offer** — shown first in its plain
+  (non-share) form; the share-with-a-friend variant of this same offer is
+  introduced later in the sequence, deliberately not bundled with its
+  first appearance. Exact later timing still TBD.
+- **Soft paywall, after the 8th completed routine** — first real paywall
+  appearance for free users.
+- **Hard paywall, after the 14th completed routine** — "that was your last
+  fully unlocked routine"; offers coins-for-Pro-for-a-day, or a
+  yearly-billed-monthly subscription option; gives reduced coins/streak-
+  savers as a softer consolation tier.
 
 ---
+
+## Proposed sequence (Claude's draft, 2026-08-21 — pending Karen's confirmation)
+
+Karen asked for help organizing the ~25 topical sheets. This slots each
+one against `routines_completed`, anchored to the timing signals she gave
+explicitly, with everything else placed to keep pace roughly even and to
+front-load sheets that serve a Global Goal. **Nothing below is locked —
+it's a starting point to react to, not a decision.**
+
+| Routine # | Sheet | Anchor | Serves goal |
+|---|---|---|---|
+| 1 | *(fixed: Routine Recap → Leaderboard Explainer → Leaderboard → Home)* | dictated, fixed | Goal 2 |
+| 2 | Coins explainer | Karen: "routine 2 or 3" | Goal 4 |
+| 3 | Streak explainer | Karen: "early" | Goal 4 |
+| 4 | Body Filter / Position Filter explainer | Karen: "early on, within 14 days of Pro" | Goal 4 |
+| 5 | Day-5 one-time offer (60 days for $2 + bonuses, plain, no share) | Karen: explicit "day 5" | Goal 3 |
+| 6 | Pre–Routine Type 2 transition explainer | Karen: "the session before" routine 7 | Goal 4 |
+| 7 | *(structural: routes into Routine Type 2, no drip sheet)* | dictated, fixed | — |
+| 8 | Soft paywall | Karen: explicit | Goal 3 |
+| 9 | Notification reminders | Karen: "earlier than the 10th" | Goal 4 |
+| 10 | Increase routine time nudge | Karen: explicit "~10th routine" | Goal 4 |
+| 11 | Ada speed control | unanchored — placed here | Goal 4 |
+| 12 | Badges explainer | unanchored — placed here | Goal 4 |
+| 13 | Family Share | Karen: "maybe before the paywall" (i.e. before 14) | Goal 3 |
+| 14 | Hard paywall | Karen: explicit | Goal 3 |
+
+**Unanchored, no timing signal given** — proposed as a flexible pool, one
+per session from routine 15 onward (post-decision period), order not
+meaningful: Closed captioning/font size, Sound options, Profile setup,
+Meet Ada (+ Bruce), Gym setting, Sport type explainer, Sharing (30-day
+gift), Alberta tour, Feedback ask, Time-off reassurance, share-variant of
+the day-5 offer (per Karen: introduced later, not bundled with routine 5).
+
+**Recurring/conditional, not slotted into the table** (unchanged from the
+earlier grouping): Stiffness progress stats (~every 8 routines — first
+one lands on routine 8, same session as the soft paywall; flag as a
+possible crowding issue), Streak Saver Offer (conditional trigger),
+Guest sign-up nudge (every 3 days, calendar-based), Random reactivation
+gift (random schedule), Turn Pro banner (persistent UI, not a sheet).
+
+**Judgment calls made without explicit direction from Karen** (flag before
+treating as final): sheets 11–12 (Ada speed control, Badges explainer)
+placed by even pacing, not a stated reason; the 10 unanchored sheets
+pushed to routine 15+ rather than interspersed earlier, on the assumption
+that priority sheets (goal-serving, explicitly anchored) should come
+first — Karen may want some of these earlier for other reasons (e.g.
+Profile setup or Meet Ada feel like early-app-orientation content, not
+routine-15 content).
 
 ## Template for one step (once sequence is confirmed)
 
@@ -173,11 +236,9 @@ Serves Global Goal: [1/2/3/4 from Global-Goals.md, or "none — flag as gap"]
 ```
 
 ## Open items
-- Full sequence/timing for the ~25 topical sheets above is unresolved —
-  Karen asked for help organizing these; needs a follow-up working session
-  once the goal-per-sheet mapping (see Global-Goals.md) is done, so
-  sequencing decisions can be justified against the 4 confirmed goals
-  rather than picked arbitrarily.
+- ~~Full sequence/timing for the ~25 topical sheets~~ — **draft proposed
+  2026-08-21**, see "Proposed sequence" above. Still needs Karen's
+  confirmation, especially the judgment calls flagged in that section.
 - Trial/paywall day-vs-routine-count conflict (see "Trial & paywall
   structure" above) blocks finalizing the one-time-offer and paywall
   milestone steps.

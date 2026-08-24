@@ -53,12 +53,59 @@ provided and wired; Stripe links confirmed live; `/signup/` now redirects
 home; Sign In URL confirmed correct; social links confirmed; no video
 needed) — see `USER_TODO.md` for detail, removed from this list per rule 3.
 
+## CMO — App Store Specialist pending Manager review
+- [ ] Small Business Program enrollment checklist — verifies WeStretch is
+  actually enrolled for the reduced 15% App Store commission (vs. 30%
+  standard); requires App Store Connect Account Holder access to actually
+  check, which this automation doesn't have — `Team/CMO/In Progress/App
+  Store Specialist/Apple Opportunity Radar/Output/2026-08-21-small-business-program-checklist.md`
+  — 2026-08-21 (manual test run of app-store-specialist-nightly-action)
+- [ ] Billing Grace Period & App Store Server Notifications checklist —
+  split into a quick App Store Connect config step (Account Holder/Admin)
+  and a real backend engineering task (webhook endpoint outside this
+  repo's scope) — `Team/CMO/In Progress/App Store Specialist/Apple
+  Opportunity Radar/Output/2026-08-21-billing-grace-period-and-server-notifications-checklist.md`
+  — 2026-08-21 (first scheduled nightly-action run)
+- [ ] PPO test plan for the first 3 screenshots — brief for the Image
+  Creation/Copywriting pipelines to produce 3 headline treatments for
+  screenshot 1 (reusing already-graded copy), plus a full Product Page
+  Optimization test setup ready for App Store Connect — `Team/CMO/In
+  Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-08-22-ppo-test-first-3-screenshots.md`
+  — 2026-08-22 (scheduled nightly-action run)
+- [ ] Custom Product Pages plan (back pain, stiffness, mobility, golf,
+  pickleball) — 5 pages: keyword fields, promotional text, and
+  screenshot-1 direction drafted for each (back pain reuses already-
+  graded copy outright; mobility has a candidate transplant needing
+  re-grading; stiffness/golf/pickleball need a fresh copy-loop run); plus
+  an open question for Karen on whether to merge the stiffness and
+  mobility pages given intent overlap — `Team/CMO/In Progress/App Store
+  Specialist/Apple Opportunity Radar/Output/2026-08-23-cpp-plan-5-pages.md`
+  — 2026-08-23 (scheduled nightly-action run)
+
+## CMO — Apple Opportunity Radar monthly refresh
+- [ ] **2026-08-21 (manual test run, not scheduled):** Checked 13/13
+  tracked developer.apple.com URLs successfully, 0 failures. Found real
+  updates in 9 sections (not just wording — new stats, new rules, one hard
+  compliance redline) — expected for a first live pull, since the prior
+  baseline was Karen's manual excerpt rather than a full page-by-page
+  fetch. Added 4 new backlog items. Notable findings worth Karen/CMO
+  attention specifically:
+  - **Compliance redline:** device-sensor-only medical measurement claims
+    (blood pressure, glucose, etc.) are flatly prohibited — never let copy
+    imply this.
+  - **New revenue lever:** EU alternative terms give 10% commission
+    (vs. 15% Small Business Program) — worth checking if EU is a
+    meaningful market.
+  - **New CPP fact:** deep-linked Custom Product Pages need iOS 18+.
+  - 3 candidate source URLs found (TestFlight, App Clips, Apple Developer
+    News) for future Knowledge Base sections — need a human sanity-check
+    before being added as tracked "fact," per this skill's own caution
+    rule — see `Implementation Spec.md` section 1.
+  - Full detail: `Team/CMO/In Progress/App Store Specialist/Apple
+    Opportunity Radar/Knowledge Base/apple-marketing-opportunities.md`
+    changelog, and `state/monthly-refresh-log.json`.
+
 ## CMO — Apple Opportunity Radar (fully live 2026-08-21)
-- [ ] Recommended: trigger one manual run of each skill in a live session
-  to confirm the Output/WORK-TRACKER/state-file loop works end to end
-  before the unattended schedule fires for real (nightly first fires
-  2026-08-21 8:00 PM, monthly first fires 2026-09-01 7:00 AM) — see that
-  project's Implementation Spec "Recommended next step" — flagged 2026-08-21
 
 Resolved 2026-08-21: both skills built, wrapper scripts built, state files
 initialized, Knowledge Base seeded with Karen's baseline, both Windows
@@ -86,6 +133,5 @@ archive copies.
 
 ## CXO — Onboarding UX Flow Spec
 - [ ] Karen to review proposed drip sequence (Claude's draft) — `Team/CXO/In Progress/Onboarding UX Flow Spec/Storyline.md` — 2026-08-21
-- [ ] No visual design for Home, Set Your Goal, Streak Saver Offer — `Team/CXO/In Progress/Onboarding UX Flow Spec/Screen-Inventory.md` — 2026-08-21
 - [ ] Goal 1 fix (leaderboard dead-end) not decided — `Team/CXO/In Progress/Onboarding UX Flow Spec/Screens/Home.md` — 2026-08-21
 - [ ] ~15 more small open questions (body_filter list, "too fast" stacking, etc.) — see `Team/CXO/In Progress/Onboarding UX Flow Spec/Global-Goals.md` and `State-Variables.md`

@@ -83,18 +83,36 @@ goal coverage so far:
   in `Storyline.md` but have no confirmed sequence yet, so "actually gets
   seen/completed" can't be assessed until sequencing is resolved.
 
-## New open items (session 2026-08-20)
+## Session 2026-08-21 (second working pass, gap-filling)
 
-- **Trial/paywall model conflict**: guest gets 7 Pro days, +7 more on
-  signup, but free-tier messaging separately references "11 routines," "14
-  routines/14 days," a day-8 paywall, and a day-14 paywall. These need to
-  resolve to one coherent model before Goal 3's mechanisms can be
-  finalized. See `State-Variables.md` and `Storyline.md` for where this
-  surfaces.
-- **Sharing/referral offers**: two share mechanics were described (day-5
-  one-time offer: sharer gets coins + friend gets 60 days for $2; and a
-  separate 30-day gift-for-gift mechanic) — confirm if these are the same
-  promotion described twice or genuinely two different features.
-- **"Leader board" wireframe (#22) vs. the real, already-live leaderboard
-  screen** Karen referenced as existing elsewhere — confirm whether #22 is
-  meant to become that screen's new design or is unrelated.
+- **Goal 1**: `Home` now has a partial book (`Screens/Home.md`) covering
+  everything Karen specified, plus two proposed (undecided) fixes for the
+  actual dead-end mechanism — see that file. Summary-card content and full
+  nav list are still unspecified; needs a real design/mockup pass before
+  this goal is truly done.
+- **Goal 4**: the ~25 drip sheets now have a proposed routine-by-routine
+  sequence in `Storyline.md`, anchored to every timing signal Karen gave
+  explicitly. Several placements are Claude's judgment call rather than
+  dictated — flagged inline in `Storyline.md`, pending Karen's review.
+- `Set Your Goal` and `Streak Saver Offer` also drafted (partial/stub) —
+  see `Screen-Inventory.md` rows #25–26.
+
+## Resolved (session 2026-08-20, second pass)
+
+- **Trial/paywall model** — routine-count based, not day-based. Guest: 7
+  Pro-completed-routine pool; signing up adds +7 to whatever's left.
+  Typical path totals 14 routines. Soft paywall after routine 8, hard
+  paywall after routine 14. See `Storyline.md` "Trial & paywall structure."
+  One open edge case remains: guest who passes 8+ routines without ever
+  signing up — behavior not yet specified.
+- **Sharing offers** — the day-5/routine-5 "60 days for $2" offer and the
+  Routine Type 2 lock banner's share offer are the *same* promotion.
+  Karen wants the share-with-a-friend version introduced later in the
+  drip sequence, not bundled with the offer's first appearance. The
+  separate 30-day gift-for-gift "Sharing" drip sheet is a distinct,
+  unrelated mechanic — both now documented separately in `Storyline.md`.
+- **"Leader board" wireframe (#22)** — confirmed **not** the real
+  leaderboard; Karen isn't sure what it was for and hasn't uploaded the
+  actual live leaderboard (no image exists — it's out of scope for this
+  spec entirely, she won't be altering it). See `Screen-Inventory.md`
+  rows #22 and #28.

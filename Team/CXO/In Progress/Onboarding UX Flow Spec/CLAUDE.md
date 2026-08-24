@@ -31,6 +31,10 @@ Read `Memory.md` alongside this file before adding or editing a screen.
   after routine 2 **and** every step in chapter 1 was completed). This
   stays out of individual screen books and instead references screens by
   name plus the gating condition, per Karen's format decision.
+- `Onboarding-Flow.html` — the presentation-layer artifact: a clickable,
+  self-contained walkthrough built from everything in `Screens/` and
+  `Storyline.md`, published to claude.ai. Regenerate it (don't hand-edit)
+  after any book changes — see Memory.md decision 5 for how it was built.
 - `State-Variables.md` — the master list of variables any screen's chapter
   condition or the storyline's gates are allowed to reference (e.g.
   `routines_completed`, `account_type`). Check/extend this before inventing

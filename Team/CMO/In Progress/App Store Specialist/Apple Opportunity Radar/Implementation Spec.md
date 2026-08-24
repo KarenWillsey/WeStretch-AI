@@ -1,8 +1,13 @@
 # Apple Opportunity Radar — Implementation Spec (v1, planning stage)
 
-Status (2026-08-21): **Planning spec only — not built, not scheduled.**
-This document is the full design so a later session can build it in one
-pass. See `Memory.md` for the standing decisions this spec is built on.
+Status (2026-08-21): **Fully live.** Both skills exist, both wrapper
+scripts exist, and both Windows Scheduled Tasks are registered and
+`Ready` (nightly 8:00 PM daily; monthly refresh 1st of month, 7:00 AM).
+See `Memory.md`'s "Build session" entry for how the monthly task's
+registration actually went (3 attempts, ended up using a `.cmd` batch
+file to route around PowerShell's native-argument quoting) — useful if it
+ever needs re-registering. See `Memory.md` for the standing decisions this
+spec is built on.
 
 ## Core problem
 
@@ -102,6 +107,25 @@ Base section — these are the fetch list the monthly refresh should use):
 pinned down yet — confirm at build time): Apple Search Ads, App Clips, a
 dedicated TestFlight overview page, and a general Apple Developer News feed
 for cross-cutting announcements.
+
+**Update from 2026-08-21 live refresh's WebSearch pass** — found candidate
+URLs for 3 of the 4; a human should sanity-check and promote these to
+"Confirmed" (giving each its own Knowledge Base section) rather than the
+refresh skill auto-adding them:
+- **TestFlight** → `https://developer.apple.com/testflight/` — solid, single canonical page.
+- **App Clips** → `https://developer.apple.com/app-clips/` — solid, single canonical page.
+- **Apple Developer News** → `https://developer.apple.com/news/` — solid,
+  general feed (not App Store-specific, so noisier — worth a "check monthly
+  for App Store-relevant headlines only" instruction if added). One
+  concrete hit already surfaced: an "App Store Asset Best Practices" release
+  with Figma/Photoshop/Pixelmator screenshot templates — directly relevant
+  to `App Store Specialist/App Store Image Creation/`, worth a human
+  double-checking regardless of whether this URL gets formally tracked.
+- **Apple Search Ads** → no clean canonical page on developer.apple.com
+  itself; the actual product site is `searchads.apple.com` (different
+  domain). `developer.apple.com/documentation/apple_ads` is API reference,
+  not a marketing/opportunity overview. Needs a human call on whether to
+  track an off-domain Apple property here.
 
 ### 2. Monthly refresh workflow
 
@@ -218,22 +242,34 @@ inspectable history of what was actually checked and when.
 
 ## Explicitly out of scope for now
 
-- Actually building the two skills.
-- Registering the two Windows Scheduled Tasks.
+- ~~Actually building the two skills.~~ — done 2026-08-21.
+- ~~Registering the two Windows Scheduled Tasks.~~ — scripted 2026-08-21,
+  blocked by the permission classifier; Karen has the script to run
+  herself. **Not confirmed live until she runs it or someone checks
+  `Get-ScheduledTask -TaskName "WeStretch App Store Specialist*"`.**
 - ~~Populating the Knowledge Base~~ — done 2026-08-21 (Karen-provided
-  baseline); what's still not built is the *automated* monthly refresh that
-  keeps it current going forward.
+  baseline).
 - Any live submission to Apple (editorial pitch, CPP publish, Search Ads
   campaign) — nightly output is always a draft for Manager/Karen review.
+  Still true even now that this is built.
 
-## Build order (once Karen greenlights execution)
+## Build order
 
-1. Verify/finalize the source URL list.
-2. Build `app-store-specialist-monthly-refresh`, run it once manually to
-   populate `Knowledge Base/apple-marketing-opportunities.md` for real.
-3. Build `app-store-specialist-nightly-action`, run it once manually
-   against a seeded backlog item to confirm the Output/WORK-TRACKER loop works.
-4. Register both Windows Scheduled Tasks.
-5. Add the Manager-side staleness check to root `WORK-TRACKER.md`'s
-   session-start routine (currently just documented here, not yet wired
-   into that file's rules).
+1. ✅ Verify/finalize the source URL list — done via Karen's baseline import.
+2. ✅ Build `app-store-specialist-monthly-refresh` — built 2026-08-21. Not
+   yet run live (first real run will happen on schedule, or can be
+   triggered manually to test).
+3. ✅ Build `app-store-specialist-nightly-action` — built 2026-08-21. Not
+   yet run live.
+4. ✅ Register both Windows Scheduled Tasks — done 2026-08-21 by Karen
+   (permission classifier blocked Claude from registering them directly).
+5. ✅ Add the Manager-side staleness check to root `WORK-TRACKER.md`'s
+   session-start rules — done 2026-08-21 (rule 8).
+
+## Recommended next step
+
+Before the first real scheduled run fires unattended, consider triggering
+one manual run of each skill in a live session (say "run the nightly
+action skill now" / "run the monthly refresh skill now") to confirm the
+Output/WORK-TRACKER/state-file loop actually works end to end — same
+caution the daily brief spec used for its first live run.

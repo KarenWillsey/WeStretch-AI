@@ -26,24 +26,51 @@ Source images: `Images/Screenshot 2026-08-19 151826.png` (oldest) through
 | 13 | Routine Type 2 | 151851 | ☐ | full customize-routine summary sheet (length, type, body filter, base positions) — button relabeled "Let's Go" pre-routine-7 / "Let's stretch" once it becomes the standard entry point at routine 7+. Free users: only Full Body routine type is tappable, other type cards shown blurred/greyed and route to paywall if tapped; add an info banner "Fully unlock every customization" |
 | 14 | Rating | 151851 | ☐ | pre-routine "while your routine is being built" check-in |
 | 15 | Do routine | 151851 | ☐ | placeholder — the actual routine-playback screen |
-| 16 | Post Rating | 151851 | ☐ | "Congratulations! Let's check in on how you feel" — pain/stiffness/pace sliders |
+| 16 | Post Rating | 151851 | ☐ | "Congratulations! Let's check in on how you feel" — pain/stiffness/speed sliders |
 | 17 | Badges | 151851 | ☐ | placeholder |
 | 18 | Streak Progress | 151851 | ☐ | placeholder |
 | 19 | Collect coins | 151900 | ☐ | placeholder |
 | 20 | Goal Reached | 151900 | ☐ | placeholder, conditional on `daily_goal_reached` |
 | 21 | Rate us | 151900 | ☐ | placeholder |
-| 22 | Leader board | 151900 | ☐ | placeholder — flagged as a current dead-end (see Global-Goals.md) |
+| 22 | Leader board | 151900 | — | **Not the real leaderboard.** Karen confirmed 2026-08-20 she did not upload the actual live leaderboard and doesn't know what this placeholder was meant to represent — purpose unclear even to her. Do not treat as a design target; the flow's actual leaderboard destination is row #28. Candidate to drop from this spec entirely — confirm with Karen. |
 | 23 | paywall place holder | 151900 | ☐ | placeholder — now has real copy detail, see Storyline.md paywall steps |
-| 24 | Home | *(not uploaded)* | ☐ | top banner for guests ("You are a guest user. Sign up anytime to save your history" → tap → Sign Up); tapping the top widget opens a calendar of stretch history; bottom nav includes at least Leaderboard, Notifications, Settings (confirm full nav list); persistent "Turn Pro" banner for free users → paywall. **Needed for Goal 1 (leaderboard dead-end fix) — no mockup exists yet.** |
-| 25 | Set Your Goal | *(not uploaded)* | ☐ | first-visit explainer: set default routine length (revisit every few weeks to add minutes); toggle: Everyday Stretcher vs. Weekday Stretcher (streaks tied to Everyday) |
-| 26 | Streak Saver Offer | *(not uploaded)* | ☐ | conditional sheet: offered on return after a missed day that follows a 5-day streak — "use your streak freeze?" |
+| 24 | Home | *(not uploaded)* | ☑ partial | Drafted 2026-08-21 (`Screens/Home.md`) with everything Karen specified (guest banner, history calendar widget, Turn Pro banner, partial bottom nav); summary-card content and full nav list still unspecified — needs a real design pass. **Needed for Goal 1.** |
+| 25 | Set Your Goal | *(not uploaded)* | ☑ partial | Drafted 2026-08-21 (`Screens/Set Your Goal.md`) — first-visit copy, routine-length field, Everyday/Weekday toggle. Save target and Weekday-Stretcher behavior still unspecified. |
+| 26 | Streak Saver Offer | *(not uploaded)* | ☑ stub | Drafted 2026-08-21 (`Screens/Streak Saver Offer.md`) — trigger condition only, no real copy yet. |
 | 27 | Sign Up | *(existing app screen)* | — | not part of this spec — Karen confirmed this is the existing login/signup structure already live in the app; every book's "Login"/"Sign up" button target just links out to it |
-| 28 | Leaderboard (real) | *(existing app screen)* | — | Karen clarified the actual leaderboard (with live rankings) already exists elsewhere in the app, separate from the `Leader board` placeholder wireframe (#22) uploaded here — **confirm whether #22 is meant to become this real screen's new design, or whether it's unrelated and can be dropped from this spec** |
+| 28 | Leaderboard (real) | *(existing app screen, no image)* | — | The actual live leaderboard, already built and shipping. **Confirmed 2026-08-20: out of scope — Karen will not be altering it, no image exists to work from.** `Storyline.md` step S2's "Take me to the leaderboard" button targets this screen as a link-out only, same treatment as `Sign Up` (#27) — nothing about its design is part of this spec. |
+| 29 | Routine Recap | *(not uploaded)* | ☑ | Drip step S1 — fully dictated, drafted 2026-08-21 as `Screens/Routine Recap.md`. |
+| 30 | Leaderboard Explainer | *(not uploaded)* | ☑ | Drip step S2 — fully dictated, drafted 2026-08-21 as `Screens/Leaderboard Explainer.md`. |
 
 **Drip/education sheets** (~28 distinct topics Karen dictated, most not
 wireframed) are cataloged in `Storyline.md` rather than duplicated here as
 individual rows, per the project's format decision that the drip layer
 owns its own sequence separate from the core screen inventory.
+
+## Status as of 2026-08-21: dictation pass closed
+
+Karen has finished dictating for this project — she is **not** producing
+individual chapter/JSON books for the remaining un-drafted rows above
+(Second, pain, sport, standing, floor, Base Positions, Body Filter,
+Minutes, Badges, Streak Progress, Collect coins, Goal Reached, Rate us).
+Their status going forward:
+
+- Rows with a source image (everything above except #24–26) — **mockup
+  only, no book.** The uploaded screenshot is the reference; nothing in
+  this project should invent chapter text/JSON for them.
+- Rows without any source image (**#24 Home, #25 Set Your Goal, #26
+  Streak Saver Offer, #29 Routine Recap, #30 Leaderboard Explainer**) have
+  no visual mockup, but where Karen had dictated real content it's now
+  drafted as its own book (2026-08-21 pass, using her existing credits to
+  close gaps rather than wait for more dictation) — see each row's notes
+  for exactly what's still missing (mostly: visual design, a couple of
+  unspecified nav targets).
+
+11 books are now drafted: `First Screen`, `Time`, `Rating`, `Do Routine`,
+`Post Rating`, `Routine Type 2`, `Routine Recap`, `Leaderboard Explainer`,
+`Home` (partial), `Set Your Goal` (partial), `Streak Saver Offer` (stub) —
+plus `Storyline.md` (now including a proposed drip sequence),
+`Global-Goals.md`, `Brand-Voice-Principles.md`, and `State-Variables.md`.
 
 ## Known gaps vs. Karen's dictated live-app flow
 

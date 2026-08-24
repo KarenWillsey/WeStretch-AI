@@ -66,7 +66,7 @@ State: `routines_completed == 3 AND account_type == "guest"`
 State: `routines_completed == 3 AND account_type == "free"`
 
 - Title: "Welcome back to your 4th routine, {first_name}" **(drafted — confirm)**
-- Subtitle: "As a free user, you get 11 fully unlocked routines as our gift — after that, go Pro to keep everything unlocked." **(drafted from Karen's dictated content — the "11 routines" figure conflicts with other trial framing elsewhere in the flow, see State-Variables.md open items — confirm before finalizing)**
+- Subtitle: "As a free user, you get 11 fully unlocked routines as our gift — after that, go Pro to keep everything unlocked." **(drafted from Karen's dictated content — confirmed 2026-08-20 against the resolved 14-routine trial budget: 14 − 3 = 11, checks out)**
 - Button 1 "Full Body" → {Screen: Time}
 - Button 2 "Customize" → {Screen: Second}
 - Button 3 "Last routine settings" → {Screen: Rating}
@@ -79,6 +79,31 @@ State: `routines_completed == 4 AND account_type == "free"`
 - Button 1 "Full Body" → {Screen: Time}
 - Button 2 "Customize" → {Screen: Second} (individual locked routine types inside Second/pain/sport/standing/floor/Base Positions/Body Filter route to `paywall place holder` if tapped by a free user — see [[Routine Type 2]])
 - Button 3 "Last routine settings" → {Screen: Rating}
+
+## Chapter: routines_completed >= 4, account_type == guest
+State: `routines_completed >= 4 AND account_type == "guest"`
+
+**Fixed 2026-08-21 — this chapter was missing.** Karen only dictated
+guest copy through `routines_completed == 3`; routines 4+ had no matching
+chapter, which is a bug (undefined screen state). Karen separately
+confirmed guests keep the same 2-button pattern indefinitely ("the guest
+user only has the same 2 buttons as above"), so this chapter repeats that
+pattern rather than inventing new copy.
+
+- Title: "Welcome back to your {routines_completed + 1}th routine" **(pattern extrapolated from earlier guest chapters — confirm)**
+- Subtitle: none dictated for this range — reuse routines_completed==3's
+  subtitle tone or leave blank until Karen provides copy.
+- Button 1 "Full Body" → {Screen: Time}
+- Button 2 "Customize" → {Screen: Second}
+- Once `routines_completed >= 7` (past the 7-routine guest trial pool):
+  the Customize path's routine-type selection becomes gated the same way
+  `Routine Type 2` gates a budget-exhausted free user (Full Body only,
+  other types blurred, tap → paywall) — see the note below. This is a
+  guest, not a free user, so it does **not** route through `Routine Type 2`
+  the way free users do at routine 7 — that consolidation was only
+  dictated for free users. **Confirm with Karen**: should guest also
+  collapse into `Routine Type 2` at routine 7, or does gating apply
+  in-place within the existing wizard screens (Second/pain/sport/etc.)?
 
 ## Chapter: routines_completed == 5, account_type == free
 State: `routines_completed == 5 AND account_type == "free"`
@@ -94,6 +119,15 @@ State: `routines_completed >= 6 AND account_type == "free"`
 - Subtitle: "All your customizations are now on one screen." **(drafted from Karen's dictated content — confirm)**
 - Single button → {Screen: Routine Type 2} directly, replacing the Full Body / Customize / Last routine settings buttons used through routine 6.
 - **Karen: confirm this reading** — your dictation said this chapter's welcome-back copy shows, then routes straight to Routine Type 2, but didn't specify whether First Screen still renders with a button first or skips straight through. Drafted as: First Screen shows this chapter once, with one CTA into Routine Type 2, which is where "Let's stretch" → {Screen: Rating} actually lives (see [[Routine Type 2]]).
+
+## Note: guest past the 7-routine trial pool
+Not a separate First Screen chapter — Karen confirmed (2026-08-21) that a
+guest who passes `trial_routines_remaining` without signing up gets the
+same gating as a budget-exhausted free user: access to the "Full Body"
+routine style only, no customization; other options are visible but
+blurred, and tapping any of them → {Screen: paywall place holder}. This
+gating lives on [[Routine Type 2]] (`account_type == 'free'` chapter) —
+apply it to guests past-budget too rather than duplicating it here.
 
 ## Chapter: account_type == pro
 **Not yet dictated.** No Pro-tier First Screen copy has been specified —
@@ -181,6 +215,15 @@ always see the fully-unlocked 3-button variant, but confirm with Karen.
         {"label": "Full Body", "target": "Time"},
         {"label": "Customize", "target": "Second"},
         {"label": "Last routine settings", "target": "Rating"}
+      ]
+    },
+    {
+      "condition": "routines_completed >= 4 && account_type == 'guest'",
+      "title": "Welcome back to your {routines_completed + 1}th routine",
+      "subtitle": null,
+      "buttons": [
+        {"label": "Full Body", "target": "Time"},
+        {"label": "Customize", "target": "Second"}
       ]
     },
     {

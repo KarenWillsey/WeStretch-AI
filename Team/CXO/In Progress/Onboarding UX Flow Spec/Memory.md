@@ -117,12 +117,82 @@ based user-flow to engineering/design:
      consider whether `Routine Type 2` needs the equivalent field, since
      it's the wizard's replacement for returning free users.
 
+10. **Trial/paywall model is routine-count based, not day-based — 7 (guest)
+    + 7 (signup bonus, additive to remainder) = 14-routine typical budget,
+    soft paywall at routine 8, hard paywall at routine 14.**
+    - **Why:** Karen's first dictation pass used day counts, routine
+      counts, and calendar-day paywall triggers interchangeably; asked
+      directly, she confirmed it was always routine-count based and the
+      "day 8"/"day 14" phrasing meant the 8th/14th completed routine.
+    - **How to apply:** Any new copy referencing trial length or paywall
+      timing should use `routines_completed` thresholds (8, 14), never
+      calendar days. See `Storyline.md` "Trial & paywall structure."
+    - Guest-never-signs-up-past-routine-7 is resolved (2026-08-21): same
+      gating as a budget-exhausted free user — Full Body only, other
+      routine types visible but blurred, tap-through → paywall.
+
+11. **The uploaded `Leader board` wireframe (screen #22) is not the real
+    leaderboard and is out of scope.** The actual live leaderboard has no
+    image in this project and Karen will not be altering it — treat any
+    navigation target to "the leaderboard" as a link-out, same as `Sign
+    Up`, never as something to design.
+    - **Why:** Karen clarified this directly after being asked whether
+      #22 was meant to become the real screen's redesign — it isn't, and
+      she's not sure what #22 was for.
+    - **How to apply:** Don't draft UI content for #22 or for the real
+      leaderboard. If #22 turns out to serve some other purpose later,
+      get that from Karen rather than guessing from the placeholder image.
+
+12. **Dictation phase closed 2026-08-21.** Karen confirmed she is not
+    drafting individual books for the remaining un-drafted screens — see
+    `Screen-Inventory.md` "Status as of 2026-08-21" for exactly what has
+    content vs. mockup-only vs. neither.
+
+13. **Presentation-layer Artifact built 2026-08-21: `Onboarding-Flow.html`.**
+    - **How it was built:** hand-authored HTML/CSS/JS template in the
+      scratchpad, with the 4 uploaded wireframe sheets base64-embedded via
+      a one-off Python script (`base64.b64encode` → `data:image/png;base64,...`,
+      injected by string-replace into `__IMG1__`..`__IMG4__` placeholders)
+      rather than passing megabytes of base64 through an edit call. Output
+      written to `Onboarding-Flow.html` in this project folder, then
+      published with the `Artifact` tool.
+    - Mockup-only screens use an approximate crop: each wireframe sheet
+      has N screens laid out left-to-right, so a screen's thumbnail uses
+      CSS `background-size: N*100% 100%` + `background-position` at
+      `index/(N-1)*100%` — visually approximate, not a pixel-precise crop.
+      Good enough for spec-browsing; not a substitute for real assets.
+    - **How to apply:** regenerate rather than hand-edit after any
+      `Screens/*.md` or `Storyline.md` change — re-run the same build
+      approach (template + base64 injection) so the artifact stays in
+      sync with the git-tracked source of truth.
+
+14. **Consistency review 2026-08-21 found and fixed 2 real bugs in the
+    drafted books** (not just missing content — actual contradictions):
+    - `Routine Type 2` locked ALL free users unconditionally, contradicting
+      `First Screen`'s countdown chapters which assume free users keep full
+      access until their trial budget runs out. Fixed: split into two
+      chapters keyed on `trial_routines_remaining` (>0 = full access, <=0 =
+      locked).
+    - `First Screen` had no chapter for guest users past
+      `routines_completed == 3` — an undefined screen state. Fixed: added
+      a chapter for `routines_completed >= 4, guest`, reusing the
+      established 2-button pattern per Karen's own "same 2 buttons as
+      above" rule.
+    - **Why this matters going forward:** when adding any new chapter/
+      condition, check it against every other book that shares the same
+      state variables (`account_type`, `routines_completed`,
+      `trial_routines_remaining`) for contradictions, not just internal
+      completeness.
+
 ## Open items (project)
 
 - Master list of state variables is still growing — see
-  `State-Variables.md` open items (body_filter's full 12-part list,
-  whether pain/stiffness/pace are 3 variables or 1, exact `routine_id`
-  mechanism).
+  `State-Variables.md` open items. **2026-08-21 updates:** pain/stiffness/
+  speed confirmed as 3 separate variables (`pain_rating`,
+  `stiffness_rating`, `speed_rating` — "pace" dropped in favor of "speed");
+  `routine_id` renamed to `sport_id` (mechanism still unconfirmed);
+  `body_filter`'s exact list dropped from tracking here per Karen — her
+  team owns that detail.
 - Full screen inventory (23 screens across 4 uploaded images) is captured
   in `Screen-Inventory.md`, none drafted into `Screens/` yet. Two screens
   (positions 9 and 10, the pose-summary and body-filter sheets in the
