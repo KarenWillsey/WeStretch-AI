@@ -23,7 +23,11 @@ originated in CMO but apply to any deliverable-producing work across roles):
    - **Why:** Karen said (2026-08-21) that "don't worry about the credit limit" on a specific task is never permission to be verbose generally — token efficiency is a constant default, not situational.
    - **How to apply:** Applies to chat responses (short, plain, no filler) and to how work gets done (pick the right tool/skill first time, don't re-read files already in context, don't over-dispatch agents). Not worrying about a budget for one task means "don't stall the work," not "spend freely."
 
-4. **No em dashes anywhere in any company output, full stop.**
+4. **"git commit and push all" means stage and commit everything currently unstaged, without stopping to ask which parts to include.**
+   - **Why:** Karen clarified (2026-08-24) after being asked to scope down a commit that included unrelated pending work — she wants "all" taken literally going forward, not treated as a prompt to filter or confirm scope.
+   - **How to apply:** When Karen says "commit and push all" (or equivalent), stage every unstaged/untracked change across the repo (including submodules — commit and push inside each dirty submodule first, then bump its pointer in the parent) and commit/push without an `AskUserQuestion` scoping check first. Still apply the normal safety checks (no secrets, review `git status` after a broad `git add`) — this rule removes the scope-confirmation step, not the safety review. If something looks genuinely broken (e.g. a bug producing phantom untracked files), it's fine to fix and mention it, but don't hold the commit for a scoping decision.
+
+5. **No em dashes anywhere in any company output, full stop.**
    - **Why:** Company-wide style rule set by Karen at the Manager level (2026-08-20) — applies to every role and every deliverable, not just one project.
    - **How to apply:** Never write an em dash (—) in any generated copy, doc, or code comment across this repo. Use a period, comma, or restructure the sentence instead. Applies even inside text supplied by someone else (e.g. a draft from Kari or another teammate) — strip or replace any em dash found in source material before it ships.
 
