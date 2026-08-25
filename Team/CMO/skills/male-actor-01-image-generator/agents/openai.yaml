@@ -1,0 +1,4 @@
+interface:
+  display_name: "Male Actor 01 Image Generator"
+  short_description: "Generate Male Actor 01 in a requested pose"
+  default_prompt: "Use $male-actor-01-image-generator to create Male Actor 01 in this pose: [describe the pose]."

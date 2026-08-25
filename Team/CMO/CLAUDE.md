@@ -20,6 +20,9 @@ website copy).
 - `Team/CMO/skills/create-4k-crop-master/` — source-image crop mastering.
 - `Team/CMO/skills/female-actor-01-image-generator/` - reference-locked lifestyle
   image generation for Female Actor 01 in a user-supplied pose.
+- `Team/CMO/skills/male-actor-01-image-generator/` - reference-locked lifestyle
+  image generation for Male Actor 01 (outdoor pickleball-court reference) in a
+  user-supplied pose.
 - `.claude/skills/cmo-app-store-image-creation/` — CMO-persona review/guidance
   companion to the app-store-image-creation pipeline; discoverable as a slash
   command (see the root `CLAUDE.md` "Known issue" note on why this lives under
