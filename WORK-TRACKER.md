@@ -81,6 +81,20 @@ needed) — see `USER_TODO.md` for detail, removed from this list per rule 3.
   mobility pages given intent overlap — `Team/CMO/In Progress/App Store
   Specialist/Apple Opportunity Radar/Output/2026-08-23-cpp-plan-5-pages.md`
   — 2026-08-23 (scheduled nightly-action run)
+- [ ] Localize App Store assets (French, Spanish) — French/Spanish
+  translations of the screenshot and app-preview-video copy (the only
+  English App Store asset copy that exists yet); flags that product page
+  metadata (name/subtitle/keywords/description) has no English source to
+  localize, and adds a new prerequisite backlog item to draft it —
+  `Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-08-26-localize-app-store-assets-fr-es.md`
+  — 2026-08-26 (scheduled nightly-action run)
+- [ ] **Reliability gap:** the 2026-08-24 and 2026-08-25 scheduled nightly
+  runs both show a "Starting scheduled nightly-action run" line in
+  `Apple Opportunity Radar/state/last-run.log` but no completion banner, no
+  exit-code line, and no `Output/` file for either date — they appear to
+  have started and then failed or hung silently. Needs investigation
+  (check Windows Task Scheduler history for those two runs) before trusting
+  the schedule unattended again.
 
 ## CMO — Apple Opportunity Radar monthly refresh
 - [ ] **2026-08-21 (manual test run, not scheduled):** Checked 13/13

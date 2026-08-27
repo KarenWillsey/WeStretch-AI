@@ -36,6 +36,25 @@ SKILL.md files were removed from this folder; the App Store image-creation
 work above replaced them as CMO's active output. Restore or rewrite those if
 that generic review/planning function is needed again.
 
+## Website changes
+
+When Karen asks to make changes to the website, the code lives in
+`Team/CMO/Ready/website-repo` (git submodule, Astro app — see its own
+`CLAUDE.md` for that codebase's conventions). Before editing:
+
+1. `cd` into `Team/CMO/Ready/website-repo`.
+2. Start the local dev server so the site can be viewed while working:
+   `npm run dev` (Astro dev server). Check for an already-running dev
+   server/port first — if one's already up, reuse it instead of starting
+   a second one.
+3. Make the change, then verify it in the browser against the running
+   dev server (and check responsive breakpoints per that repo's
+   `CLAUDE.md` — every styling/markup change must work on mobile,
+   tablet, and desktop, not just the window it was eyeballed at).
+
+If `Ready/website-repo/` is empty, run `git submodule update --init
+--recursive` from the repo root first.
+
 ## Project pipeline
 
 - `Review ToDo/` - shared staging area for reviewed CMO image assets awaiting
