@@ -94,6 +94,11 @@ After the candidate passes review, save it to the destination and present it
 for user approval. Never place an unreviewed generation in an App Store
 `Output/` folder.
 
+Once Karen approves the image, move it from `Team/CMO/Review ToDo/` into
+`Team/CMO/Image Catalogue/` (skip this step if the user saved to a different
+destination). Leave rejected or superseded candidates in `Review ToDo/`, or
+delete them — they never move to `Image Catalogue/`.
+
 ## Revisions
 
 Use the previously approved candidate as the edit target. Change only the

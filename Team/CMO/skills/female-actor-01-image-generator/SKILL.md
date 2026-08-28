@@ -1,6 +1,6 @@
 ---
 name: female-actor-01-image-generator
-description: Use when the user says "create image of female actor 01 in pose ...", asks to generate Female Actor 01 in a dynamic or specified pose, or requests another image of Female Actor 01. Generate a photorealistic 3:4 lifestyle image using the bundled identity reference while changing only the requested pose and preserving the actor, wardrobe, room, lighting, and clean App Store source-photo composition. Save reviewed outputs to Team/CMO/Review unless the user specifies another destination.
+description: Use when the user says "create image of female actor 01 in pose ...", asks to generate Female Actor 01 in a dynamic or specified pose, or requests another image of Female Actor 01. Generate a photorealistic 3:4 lifestyle image using the bundled identity reference while changing only the requested pose and preserving the actor, wardrobe, room, lighting, and clean App Store source-photo composition. Save reviewed outputs to Team/CMO/Review ToDo/ unless the user specifies another destination.
 ---
 
 # Female Actor 01 Image Generator
@@ -87,6 +87,11 @@ Regenerate or make a targeted correction before showing it if any check fails:
 After the candidate passes review, save it to the destination and present it
 for user approval. Never place an unreviewed generation in an App Store
 `Output/` folder.
+
+Once Karen approves the image, move it from `Team/CMO/Review ToDo/` into
+`Team/CMO/Image Catalogue/` (skip this step if the user saved to a different
+destination). Leave rejected or superseded candidates in `Review ToDo/`, or
+delete them — they never move to `Image Catalogue/`.
 
 ## Revisions
 

@@ -62,8 +62,16 @@ If `Ready/website-repo/` is empty, run `git submodule update --init
 ## Project pipeline
 
 - `Review ToDo/` - shared staging area for reviewed CMO image assets awaiting
-  Karen's approval. The `female-actor-01-image-generator` skill saves here by
-  default.
+  Karen's approval. `female-actor-01-image-generator`,
+  `male-actor-01-image-generator`, and `westretch-ada-image-gen` all save
+  here by default. Mixed approved/rejected over time — once Karen approves a
+  candidate, move it to `Image Catalogue/` (see below); don't leave approved
+  images sitting in this folder.
+- `Image Catalogue/` - standing archive of **approved** source images only,
+  moved here from `Review ToDo/` once Karen signs off. Not a delivery
+  folder — finished, sized App Store exports still go through their own
+  project `output/` folders. See `Team/CMO/Memory.md` for the full rule and
+  which skills it applies to.
 - `Ideas/App Stores/App Store Keyword Creation/` — not yet started (empty).
 - `In Progress/` — active initiatives, each with its own `CLAUDE.md` + `Memory.md`:
   - `App Store Specialist/` — has its own `CLAUDE.md` orienting across its

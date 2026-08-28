@@ -52,3 +52,10 @@ Create a polished stylized 3D render of Ada, the WeStretch fitness avatar, perfo
 ```
 
 If the user asks for a named pose that could be ambiguous, infer the common fitness/stretch version and generate it. Ask a concise clarification only when the body position, facing direction, or output use would materially change the result.
+
+## Output location
+
+- Save every generated candidate to `Team/CMO/Review ToDo/` by default. Use a different folder only when the user explicitly specifies one.
+- Present it there for Karen's review before treating the task as done.
+- Once Karen approves the image, move it from `Team/CMO/Review ToDo/` into `Team/CMO/Image Catalogue/` (skip this step if the user saved to a different destination). Leave rejected or superseded candidates in `Review ToDo/`, or delete them — they never move to `Image Catalogue/`.
+- Use a descriptive lowercase kebab-case filename based on the pose (e.g. `ada-standing-quad-stretch.png`). Never overwrite an existing file unless explicitly asked — add `-v2`, `-v3`, etc. instead.
