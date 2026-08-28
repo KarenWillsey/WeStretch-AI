@@ -16,6 +16,10 @@ website copy).
   guardrails other CMO skills depend on; load this first.
 - `Team/CMO/skills/ada-stretching-phone-image/` — Ada (brand character) stretching
   phone-image generation.
+- `Team/CMO/skills/westretch-ada-image-gen/` — general-purpose Ada pose image
+  generation (any pose/exercise, isolated character render), reference-locked
+  to the four bundled Ada pose assets. For App Store phone-composited images
+  specifically, use `ada-stretching-phone-image` instead.
 - `Team/CMO/skills/app-store-image-creation/` — App Store screenshot pipeline.
 - `Team/CMO/skills/create-4k-crop-master/` — source-image crop mastering.
 - `Team/CMO/skills/female-actor-01-image-generator/` - reference-locked lifestyle

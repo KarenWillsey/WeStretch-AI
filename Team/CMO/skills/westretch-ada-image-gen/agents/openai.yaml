@@ -1,0 +1,8 @@
+interface:
+  display_name: "WeStretch Ada Image Gen"
+  short_description: "Create consistent Ada pose images"
+  brand_color: "#E95745"
+  default_prompt: "Use $westretch-ada-image-gen to create an image of Ada in a standing quad stretch."
+
+policy:
+  allow_implicit_invocation: true
