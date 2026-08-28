@@ -1,6 +1,48 @@
 # WeStretch Radio Ad — Improved for Read-Aloud Delivery
 
-## Latest version (83 words, ~30 sec at a natural announcer pace)
+## FINAL — chosen version (2026-08-28)
+
+Karen chose Version 2 ("Grab your family") from the group-stretching round below, with
+one word swap: "on-screen avatar" → "animated instructor".
+
+**Stretching is easier when you're not doing it alone. Grab your family, your friends, or your coworkers, and keep each other on track with WeStretch. It's the stretching app built with physiotherapists, personalized to your body, your schedule, and your needs. An animated instructor guides you step by step, and you can track your streaks and challenge each other to see who's stretching more. And on Apple, Family Sharing means one subscription covers your whole household. Download WeStretch today at WeStretch dot CA.** (83 words, ~30 sec)
+
+This is the production-ready script. Everything below is the round that produced it, kept for reference.
+
+## Round that produced the final version — 2 versions on the group-stretching theme (2026-08-28)
+
+Karen supplied a new draft from the radio specialist, built around a different theme
+(stretching with friends/coworkers, not the solo "activities filling your days" opener
+used in earlier rounds) and asked for two distinct 30-second options that keep that
+group theme and add the Apple Family Sharing benefit (one subscription covers the
+whole family). This is a new lineage, not a further edit of the "Golf, yard work..."
+version below, which stays as the most recent version of that separate direction.
+
+**Family Sharing research:** Apple's own language for this is "Family Sharing lets
+you share subscriptions with family members at no extra cost," covering up to six
+people. For a 30-second spot, the plain-spoken version is "one subscription covers
+your whole family/household" — that's the phrasing used in both versions below (see
+Apple's Family Sharing page and developer guidance for the source terminology).
+
+### Version 1 — "Not doing it alone" (76 words, ~29 sec) — not chosen
+
+Sometimes the hardest part of stretching is doing it alone. Join WeStretch with friends or coworkers, and keep each other on track. WeStretch is a stretching app built with physiotherapists, around your body, your schedule, and your needs. An on-screen avatar guides you step by step, and you can challenge your friends to see who's stretching more. Best part, with Apple Family Sharing, one subscription covers your whole family. Download WeStretch today at WeStretch dot CA.
+
+### Version 2 — "Grab your family" (83 words, ~30 sec) — chosen, see FINAL section above for the "animated instructor" wording tweak
+
+Stretching is easier when you're not doing it alone. Grab your family, your friends, or your coworkers, and keep each other on track with WeStretch. It's the stretching app built with physiotherapists, personalized to your body, your schedule, and your needs. An on-screen avatar guides you step by step, and you can track your streaks and challenge each other to see who's stretching more. And on Apple, Family Sharing means one subscription covers your whole household. Download WeStretch today at WeStretch dot CA.
+
+**Why two different angles:** Version 1 keeps the radio specialist's original framing
+("hardest part is the routine/doing it alone") and treats Family Sharing as a closing
+bonus line. Version 2 leads with the group premise as the whole spine of the ad ("grab
+your family, your friends, or your coworkers") so Family Sharing lands as a natural
+extension of the family/group theme rather than a bolted-on fact. Both pass the
+read-aloud checklist: no em dashes, no fixed session length, no corporate words
+("solution"), and no fragmented rhetorical-question opener.
+
+---
+
+## Golf/yard-work lineage — most recent version (83 words, ~30 sec at a natural announcer pace)
 
 Golf, yard work, camping weekends, and time with family. There's a lot in life you want to keep enjoying, so don't let pain and stiffness get in the way.
 
@@ -14,7 +56,7 @@ Download WeStretch today at WeStretch dot CA, and keep doing the things you love
 
 ---
 
-## What changed this round and why
+## What changed this round and why (golf/yard-work lineage, prior round)
 
 Kari (Karen's personal assistant) reviewed the previous version and said it didn't read like a natural conversation. She supplied a rewrite, which Karen adopted:
 
@@ -60,6 +102,10 @@ WeStretch is the stretching app that keeps you ready for it. Just press start, a
 No guesswork. No gym. Just ten minutes, and you're good to go.
 
 Download WeStretch today at WeStretch dot CA — and keep doing the things you love.
+
+### Radio specialist's group-stretching starting draft (2026-08-28, basis for Version 1 and Version 2 above)
+
+Sometimes the hardest thing about a stretching routine is that "routine" part. There are proven benefits to stretching regularly, but if you're not in the habit, it can slip away. Join WeStretch with some friends or coworkers to keep each other on track. WeStretch is the stretching app built with physiotherapists, around your body, your schedule, and your needs. An on-screen avatar guides you step by step. You can track which days you stretch and challenge your friends to see who's stretching more. Download WeStretch today at WeStretch dot CA.
 
 ### Karen's original starting draft
 

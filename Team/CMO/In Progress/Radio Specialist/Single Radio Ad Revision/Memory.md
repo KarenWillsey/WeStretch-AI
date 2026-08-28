@@ -1,4 +1,4 @@
-# Radio Specialist — 5 x 30 Second Radio Copy — Memory
+# Radio Specialist — Single Radio Ad Revision — Memory
 
 ## Feedback: avoid the fragmented rhetorical-question opener (2026-08-20)
 
@@ -30,6 +30,23 @@ of session length, not that the app expects a fixed duration from them.
 
 **How to apply:** replace fixed-duration claims with user-control framing,
 e.g. "you choose how long" instead of "just ten minutes."
+
+## Feedback: "animated instructor" over "on-screen avatar" (2026-08-28, watch for pattern)
+
+Karen's one edit when picking the final group-stretching ad (Version 2, "Grab your
+family") was swapping "on-screen avatar" for "animated instructor" — everything else
+in the copy was accepted as written.
+
+**Why:** unstated, but she changed nothing else, so it's a deliberate wording call
+on this specific term rather than a broader rewrite request.
+
+**How to apply:** treat "animated instructor" as the preferred term in this ad going
+forward. Don't yet assume it replaces "avatar" everywhere. "Avatar" is the term used
+in `Team/CMO/skills/westretch-core/references/strategic-thesis.md` and confirmed
+explicitly fine in the sibling `5 x 30 second radio copy/SKILL.md` ("Avatar is fine,
+it's 2026 and the audience knows what an app avatar is"). If Karen makes the same
+swap again on a future script, that's the signal to update those two files and treat
+"avatar" as deprecated brand-wide, not just here.
 
 ## Feedback: match Kari's natural, spoken phrasing (2026-08-20)
 
