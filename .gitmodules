@@ -1,3 +1,6 @@
 [submodule "Team/CMO/Ready/website-repo"]
 	path = Team/CMO/Ready/website-repo
 	url = git@github.com:WeBananas/westretch-website-astro.git
+[submodule "Team/CXO/In Progress/Westretch-UX"]
+	path = Team/CXO/In Progress/Westretch-UX
+	url = git@github.com:WeBananas/westretch-ux-react.git
