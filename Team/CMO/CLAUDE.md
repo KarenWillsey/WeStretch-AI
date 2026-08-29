@@ -24,6 +24,9 @@ website copy).
 - `Team/CMO/skills/create-4k-crop-master/` — source-image crop mastering.
 - `Team/CMO/skills/female-actor-01-image-generator/` - reference-locked lifestyle
   image generation for Female Actor 01 in a user-supplied pose.
+- `Team/CMO/skills/female-actor-02-image-generator/` - reference-locked lifestyle
+  image generation for Female Actor 02 (outdoor patio/lawn reference) in a
+  user-supplied pose.
 - `Team/CMO/skills/male-actor-01-image-generator/` - reference-locked lifestyle
   image generation for Male Actor 01 (outdoor pickleball-court reference) in a
   user-supplied pose.
@@ -63,8 +66,8 @@ If `Ready/website-repo/` is empty, run `git submodule update --init
 
 - `Review ToDo/` - shared staging area for reviewed CMO image assets awaiting
   Karen's approval. `female-actor-01-image-generator`,
-  `male-actor-01-image-generator`, and `westretch-ada-image-gen` all save
-  here by default. Mixed approved/rejected over time — once Karen approves a
+  `female-actor-02-image-generator`, `male-actor-01-image-generator`, and
+  `westretch-ada-image-gen` all save here by default. Mixed approved/rejected over time — once Karen approves a
   candidate, move it to `Image Catalogue/` (see below); don't leave approved
   images sitting in this folder.
 - `Image Catalogue/` - standing archive of **approved** source images only,
