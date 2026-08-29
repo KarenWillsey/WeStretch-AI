@@ -88,6 +88,13 @@ needed) — see `USER_TODO.md` for detail, removed from this list per rule 3.
   localize, and adds a new prerequisite backlog item to draft it —
   `Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-08-26-localize-app-store-assets-fr-es.md`
   — 2026-08-26 (scheduled nightly-action run)
+- [ ] Native rating prompts implementation plan — StoreKit `requestReview`
+  wired to streak-milestone and Nth-completed-routine moments (never
+  onboarding/paywall/error flows), no custom pre-prompt gate, Apple
+  enforces the 3-prompts/365-day cap silently; needs the native iOS app
+  codebase (not in this repo) to actually implement — `Team/CMO/In
+  Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-08-28-native-rating-prompts-plan.md`
+  — 2026-08-28 (scheduled nightly-action run)
 - [ ] **Reliability gap:** the 2026-08-24 and 2026-08-25 scheduled nightly
   runs both show a "Starting scheduled nightly-action run" line in
   `Apple Opportunity Radar/state/last-run.log` but no completion banner, no
