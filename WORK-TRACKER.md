@@ -159,7 +159,8 @@ legibility. Source files left in place in `Review ToDo/` as the CMO asset
 archive copies.
 
 ## CXO — Westretch-UX
-- [ ] Variable/state testing structure v1 built 2026-08-29 (`src/data/variables.json`, `src/data/testPresets.json`, `chapters` on screens, `TestStatePanel` in the left panel) — only 2 of the ~35 `State-Variables.md` variables are wired in so far (`account_type`, `routines_completed`), and only `welcome-guest/free/pro` have example chapters (routines 1–4). Grow the dictionary + chapters as Karen builds out more of `KarensPlayground.json`, per the workflow in that project's `Memory.md` — `Team/CXO/In Progress/Westretch-UX` — flagged 2026-08-29
+- [ ] Variable/state testing structure v1 built 2026-08-29 (`src/data/variables.json`, `src/data/testPresets.json`, `chapters` on screens, `TestStatePanel` in the left panel) — only 3 of the ~35 `State-Variables.md` variables are wired in so far (`account_type`, `routines_completed`, `first_name`), and only `welcome-guest/free/pro` have example chapters. Grow the dictionary + chapters as Karen builds out more of `KarensPlayground.json`, per the workflow in that project's `Memory.md` — `Team/CXO/In Progress/Westretch-UX` — flagged 2026-08-29
+- [ ] Unity migration handoff doc created for Jacque (`Team/CXO/In Progress/Westretch-UX/UNITY-HANDOFF.md`) explaining the `chapters`/`when` matching logic. **Open decision needed before migration starts:** this prototype's JSON shape does not match `DefaultRemoteConfig.v2.json`'s existing production shape — Karen and Jacque need to decide whether Jacque maps this content into the existing production shape, or the production config adopts this prototype's `chapters`/`when` pattern instead — flagged 2026-08-29
 
 ## CXO — Onboarding UX Flow Spec
 - [ ] Karen to review proposed drip sequence (Claude's draft) — `Team/CXO/In Progress/Onboarding UX Flow Spec/Storyline.md` — 2026-08-21
