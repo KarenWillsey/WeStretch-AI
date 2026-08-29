@@ -34,13 +34,12 @@ this file.
    re-run in that session — don't wait for her to notice.
 
 ## CMO — website-repo
-Sits in `Ready/` but has 5 open items in its own tracker — folder location
+Sits in `Ready/` but has 4 open items in its own tracker — folder location
 may need revisiting (Ready usually means done, this isn't). Full detail:
 `Team/CMO/Ready/website-repo/USER_TODO.md`.
 - [ ] Meta Conversions API access token needs a secure home (not this repo)
   — no backend exists yet to hold it; **recommend rotating it**, since
   Karen shared it in chat rather than a secrets vault — flagged 2026-08-21
-- [ ] Image self-hosting — flagged priority, hurts Lighthouse score
 - [ ] DNS/domain cutover plan + access — Karen confirmed 2026-08-21 this is
   easy and ready whenever needed; window still TBD
 - [ ] Remove dev-site noindex block before going live — intentionally
@@ -51,7 +50,9 @@ Resolved 2026-08-21 (contact form → keep mailto:, future: swap to a
 WeStretch webhook API once Karen builds it; analytics/GA4/Meta Pixel IDs
 provided and wired; Stripe links confirmed live; `/signup/` now redirects
 home; Sign In URL confirmed correct; social links confirmed; no video
-needed) — see `USER_TODO.md` for detail, removed from this list per rule 3.
+needed) and 2026-08-28 (image self-hosting — all images self-hosted under
+`public/images/`, duplicates deduped) — see `USER_TODO.md` for detail,
+removed from this list per rule 3.
 
 ## CMO — App Store Specialist pending Manager review
 - [ ] Small Business Program enrollment checklist — verifies WeStretch is
@@ -156,6 +157,9 @@ instruction), resized ~7% to cover wide desktop viewports without a seam.
 Text-shadow added to the overlaid hero text (`src/pages/index.astro`) for
 legibility. Source files left in place in `Review ToDo/` as the CMO asset
 archive copies.
+
+## CXO — Westretch-UX
+- [ ] Variable/state testing structure v1 built 2026-08-29 (`src/data/variables.json`, `src/data/testPresets.json`, `chapters` on screens, `TestStatePanel` in the left panel) — only 2 of the ~35 `State-Variables.md` variables are wired in so far (`account_type`, `routines_completed`), and only `welcome-guest/free/pro` have example chapters (routines 1–4). Grow the dictionary + chapters as Karen builds out more of `KarensPlayground.json`, per the workflow in that project's `Memory.md` — `Team/CXO/In Progress/Westretch-UX` — flagged 2026-08-29
 
 ## CXO — Onboarding UX Flow Spec
 - [ ] Karen to review proposed drip sequence (Claude's draft) — `Team/CXO/In Progress/Onboarding UX Flow Spec/Storyline.md` — 2026-08-21
