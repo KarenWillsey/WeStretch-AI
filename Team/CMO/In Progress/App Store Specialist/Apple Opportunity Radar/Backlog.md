@@ -12,7 +12,6 @@ Seeded 2026-08-21 from `Knowledge Base/apple-marketing-opportunities.md`
 supersedes the earlier generic seed list). Order preserved from that list;
 re-prioritize here if the order needs to change.
 
-- [ ] Launch an App Store In-App Event fitness challenge (e.g. "7-Day Mobility Challenge").
 - [ ] Configure introductory, promotional, and win-back subscription offers.
 - [ ] Verify accessibility, account deletion, privacy disclosures, and subscription-clarity requirements are met.
 - [ ] Draft an Apple Featuring Nomination for a meaningful upcoming update or seasonal campaign.
@@ -38,3 +37,4 @@ gap while working the localization item below):
 - [x] Create Custom Product Pages for back pain, stiffness, mobility, golf, and pickleball. — 2026-08-23 (scheduled run) — plan: [Output/2026-08-23-cpp-plan-5-pages.md](Output/2026-08-23-cpp-plan-5-pages.md)
 - [x] Localize App Store assets for English, French, and Spanish. — 2026-08-26 (scheduled run) — scoped to existing screenshot/video copy only (product page metadata doesn't exist in English yet — see new backlog item above): [Output/2026-08-26-localize-app-store-assets-fr-es.md](Output/2026-08-26-localize-app-store-assets-fr-es.md)
 - [x] Wire up native rating prompts after positive moments (completed routines, streak milestones) — respecting the 3-prompts/365-day cap. — 2026-08-28 (scheduled run) — implementation plan: [Output/2026-08-28-native-rating-prompts-plan.md](Output/2026-08-28-native-rating-prompts-plan.md)
+- [x] Launch an App Store In-App Event fitness challenge (e.g. "7-Day Mobility Challenge"). — 2026-08-29 (scheduled run) — draft: [Output/2026-08-29-in-app-event-7-day-mobility-challenge.md](Output/2026-08-29-in-app-event-7-day-mobility-challenge.md)

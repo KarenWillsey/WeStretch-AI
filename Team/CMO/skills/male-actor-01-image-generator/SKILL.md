@@ -85,8 +85,11 @@ Regenerate or make a targeted correction before showing it if any check fails:
 - Honor the user's requested file format. If none is specified, use PNG.
 - Use a descriptive lowercase kebab-case filename based on the pose, setting,
   and orientation when relevant.
-- Never overwrite an existing file unless the user explicitly requests it.
-  Add `-v2`, `-v3`, and so on when a filename already exists.
+- Never overwrite an existing file by default. Add `-v2`, `-v3`, and so on
+  when a filename already exists.
+- Treat `Team/CMO/Image Catalogue/` as append-only. Never overwrite or replace
+  a catalogue image, even when a revision is requested. If a destination name
+  already exists there, preserve it and use the next available version suffix.
 - Do not leave a project-bound final only in the image tool's generated-images
   directory.
 
@@ -102,5 +105,7 @@ delete them — they never move to `Image Catalogue/`.
 ## Revisions
 
 Use the previously approved candidate as the edit target. Change only the
-newly requested pose detail and preserve every unmentioned element. Re-run the
-same review before presenting the revision.
+newly requested pose detail and preserve every unmentioned element. Save the
+revision outside `Image Catalogue/`, re-run the same review, and present it for
+approval. Once approved, add it to the catalogue as a new image with a unique
+filename; never replace the original catalogue file.
