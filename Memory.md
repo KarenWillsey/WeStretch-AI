@@ -39,6 +39,10 @@ originated in CMO but apply to any deliverable-producing work across roles):
    - **Why:** Karen said (2026-08-29, `guest-welcome-onboarding-copy.csv`) that commas I added around `{first_name}` insertions ("Sign in, {first_name}, and...") were "overkill." Casual/punchy in-app copy reads better without them, even where formal grammar would normally call for one.
    - **How to apply:** Default to no comma around a name or short inserted token unless dropping it genuinely creates a misread (e.g. two adjacent tokens running together, like `{routines_completed}` directly followed by `{first_name}`). Applies to any title/subtitle/push-notification-style copy across roles, not just this file.
 
+8. **Never leave working/scratch copies committed or lying around in the repo. Any automation or session that generates temporary data must clean up after itself before finishing.**
+   - **Why:** Karen found three raw Jira API dump files (`assigned_tickets_data.json`, `jira_brief_output.json`, `mentions_data.json`) sitting untracked at the repo root, left behind by a `daily-brief-jira` run (2026-08-31). They were intermediate working data for building the daily brief, not a deliverable, and should have been deleted once the brief was produced.
+   - **How to apply:** If a task needs a scratch/intermediate file at all, write it to the session's actual scratchpad directory (never the repo), and if it must briefly touch the repo for some tool-specific reason, delete it before the task ends. Before finishing any task, run `git status` and treat any unexpected untracked file as a cleanup item, not something to leave for later or silently commit. This applies to every role and every automation (scheduled or interactive), not just Jira. See `.claude/skills/daily-brief-jira/SKILL.md` for the specific fix applied to the skill that caused this.
+
 ## Repo restructure (project)
 
 On 2026-08-17, the repo moved from one root `CLAUDE.md`/`Memory.md` to a

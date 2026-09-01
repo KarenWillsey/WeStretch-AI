@@ -12,7 +12,6 @@ Seeded 2026-08-21 from `Knowledge Base/apple-marketing-opportunities.md`
 supersedes the earlier generic seed list). Order preserved from that list;
 re-prioritize here if the order needs to change.
 
-- [ ] Verify accessibility, account deletion, privacy disclosures, and subscription-clarity requirements are met.
 - [ ] Draft an Apple Featuring Nomination for a meaningful upcoming update or seasonal campaign.
 
 Added 2026-08-21 by the first live monthly-refresh run (found via a real
@@ -38,3 +37,4 @@ gap while working the localization item below):
 - [x] Wire up native rating prompts after positive moments (completed routines, streak milestones) — respecting the 3-prompts/365-day cap. — 2026-08-28 (scheduled run) — implementation plan: [Output/2026-08-28-native-rating-prompts-plan.md](Output/2026-08-28-native-rating-prompts-plan.md)
 - [x] Launch an App Store In-App Event fitness challenge (e.g. "7-Day Mobility Challenge"). — 2026-08-29 (scheduled run) — draft: [Output/2026-08-29-in-app-event-7-day-mobility-challenge.md](Output/2026-08-29-in-app-event-7-day-mobility-challenge.md)
 - [x] Configure introductory, promotional, and win-back subscription offers. — 2026-08-30 (scheduled run) — checklist: [Output/2026-08-30-subscription-offers-config-checklist.md](Output/2026-08-30-subscription-offers-config-checklist.md)
+- [x] Verify accessibility, account deletion, privacy disclosures, and subscription-clarity requirements are met. — 2026-08-31 (scheduled run) — checklist: [Output/2026-08-31-accessibility-privacy-subscription-clarity-checklist.md](Output/2026-08-31-accessibility-privacy-subscription-clarity-checklist.md)

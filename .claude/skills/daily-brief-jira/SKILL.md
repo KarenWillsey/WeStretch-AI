@@ -57,6 +57,18 @@ Karen's ask, to keep this from becoming noise: don't re-surface a mention foreve
 
 - Any individual call failure: include a `COULDN'T CHECK: [what]` line with the real error, and don't update `jira-mentions-state.json` this run.
 
+## Working data
+
+Keep API responses and intermediate results in-memory and hand them to
+`daily-brief-compose` directly per the output contract below — don't write
+them to files in the repo. If a working file is genuinely unavoidable
+(e.g. as a scratch buffer while paginating), write it to the session's
+actual scratchpad directory, never to the repo, and delete it before this
+skill finishes either way. **2026-08-31: a run left three raw API dump
+files (`assigned_tickets_data.json`, `jira_brief_output.json`,
+`mentions_data.json`) sitting at the repo root** — this section exists so
+it doesn't happen again. See root `Memory.md` item 8.
+
 ## Output contract (consumed by `daily-brief-compose`)
 
 ```
