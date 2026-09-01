@@ -27,6 +27,15 @@ gap while working the localization item below):
 
 - [ ] Draft English App Store product page metadata (name ≤30 chars, subtitle ≤30 chars, keyword field ≤100 chars, promotional text ≤170 chars, long-form description) — prerequisite for localizing product page metadata into French and Spanish.
 
+Added 2026-09-01 by the monthly-refresh run (found via real
+developer.apple.com fetches — see Knowledge Base changelog):
+
+- [ ] Configure the in-app purchase/subscription showcase on the product page (up to 20 items across IAPs + subscriptions, custom order, 35-char name / 55-char description each) — new Apple feature, not yet used.
+- [ ] Confirm whether WeStretch's app supports Dark Mode, and if so add at least one Dark-Mode screenshot to the product page.
+- [ ] Fold privacy-manifest and SDK-signature verification into the existing ad/analytics SDK audit item — Apple is expanding software-supply-chain integrity requirements for third-party SDKs.
+- [ ] Submit the drafted "7-Day Mobility Challenge" In-App Event (see Output/2026-08-29-in-app-event-7-day-mobility-challenge.md) for an Apple Featuring Nomination — In-App Events are now an explicitly nominate-able, featurable content type.
+- [ ] Evaluate offering a monthly subscription with a 12-month commitment as an additional plan tier alongside the existing Monthly/Annual options, and confirm whether "streamlined purchasing" (completing a purchase from outside the app) should stay on or be turned off.
+
 ## Done
 
 - [x] Confirm enrollment in Apple's Small Business Program (15% commission rate). — 2026-08-21 (manual test run) — checklist: [Output/2026-08-21-small-business-program-checklist.md](Output/2026-08-21-small-business-program-checklist.md)

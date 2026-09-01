@@ -14,6 +14,21 @@ fetches against, not a reason to switch to manual updates.
 
 ## Changelog
 
+- **2026-09-01 (monthly refresh)** — Second live monthly-refresh run (first
+  run via the actual scheduled task, not a manual test). Fetched all 13
+  confirmed source URLs successfully (0 failures). Found real, actionable
+  changes in 10 of 16 sections. Updated: App Store Listing, Screenshots and
+  Videos, Ratings and Reviews, App Store A/B Testing, Subscriptions and Free
+  Trials, Analytics and Measurement, Revenue and Apple Commissions, Privacy
+  and Customer Accounts, App Review and Releases, Getting Featured by Apple.
+  No changes to: Custom Product Pages, App Store Events, App Store
+  A/B Testing baseline mechanics beyond the additions below, Accessibility,
+  Health and Fitness Claims, Metadata rejection triggers table. 5 new
+  backlog items added — see `../Backlog.md`. WebSearch pass for
+  still-unconfirmed candidates found a solid Apple Search Ads canonical page
+  (`developer.apple.com/app-store/promote/`) — flagged in
+  `../Implementation Spec.md` for human sanity-check rather than auto-added.
+  Full run detail in `../state/monthly-refresh-log.json`.
 - **2026-08-21 (live refresh)** — First live monthly-refresh run (manual
   test, triggered in session rather than by the scheduled task). Fetched
   all 13 confirmed source URLs successfully (0 failures). Found real,
@@ -55,6 +70,12 @@ fetches against, not a reason to switch to manual updates.
 - Localize metadata for English, French, and Spanish.
 - Keep screenshots, descriptions, and claims accurate and current.
 - Write meaningful "What's New" release notes.
+- **[2026-09-01]** In-app purchases and subscriptions can be showcased
+  directly on the product page: up to 20 total items across both sections
+  combined, with a customizable display order. Each showcased item gets its
+  own display name (max 35 characters) and description (max 55 characters).
+  Showcased items are also discoverable in App Store search and can be
+  featured on the Today/Games/Apps tabs, routing back to the product page.
 
 Source: https://developer.apple.com/app-store/product-page/
 
@@ -72,6 +93,8 @@ Source: https://developer.apple.com/app-store/product-page/
 - Make videos effective without sound because previews autoplay muted.
 - Show personalized routine creation within the opening seconds.
 - Test Ada, lifestyle photography, and mixed visuals.
+- **[2026-09-01]** If the app supports Dark Mode, include at least one
+  screenshot showing what the experience looks like in Dark Mode.
 
 Source: https://developer.apple.com/app-store/product-page/
 
@@ -92,6 +115,20 @@ Source: https://developer.apple.com/app-store/product-page/
   in marketing materials requires the reviewer's permission first.
 - **[2026-08-21]** Report offensive/spam reviews via "Report a Concern" in
   App Store Connect — do not use a public reply for this.
+- **[2026-09-01]** Since iOS 18.4/iPadOS 18.4, Apple shows AI-generated
+  "review summaries" on product pages — short paragraphs compiling review
+  highlights. Users can tap-and-hold a summary to report a concern.
+  Currently English-only, US-only, with planned expansion — nothing for
+  WeStretch to configure, but worth knowing it's live when reviewing how
+  the product page presents.
+- **[2026-09-01]** The displayed summary rating is specific to each
+  territory and can be reset per-territory when releasing a new version
+  (not just globally).
+- **[2026-09-01]** App Store Connect can now send an email alert when a user
+  edits a review that WeStretch previously replied to.
+- **[2026-09-01]** Direct reviewers reporting download errors or billing
+  issues to Apple Support rather than trying to resolve those in a public
+  reply.
 
 Source: https://developer.apple.com/app-store/ratings-and-reviews/
 
@@ -134,6 +171,19 @@ Source: https://developer.apple.com/app-store/custom-product-pages/
 - Monitor results in App Store Connect.
 - Apply the winning version to the default product page.
 - Continue testing regularly.
+- **[2026-09-01]** Only one test can be running at a time.
+- **[2026-09-01]** Tests run for up to 90 days (or until manually stopped),
+  and results need to reach at least 90% confidence before a treatment
+  should be applied.
+- **[2026-09-01]** Traffic allocated to a test is split across its
+  treatments, not given to each individually — e.g. 40% traffic allocated
+  to a 2-treatment test means each treatment gets 20%.
+- **[2026-09-01]** If testing alternate app icons, all icon variants must be
+  included in the published app's binary ahead of time.
+- **[2026-09-01]** Tests that don't include alternate icons can be submitted
+  for review independently of a new app version; icon-variant tests cannot.
+- **[2026-09-01]** Localized treatments may take longer to reach a
+  significant result. The comparison baseline can be changed at any time.
 
 Source: https://developer.apple.com/app-store/product-page-optimization/
 
@@ -187,6 +237,17 @@ Source: https://developer.apple.com/app-store/in-app-events/
 - Consider Family Sharing when appropriate.
 - Family Sharing can include up to five additional family members.
 - Enabling Family Sharing for an applicable subscription cannot be undone.
+- **[2026-09-01]** Apple now supports monthly subscriptions with a 12-month
+  commitment as an additional plan structure — worth evaluating alongside
+  WeStretch's existing Monthly/Annual plans.
+- **[2026-09-01]** "Streamlined purchasing" lets a customer complete a
+  purchase from outside the app (this can be turned off if unwanted) — worth
+  confirming whether WeStretch wants this on or off.
+- **[2026-09-01]** Win-back offer discovery now spans more surfaces: the App
+  Store product page, editorial/recommendation placements (Today/Games/Apps
+  tabs), an automatic in-app offer sheet, the customer's Apple Account
+  Subscriptions settings, and direct links — with a priority ranking when
+  more than one offer is eligible.
 
 Source: https://developer.apple.com/app-store/subscriptions/
 
@@ -238,6 +299,12 @@ Source: https://developer.apple.com/app-store/subscriptions/
   continuous year (vs. the general 85%-proceeds/15%-commission rule
   elsewhere) — worth checking if this changes WeStretch's actual EU
   economics, if EU is a meaningful market.
+- **[2026-09-01]** New Small Business Program member benefit: developers
+  with fewer than 2 million first-time App Store downloads can use Apple
+  Foundation Models on Private Cloud Compute at no cloud API cost (subject
+  to obtaining the PCC entitlement). CTO-adjacent — relevant only if
+  WeStretch is using or planning on-device/PCC AI features, not something
+  this project builds itself.
 
 Source: https://developer.apple.com/app-store/small-business-program/
 
@@ -260,6 +327,14 @@ Source: https://developer.apple.com/app-store/small-business-program/
 - Compare subscriber retention by cohort.
 - Separate new users, returning users, current subscribers, and former subscribers.
 - Review results after screenshot updates, pricing changes, and major releases.
+- **[2026-09-01]** App Store Connect now has a dedicated Offers dashboard
+  (introductory/promotional/win-back offers and offer codes performance)
+  and a Subscription Retention view (percentage renewed for consecutive
+  periods, filterable by acquisition source). Trackable subscription events
+  now explicitly include activations, conversions to standard price,
+  reactivations, and renewals. Results can also be filtered/grouped by
+  proceeds rate (85% vs. 70%) to see which subscriber cohort each metric
+  belongs to.
 
 Source: https://developer.apple.com/app-store/subscriptions/
 
@@ -331,10 +406,25 @@ Source: https://developer.apple.com/videos/play/tech-talks/111433/
   ATT permission for analytics *across WeStretch's own apps only* — it
   cannot be combined with other data to track across third-party apps or
   websites.
+- **[2026-09-01]** "Tracking" is defined broadly enough to catch unintentional
+  cases: using a third-party SDK that combines WeStretch's data with other
+  companies' data for ad targeting/measurement counts as tracking requiring
+  ATT permission *even if WeStretch itself doesn't use it that way* — the
+  SDK's behavior is what matters. Tracking inside an in-app webview requires
+  the same ATT prompt as native tracking would.
+- **[2026-09-01]** Apple is expanding software-supply-chain integrity
+  requirements: third-party SDKs increasingly need signatures and privacy
+  manifests. Worth folding into the existing ad/analytics SDK audit backlog
+  item (device-fingerprinting) since it's the same audit surface.
+- **[2026-09-01]** Developers can offer a separate consent control for local
+  privacy-law compliance (e.g. GDPR, ePrivacy) distinct from the ATT prompt.
 - Provide in-app account deletion if users can create accounts.
 - Allow account deletion regardless of the customer's location.
 - Explain that account deletion does not automatically cancel an Apple subscription.
 - Direct users to subscription management before account deletion when appropriate.
+- **[2026-09-01]** Account deletion can also offer a "deferred" option —
+  schedule deletion to align with subscription expiration — as long as an
+  immediate-deletion option is also available.
 
 Sources:
 - https://developer.apple.com/app-store/user-privacy-and-data-use/
@@ -383,6 +473,15 @@ Source: https://developer.apple.com/app-store/review/guidelines/
   or seasonal campaign is at risk from normal review timing.
 - **[2026-08-21]** An appeal can be submitted if WeStretch believes a
   rejection was made in error or unfairly.
+- **[2026-09-01]** If additional issues turn up while a bug-fix update is
+  under review, and none involve legal/safety concerns, Apple now lets the
+  developer opt to resolve them in the next submission instead of blocking
+  the current one — reply to the offer message in App Store Connect to
+  accept.
+- **[2026-09-01]** 30-minute Webex appointments with App Review are
+  available to discuss guidelines/best practices directly — worth using
+  ahead of a first Featuring Nomination or a submission with unusual
+  subscription/health-claim framing.
 - **[2026-08-21]** Metadata rejection triggers worth keeping front-of-mind
   when drafting App Store copy/screenshots/events (App Review Guideline
   §2.3, consolidated from the Health and Fitness Claims source below):
@@ -423,6 +522,19 @@ Sources:
   specifically before nominating): user experience, UI design, innovation,
   uniqueness vs. competitors, accessibility, localization quality, and
   App Store product page quality (screenshots/previews/description/ratings).
+- **[2026-09-01]** In-App Events are now explicitly one of the nominate-able
+  content types (alongside new apps, significant updates, and "great
+  stories") and can themselves be featured on Today/Games/Apps tabs, in
+  search results, and on product pages — directly relevant now that
+  WeStretch has a drafted In-App Event ("7-Day Mobility Challenge," see
+  `../Output/2026-08-29-in-app-event-7-day-mobility-challenge.md`).
+- **[2026-09-01]** Other featuring mechanisms worth knowing about beyond a
+  Featuring Nomination: App/Game of the Day (Apple's own daily pick),
+  themed Lists on the Today tab, Personalized recommendations (algorithmic,
+  not nominated), and the Editors' Choice badge (a distinct curated award
+  with its own badge shown on the product page).
+- **[2026-09-01]** Eligibility isn't restricted by app category — no need to
+  read prior guidance as fitness-specific.
 
 Source: https://developer.apple.com/app-store/getting-featured/
 

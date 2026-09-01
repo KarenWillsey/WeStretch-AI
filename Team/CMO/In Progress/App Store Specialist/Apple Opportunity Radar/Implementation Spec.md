@@ -127,6 +127,15 @@ refresh skill auto-adding them:
   not a marketing/opportunity overview. Needs a human call on whether to
   track an off-domain Apple property here.
 
+**Update from 2026-09-01 monthly refresh's WebSearch pass** — found a
+better candidate for Apple Search Ads than the 2026-08-21 pass did:
+- **Apple Search Ads** → `https://developer.apple.com/app-store/promote/`
+  ("Promoting your apps" — covers Apple Ads placement across the Today tab,
+  Search tab, search results, and product page bottom; on-domain, unlike
+  `searchads.apple.com`). A human should sanity-check and promote this to
+  "Confirmed" (own Knowledge Base section) rather than the refresh skill
+  auto-adding it, per the standing rule above.
+
 ### 2. Monthly refresh workflow
 
 Runs once a month (proposed: 1st of month, morning).
