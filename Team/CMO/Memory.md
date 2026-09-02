@@ -24,3 +24,30 @@ keep their own project-specific staging (`waiting for approval/`, `output/`,
 `assets/approved-exemplars/`) — those pipelines produce finished, sized App
 Store deliverables, not reusable source images, and Karen confirmed
 (2026-08-28) not to fold them into this shared flow.
+
+## website-repo deploy command (set 2026-09-01, Karen)
+
+When Karen says "deploy to Firebase" / "push to Firebase" for
+`Team/CMO/Ready/website-repo` (the Astro site, submodule
+`westretch-website-astro`), run from inside that folder:
+
+```
+npm run build
+firebase deploy --only hosting:website-dev --project westretch-prod
+```
+
+or equivalently `./build-deploy-hosting.sh`. This publishes to the dev
+site at https://westretch-website-dev.firebaseapp.com/ (also reachable at
+https://westretch-website-dev.web.app). Firebase CLI is already installed
+and logged in as karen.westretch@gmail.com on Karen's machine — no login
+step needed there. `.firebaserc` targets Firebase project `westretch-prod`,
+hosting target `website-dev` → site `westretch-website-dev`.
+
+**Why:** Karen doesn't know the Firebase workflow herself and wants this
+run automatically on request rather than re-explained each time.
+
+**How to apply:** Any request like "deploy/push the website/site to
+Firebase" with no other target named should be read as this command
+against `website-repo`. If a different Firebase target or site is ever
+meant, confirm before running — this default is specific to
+`website-dev`/`westretch-prod`.
