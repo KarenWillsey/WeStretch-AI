@@ -2,7 +2,7 @@
 
 Approved CMO source images live here, flat (no subfolders needed unless the
 catalogue grows large enough to warrant them). This is a source-image
-archive, not a delivery folder — finished, sized App Store exports still go
+archive, not a delivery folder, finished, sized App Store exports still go
 through their own project `output/` folders (see `ada-stretching-phone-image`
 and `app-store-image-creation`).
 
@@ -15,7 +15,7 @@ and `app-store-image-creation`).
 3. On approval, move the file from `Review ToDo/` into this folder. It stays
    here as reusable reference/source material for future generations and
    compositing.
-4. If not approved, it does not move here — either discard it or keep
+4. If not approved, it does not move here, either discard it or keep
    iterating in `Review ToDo/`.
 
 Keep filenames descriptive (character/subject, pose, setting) since this

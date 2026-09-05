@@ -1,4 +1,4 @@
-WESTRETCH LOGO PLACEMENT SPECIFICATION — APPROVED PICKLEBALL DESIGN
+WESTRETCH LOGO PLACEMENT SPECIFICATION: APPROVED PICKLEBALL DESIGN
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 AUTHORITATIVE FILES
@@ -30,7 +30,7 @@ Before placing or exporting the logo, verify:
    (Asset corrected 2026-08-07: red recolored from off-brand #F05556 to brand
    Fire Red #FC4850 per Knowledge Base/Brand Guildeline.pdf; white
    is brand WHITE #FFFFFF. Previous asset kept as
-   Retired_02_WeStretch_Logo_OffBrand_Red_F05556.png — never use it.)
+   Retired_02_WeStretch_Logo_OffBrand_Red_F05556.png; never use it.)
 3. Transparency is preserved.
 4. Colours are unchanged.
 5. Aspect ratio is preserved.
@@ -52,7 +52,7 @@ PLACEMENT
 Reference canvas: 853 × 1844 px (approved pickleball phone design).
 All percentages are derived from this reference.
 
-Measure from visible logo artwork — NOT from transparent PNG bounds.
+Measure from visible logo artwork: NOT from transparent PNG bounds.
 
 Visible logo top edge:          4.93% of canvas height
 Visible logo horizontal centre: 49.53% of canvas width
@@ -93,7 +93,7 @@ Preserve this separation on every output.
 QUALITY CHECK
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 The logo must be visually identical across every variation and every output size.
-Check visible artwork bounds — not transparent PNG canvas bounds.
+Check visible artwork bounds: not transparent PNG canvas bounds.
 
 Confirm:
 - Logo file is original (not regenerated or approximated)

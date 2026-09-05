@@ -6,7 +6,7 @@ description: >
   (new stories on existing topics are fine), then applies Chase strategy, Expert copy,
   and Marg grading before saving a clean studio-ready markdown file. Use whenever the user
   asks for radio ads, radio scripts, 30-second spots, radio copy, new radio ideas, or wants
-  to rotate WeStretch radio creative. Always depends on westretch-core — invoke it first.
+  to rotate WeStretch radio creative. Always depends on westretch-core; invoke it first.
   Even if the user just says "write more radio ads" or "give me some radio scripts," use this skill.
   For revising or polishing a single existing script instead of generating a fresh batch,
   use the sibling radio-ad-revise skill instead.
@@ -18,7 +18,7 @@ Produces a batch of 5 announcer-ready 30-second radio ad scripts, each on a dist
 each graded to an A average before delivery. Saves a clean studio-ready markdown file to the
 Output folder.
 
-## Step 0 — Load westretch-core first
+## Step 0; Load westretch-core first
 
 Invoke the westretch-core skill before writing a single word of copy. It holds the personas,
 the Strategic Thesis, the ICP, and the honesty guardrail that every piece of WeStretch
@@ -32,15 +32,15 @@ Key things to carry forward from westretch-core into this task:
 - **What WeStretch is NOT**: Not yoga, not a stretch library, not a timer list.
 - **Real authority anchor**: Licensed physiotherapists designed the stretch library. Use it.
 
-## Step 1 — Scan the Output folder for existing radio ad angles
+## Step 1; Scan the Output folder for existing radio ad angles
 
 Read the contents of this project's own Output folder:
 `C:\Users\karen\Documents\WeStretch AI\WeStretch-AI\Team\CMO\In Progress\Radio Specialist\5 x 30 second radio copy\Output\`
 
 Find any markdown files that contain radio ad scripts (look for files named
 `WeStretch-Radio-Ads-*.md` or similar). For each file found, extract the topic and specific
-angle of each ad (e.g., "travel — post-flight stiffness on planes and buses",
-"morning — waking up with a stiff back at 7 AM", "desk — afternoon neck and shoulder pain").
+angle of each ad (e.g., "travel; post-flight stiffness on planes and buses",
+"morning (waking up with a stiff back at 7 AM", "desk) afternoon neck and shoulder pain").
 
 Build a "covered angles" list. The rule is:
 - Do not repeat the exact same story angle.
@@ -50,10 +50,10 @@ Build a "covered angles" list. The rule is:
 
 If no prior radio ad files exist, the covered-angles list is empty.
 
-## Step 2 — Chase selects 5 fresh topics and designs the strategy
+## Step 2; Chase selects 5 fresh topics and designs the strategy
 
 For each of the 5 ads, Chase identifies:
-- The **scene or moment** (specific, visual, relatable for the ICP — not vague)
+- The **scene or moment** (specific, visual, relatable for the ICP, not vague)
 - **FATE mapping**: Focus (the moment), Authority (physio-informed), Tribe (who they are),
   Emotion (what they feel right then)
 - The **identity the ad builds** ("I'm someone who keeps moving no matter what")
@@ -61,7 +61,7 @@ For each of the 5 ads, Chase identifies:
 - Whether to use **self-generated proof** (Chase's preferred technique when outcomes can't
   be honestly promised: invite them to try it and notice for themselves)
 
-**Topic pool** (not exhaustive — Chase may add others that fit the ICP):
+**Topic pool** (not exhaustive; Chase may add others that fit the ICP):
 - Morning stiffness: waking up tight, hips that won't cooperate, back that needs coaxing
 - Travel: adventure hiking soreness, cruise ship stiffness, long-haul flight aftermath,
   road trip with grandkids, international travel jet lag
@@ -78,11 +78,11 @@ For each of the 5 ads, Chase identifies:
 
 Choose the 5 that:
 1. Are NOT on the covered-angles list (or bring a genuinely new story to a covered topic)
-2. Collectively span different times of day, activities, and life moments — so the rotation
+2. Collectively span different times of day, activities, and life moments, so the rotation
    feels varied, not repetitive
 3. Are most likely to resonate with the ICP (50+ active adults) or strong adjacent audiences
 
-## Step 3 — Expert writes the copy
+## Step 3; Expert writes the copy
 
 For each of the 5 scripts, Expert writes one clean radio ad following these rules.
 
@@ -101,12 +101,12 @@ this lands in 30 seconds. Count words. Cut ruthlessly. Every word earns its plac
    ("try it today and notice the difference for yourself") or a concrete access
    statement ("if you have your phone, you have your program"). Never a promised
    outcome, and never a prescribed time commitment (no "ten minutes a day" style
-   claims — sessions are user-controlled, not fixed-length; see this project's
+   claims; sessions are user-controlled, not fixed-length; see this project's
    `Memory.md`).
 4. **CTA:** "Download WeStretch today at WeStretch dot CA."
 
 **House style (non-negotiable):**
-- No em dashes, anywhere — company-wide rule (see the repo root `Memory.md`). Use commas,
+- No em dashes, anywhere, company-wide rule (see the repo root `Memory.md`). Use commas,
   periods, colons, or parentheses instead.
 - No outcome promises without proof. Do not write "reduce your pain," "improve your balance,"
   "feel better," or "change your life" as guaranteed results. Prove the process; let the
@@ -115,7 +115,7 @@ this lands in 30 seconds. Count words. Cut ruthlessly. Every word earns its plac
   "before your body gives out," or "don't let stiffness win."
 - No jargon as headlines: "physio-informed" is fine in context; "adaptive algorithm" or
   "AI-powered" are not.
-- "Avatar" is fine — it's 2026 and the audience knows what an app avatar is.
+- "Avatar" is fine; it's 2026 and the audience knows what an app avatar is.
 
 **Variety across the 5 scripts:**
 - Do not open all 5 with the same sentence structure ("You wake up." five times = failure).
@@ -125,22 +125,22 @@ this lands in 30 seconds. Count words. Cut ruthlessly. Every word earns its plac
   not like a template with a swapped hook. Read all 5 back-to-back before finalizing;
   if they sound like variations of one script, rewrite the weakest ones.
 
-## Step 4 — Marg grades each script
+## Step 4; Marg grades each script
 
 Score each of the 5 scripts individually on Marg's 5 dimensions (A+ to F):
-1. **Attention** — does the hook earn attention in the first two seconds, on audio alone?
-2. **Speak to me** — does it sound like it's for me, not a mass audience?
-3. **Believe** — do I buy it, or does it overclaim or tell me how I feel?
-4. **Act** — does it make me want to download without feeling pushed?
-5. **Honest** — does it feel real, or like a polished pitch?
+1. **Attention**: does the hook earn attention in the first two seconds, on audio alone?
+2. **Speak to me**: does it sound like it's for me, not a mass audience?
+3. **Believe**: do I buy it, or does it overclaim or tell me how I feel?
+4. **Act**: does it make me want to download without feeling pushed?
+5. **Honest**: does it feel real, or like a polished pitch?
 
 **Target:** A average (≥ 3.50) on every script before it goes in the file.
 
 Run the Expert × Marg loop (max 3 passes per script) until each hits target. If a
 dimension reaches an honest ceiling below A+, name it and stop. Do not force the score
-by overclaiming — the honest ceiling is a feature, not a failure.
+by overclaiming; the honest ceiling is a feature, not a failure.
 
-## Step 5 — Save and present the output file
+## Step 5; Save and present the output file
 
 **Filename:** `WeStretch-Radio-Ads-30sec-[YYYY-MM-DD].md`
 
@@ -149,10 +149,10 @@ Save to this project's own Output folder:
 
 If a file with today's date already exists, append `-v2`, `-v3`, etc.
 
-**File format — exactly this structure:**
+**File format, exactly this structure:**
 
 ```
-# WeStretch Radio Ad Scripts — 30-Second Rotation
+# WeStretch Radio Ad Scripts; 30-Second Rotation
 [date] | Batch of 5
 
 ---
@@ -160,7 +160,7 @@ If a file with today's date already exists, append `-v2`, `-v3`, etc.
 ## AD 1: [THEME IN CAPS]
 *Topic: [one-line description of the specific angle]*
 
-[clean script text — exactly what the announcer reads, nothing else]
+[clean script text; exactly what the announcer reads, nothing else]
 
 ---
 

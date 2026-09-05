@@ -1,6 +1,6 @@
 # WeStretch Re-Engagement Emails: Flow 1, Drafted and Verified
 
-**Steps run:** Chase (strategy) OK, Expert (copy) OK, Marg (grading) OK — 1 loop, all three personas touched.
+**Steps run:** Chase (strategy) OK, Expert (copy) OK, Marg (grading) OK, 1 loop, all three personas touched.
 
 No draft existed for Flow 1; the theme table in `WeStretch Re-Engagement Emails - Voice & Approach.md` names its five themes but only Flow 2 and Flow 3 had been written. This file drafts Flow 1 from scratch, from the same theme table, through the same personas and rubric as the Flow 2 & 3 review in `Flow 2 & 3 - Verified and Improved.md`.
 

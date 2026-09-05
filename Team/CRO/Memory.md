@@ -1,6 +1,6 @@
 # CRO Memory
 
-Persistent memory for the CRO role only — facts, feedback, and context that
+Persistent memory for the CRO role only: facts, feedback, and context that
 apply across CRO's work but aren't specific to a single project (those live in
 that project's own `Memory.md` under `Ideas/`, `In Progress/`, or `Ready/`).
 Nothing role-specific has come up yet; add entries here as CRO work happens,

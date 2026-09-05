@@ -1,6 +1,6 @@
 # Team/CPO/CLAUDE.md
 
-Scope: this folder is the CPO's isolated workspace — responsibilities, skills, and
+Scope: this folder is the CPO's isolated workspace, responsibilities, skills, and
 memory specific to this role only. Read this file (and Team/CPO/Memory.md) whenever
 working here; cross-role conventions live in the repo root `CLAUDE.md`.
 
@@ -13,23 +13,23 @@ Roadmap prioritization, user research synthesis.
 - `Team/CPO/skills/roadmap-prioritization/`
 - `Team/CPO/skills/user-research-synthesis/`
 Each skill is scoped to a single decision or review task, not a general "be the
-CPO" persona — invoke the specific skill that matches the task. New skills follow
+CPO" persona; invoke the specific skill that matches the task. New skills follow
 the existing `SKILL.md` frontmatter pattern (`name`, `description` starting
 with "Use when...") and a short structured output format. Note the repo-wide
-skill-discovery caveat in the root `CLAUDE.md` — these
+skill-discovery caveat in the root `CLAUDE.md`; these
 `skills/` files are read by convention/reference, not auto-invoked as slash
 commands.
 
 ## Project pipeline
 
-- `Ideas/` — early-stage CPO concepts, not yet started.
-  - `Features/` — cross-functional feature planning docs (see root `CLAUDE.md`
+- `Ideas/`: early-stage CPO concepts, not yet started.
+  - `Features/`: cross-functional feature planning docs (see root `CLAUDE.md`
     "Cross-functional feature planning"). Lives here because a not-yet-started
     feature is a roadmap idea, even when other roles contribute docs to it.
-- `In Progress/` — active CPO initiatives. Each gets its own subfolder with its
+- `In Progress/`: active CPO initiatives. Each gets its own subfolder with its
   own `CLAUDE.md` + `Memory.md` pair once real work begins. Move a feature here
   from `Ideas/Features/` once it starts real build work.
-- `Ready/` — finished/decided CPO initiatives, kept for reference.
+- `Ready/`: finished/decided CPO initiatives, kept for reference.
 
 ## Memory
 

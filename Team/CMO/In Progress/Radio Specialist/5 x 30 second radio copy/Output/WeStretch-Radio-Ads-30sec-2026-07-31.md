@@ -1,4 +1,4 @@
-# WeStretch Radio Ad Scripts — 30-Second Rotation
+# WeStretch Radio Ad Scripts; 30-Second Rotation
 Three scripts for alternating rotation. Each runs approximately 30 seconds at a comfortable announcer pace (~75 words each).
 
 ---

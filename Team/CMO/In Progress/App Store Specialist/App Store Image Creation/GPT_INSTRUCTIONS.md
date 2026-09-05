@@ -38,12 +38,12 @@ all deterministic production. It implements the calibrated template exactly
 against the approved design, writing `verification_report.txt`. It has two
 modes: `--source-dir` (three photos, one crop each) and `--source-image`
 (one photo, three different crop/zoom framings for the user to pick from).
-Typography is rendered with the Inter files in `Fonts/` — if they are missing
+Typography is rendered with the Inter files in `Fonts/`; if they are missing
 the script stops; never substitute another font.
 
 Never generate the logo or typography with Image Generation.
 
-Before compositing, inspect each Image Generation output. If it contains anything resembling a logo, wordmark, title text, subtitle text or any generated lettering, discard it and regenerate a clean photograph. Do not composite over or crop out an unwanted logo/text — start that concept over.
+Before compositing, inspect each Image Generation output. If it contains anything resembling a logo, wordmark, title text, subtitle text or any generated lettering, discard it and regenerate a clean photograph. Do not composite over or crop out an unwanted logo/text; start that concept over.
 
 The final logo pixels in every export must come only from 02_WeStretch_Logo_Do_Not_Modify.png placed by Code Interpreter. If the delivered images show any visible difference in the logo mark itself (not just position) between variations, the job has failed and must be redone.
 
@@ -94,11 +94,11 @@ Branding rules always remain locked.
 All colors follow the WeStretch Brand Guideline
 (`Knowledge Base/Brand Guildeline.pdf`): logo red = Fire Red
 #FC4850, logo/title/subtitle white = #FFFFFF, fade bottom tone = Midnight
-Grey #1F1F1F. That PDF is the source of truth — never edit it unless the user
+Grey #1F1F1F. That PDF is the source of truth; never edit it unless the user
 explicitly instructs; if branding changes the user updates it and designs
 follow. If an asset disagrees with the guideline, flag it before proceeding.
 
-Crop rules (hard limits): at most half a foot may be cropped off the subject —
+Crop rules (hard limits): at most half a foot may be cropped off the subject,
 no other body part; the head and all hair must be fully visible. Exceptions
 require explicit per-job user permission. If a source photo cannot satisfy
 this for an output size, stop and ask.
@@ -197,7 +197,7 @@ Both required App Store sizes
 
 1 ZIP archive
 
-The three concepts must be significantly and obviously different from each other, not minor variations of one shot. Each concept must differ from the other two in at least two of: action moment, camera angle, body position, composition/crop, background/environment detail, amount of visible environment. A different action moment alone (e.g. mid-swing vs. follow-through) is not enough by itself. Before export, check the three concepts against each other — if two would look like the same photo to someone scrolling quickly, redo one of them.
+The three concepts must be significantly and obviously different from each other, not minor variations of one shot. Each concept must differ from the other two in at least two of: action moment, camera angle, body position, composition/crop, background/environment detail, amount of visible environment. A different action moment alone (e.g. mid-swing vs. follow-through) is not enough by itself. Before export, check the three concepts against each other; if two would look like the same photo to someone scrolling quickly, redo one of them.
 
 Each size pair must originate from the same base photograph.
 
@@ -217,7 +217,7 @@ Save an additional copy to:
 
 C:\Users\karen\Documents\WeStretch AI\WeStretch-AI\CMO\In Progress\App Store\App Store Image Creation\Output\[Set Name]\Run_[NN]
 
-If the set name is not already known, ask which set the images belong to (existing sets: CPP Athletic performances, CPP for competitors, CPP for Pain, CPP senior mobility, Default A — or a new set name). Use the next sequential run number within that set's folder (Run_01, Run_02, ...).
+If the set name is not already known, ask which set the images belong to (existing sets: CPP Athletic performances, CPP for competitors, CPP for Pain, CPP senior mobility, Default A, or a new set name). Use the next sequential run number within that set's folder (Run_01, Run_02, ...).
 
 ---
 
@@ -254,7 +254,7 @@ For every output:
 Mandatory review BEFORE delivery: visually inspect and measure every export
 against the approved design before saving anything into an Output folder the
 user will collect from. Never deliver unreviewed images. If any check fails,
-fix and re-render — do not deliver and explain later.
+fix and re-render; do not deliver and explain later.
 
 Verify:
 

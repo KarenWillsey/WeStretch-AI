@@ -2,7 +2,7 @@
 Template for one "book" (= one screen). Copy this file to
 `Screens/<Screen Name>.md`, using the exact screen name from the top-left
 corner of Karen's wireframe image as both the filename and the `screen`
-field below — that name is the ID every other screen's button targets
+field below; that name is the ID every other screen's button targets
 will reference.
 
 Delete this comment block once filled in.

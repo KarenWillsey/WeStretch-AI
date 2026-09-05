@@ -13,7 +13,7 @@ such as `indoors` by overriding only the conflicting lock.
 ## Canonical resources
 
 - Identity image: `assets/female-actor-02-reference.png`
-- Supplementary face reference (close-up, for identity confirmation only —
+- Supplementary face reference (close-up, for identity confirmation only,
   not a scene or wardrobe reference): `assets/female-actor-02-headshot-a.png`
   and `assets/female-actor-02-headshot-b.png`
 - Prompt: `references/prompt-template.md`
@@ -108,7 +108,7 @@ for user approval. Never place an unreviewed generation in an App Store
 Once Karen approves the image, move it from `Team/CMO/Review ToDo/` into
 `Team/CMO/Image Catalogue/` (skip this step if the user saved to a different
 destination). Leave rejected or superseded candidates in `Review ToDo/`, or
-delete them — they never move to `Image Catalogue/`.
+delete them; they never move to `Image Catalogue/`.
 
 ## Revisions
 

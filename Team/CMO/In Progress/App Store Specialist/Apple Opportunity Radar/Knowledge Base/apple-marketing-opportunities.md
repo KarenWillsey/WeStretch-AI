@@ -1,20 +1,20 @@
-# Apple Marketing Opportunities — Knowledge Base
+# Apple Marketing Opportunities; Knowledge Base
 
 **Status: seeded with a real baseline (2026-08-21, Karen-provided).** This
 replaces the earlier empty skeleton. The content below was compiled by
 Karen from the developer.apple.com pages cited under each section's
-`Source:` line — treat those lines as the last-verified reference for that
+`Source:` line; treat those lines as the last-verified reference for that
 section, dated 2026-08-21, until a monthly refresh re-checks them.
 
 **Important for future sessions:** this baseline was hand-provided this one
 time, not fetched live by Claude. The standing decision in `../Memory.md`
 that the monthly refresh fetches developer.apple.com **live** still
-applies going forward — this file is the starting snapshot to diff future
+applies going forward; this file is the starting snapshot to diff future
 fetches against, not a reason to switch to manual updates.
 
 ## Changelog
 
-- **2026-09-01 (monthly refresh)** — Second live monthly-refresh run (first
+- **2026-09-01 (monthly refresh)**: Second live monthly-refresh run (first
   run via the actual scheduled task, not a manual test). Fetched all 13
   confirmed source URLs successfully (0 failures). Found real, actionable
   changes in 10 of 16 sections. Updated: App Store Listing, Screenshots and
@@ -24,15 +24,15 @@ fetches against, not a reason to switch to manual updates.
   No changes to: Custom Product Pages, App Store Events, App Store
   A/B Testing baseline mechanics beyond the additions below, Accessibility,
   Health and Fitness Claims, Metadata rejection triggers table. 5 new
-  backlog items added — see `../Backlog.md`. WebSearch pass for
+  backlog items added; see `../Backlog.md`. WebSearch pass for
   still-unconfirmed candidates found a solid Apple Search Ads canonical page
-  (`developer.apple.com/app-store/promote/`) — flagged in
+  (`developer.apple.com/app-store/promote/`), flagged in
   `../Implementation Spec.md` for human sanity-check rather than auto-added.
   Full run detail in `../state/monthly-refresh-log.json`.
-- **2026-08-21 (live refresh)** — First live monthly-refresh run (manual
+- **2026-08-21 (live refresh)**: First live monthly-refresh run (manual
   test, triggered in session rather than by the scheduled task). Fetched
   all 13 confirmed source URLs successfully (0 failures). Found real,
-  actionable additions in 8 of 16 sections — expected for a first live
+  actionable additions in 8 of 16 sections, expected for a first live
   pull, since the baseline below was Karen's manually-compiled excerpt
   rather than a full page-by-page pull. Updated: Ratings and Reviews,
   Custom Product Pages, App Store Events, Subscriptions and Free Trials,
@@ -40,13 +40,13 @@ fetches against, not a reason to switch to manual updates.
   Accessibility, Privacy and Customer Accounts, Health and Fitness Claims,
   App Review and Releases, Getting Featured by Apple. No changes to: App
   Store Listing, Screenshots and Videos, App Store A/B Testing, Analytics
-  and Measurement, Notifications and Engagement. 4 new backlog items added
-  — see `../Backlog.md`. Full run detail in `../state/monthly-refresh-log.json`.
-- **2026-08-21** — Initial baseline imported (Karen-provided research,
+  and Measurement, Notifications and Engagement. 4 new backlog items added,
+see `../Backlog.md`. Full run detail in `../state/monthly-refresh-log.json`.
+- **2026-08-21**: Initial baseline imported (Karen-provided research,
   sourced from the developer.apple.com pages listed per section below). No
   prior snapshot existed, so nothing to diff against yet. The next monthly
   refresh (once built) should re-fetch every Source URL below, diff against
-  this baseline, and update whichever sections actually changed — not
+  this baseline, and update whichever sections actually changed, not
   rewrite the whole file. Source attributions are preserved exactly as
   provided; not independently re-verified in this session.
 
@@ -114,11 +114,11 @@ Source: https://developer.apple.com/app-store/product-page/
   accurately reflects the app's current rating; quoting a customer review
   in marketing materials requires the reviewer's permission first.
 - **[2026-08-21]** Report offensive/spam reviews via "Report a Concern" in
-  App Store Connect — do not use a public reply for this.
+  App Store Connect: do not use a public reply for this.
 - **[2026-09-01]** Since iOS 18.4/iPadOS 18.4, Apple shows AI-generated
-  "review summaries" on product pages — short paragraphs compiling review
+  "review summaries" on product pages, short paragraphs compiling review
   highlights. Users can tap-and-hold a summary to report a concern.
-  Currently English-only, US-only, with planned expansion — nothing for
+  Currently English-only, US-only, with planned expansion; nothing for
   WeStretch to configure, but worth knowing it's live when reviewing how
   the product page presents.
 - **[2026-09-01]** The displayed summary rating is specific to each
@@ -143,7 +143,7 @@ Source: https://developer.apple.com/app-store/ratings-and-reviews/
 - Link ads, emails, and social campaigns to the most relevant page.
 - Connect Apple Ads campaigns to corresponding custom pages.
 - Add deep links to relevant destinations inside the app.
-- **[2026-08-21]** Deep links require iOS 18 / iPadOS 18 or later — confirm
+- **[2026-08-21]** Deep links require iOS 18 / iPadOS 18 or later; confirm
   WeStretch's minimum deployment target before committing to deep-linked CPPs.
 - Localize custom pages by language and market.
 - Compare conversion, retention, downloads, and revenue by page.
@@ -155,7 +155,7 @@ Source: https://developer.apple.com/app-store/ratings-and-reviews/
   cost per install.
 - **[2026-08-21]** CPPs are compatible with Apple Search Ads (Search tab
   placements and search-result variations) and with StoreKit-rendered ads
-  via the `customProductPageIdentifier` parameter — links this opportunity
+  via the `customProductPageIdentifier` parameter, links this opportunity
   directly to any future Apple Search Ads work.
 
 Source: https://developer.apple.com/app-store/custom-product-pages/
@@ -176,7 +176,7 @@ Source: https://developer.apple.com/app-store/custom-product-pages/
   and results need to reach at least 90% confidence before a treatment
   should be applied.
 - **[2026-09-01]** Traffic allocated to a test is split across its
-  treatments, not given to each individually — e.g. 40% traffic allocated
+  treatments, not given to each individually, e.g. 40% traffic allocated
   to a 2-treatment test means each treatment gets 20%.
 - **[2026-09-01]** If testing alternate app icons, all icon variants must be
   included in the published app's binary ahead of time.
@@ -202,7 +202,7 @@ Source: https://developer.apple.com/app-store/product-page-optimization/
 - Use the "Challenge" event type for fitness challenges.
 - **[2026-08-21]** Full list of event badge types (not just Challenge):
   Challenge, Competition, Live Event, Major Update, New Season, Premiere,
-  Special Event — pick whichever actually fits (e.g. a leaderboard-based
+  Special Event: pick whichever actually fits (e.g. a leaderboard-based
   event is Competition, not Challenge).
 - Do not submit ordinary daily routines or generic discounts as events.
 - **[2026-08-21]** Additional creative restrictions on event metadata: no
@@ -219,7 +219,7 @@ Source: https://developer.apple.com/app-store/in-app-events/
 - Clearly explain which features are free and which require a subscription.
 - Show subscription price, billing interval, and renewal terms before purchase.
 - **[2026-08-21]** The full billed amount must be the *most prominent*
-  price shown on the sign-up screen — a monthly-equivalent or other
+  price shown on the sign-up screen, a monthly-equivalent or other
   breakdown price can be shown too, but only in a visually subordinate
   position. Don't let a "$X/month" figure outshine the actual amount charged.
 - Explain when free trials end and billing begins.
@@ -238,15 +238,15 @@ Source: https://developer.apple.com/app-store/in-app-events/
 - Family Sharing can include up to five additional family members.
 - Enabling Family Sharing for an applicable subscription cannot be undone.
 - **[2026-09-01]** Apple now supports monthly subscriptions with a 12-month
-  commitment as an additional plan structure — worth evaluating alongside
+  commitment as an additional plan structure, worth evaluating alongside
   WeStretch's existing Monthly/Annual plans.
 - **[2026-09-01]** "Streamlined purchasing" lets a customer complete a
-  purchase from outside the app (this can be turned off if unwanted) — worth
+  purchase from outside the app (this can be turned off if unwanted), worth
   confirming whether WeStretch wants this on or off.
 - **[2026-09-01]** Win-back offer discovery now spans more surfaces: the App
   Store product page, editorial/recommendation placements (Today/Games/Apps
   tabs), an automatic in-app offer sheet, the customer's Apple Account
-  Subscriptions settings, and direct links — with a priority ranking when
+  Subscriptions settings, and direct links, with a priority ranking when
   more than one offer is eligible.
 
 Source: https://developer.apple.com/app-store/subscriptions/
@@ -270,7 +270,7 @@ Source: https://developer.apple.com/app-store/subscriptions/
 - **[2026-08-21]** Neither a grace-period recovery window nor a renewal-date
   extension counts against the subscriber's continuous one-year tenure that
   determines the standard 85% subscriber-proceeds rate (see Revenue and
-  Apple Commissions below) — so using these tools to save a subscriber
+  Apple Commissions below): so using these tools to save a subscriber
   doesn't cost WeStretch anything on that front.
 
 Source: https://developer.apple.com/app-store/subscriptions/
@@ -284,25 +284,25 @@ Source: https://developer.apple.com/app-store/subscriptions/
 - Monitor proceeds, taxes, refunds, territories, and offer costs.
 - **[2026-08-21]** The $1M threshold is checked twice: prior-year proceeds
   to *qualify*, and current-year proceeds (must also stay under $1M) to
-  *stay* eligible — exceeding it mid-year reverts future sales to the
+  *stay* eligible, exceeding it mid-year reverts future sales to the
   standard rate; falling back under it lets WeStretch re-qualify the
   following year.
 - **[2026-08-21]** Enrollment steps: must be the Account Holder in the
   Apple Developer Program → review and accept the Paid Apps Agreement
   Schedule 2 in App Store Connect → list all Associated Developer Accounts.
   The reduced rate takes effect **15 days after the end of the fiscal
-  calendar month in which enrollment is approved** — not immediately and
+  calendar month in which enrollment is approved**, not immediately and
   not retroactively.
 - **[2026-08-21]** EU-specific: developers on Apple's EU alternative
   business terms get a 10% commission rate, and *any* subscription (not
   just Small Business Program apps) drops to 10% after its first
   continuous year (vs. the general 85%-proceeds/15%-commission rule
-  elsewhere) — worth checking if this changes WeStretch's actual EU
+  elsewhere), worth checking if this changes WeStretch's actual EU
   economics, if EU is a meaningful market.
 - **[2026-09-01]** New Small Business Program member benefit: developers
   with fewer than 2 million first-time App Store downloads can use Apple
   Foundation Models on Private Cloud Compute at no cloud API cost (subject
-  to obtaining the PCC entitlement). CTO-adjacent — relevant only if
+  to obtaining the PCC entitlement). CTO-adjacent, relevant only if
   WeStretch is using or planning on-device/PCC AI features, not something
   this project builds itself.
 
@@ -367,12 +367,12 @@ Source: https://developer.apple.com/app-store/subscriptions/
 - Verify accessibility on both iPhone and iPad.
 - Declare supported accessibility features in App Store Connect.
 - Treat accessibility as a competitive advantage for older users.
-- **[2026-08-21]** This declaration mechanism has a name — **Accessibility
-  Nutrition Labels** — with 9 specific declarable categories: VoiceOver,
+- **[2026-08-21]** This declaration mechanism has a name; **Accessibility
+  Nutrition Labels**, with 9 specific declarable categories: VoiceOver,
   Voice Control, Sufficient Contrast, Dark Interface, Larger Text,
   Differentiate Without Color Alone, Reduce Motion, Captions, Audio
   Descriptions. Declaring more of these (truthfully) makes WeStretch more
-  discoverable to users filtering by accessibility need — directly
+  discoverable to users filtering by accessibility need, directly
   relevant given WeStretch's older-adult audience positioning.
 - **[2026-08-21]** Dynamic Type requirement for Nutrition Label
   qualification: support scaling to at least 200%, test up to 310% with
@@ -400,16 +400,16 @@ Source: https://developer.apple.com/videos/play/tech-talks/111433/
   browser properties, device configuration, location, or network
   connection to uniquely identify a device, and cannot use hashed
   email/phone numbers as a tracking identifier without ATT permission. Any
-  ad/analytics SDK doing this risks rejection — worth including explicitly
+  ad/analytics SDK doing this risks rejection, worth including explicitly
   in the SDK audit above.
 - **[2026-08-21]** Exception: the ID for Vendors (IDFV) can be used without
-  ATT permission for analytics *across WeStretch's own apps only* — it
+  ATT permission for analytics *across WeStretch's own apps only*; it
   cannot be combined with other data to track across third-party apps or
   websites.
 - **[2026-09-01]** "Tracking" is defined broadly enough to catch unintentional
   cases: using a third-party SDK that combines WeStretch's data with other
   companies' data for ad targeting/measurement counts as tracking requiring
-  ATT permission *even if WeStretch itself doesn't use it that way* — the
+  ATT permission *even if WeStretch itself doesn't use it that way*, the
   SDK's behavior is what matters. Tracking inside an in-app webview requires
   the same ATT prompt as native tracking would.
 - **[2026-09-01]** Apple is expanding software-supply-chain integrity
@@ -422,8 +422,7 @@ Source: https://developer.apple.com/videos/play/tech-talks/111433/
 - Allow account deletion regardless of the customer's location.
 - Explain that account deletion does not automatically cancel an Apple subscription.
 - Direct users to subscription management before account deletion when appropriate.
-- **[2026-09-01]** Account deletion can also offer a "deferred" option —
-  schedule deletion to align with subscription expiration — as long as an
+- **[2026-09-01]** Account deletion can also offer a "deferred" option (schedule deletion to align with subscription expiration) as long as an
   immediate-deletion option is also available.
 
 Sources:
@@ -437,7 +436,7 @@ Sources:
 - Avoid unsupported diagnosis, treatment, or injury-prevention claims.
 - **[2026-08-21] Hard redline (App Review Guideline 1.4.1):** apps claiming
   to measure x-rays, blood pressure, body temperature, blood glucose, or
-  blood oxygen using only device sensors are **not permitted, full stop** —
+  blood oxygen using only device sensors are **not permitted, full stop**,
   never let marketing copy or a feature description drift toward this,
   even implicitly (e.g. no "detects your pain level" framed as a sensor
   measurement).
@@ -466,20 +465,20 @@ Source: https://developer.apple.com/app-store/review/guidelines/
 - Write specific, understandable release notes.
 - Prioritize recurring issues mentioned in reviews and support tickets.
 - **[2026-08-21]** On average, 90% of submissions are reviewed in under 24
-  hours — useful for planning launch timing around In-App Events, seasonal
+  hours, useful for planning launch timing around In-App Events, seasonal
   campaigns, etc.
 - **[2026-08-21]** Expedited review can be requested for critical bug fixes
-  or event-related apps — worth using when a time-sensitive In-App Event
+  or event-related apps, worth using when a time-sensitive In-App Event
   or seasonal campaign is at risk from normal review timing.
 - **[2026-08-21]** An appeal can be submitted if WeStretch believes a
   rejection was made in error or unfairly.
 - **[2026-09-01]** If additional issues turn up while a bug-fix update is
   under review, and none involve legal/safety concerns, Apple now lets the
   developer opt to resolve them in the next submission instead of blocking
-  the current one — reply to the offer message in App Store Connect to
+  the current one, reply to the offer message in App Store Connect to
   accept.
 - **[2026-09-01]** 30-minute Webex appointments with App Review are
-  available to discuss guidelines/best practices directly — worth using
+  available to discuss guidelines/best practices directly, worth using
   ahead of a first Featuring Nomination or a submission with unusual
   subscription/health-claim framing.
 - **[2026-08-21]** Metadata rejection triggers worth keeping front-of-mind
@@ -525,7 +524,7 @@ Sources:
 - **[2026-09-01]** In-App Events are now explicitly one of the nominate-able
   content types (alongside new apps, significant updates, and "great
   stories") and can themselves be featured on Today/Games/Apps tabs, in
-  search results, and on product pages — directly relevant now that
+  search results, and on product pages, directly relevant now that
   WeStretch has a drafted In-App Event ("7-Day Mobility Challenge," see
   `../Output/2026-08-29-in-app-event-7-day-mobility-challenge.md`).
 - **[2026-09-01]** Other featuring mechanisms worth knowing about beyond a
@@ -533,7 +532,7 @@ Sources:
   themed Lists on the Today tab, Personalized recommendations (algorithmic,
   not nominated), and the Editors' Choice badge (a distinct curated award
   with its own badge shown on the product page).
-- **[2026-09-01]** Eligibility isn't restricted by app category — no need to
+- **[2026-09-01]** Eligibility isn't restricted by app category, no need to
   read prior guidance as fitness-specific.
 
 Source: https://developer.apple.com/app-store/getting-featured/
@@ -551,5 +550,5 @@ Source: https://developer.apple.com/app-store/getting-featured/
 9. Verify accessibility, account deletion, privacy disclosures, and subscription clarity.
 10. Nominate meaningful updates and campaigns for Apple editorial featuring.
 
-This priority list is the source for `../Backlog.md`'s seed items — see
+This priority list is the source for `../Backlog.md`'s seed items; see
 that file for status/dates as each one gets worked.

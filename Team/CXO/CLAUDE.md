@@ -1,6 +1,6 @@
 # Team/CXO/CLAUDE.md
 
-Scope: this folder is the CXO's isolated workspace — responsibilities, skills, and
+Scope: this folder is the CXO's isolated workspace, responsibilities, skills, and
 memory specific to this role only. Read this file (and Team/CXO/Memory.md) whenever
 working here; cross-role conventions live in the repo root `CLAUDE.md`.
 
@@ -14,19 +14,19 @@ Customer journey audit, UX design review.
 - `Team/CXO/skills/jokes/`
 - `Team/CXO/skills/ux-design-review/`
 Each skill is scoped to a single decision or review task, not a general "be the
-CXO" persona — invoke the specific skill that matches the task. New skills follow
+CXO" persona; invoke the specific skill that matches the task. New skills follow
 the existing `SKILL.md` frontmatter pattern (`name`, `description` starting
 with "Use when...") and a short structured output format. Note the repo-wide
-skill-discovery caveat in the root `CLAUDE.md` — these
+skill-discovery caveat in the root `CLAUDE.md`; these
 `skills/` files are read by convention/reference, not auto-invoked as slash
 commands.
 
 ## Project pipeline
 
-- `Ideas/` — early-stage CXO concepts, not yet started.
-- `In Progress/` — active CXO initiatives. Each gets its own subfolder with its
+- `Ideas/`: early-stage CXO concepts, not yet started.
+- `In Progress/`: active CXO initiatives. Each gets its own subfolder with its
   own `CLAUDE.md` + `Memory.md` pair once real work begins.
-- `Ready/` — finished/decided CXO initiatives, kept for reference.
+- `Ready/`: finished/decided CXO initiatives, kept for reference.
 
 ## Memory
 
