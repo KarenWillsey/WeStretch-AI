@@ -44,3 +44,23 @@ Karen has a reading disability that makes high email/task volume
 overwhelming; the brief's entire purpose is turning scattered noise into a
 small, skimmable, high-signal worklist, not a start-to-finish read. This is
 a personal tool for Karen only, not (yet) a template for other execs.
+
+## Known failure modes (added 2026-09-06)
+
+- **Expired auth kills the run silently.** On 2026-09-05 the scheduled task
+  exited 1 with "Failed to authenticate: OAuth session expired and could not
+  be refreshed." Sep 2, Sep 3 and Sep 4 started but logged no completion
+  line. Nothing alerted Karen; the only evidence was a missing brief.
+  **How to apply:** when a brief is missing, read `state/last-run.log` first
+  before assuming the schedule didn't fire, and treat "started, no finish
+  line" as a failure, not an unknown.
+- **The Kari rollup timestamp is written at end of run, not at send time.**
+  So a run that sends the rollup and then dies leaves
+  `last_report_sent_at` stale, and the next successful run re-sends
+  content Kari already has. **How to apply:** write the timestamp
+  immediately after the send succeeds.
+- **Outlook reissues a message id on every folder move.** This is why the
+  Kari inbox-activity delta can never re-read items that left the Inbox
+  (confirmed again 2026-09-06 by batch-delete returning a different newId
+  per message). Not a bug to fix in the skill; report those items as
+  "left the inbox, folder untraceable" and move on.

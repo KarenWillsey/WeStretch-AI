@@ -293,12 +293,31 @@ Source: https://developer.apple.com/app-store/subscriptions/
   The reduced rate takes effect **15 days after the end of the fiscal
   calendar month in which enrollment is approved**, not immediately and
   not retroactively.
-- **[2026-08-21]** EU-specific: developers on Apple's EU alternative
+- **[2026-08-21]** ~~EU-specific: developers on Apple's EU alternative
   business terms get a 10% commission rate, and *any* subscription (not
   just Small Business Program apps) drops to 10% after its first
   continuous year (vs. the general 85%-proceeds/15%-commission rule
   elsewhere), worth checking if this changes WeStretch's actual EU
-  economics, if EU is a meaningful market.
+  economics, if EU is a meaningful market.~~
+  **SUPERSEDED [2026-09-05]:** the EU Alternative Terms Addendum this
+  described is discontinued. Apple announced 2026-08-18 that all EU
+  developers move to a single set of **unified EU business terms effective
+  2026-10-01**. Under those: Apple IAP on the App Store is **26%**, or
+  **15%** for Small Business Program participants and for auto-renewable
+  subscriptions after their first year; alternative in-app payment
+  processing is 20% / 10%; out-of-app link-out offers are 15% / 10% with a
+  7-day conversion window; and a 5% Core Technology Commission applies only
+  to apps distributed *outside* the App Store (it replaces the per-install
+  Core Technology Fee). Net effect for WeStretch: **if enrolled in the
+  Small Business Program, the EU rate is 15%, same as everywhere else; no
+  EU-specific economics to chase.** Full analysis and the pre-2026-10-01
+  Account Holder action:
+  `Output/2026-09-05-eu-business-terms-economics-evaluation.md`.
+  Sources: https://developer.apple.com/support/apps-in-the-eu/ and
+  https://developer.apple.com/support/dma-and-apps-in-the-eu/
+  (Flagged for the next monthly refresh: these two URLs are not yet in the
+  tracked source list; the Small Business Program page alone will not
+  surface EU-terms changes.)
 - **[2026-09-01]** New Small Business Program member benefit: developers
   with fewer than 2 million first-time App Store downloads can use Apple
   Foundation Models on Private Cloud Compute at no cloud API cost (subject

@@ -1,63 +1,349 @@
 {
-  "last_report_sent_at": "2026-09-01T11:07:38.000Z",
+  "last_report_sent_at": "2026-09-06T11:09:06.000Z",
   "last_message_ids": [
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1J6AAA="
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCcAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCbAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCaAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KPAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCZAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KNAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KMAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KLAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KJAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KIAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KHAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KGAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KFAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KEAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCYAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCXAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCWAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCVAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCUAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KDAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KCAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KBAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1KAAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1J-AAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1J9AAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1J8AAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAtvr1J7AAA="
   ],
   "last_inbox_snapshot": [
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymHAAA=", "subject": "Tasks summary for 9/1/2026", "sender": "donotreply@managebuilding.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymGAAA=", "subject": "AppStance - Apple Ads Monthly Summary - Aug 01, 2026 to Aug 31, 2026 - We Bananas Software Inc.", "sender": "notifications@appstance.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymFAAA=", "subject": "DigitalOcean - Received $6.3 payment", "sender": "support@digitalocean.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymEAAA=", "subject": "[DigitalOcean] Your 2026-08 invoice is available", "sender": "support@digitalocean.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymDAAA=", "subject": "AppStance - Apple Ads Daily Summary - Aug 31, 2026 - We Bananas Software Inc.", "sender": "notifications@appstance.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymCAAA=", "subject": "Nordic Court, NORDIC COURT BOILER SYSTEM 1 ALARM: RESET", "sender": "servallmechservices@gmail.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymBAAA=", "subject": "Nordic Court, NORDIC COURT BOILER SYSTEM 1 ALARM: ALARM", "sender": "servallmechservices@gmail.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymAAAA=", "subject": "Manual time was added", "sender": "donotreply@upwork.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl+AAA=", "subject": "Order #1231 confirmed", "sender": "store+67694624834@t.shopifyemail.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl6AAA=", "subject": "RE: Park Employee Email", "sender": "samantha@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl4AAA=", "subject": "RE: [#SR-20707] New employee login", "sender": "Leanne.MacKinnon@parkpmg.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl3AAA=", "subject": "Re: [#SR-20707] New employee login", "sender": "support@sidegroup.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl2AAA=", "subject": "RE: [#SR-20707] New employee login", "sender": "Leanne.MacKinnon@parkpmg.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl1AAA=", "subject": "Re: [#SR-20707] New employee login", "sender": "support@sidegroup.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylxAAA=", "subject": "Re: clearmotive | Video Recordings of Analytics & UX Findings", "sender": "mike.vecchiarelli@clearmotive.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylvAAA=", "subject": "Park Employee Email", "sender": "samantha@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylgAAA=", "subject": "Daily Brief (2026-08-31) ~381822 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylRAAA=", "subject": "Daily Brief (2026-08-30) ~313152 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylLAAA=", "subject": "P", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvPg+hAAA=", "subject": "Jeannie's Welcome Back/ Aug 29th Update", "sender": "logistics@gpboyschoir.org"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtuo/2qAAA=", "subject": "Daily Brief (2026-08-28) ~452,550 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtt0CGlAAA=", "subject": "permission", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtt0CGeAAA=", "subject": "Compliance forms for the Trust [C]", "sender": "Kelly.Jarego@td.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtt0CGMAAA=", "subject": "Daily Brief (2026-08-27) ~477,337 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaUAAA=", "subject": "Special Guest Speaker", "sender": "logistics@gpboyschoir.org"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaRAAA=", "subject": "Introducing Dayna!", "sender": "Lisa.Neville@pattisonmedia.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaNAAA=", "subject": "FW: Fabric BO with front and back same color", "sender": "Leanne.MacKinnon@parkpmg.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaMAAA=", "subject": "Fw: Nordic Court??", "sender": "kevin@parkpmg.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaLAAA=", "subject": "FW: Nordic Court??", "sender": "Rhonda.Side@sidemanagement.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkZ6AAA=", "subject": "Daily Brief (2026-08-26) ~390,823 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkZnAAA=", "subject": "RE: PIA Fees: Garrett [I] [C]", "sender": "Carlos.Cruz@td.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkZsAAA=", "subject": "Daily Brief (Aug 25, 2026) ~301,281 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo/feBOAAA=", "subject": "TD eSign Document Package", "sender": "leon.makombe@td.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8e0AAA=", "subject": "RE: PIA Fees: Garrett [I] [C]", "sender": "Kelly.Jarego@td.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8eyAAA=", "subject": "Park July Reports", "sender": "accounting@parkpmg.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8eZAAA=", "subject": "Daily Brief (Aug 24, 2026) ~345,382 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8eRAAA=", "subject": "Daily Brief (Aug 23, 2026) ~306,038 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtqoJkMAAA=", "subject": "Daily Brief (Aug 22, 2026) ~321,933 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb+KAAAA=", "subject": "Annual Condo Fee Reconciliation - Jun 2026", "sender": "Olena.Moraru@sidemanagement.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb+JvAAA=", "subject": "Daily Brief (Aug 21, 2026) ~312,511 tokens (excl. compose)", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb+JdAAA=", "subject": "clearmotive | Video Recordings of Analytics & UX Findings", "sender": "mike.vecchiarelli@clearmotive.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpa62lAAA=", "subject": "RE: program", "sender": "kevin@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xtAAA=", "subject": "Fw: Quote 3795 - Network Equipment Replacement", "sender": "kari@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xrAAA=", "subject": "FW: Q1 Greater Edmonton Commercial Market Report 2026", "sender": "Rhonda.Side@sidemanagement.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xZAAA=", "subject": "FW: Voice Mail Message", "sender": "admin@parkpmg.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtmGbSAAAA=", "subject": "A Document Has Been Shared With You", "sender": "notifications@janeapp.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkoaAMAAA=", "subject": "program", "sender": "reneesonnenberg@ikumon.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkoZ+XAAA=", "subject": "Taylor web", "sender": "Rhonda.Side@sidemanagement.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkoZ+PAAA=", "subject": "Purchase price estimate", "sender": "kevinw@ohdoor.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkFu5bAAA=", "subject": "FW: WJ & Side Management : Taylor Estates Project General Updates", "sender": "Rhonda.Side@sidemanagement.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkFu5LAAA=", "subject": "July - Monthly reports", "sender": "elena@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtjNhg+AAA=", "subject": "June - Monthly reports", "sender": "elena@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHfgAAA=", "subject": "Home | Laird NRC", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHffAAA=", "subject": "Gutsy; Test ideas with AI-lookalike audiences in seconds", "sender": "karen@kasa.ca"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtWq7UqAAA=", "subject": "FW: Important Insurance Endorsement & Appraisal Documents Enclosed", "sender": "kevin@kasa.ca"}
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt0jP82AAA=",
+      "subject": "Tasks summary for 9/6/2026",
+      "sender": "donotreply@managebuilding.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt0jP81AAA=",
+      "subject": "AppStance - Apple Ads Daily Summary - Sep 05, 2026 - We Bananas Software Inc.",
+      "sender": "notifications@appstance.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtz51MEAAA=",
+      "subject": "Security alert for maxwillsey@edu.gpcsd.ca",
+      "sender": "no-reply@accounts.google.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtz51MDAAA=",
+      "subject": "Sept 5th Choir Update",
+      "sender": "logistics@gpboyschoir.org"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtz51MCAAA=",
+      "subject": "Choir Credits",
+      "sender": "logistics@gpboyschoir.org"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCLAAA=",
+      "subject": "#td_secure Update [I]",
+      "sender": "Kelly.Jarego@td.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryntAAA=",
+      "subject": "RE: [External] Can I ask for your help on random topic",
+      "sender": "Owen@kmsc.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynsAAA=",
+      "subject": "RE: [External] Can I ask for your help on random topic",
+      "sender": "Owen@kmsc.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCGAAA=",
+      "subject": "Safe and Caring Schools",
+      "sender": "ChristaErickson@gpcsd.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynmAAA=",
+      "subject": "NEW Date Sept 24 - Choose Your Side",
+      "sender": "SideCentre@nwpolytech.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCFAAA=",
+      "subject": "Graduation Information",
+      "sender": "ChristaErickson@gpcsd.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynNAAA=",
+      "subject": "Mom's we need your help!",
+      "sender": "assistantconductor@gpboyschoir.org"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynLAAA=",
+      "subject": "Fw: Your PayPal Account will be closed",
+      "sender": "team@westretch.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynBAAA=",
+      "subject": "clearmotive Invoice",
+      "sender": "cmadmin@clearmotive.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrym4AAA=",
+      "subject": "Updates: Food Drive and Guest Speaker",
+      "sender": "logistics@gpboyschoir.org"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynQAAA=",
+      "subject": "Biology 30",
+      "sender": "BreanneBodnar@gpcsd.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feBkAAA=",
+      "subject": "TD eSign - The package \"Private Trust Investment Policy Statement\" is about to expire.",
+      "sender": "TD.eSignNoReplyAccount@td.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymWAAA=",
+      "subject": "FW: 214 Place Lobby - Proposed Ceiling/Lighting Plan Design",
+      "sender": "kevin@parkpmg.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymPAAA=",
+      "subject": "FW: QWC - Monthly Financial Reports - Jul.2026",
+      "sender": "kevin@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymIAAA=",
+      "subject": "Daily Brief 2026-09-01",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl3AAA=",
+      "subject": "Re: [#SR-20707] New employee login",
+      "sender": "support@sidegroup.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl2AAA=",
+      "subject": "RE: [#SR-20707] New employee login",
+      "sender": "Leanne.MacKinnon@parkpmg.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl1AAA=",
+      "subject": "Re: [#SR-20707] New employee login",
+      "sender": "support@sidegroup.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylxAAA=",
+      "subject": "Re: clearmotive | Video Recordings of Analytics & UX Findings",
+      "sender": "mike.vecchiarelli@clearmotive.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylvAAA=",
+      "subject": "Park Employee Email",
+      "sender": "samantha@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylgAAA=",
+      "subject": "Daily Brief 2026-08-31",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylRAAA=",
+      "subject": "Daily Brief 2026-08-30",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylLAAA=",
+      "subject": "P",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvPg_hAAA=",
+      "subject": "Jeannie's Welcome Back/ Aug 29th Update",
+      "sender": "logistics@gpboyschoir.org"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feBnAAA=",
+      "subject": "FW: 2026 Excel Masterclass: Using Copilot, Automation and LAMBDA Functions",
+      "sender": "elena@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtuo_2qAAA=",
+      "subject": "Daily Brief 2026-08-28",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtt0CGlAAA=",
+      "subject": "permission",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtt0CGeAAA=",
+      "subject": "Compliance forms for the Trust [C]",
+      "sender": "Kelly.Jarego@td.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtt0CGMAAA=",
+      "subject": "Daily Brief 2026-08-27",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaUAAA=",
+      "subject": "Special Guest Speaker",
+      "sender": "logistics@gpboyschoir.org"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaRAAA=",
+      "subject": "Introducing Dayna!",
+      "sender": "Lisa.Neville@pattisonmedia.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaNAAA=",
+      "subject": "FW: Fabric BO with front and back same color",
+      "sender": "Leanne.MacKinnon@parkpmg.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaMAAA=",
+      "subject": "Fw: Nordic Court??",
+      "sender": "kevin@parkpmg.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaLAAA=",
+      "subject": "FW: Nordic Court??",
+      "sender": "Rhonda.Side@sidemanagement.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkZ6AAA=",
+      "subject": "Daily Brief 2026-08-26",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feBoAAA=",
+      "subject": "Reserve Your Spot Now | QuantumShift Alumni Event in Ottawa Oct 22-23",
+      "sender": "eamorse@ivey.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkZsAAA=",
+      "subject": "Daily Brief Aug 25, 2026",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8eyAAA=",
+      "subject": "Park July Reports",
+      "sender": "accounting@parkpmg.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8eZAAA=",
+      "subject": "Daily Brief Aug 24, 2026",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtrL8eRAAA=",
+      "subject": "Daily Brief Aug 23, 2026",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtqoJkMAAA=",
+      "subject": "Daily Brief Aug 22, 2026",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb-KAAAA=",
+      "subject": "Annual Condo Fee Reconciliation - Jun 2026",
+      "sender": "Olena.Moraru@sidemanagement.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb-JvAAA=",
+      "subject": "Daily Brief Aug 21, 2026",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb-JdAAA=",
+      "subject": "clearmotive | Video Recordings of Analytics & UX Findings",
+      "sender": "mike.vecchiarelli@clearmotive.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpa62lAAA=",
+      "subject": "RE: program",
+      "sender": "kevin@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xtAAA=",
+      "subject": "Fw: Quote 3795 - Network Equipment Replacement",
+      "sender": "kari@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xrAAA=",
+      "subject": "FW: Q1 Greater Edmonton Commercial Market Report 2026",
+      "sender": "Rhonda.Side@sidemanagement.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xZAAA=",
+      "subject": "FW: Voice Mail Message",
+      "sender": "admin@parkpmg.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtmGbSAAAA=",
+      "subject": "A Document Has Been Shared With You",
+      "sender": "notifications@janeapp.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkoaAMAAA=",
+      "subject": "program",
+      "sender": "reneesonnenberg@ikumon.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkoZ-XAAA=",
+      "subject": "Taylor web",
+      "sender": "Rhonda.Side@sidemanagement.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkoZ-PAAA=",
+      "subject": "Purchase price estimate",
+      "sender": "kevinw@ohdoor.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkFu5bAAA=",
+      "subject": "FW: WJ & Side Management : Taylor Estates Project General Updates",
+      "sender": "Rhonda.Side@sidemanagement.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkFu5LAAA=",
+      "subject": "July - Monthly reports",
+      "sender": "elena@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtjNhg-AAA=",
+      "subject": "June - Monthly reports",
+      "sender": "elena@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHfgAAA=",
+      "subject": "Home | Laird NRC",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHffAAA=",
+      "subject": "Gutsy; Test ideas with AI-lookalike audiences in seconds",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtWq7UqAAA=",
+      "subject": "FW: Important Insurance Endorsement & Appraisal Documents Enclosed",
+      "sender": "kevin@kasa.ca"
+    }
   ]
 }
