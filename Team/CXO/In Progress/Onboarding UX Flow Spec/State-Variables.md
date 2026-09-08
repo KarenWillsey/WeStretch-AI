@@ -10,6 +10,7 @@ finalized.
 |---|---|---|---|
 | `routines_completed` | integer | count of stretching routines the user has finished | drives "0 routines done" / "1 routine done" chapters |
 | `account_type` | enum: `guest`, `free`, `pro` | which of WeStretch's three user tiers | confirm exact tier names/values with Karen |
+| `purchase_pending` | boolean | a paywall handed the user off to the native purchase sheet and it has not come back yet | **Prototype-only plumbing, added 2026-09-08.** Lets one shared hand-off screen (S6) be the auth hand-off and the purchase hand-off; the real app gets a store callback instead. See `Westretch-UX/Jacques-TODO.md` item 8 |
 | `routine_path` | enum: `full_body`, `customize` | which top-level choice the user made on First Screen | |
 | `sport_id` | identifier | which specific routine the user was given/chose | **Renamed from `routine_id` to `sport_id` 2026-08-21 per Karen.** Live app already identifies completed routines by this ID; mechanism still unconfirmed; see Open items. |
 | `standing_poses_selected` | set, up to 8 | which of the 8 standing poses (Standing, Arms Up, T-Pose, Straddle T, Arms Behind, Toe Touch, Lunge (R), Lunge (L)) are toggled on | from `standing` / `Base Positions` screens |
