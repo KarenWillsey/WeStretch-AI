@@ -45,6 +45,17 @@ originated in CMO but apply to any deliverable-producing work across roles):
    - **Why:** Karen found three raw Jira API dump files (`assigned_tickets_data.json`, `jira_brief_output.json`, `mentions_data.json`) sitting untracked at the repo root, left behind by a `daily-brief-jira` run (2026-08-31). They were intermediate working data for building the daily brief, not a deliverable, and should have been deleted once the brief was produced.
    - **How to apply:** If a task needs a scratch/intermediate file at all, write it to the session's actual scratchpad directory (never the repo), and if it must briefly touch the repo for some tool-specific reason, delete it before the task ends. Before finishing any task, run `git status` and treat any unexpected untracked file as a cleanup item, not something to leave for later or silently commit. This applies to every role and every automation (scheduled or interactive), not just Jira. See `.claude/skills/daily-brief-jira/SKILL.md` for the specific fix applied to the skill that caused this.
 
+9. **Karen has a serious reading disability. She is a slow reader and does not absorb much per pass. Every response to her must be zero fluff: exactly what she needs to know, nothing else. If she wants more, she will ask.**
+   - **Why:** She stated this directly again on 2026-09-07 after a website copy task, and said she has asked before. She had already said it on 2026-08-21 ("I've read this 4 times now"). It has been broken repeatedly since, most recently with a long multi-section summary of a three-page website rewrite. Repeating a rule she has already given is itself the failure, not just the long response.
+   - **How to apply:**
+     - Lead with the answer or the status. No preamble, no recap of what she asked for, no narration of how the work was done.
+     - Short sentences, short paragraphs, bullets over prose.
+     - Do not paste multi-section write-ups, long tables or nested lists into chat. Detail goes in a file, with a link.
+     - Do not explain reasoning she did not ask for. Do not list every skill used, every check run, or every file touched.
+     - Open questions: state them as a short list at the end, one line each. Do not argue both sides.
+     - This holds in every conversation and every project, permanently. It is not something to re-earn per session.
+     - Same rule already lives in the per-user auto-memory store as `user-reading-disability` and `feedback-concise-responses`. It is duplicated here on purpose so it travels with the repo.
+
 ## Repo restructure (project)
 
 On 2026-08-17, the repo moved from one root `CLAUDE.md`/`Memory.md` to a

@@ -71,6 +71,59 @@ verify the whole loop before trusting it unattended:
 **Conclusion: both skills work as designed.** Safe to let the unattended
 schedule run for real going forward. Nothing to fix.
 
+## The live App Store listing is readable without App Store Connect (2026-09-06)
+
+Found during the 2026-09-06 nightly run, which had been told (by an
+earlier run's own note) that no English product page metadata existed.
+It did. It was live on the App Store the whole time; only the repo had no
+record of it. **Check the live listing before ever concluding an App
+Store asset "does not exist."**
+
+Two public, unauthenticated sources cover most fields, and both were
+verified working:
+
+- `https://itunes.apple.com/lookup?id=1458915362&country=us` returns
+  JSON with the app name, the full description, version, release date,
+  seller, categories, price, **minimum iOS version**, average rating,
+  rating count, and the current release notes.
+- The storefront HTML (`https://apps.apple.com/us/app/id1458915362`,
+  fetched with a browser user agent) contains the **subtitle**, which the
+  lookup API does not return. Grep the HTML for `"subtitle":"`. The same
+  trick reads competitors' subtitles from the "You Might Also Like" rail,
+  which is free keyword research.
+
+**Two fields stay invisible from outside and always need App Store
+Connect:** the keyword field and promotional text. Never guess at their
+current values; propose, and say plainly that it is a proposal.
+
+WeStretch's App Store app ID is **1458915362**. The storefront URL slug
+(`westretch-the-stretching-app`) is stale and does not match the current
+app name, which is normal; the slug does not update when the name does.
+
+## The live IAP list is readable too, and WeStretch does sell via Apple IAP (2026-09-07)
+
+Extends the 2026-09-06 note below. The storefront HTML also carries the
+in-app purchase list, which the `itunes.apple.com/lookup` API does not
+return. In the page's embedded JSON, look for an `Annotation` block with
+`"title":"In-App Purchases"`; its `textPairs` are `[name, price]`.
+
+**This settles a question that had blocked the 2026-08-30 subscription
+offers item: WeStretch transacts through Apple IAP, not only Stripe.**
+
+Live US SKUs as of 2026-09-07 (Apple caps this public list at 10 and orders
+it itself, so there may be more): Premium Monthly $9.99, Premium Yearly
+$59.99, Premium Quarterly $20.99, 999 Coins $6.99, 200 Coins $1.99, 50
+Coins $0.99, Streak Saver (1) $1.99, Streak Saver (7) $11.99, Streak Saver
+(3) $4.99, Pro Quarterly $69.99. The Premium Monthly/Yearly prices match
+the website's Stripe links exactly, so the channels are at price parity.
+
+**Unresolved naming split, don't write copy around it until Karen rules:**
+the App Store sells "**Premium**" Monthly/Yearly/Quarterly, but the app's
+own onboarding/paywall spec (`Team/CXO/In Progress/Onboarding UX Flow
+Spec/`) calls the paid tier "**Pro**" everywhere. There is *also* a
+separate "Pro Quarterly" at $69.99 alongside "Premium Quarterly" at $20.99,
+and nothing in this repo explains what the difference is.
+
 ## Knowledge Base baseline (2026-08-21)
 
 Karen provided a full, sourced Apple Developer checklist for WeStretch
