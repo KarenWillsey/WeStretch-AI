@@ -19,12 +19,26 @@ Durable facts for this folder only. Cross role facts go in the repo root `Memory
    - Type: Work Sans Bold for display, Inter Regular/SemiBold/Bold for everything else.
    - Print CMYK hex values differ from web hex values. Both are recorded in `core/brand-core.json`. Do not use web values on a print job.
 
-3. **OPEN CONFLICT: the Westretch-UX prototype does not use the brand palette.**
-   - `Team/CXO/In Progress/Westretch-UX/src/styles/global.css` defines a green
-     system (`--variant-accent: #178f78`, `--variant-dark: #0b5f51`,
-     `--variant-soft: #dff6ef`) and a different red (`#ff3946`, `#e8423a`),
-     none of which appear in the brand guideline.
-   - **Not resolved.** Karen has to decide: is the prototype green an
-     intentional new direction that should be promoted into the brand core, or
-     is it drift that should be corrected back to Fire Red?
-   - Tracked in `WORK-TRACKER.md`.
+3. **RESOLVED 2026-09-09: the app palette was drift, not a new direction.**
+   - The Westretch-UX prototype had been running a green system
+     (`--variant-accent: #178f78`, `--variant-dark: #0b5f51`, `--variant-soft: #dff6ef`)
+     plus a slightly-off red (`#ff3946`, `#e8423a`). None of it appears in the brand book.
+   - **Karen's call, verbatim: "red is right, green is drift. update everywhere."**
+   - The prototype is now on Fire Red. Full change table is in
+     `Team/CXO/In Progress/Westretch-UX/Memory.md`.
+   - **How to apply going forward:** `Knowledge Base/Brand Guildeline.pdf` is the
+     authority. If any surface disagrees with it, the surface is wrong. Do not treat
+     a colour that shipped in a prototype as evidence that it is brand.
+
+4. **The app's red was close but not exact, and that counted as drift too.**
+   - The prototype CTA gradient was `#ff7b6b` to `#e8423a`. The brand ramp is
+     `#FC7E84` to `#E24048`. Near enough to look right in isolation, wrong when
+     placed next to a correctly built asset.
+   - **How to apply:** never eyeball a brand colour. Copy the hex out of
+     `core/brand-core.json` or `core/tokens.css`.
+
+5. **Open, smaller: the Pro and Lite concept variants are still off brand on purpose.**
+   `westretch-pro` uses purple `#7357d8`, `westretch-lite` uses coral `#e25d4f`.
+   They are alternate product concepts for different audiences, so being visually
+   distinct is the point. Left unchanged in the 2026-09-09 sweep. Karen has not
+   said whether they should eventually come onto the brand core.

@@ -15,10 +15,18 @@ Durable facts for this folder only.
    Minimum 48px touch target and 16.5px body text, because the audience is
    adults 50 to 65. These are not negotiable per screen.
 
-3. **OPEN CONFLICT: the Westretch-UX prototype palette is green, the brand is red.**
-   - Prototype: `--variant-accent: #178f78`, `--variant-dark: #0b5f51`,
-     `--variant-soft: #dff6ef`, plus reds `#ff3946` and `#e8423a`.
-   - Brand guideline: Fire Red `#FC4850`, Midnight Grey `#1F1F1F`.
-   - Neither is wrong yet. Karen decides whether green is a new direction to
-     promote into the brand core, or drift to correct.
-   - Same item is logged in the Brand System `Memory.md` and `WORK-TRACKER.md`.
+3. **RESOLVED 2026-09-09: the prototype is on Fire Red, the green is gone.**
+   - **Karen's call, verbatim: "red is right, green is drift. update everywhere."**
+   - `Team/CXO/In Progress/Westretch-UX/src/styles/global.css` and
+     `src/data/variants.json` were rewritten onto the brand palette.
+     `npm run check` and `npm run build` both clean after the change.
+   - Full before/after table lives in `Team/CXO/In Progress/Westretch-UX/Memory.md`.
+   - **How to apply:** this kit and the prototype now agree. If they ever diverge
+     again, the brand book wins, then this kit, then the prototype. Never the other way.
+
+4. **Two colours in the prototype are intentionally off brand. Leave them.**
+   - The badge screen brown gym backdrop (`#14100c`, `#2a2118`) is the 3D environment
+     the brand book describes, not drift.
+   - The reviewer hotspot debug highlight (`#14e39a` mint) is a dev-only overlay kept
+     loud and off brand so it does not compete with the artwork. Turning it red would
+     make it collide with every real Fire Red CTA.
