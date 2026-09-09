@@ -1,0 +1,61 @@
+/* WeStretch Brand Core
+   Single source of truth for colour, type and shape.
+   Extracted from Knowledge Base/Brand Guildeline.pdf (47pp).
+   Do not redefine these values anywhere else. Import or copy from here.
+
+   Two skins are built on top of this file:
+     - Team/CXO/In Progress/App Design System/tokens/app-tokens.css
+     - Team/CMO/In Progress/Brand System/marketing/marketing-tokens.css
+*/
+
+:root {
+  /* Primary palette */
+  --ws-fire-red: #FC4850;      /* CMYK print value #FF3366 */
+  --ws-midnight-grey: #1F1F1F; /* CMYK print value #333333 */
+  --ws-dark-grey: #4C4C4C;
+  --ws-white: #FFFFFF;
+
+  /* Secondary palette */
+  --ws-sunshine-gold: #FBBC05;   /* CMYK #FFCC00 */
+  --ws-lavender-blue: #667FD4;   /* CMYK #6666CC */
+  --ws-light-grey: #E4E4E4;
+  --ws-medium-grey: #ADACAC;
+
+  /* Fire Red ramp */
+  --ws-red-900: #4B1518;
+  --ws-red-800: #641C20;
+  --ws-red-700: #7E2428;
+  --ws-red-600: #972B30;
+  --ws-red-500: #B03238;
+  --ws-red-400: #C93940;
+  --ws-red-300: #E24048;
+  --ws-red-200: #FC4850;
+  --ws-red-100: #FC7E84;
+  --ws-red-050: #FEDADC;
+
+  /* Neutral ramp (Midnight Grey tints) */
+  --ws-grey-900: #1F1F1F;
+  --ws-grey-800: #353535;
+  --ws-grey-700: #4C4C4C;
+  --ws-grey-600: #626262;
+  --ws-grey-500: #797979;
+  --ws-grey-400: #A5A5A5;
+  --ws-grey-300: #BCBCBC;
+  --ws-grey-200: #D2D2D2;
+  --ws-grey-100: #E9E9E9;
+  --ws-grey-050: #FFFFFF;
+
+  /* Typography */
+  --ws-font-display: "Work Sans", system-ui, sans-serif; /* Bold only */
+  --ws-font-ui: "Inter", system-ui, sans-serif;          /* Regular, SemiBold, Bold */
+
+  /* Shape: brand guideline specifies 10% corner radius on containers */
+  --ws-radius-ratio: 0.10;
+
+  /* Container recipe (guideline p24) */
+  --ws-container-fill: rgba(31, 31, 31, 0.99);
+  --ws-container-stroke: rgba(255, 255, 255, 0.20);
+  --ws-container-inner-fill: rgba(255, 255, 255, 0.20);
+  --ws-container-inner-tip: #4C4C4C;
+  --ws-container-title: #D9D9D9;
+}

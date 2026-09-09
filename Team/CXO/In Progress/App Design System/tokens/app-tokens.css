@@ -1,0 +1,59 @@
+/* WeStretch App Skin
+   Built on the brand core. Import that first.
+   Use for in app UI only. Never for ads, email or print.
+
+   Brand core: Team/CMO/In Progress/Brand System/core/tokens.css
+   Never redefine a brand colour here. Only app scale, spacing and component recipes.
+*/
+
+@import url("../../../../CMO/In Progress/Brand System/core/tokens.css");
+
+:root {
+  /* App type scale. Smaller and tighter than marketing.
+     Brand guideline p25 sets the sheet defaults. */
+  --app-header:    24px; /* Inter Bold */
+  --app-title:     16px; /* Inter SemiBold, container titles */
+  --app-body:      16.5px; /* Inter Regular */
+  --app-caption:   14px;
+  --app-header-gap: 8px;  /* header to body */
+
+  /* App spacing */
+  --app-space-xs: 4px;
+  --app-space-sm: 8px;
+  --app-space-md: 16px;
+  --app-space-lg: 24px;
+  --app-space-xl: 40px;
+
+  /* Touch. Minimum tappable target for a 50 to 65 audience. */
+  --app-touch-min: 48px;
+
+  /* Surfaces. Brand guideline p23-24: 2D layers floating over a 3D gym background. */
+  --app-scrim-blur: 6%;
+  --app-panel-fill:   var(--ws-container-fill);        /* #1F1F1F at 99% */
+  --app-panel-stroke: var(--ws-container-stroke);      /* 1pt white at 20% */
+  --app-panel-inner:  var(--ws-container-inner-fill);  /* white at 20% */
+  --app-panel-title:  var(--ws-container-title);       /* #D9D9D9 */
+  --app-inner-element: var(--ws-container-inner-tip);  /* #4C4C4C keeps elements sharp */
+
+  /* Text on the dark panel system */
+  --app-ink:       #FFFFFF;
+  --app-ink-muted: var(--ws-grey-300);
+
+  /* Primary action. Guideline p26: always red, rounded, vertical gradient, slight shadow. */
+  --app-cta-fill: linear-gradient(180deg, #FC7E84 0%, #FC4850 55%, #E24048 100%);
+  --app-cta-ink: #FFFFFF;
+  --app-cta-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --app-cta-radius: 999px;
+
+  /* Secondary action is never a second coloured button. It is a small hyperlink. */
+  --app-link-ink: var(--ws-grey-300);
+}
+
+/* Corner radius is 10% of container width, per the guideline.
+   In CSS that is not directly expressible, so use these standard sizes. */
+:root {
+  --app-radius-sm: 8px;   /* small chips, roughly 80px wide */
+  --app-radius-md: 16px;  /* cards, roughly 160px wide */
+  --app-radius-lg: 24px;  /* sheets, roughly 240px wide */
+  --app-radius-xl: 36px;  /* full width panels on phone */
+}

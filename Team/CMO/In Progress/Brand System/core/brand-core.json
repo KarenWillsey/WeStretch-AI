@@ -1,0 +1,67 @@
+{
+  "source": "Knowledge Base/Brand Guildeline.pdf",
+  "colors": {
+    "primary": {
+      "fireRed":      { "web": "#FC4850", "print": "#FF3366", "rgb": [252, 72, 80] },
+      "midnightGrey": { "web": "#1F1F1F", "print": "#333333", "rgb": [31, 31, 31] },
+      "darkGrey":     { "web": "#4C4C4C", "print": "#333333", "rgb": [76, 76, 76] },
+      "white":        { "web": "#FFFFFF", "print": "#FFFFFF", "rgb": [255, 255, 255] }
+    },
+    "secondary": {
+      "sunshineGold": { "web": "#FBBC05", "print": "#FFCC00", "rgb": [251, 188, 5] },
+      "lavenderBlue": { "web": "#667FD4", "print": "#6666CC", "rgb": [102, 127, 212] },
+      "lightGrey":    { "web": "#E4E4E4" },
+      "mediumGrey":   { "web": "#ADACAC", "rgb": [173, 172, 172] }
+    }
+  },
+  "typography": {
+    "display": { "family": "Work Sans", "weights": ["Bold"] },
+    "ui":      { "family": "Inter", "weights": ["Regular", "SemiBold", "Bold"] },
+    "sheetDefaults": {
+      "header": { "family": "Inter", "weight": "Bold", "size": "24pt" },
+      "body":   { "family": "Inter", "weight": "Regular", "size": "16.5pt" },
+      "containerTitle": { "family": "Inter", "weight": "SemiBold", "size": "16pt", "color": "#D9D9D9" },
+      "headerToBodySpacing": "8pt",
+      "align": "left"
+    }
+  },
+  "shape": {
+    "cornerRadius": "10% of container width",
+    "container": {
+      "fill": "#1F1F1F at 99% opacity",
+      "innerStroke": "1pt #FFFFFF at 20% opacity",
+      "innerContainerFill": "#FFFFFF at 20% opacity",
+      "innerElementColor": "#4C4C4C"
+    }
+  },
+  "cta": {
+    "shape": "rounded",
+    "fill": "vertical linear gradient of Fire Red",
+    "shadow": "slight drop shadow",
+    "rule": "Primary action is always the big red button. Dismiss or Not now is small and hyperlinked.",
+    "copy": "short and clear"
+  },
+  "logo": {
+    "concepts": ["community", "movement", "collection", "innovation"],
+    "clearance": "the width of the w from each perimeter",
+    "luminousVariant": "background use only, always include the WE S letters, large scale only",
+    "elementPattern": "always align elements to the bottom, large scale only, never small"
+  },
+  "visualStyle": {
+    "system": "2D interface layers floating over a 3D gym background",
+    "backgroundBlur": "uniform layer blur 6%",
+    "iconography": ["outlined line-work with text on main menus", "coloured and shaded for large areas where text is secondary", "stick figure library for poses and subtypes, coloured means selected, grey means unselected"]
+  },
+  "characters": {
+    "ada": {
+      "role": "Main AI stretch instructor, central character",
+      "personality": "motivator plus explainer, smart, adaptive, calm",
+      "note": "Playful superhero framing, does what human guides cannot"
+    },
+    "bruce": {
+      "role": "Secondary coach, Ada's counterpart",
+      "personality": "high energy, celebratory"
+    }
+  },
+  "tactileElements": ["WeCoin", "Badges", "Streak Savers"]
+}

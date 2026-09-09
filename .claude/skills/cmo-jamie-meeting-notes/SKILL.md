@@ -1,9 +1,9 @@
 ---
 name: cmo-jamie-meeting-notes
-description: Use when Karen shares a new Zoom transcript (or SRT/VTT/TXT/Markdown) with Jamie and wants the WeStretch team's running action-item list updated. Trigger phrases include "meeting notes", "action items", "Jamie meeting", "Zoom transcript", "update the running list", "what's still open from the call", or pasting a transcript alongside the previous action-item Markdown. Reconciles the previous action-item baseline against the new transcript — closing completed work, adding newly assigned tasks, and preserving dependencies — then writes a dated Markdown file to the project's Output folder.
+description: Use when Karen shares a new Zoom transcript (or SRT/VTT/TXT/Markdown) with Jamie and wants the WeStretch team's running action-item list updated. Trigger phrases include "meeting notes", "action items", "Jamie meeting", "Zoom transcript", "update the running list", "what's still open from the call", or pasting a transcript alongside the previous action-item Markdown. Reconciles the previous action-item baseline against the new transcript, closing completed work, adding newly assigned tasks, and preserving dependencies, then writes a dated Markdown file to the project's Output folder.
 ---
 
-# CMO — Jamie Meeting Notes
+# CMO: Jamie Meeting Notes
 
 Update the WeStretch team's running action-item Markdown using the newest meeting transcript.
 
@@ -41,7 +41,7 @@ Update the WeStretch team's running action-item Markdown using the newest meetin
 - Include a deadline in the task only when it was explicitly stated.
 - Do not include completed checkboxes, commentary, explanations, or a meeting summary unless requested.
 - Prefer concise wording while preserving enough context for the team to act without reopening the transcript.
-- Save the file to `Team/CMO/In Progress/Jamie Meeting Notes/Output/`, named `WeStretch-Team-Zoom-Remaining-Action-Items-YYYY-MM-DD.md` (same date as the title). This becomes the new baseline for the next run — do not overwrite prior dated files.
+- Save the file to `Team/CMO/In Progress/Jamie Meeting Notes/Output/`, named `WeStretch-Team-Zoom-Remaining-Action-Items-YYYY-MM-DD.md` (same date as the title). This becomes the new baseline for the next run. Do not overwrite prior dated files.
 
 ## Quality check
 

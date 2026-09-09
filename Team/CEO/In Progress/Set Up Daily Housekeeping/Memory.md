@@ -75,6 +75,13 @@ a personal tool for Karen only, not (yet) a template for other execs.
   the Kari rollup; then read the item back before moving on. Read-back has
   caught this every single time, so detection is working and only prevention
   is missing.
+  **First clean run 2026-09-09**: the Kari rollup and Karen's own brief both
+  rendered as real HTML on the first send, verified by read-back from Sent
+  Items, one send each, no correction email. The streak broke because the
+  orchestrator explicitly told the triage agent to pass raw unescaped tags and
+  read the item back. That instruction still lives in the caller, not in
+  `daily-brief-email-triage` itself, so a run invoked without it can still
+  regress. Do not treat this as fixed until the rule is in the skill.
 
 - **Oversized email bodies can be recovered from the saved tool-result file.**
   The Aug 12 Taylor Estates email (166,815 chars) was reported unreadable on
@@ -91,3 +98,18 @@ a personal tool for Karen only, not (yet) a template for other execs.
   (confirmed again 2026-09-06 by batch-delete returning a different newId
   per message). Not a bug to fix in the skill; report those items as
   "left the inbox, folder untraceable" and move on.
+
+## Resolved (kept so it is not re-investigated)
+
+- **Asana My Tasks pagination is fine.** An invalid pagination token on
+  2026-09-07 made the task count unconfirmable and looked like a broken API.
+  Two clean runs since: 2026-09-08 paged through 225 open tasks and 2026-09-09
+  paged through 224, both across three pages with no gap. Treat that one day as
+  transient. Tracker item deleted 2026-09-09; do not reopen without a new
+  failure.
+- **Asana project names are still missing and this is a real gap, not a
+  pagination side effect.** `daily-brief-asana` requests only
+  `name,due_on,assignee_section.name,permalink_url`, so every task in the brief
+  reads as "My Tasks" or a bare numeric project id. Confirmed again 2026-09-09.
+  The fix is adding `projects.name` to the opt_fields list.
+

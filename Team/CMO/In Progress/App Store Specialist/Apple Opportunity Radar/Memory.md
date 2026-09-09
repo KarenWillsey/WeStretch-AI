@@ -124,6 +124,38 @@ Spec/`) calls the paid tier "**Pro**" everywhere. There is *also* a
 separate "Pro Quarterly" at $69.99 alongside "Premium Quarterly" at $20.99,
 and nothing in this repo explains what the difference is.
 
+## WeStretch is a dark-themed app, and the whole product page is dark (2026-09-08)
+
+Found during the 2026-09-08 nightly run, working a backlog item that assumed
+the opposite. **All 10 live iPhone screenshots and all 10 iPad screenshots
+show a dark app UI on a dark caption band.** There is no light screen
+anywhere on the product page. Do not accept a future "add a Dark Mode
+screenshot" item at face value; it is already satisfied.
+
+This is deliberate, not accidental. The approved brand palette in
+`App Store Image Creation/Memory.md` is Fire Red #FC4850 / White #FFFFFF /
+Midnight Grey #1F1F1F, with a charcoal RGB(12,13,14)->RGB(30,30,31) caption
+band. The CXO redesign prototype
+(`Team/CXO/In Progress/Westretch-UX/public/screens/westretch/`) is dark too;
+11 of 12 sampled screens. **So the current screenshots will not go stale when
+the redesign ships** — a risk worth not re-checking.
+
+**How to inspect the live screenshots without App Store Connect:** the
+`itunes.apple.com/lookup` call already in this file returns `screenshotUrls`
+and `ipadScreenshotUrls` at thumbnail size. Swap the trailing
+`/320x480bb.jpg` for `/600x0w.png` to get a readable version. Measure mean
+luminance to triage, but **always look at a few** — WeStretch's brighter
+screenshots (mean luma ~112) are sunlit lifestyle photography with a
+near-black app UI composited on top, so the number alone is misleading.
+
+**Still unanswered, and it needs the iOS project:** whether the app is
+*adaptive* (honours the system Light/Dark setting) or *hard-locked* to dark.
+The `UIUserInterfaceStyle` key in the app target's Info.plist decides it.
+If adaptive, the product page needs a *Light* Mode screenshot — the reverse
+of what the backlog item asked for. If fixed dark, there is nothing to do.
+Record the answer here when someone checks, so a monthly refresh does not
+raise this a third time.
+
 ## Knowledge Base baseline (2026-08-21)
 
 Karen provided a full, sourced Apple Developer checklist for WeStretch
