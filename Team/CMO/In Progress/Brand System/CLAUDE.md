@@ -12,7 +12,9 @@ folder gets corrected.
 core/            Shared brand truth. Both skins build on this. Never bypass it.
   tokens.css       Colour, type and shape as CSS variables
   brand-core.json  The same values as data, for tools and renderers
-  voice.md         Copy rules that constrain design output
+  voice.md         AUTHORITY on voice, tone, audience and every banned word
+  positioning.md   AUTHORITY on product, differentiation, competitors, proof
+  voice-doc-review.md  Why voice.md says what it says, kept as a record
 marketing/       The marketing skin
   marketing-tokens.css  Scale and spacing for ads, email, print, web
   formats.md            Exact canvas sizes for every surface
@@ -46,3 +48,18 @@ The **app skin** lives in `Team/CXO/In Progress/App Design System/` and imports
 `/design-sync` pushes `components/` up to a Claude Design project so the
 marketing kit is visible as cards. The repo stays the source of truth.
 Never edit on claude.ai and expect it to come back down.
+
+## One fact, one home
+
+`core/voice.md` and `core/positioning.md` are the authority. Nothing else in the
+repo restates their content; other files point at them.
+
+`.agents/product-marketing.md` is a router read by 49 third-party marketing
+skills. It holds pointers plus four non-negotiable rules and nothing else. It
+was cut from 189 lines to a router on 2026-09-09 because roughly 120 of those
+lines were a second copy of the voice doc, which is exactly how the colour
+palette drifted.
+
+**If you change a fact, change the authority file. Never add content here or to
+the router.**
+

@@ -1,0 +1,42 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Buttons</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet"><style>
+:root{
+  --ws-fire-red:#FC4850; --ws-red-100:#FC7E84; --ws-red-300:#E24048; --ws-red-400:#C93940;
+  --ws-red-050:#FEDADC; --ws-midnight:#1F1F1F; --ws-dark-grey:#4C4C4C; --ws-gold:#FBBC05;
+  --ws-lavender:#667FD4; --ws-light-grey:#E4E4E4;
+  --g900:#1F1F1F; --g800:#353535; --g700:#4C4C4C; --g600:#626262; --g500:#797979;
+  --g400:#A5A5A5; --g300:#BCBCBC; --g200:#D2D2D2; --g100:#E9E9E9; --g050:#FAFAFA;
+  --cta:linear-gradient(180deg,#FC7E84 0%,#FC4850 55%,#E24048 100%);
+  --panel:rgba(31,31,31,.99); --panel-stroke:rgba(255,255,255,.20);
+  --panel-inner:rgba(255,255,255,.20); --panel-title:#D9D9D9;
+  --f-display:"Work Sans",system-ui,sans-serif; --f-ui:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--f-ui);background:var(--g050);color:var(--g900);
+  -webkit-font-smoothing:antialiased;padding:24px}
+.ds-h{font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--g500);margin:0 0 4px}
+.ds-sub{font-size:12px;color:var(--g400);margin:0 0 20px}
+.ds-row{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+.ds-col{display:flex;flex-direction:column;gap:14px}
+.ds-lab{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--g400);
+  margin-top:6px;font-weight:600}
+.ds-sec{margin-bottom:28px}
+/* dark stage: the app's panels always sit over the 3D gym backdrop */
+.stage{background:linear-gradient(160deg,#2a2118 0%,#14100c 70%);border-radius:20px;
+  padding:22px;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+
+.btn{font-family:var(--f-ui);font-weight:700;font-size:16.5px;color:#fff;border:0;
+  background:var(--cta);border-radius:999px;min-height:48px;padding:0 28px;cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.35);width:100%}
+.btn:active{background:linear-gradient(180deg,#E24048 0%,#C93940 100%)}
+.btn[disabled]{background:var(--g700);box-shadow:none;color:var(--g400);cursor:not-allowed}
+.btn-link{background:none;border:0;box-shadow:none;color:var(--g300);font-weight:600;
+  font-size:15px;text-decoration:underline;min-height:44px;cursor:pointer;width:auto;padding:0}
+.panel{background:var(--panel);border-radius:24px;padding:20px;
+  box-shadow:inset 0 0 0 1px var(--panel-stroke);width:300px}
+.panel h3{font-size:16px;font-weight:600;color:var(--panel-title);margin:0 0 10px}
+.panel p{font-size:16.5px;line-height:1.45;color:#fff;margin:0 0 8px}
+.inner{background:var(--panel-inner);border-radius:16px;padding:14px;margin-top:12px}
+</style></head><body><p class="ds-h">Buttons</p><p class="ds-sub">One Fire Red button per screen. Everything else is a small link.</p><div class="stage"><div style="width:300px" class="ds-col"><div><button class="btn">Start today's routine</button><div class="ds-lab" style="color:var(--g400)">Primary, default</div></div><div><button class="btn" style="background:linear-gradient(180deg,#E24048 0%,#C93940 100%)">Start today's routine</button><div class="ds-lab" style="color:var(--g400)">Primary, pressed</div></div><div><button class="btn" disabled>Start today's routine</button><div class="ds-lab" style="color:var(--g400)">Primary, disabled</div></div><div style="text-align:center"><button class="btn-link">Not now</button><div class="ds-lab" style="color:var(--g400)">Secondary. Never a second coloured button.</div></div></div></div><p style="font-size:12px;color:var(--g600);border-left:3px solid var(--ws-fire-red);padding-left:12px;margin-top:20px">Rounded, vertical Fire Red gradient, slight drop shadow (brand book p26). Minimum height 48px and minimum label 16.5px, because the audience is 50 to 65. Dismiss and Not now are small hyperlinks, never a competing coloured button.</p></body></html>

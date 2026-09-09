@@ -78,6 +78,43 @@ Each skill is scoped to a single decision or review task for that function (e.g.
 
 **Git submodules:** a project folder can be a real application-code repo (as opposed to the planning-doc folders the rest of `Team/` holds) checked in as a git submodule, e.g. `Team/CMO/Ready/website-repo` → `git@github.com:WeBananas/westretch-website-astro.git`. `.gitmodules` at repo root tracks these. A fresh clone needs `git submodule update --init --recursive` to populate them; an empty submodule folder after cloning is expected, not broken. Treat the submodule's own `CLAUDE.md`/`AGENTS.md` (if it has one) as authoritative for that codebase; this repo's `CLAUDE.md`/`Memory.md` files describe the business/org layer, not the application code inside the submodule.
 
+## Brand, voice and the design system
+
+Three files are the source of truth for anything WeStretch says or shows. They
+are not optional reading for copy or design work in any role.
+
+| Topic | File |
+|---|---|
+| **Voice, tone, audience, banned words, per-channel examples** | `Team/CMO/In Progress/Brand System/core/voice.md` |
+| **Product, differentiation, competitors, proof points** | `Team/CMO/In Progress/Brand System/core/positioning.md` |
+| **Colour, type, logo, shape** | `Team/CMO/In Progress/Brand System/core/tokens.css` and `core/brand-core.json` |
+| **Ad, email, social, print sizes** | `Team/CMO/In Progress/Brand System/marketing/formats.md` |
+
+The architecture is **one brand core, two skins**. The CMO owns the core plus
+the marketing skin. The CXO owns the app skin
+(`Team/CXO/In Progress/App Design System/`), which imports the core and never
+redefines a brand value. A colour or font hex belongs in the core, nowhere else.
+
+`Knowledge Base/Brand Guildeline.pdf` (47pp) is the official brand book. If any
+file or surface disagrees with it, the file is wrong.
+
+**Three tiers of file, and the difference matters.** Keeping them straight is
+what stops the same fact living in five places and drifting apart.
+
+- **Authority.** The real content, one home each: `core/voice.md`,
+  `core/positioning.md`, `core/tokens.css`. Change facts here.
+- **Bootstrap.** Auto-loaded by a harness, so they carry a short rule floor plus
+  pointers: this file and `AGENTS.md`. Deliberate insurance, kept minimal.
+- **Router.** Pointers only, no content: `.agents/product-marketing.md`. 49 of
+  the installed third-party skills open by reading that exact path, which is the
+  only reason it exists. Do not edit the vendored `SKILL.md` files to inject
+  context; they are overwritten on package update.
+
+If any of these disagree, the authority file wins. Change it first.
+
+**Non-Claude harnesses read `AGENTS.md`**, not this file. It carries the same
+pointers and hard rules. Keep the two in step.
+
 ## Naming convention
 
 `NAMING-CONVENTION.md` (repo root) is the rule for every folder and skill

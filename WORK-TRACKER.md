@@ -77,7 +77,9 @@ may need revisiting, Ready usually means done, this isn't). Full detail:
 - [ ] **One westretch.ca URL is noindexed in both the HTML and the HTTP header, surfaced 2026-09-08.** An Ahrefs alert ("Noindex in HTML and HTTP header [New]: 1 URL") caught by the daily brief. That URL is blocked from search entirely. Identify which page it is and confirm whether it's the intentional dev-site block already tracked above or an accidental one on a live page (`Team/CMO/Ready/website-repo`)
 
 Resolved 2026-08-21 (contact form: keep mailto:, future swap to a
-WeStretch webhook API once Karen builds it; analytics/GA4/Meta Pixel IDs
+WeStretch webhook API once Karen builds it, and as of 2026-09-09 the
+global footer newsletter signup shares that same mailto: fallback, so
+two forms swap over when that API lands, not one; analytics/GA4/Meta Pixel IDs
 provided and wired; Stripe links confirmed live; `/signup/` now redirects
 home; Sign In URL confirmed correct; social links confirmed; no video
 needed) and 2026-08-28 (image self-hosting: all images self-hosted under
@@ -192,9 +194,22 @@ archive copies.
 Set up 2026-09-09. Projects: `Team/CMO/In Progress/Brand System/` and
 `Team/CXO/In Progress/App Design System/`.
 - [x] ~~DECISION NEEDED: app prototype palette does not match the brand guideline.~~ **Resolved 2026-09-09.** Karen: "red is right, green is drift. update everywhere." The Westretch-UX prototype was moved off the green system onto brand Fire Red `#FC4850` (`global.css` and `variants.json`); `npm run check` and `npm run build` clean. Change table in `Team/CXO/In Progress/Westretch-UX/Memory.md`.
-- [ ] **Component libraries are still empty.** `Brand System/components/` and `App Design System/components/` hold no component previews yet. The palette is settled now, so this is unblocked and is the next piece of work. Flagged 2026-09-09
-- [ ] **No Claude Design project created yet.** `/design-sync` needs a design-system project on claude.ai to target. Waiting on the component libraries above. Flagged 2026-09-09
-- [ ] **Should the Pro and Lite concept variants come onto the brand core?** `westretch-pro` is purple `#7357d8`, `westretch-lite` is coral `#e25d4f`. Deliberately distinct because they are alternate product concepts for different audiences, so they were left out of the 2026-09-09 drift fix. Karen has not ruled on whether that stays true long term. Low priority, not blocking. Flagged 2026-09-09
+- [x] ~~Component libraries are still empty.~~ **Done 2026-09-09.** 10 components built in Fire Red: 5 marketing (colour, typography, paid social, email, out of home) and 5 app (buttons, panels, tactile, forms, spacing). All carry `@dsCard` markers and are ready for `/design-sync`. **Awaiting Karen's visual review before syncing.**
+- [ ] **No Claude Design project created yet.** `/design-sync` needs a design-system project on claude.ai to target. Components exist and were published for review 2026-09-09 at https://claude.ai/code/artifact/5d46afb0-2d95-4267-a20d-a75126231162 . Unblocked once Karen approves. Flagged 2026-09-09
+
+## Voice document (CMO)
+
+Staff-authored voice doc submitted 2026-09-09. Karen approved all three
+corrections the same day. Merged into
+`Team/CMO/In Progress/Brand System/core/voice.md`.
+- [x] ~~DECISION: does the Pro FOMO conversion lever survive?~~ **Resolved.** Scoped, not retired. The lever stays, framed as value kept rather than value lost. New section "Progress is an asset, not a debt" with a rewrite table. "You've lost 12 days" is out, "your 12 day streak is saved" is in.
+- [x] ~~DECISION: rewrite what sits under "Evolves with you".~~ **Resolved.** Phrase kept, explanation replaced with the prescriptive physiotherapist version. "Learns your body", "tracks you" and "adapts to your body" added to the avoid list.
+- [x] ~~DECISION: Ada and Bruce absent from the voice doc.~~ **Resolved.** Section added. Ada is the brand voice at its warmest; Bruce is the single scoped exception to the hype restraint, in-app celebration beats only.
+- [x] ~~`.agents/product-marketing.md` does not exist.~~ **Created, then cut down, 2026-09-09.** 49 skills read that path. Karen caught that the first version duplicated ~120 lines of `core/voice.md`, so it was reduced to a 51 line router: pointers plus four non-negotiable rules. The product marketing facts moved to a new authority file, `core/positioning.md`.
+- [x] ~~Two competing voice sources.~~ **Resolved.** `Team/CXO/In Progress/Onboarding UX Flow Spec/Brand-Voice-Principles.md` is now a pointer with a table showing where each of Karen's five original principles landed.
+- [ ] **Competitive landscape in `Team/CMO/In Progress/Brand System/core/positioning.md` is a stub.** Only Bend is named. Run the `competitor-profiling` skill and write real profiles into the CMO folder, then summarise there. Flagged 2026-09-09
+- [ ] **No quantitative proof points exist anywhere in the repo.** No user counts, outcome data or testimonials. `core/positioning.md` explicitly tells skills not to invent any and to ask Karen. Worth fixing so marketing copy can cite something. Flagged 2026-09-09
+- [ ] **Growth and funnel targets are not recorded.** The Goals section of `core/positioning.md` points at `Team/CGO/` and `Team/CRO/` but neither holds numbers a skill could use. Flagged 2026-09-09
 
 ## CXO: Westretch-UX
 - [ ] Hotspot misalignment fixed 2026-09-08: the phone is now laid out at a fixed 390x844 and scaled as a whole (`src/lib/usePhoneScale.ts` sets `--phone-scale` from the stage's box; `.phoneScaler` in `global.css`). The old CSS resized the frame itself, so on a short or narrow window the mock screens' text stayed at its natural size inside a smaller box and drifted off the percentage-positioned hotspot rects, which is why Karen saw them line up only at certain VS Code window sizes. Verified with headless-Chrome screenshots at four window sizes with hotspots forced visible. **Still open, needs Karen:** several image screens use 9:16 artwork (`In-The-Gym.png` 3285x5840, `In-Gym-gradient.png` 941x1672) in a 390:844 frame with `object-fit: cover`, so ~18% is cropped off the left and right; on S4 that visibly clips the right edge of the Full Body / Customized buttons. Not changed, because every existing image screen's hotspot rects were authored against the cropped render and switching to `contain` would invalidate them all. Decision needed: re-cut the artwork at 390:844 (and re-measure those rects), or leave the crop. **Committed and pushed** (submodule commit `fae33d3`, bumped in this repo), but **not deployed to `westretch-ux.web.app`**, per Karen's standing 2026-09-08 "Don't deploy". (`Team/CXO/In Progress/Westretch-UX`, flagged 2026-09-08)

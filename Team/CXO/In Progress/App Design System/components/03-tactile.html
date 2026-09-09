@@ -1,0 +1,42 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WeCoin, badges, streaks</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet"><style>
+:root{
+  --ws-fire-red:#FC4850; --ws-red-100:#FC7E84; --ws-red-300:#E24048; --ws-red-400:#C93940;
+  --ws-red-050:#FEDADC; --ws-midnight:#1F1F1F; --ws-dark-grey:#4C4C4C; --ws-gold:#FBBC05;
+  --ws-lavender:#667FD4; --ws-light-grey:#E4E4E4;
+  --g900:#1F1F1F; --g800:#353535; --g700:#4C4C4C; --g600:#626262; --g500:#797979;
+  --g400:#A5A5A5; --g300:#BCBCBC; --g200:#D2D2D2; --g100:#E9E9E9; --g050:#FAFAFA;
+  --cta:linear-gradient(180deg,#FC7E84 0%,#FC4850 55%,#E24048 100%);
+  --panel:rgba(31,31,31,.99); --panel-stroke:rgba(255,255,255,.20);
+  --panel-inner:rgba(255,255,255,.20); --panel-title:#D9D9D9;
+  --f-display:"Work Sans",system-ui,sans-serif; --f-ui:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--f-ui);background:var(--g050);color:var(--g900);
+  -webkit-font-smoothing:antialiased;padding:24px}
+.ds-h{font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--g500);margin:0 0 4px}
+.ds-sub{font-size:12px;color:var(--g400);margin:0 0 20px}
+.ds-row{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+.ds-col{display:flex;flex-direction:column;gap:14px}
+.ds-lab{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--g400);
+  margin-top:6px;font-weight:600}
+.ds-sec{margin-bottom:28px}
+/* dark stage: the app's panels always sit over the 3D gym backdrop */
+.stage{background:linear-gradient(160deg,#2a2118 0%,#14100c 70%);border-radius:20px;
+  padding:22px;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+
+.btn{font-family:var(--f-ui);font-weight:700;font-size:16.5px;color:#fff;border:0;
+  background:var(--cta);border-radius:999px;min-height:48px;padding:0 28px;cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.35);width:100%}
+.btn:active{background:linear-gradient(180deg,#E24048 0%,#C93940 100%)}
+.btn[disabled]{background:var(--g700);box-shadow:none;color:var(--g400);cursor:not-allowed}
+.btn-link{background:none;border:0;box-shadow:none;color:var(--g300);font-weight:600;
+  font-size:15px;text-decoration:underline;min-height:44px;cursor:pointer;width:auto;padding:0}
+.panel{background:var(--panel);border-radius:24px;padding:20px;
+  box-shadow:inset 0 0 0 1px var(--panel-stroke);width:300px}
+.panel h3{font-size:16px;font-weight:600;color:var(--panel-title);margin:0 0 10px}
+.panel p{font-size:16.5px;line-height:1.45;color:#fff;margin:0 0 8px}
+.inner{background:var(--panel-inner);border-radius:16px;padding:14px;margin-top:12px}
+</style></head><body><p class="ds-h">WeCoin, badges, streaks</p><p class="ds-sub">The reward objects. Always 3D, always celebratory, never a flat icon.</p><div class="stage" style="align-items:center"><div style="text-align:center"><div style="width:76px;height:76px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#FDD769,#FBBC05 55%,#C99604);box-shadow:0 6px 18px rgba(251,188,5,.45),inset 0 -3px 8px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-weight:700;font-size:26px;color:#7e5e03">W</div><div class="ds-lab" style="color:var(--g400)">WeCoin</div></div><div style="text-align:center"><div style="width:76px;height:84px;background:linear-gradient(180deg,#FC7E84,#E24048);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-weight:700;font-size:24px;color:#fff;filter:drop-shadow(0 6px 14px rgba(226,64,72,.5))">7</div><div class="ds-lab" style="color:var(--g400)">Badge</div></div><div style="text-align:center"><div style="width:76px;height:76px;border-radius:20px;background:linear-gradient(180deg,#353535,#1F1F1F);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:32px">&#128293;</div><div class="ds-lab" style="color:var(--g400)">Streak saver</div></div><div style="flex:1;min-width:220px"><div style="font-size:14px;color:var(--g300);margin-bottom:8px">Weekly streak</div><div style="height:12px;border-radius:999px;background:rgba(255,255,255,.16);overflow:hidden"><div style="width:64%;height:100%;background:var(--cta)"></div></div><div style="font-size:14px;color:#fff;margin-top:8px">4 of 7 days</div></div></div><p style="font-size:12px;color:var(--g600);border-left:3px solid var(--ws-fire-red);padding-left:12px;margin-top:20px">WeCoin is gold, badges are Fire Red, progress fills use the CTA gradient. These are the only places gold appears at scale.</p></body></html>

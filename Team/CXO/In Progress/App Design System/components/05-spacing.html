@@ -1,0 +1,29 @@
+<!-- @dsCard group="Foundations" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spacing and touch</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet"><style>
+:root{
+  --ws-fire-red:#FC4850; --ws-red-100:#FC7E84; --ws-red-300:#E24048; --ws-red-400:#C93940;
+  --ws-red-050:#FEDADC; --ws-midnight:#1F1F1F; --ws-dark-grey:#4C4C4C; --ws-gold:#FBBC05;
+  --ws-lavender:#667FD4; --ws-light-grey:#E4E4E4;
+  --g900:#1F1F1F; --g800:#353535; --g700:#4C4C4C; --g600:#626262; --g500:#797979;
+  --g400:#A5A5A5; --g300:#BCBCBC; --g200:#D2D2D2; --g100:#E9E9E9; --g050:#FAFAFA;
+  --cta:linear-gradient(180deg,#FC7E84 0%,#FC4850 55%,#E24048 100%);
+  --panel:rgba(31,31,31,.99); --panel-stroke:rgba(255,255,255,.20);
+  --panel-inner:rgba(255,255,255,.20); --panel-title:#D9D9D9;
+  --f-display:"Work Sans",system-ui,sans-serif; --f-ui:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--f-ui);background:var(--g050);color:var(--g900);
+  -webkit-font-smoothing:antialiased;padding:24px}
+.ds-h{font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--g500);margin:0 0 4px}
+.ds-sub{font-size:12px;color:var(--g400);margin:0 0 20px}
+.ds-row{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+.ds-col{display:flex;flex-direction:column;gap:14px}
+.ds-lab{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--g400);
+  margin-top:6px;font-weight:600}
+.ds-sec{margin-bottom:28px}
+/* dark stage: the app's panels always sit over the 3D gym backdrop */
+.stage{background:linear-gradient(160deg,#2a2118 0%,#14100c 70%);border-radius:20px;
+  padding:22px;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+</style></head><body><p class="ds-h">Spacing and touch</p><p class="ds-sub">The scale, and the two floors that are not negotiable.</p><div class="ds-sec"><div style="display:flex;align-items:center;gap:14px;margin-bottom:8px"><div style="width:4px;height:22px;background:var(--ws-fire-red);border-radius:4px"></div><span style="font-size:13px;color:var(--g600)"><b>xs</b> 4px</span></div><div style="display:flex;align-items:center;gap:14px;margin-bottom:8px"><div style="width:8px;height:22px;background:var(--ws-fire-red);border-radius:4px"></div><span style="font-size:13px;color:var(--g600)"><b>sm</b> 8px</span></div><div style="display:flex;align-items:center;gap:14px;margin-bottom:8px"><div style="width:16px;height:22px;background:var(--ws-fire-red);border-radius:4px"></div><span style="font-size:13px;color:var(--g600)"><b>md</b> 16px</span></div><div style="display:flex;align-items:center;gap:14px;margin-bottom:8px"><div style="width:24px;height:22px;background:var(--ws-fire-red);border-radius:4px"></div><span style="font-size:13px;color:var(--g600)"><b>lg</b> 24px</span></div><div style="display:flex;align-items:center;gap:14px;margin-bottom:8px"><div style="width:40px;height:22px;background:var(--ws-fire-red);border-radius:4px"></div><span style="font-size:13px;color:var(--g600)"><b>xl</b> 40px</span></div></div><div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:24px"><div style="border:2px dashed var(--ws-fire-red);border-radius:12px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--ws-fire-red);text-align:center">48</div><div style="max-width:44ch;font-size:14px;color:var(--g600)"><b style="color:var(--g900)">48px minimum touch target.</b> Not 44. The audience is adults 50 to 65 and many use the app standing on a mat, mid routine, without their reading glasses.<br><br><b style="color:var(--g900)">16.5px minimum body text.</b> Same reason. If a layout only works by going smaller, the layout is wrong, not the floor.</div></div><div style="margin-top:26px"><p class="ds-h">Corner radius</p><p class="ds-sub">Brand book says 10% of container width. These are the standard steps.</p><div class="ds-row"><div><div style="width:96px;height:64px;background:var(--g900);border-radius:8px"></div><div class="ds-lab">sm 8px</div></div><div><div style="width:96px;height:64px;background:var(--g900);border-radius:16px"></div><div class="ds-lab">md 16px</div></div><div><div style="width:96px;height:64px;background:var(--g900);border-radius:24px"></div><div class="ds-lab">lg 24px</div></div><div><div style="width:96px;height:64px;background:var(--g900);border-radius:36px"></div><div class="ds-lab">xl 36px</div></div></div></div></body></html>

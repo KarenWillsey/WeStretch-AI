@@ -1,0 +1,29 @@
+<!-- @dsCard group="Foundations" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Typography</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet"><style>
+:root{
+  --ws-fire-red:#FC4850; --ws-red-100:#FC7E84; --ws-red-300:#E24048; --ws-red-400:#C93940;
+  --ws-red-050:#FEDADC; --ws-midnight:#1F1F1F; --ws-dark-grey:#4C4C4C; --ws-gold:#FBBC05;
+  --ws-lavender:#667FD4; --ws-light-grey:#E4E4E4;
+  --g900:#1F1F1F; --g800:#353535; --g700:#4C4C4C; --g600:#626262; --g500:#797979;
+  --g400:#A5A5A5; --g300:#BCBCBC; --g200:#D2D2D2; --g100:#E9E9E9; --g050:#FAFAFA;
+  --cta:linear-gradient(180deg,#FC7E84 0%,#FC4850 55%,#E24048 100%);
+  --panel:rgba(31,31,31,.99); --panel-stroke:rgba(255,255,255,.20);
+  --panel-inner:rgba(255,255,255,.20); --panel-title:#D9D9D9;
+  --f-display:"Work Sans",system-ui,sans-serif; --f-ui:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--f-ui);background:var(--g050);color:var(--g900);
+  -webkit-font-smoothing:antialiased;padding:24px}
+.ds-h{font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--g500);margin:0 0 4px}
+.ds-sub{font-size:12px;color:var(--g400);margin:0 0 20px}
+.ds-row{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+.ds-col{display:flex;flex-direction:column;gap:14px}
+.ds-lab{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--g400);
+  margin-top:6px;font-weight:600}
+.ds-sec{margin-bottom:28px}
+/* dark stage: the app's panels always sit over the 3D gym backdrop */
+.stage{background:linear-gradient(160deg,#2a2118 0%,#14100c 70%);border-radius:20px;
+  padding:22px;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
+</style></head><body><p class="ds-h">Typography</p><p class="ds-sub">Work Sans Bold for display. Inter for everything else.</p><div class="ds-col"><div><div style="font-family:var(--f-display);font-weight:700;font-size:56px;line-height:1.05">Move without pain</div><div class="ds-lab">Work Sans Bold 56px, display and headlines</div></div><div><div style="font-family:var(--f-display);font-weight:700;font-size:32px">Section heading</div><div class="ds-lab">Work Sans Bold 32px</div></div><div style="border-top:1px solid var(--g100);padding-top:18px"><div style="font-weight:700;font-size:24px">Inter Bold 24px, sheet header</div><div class="ds-lab">App sheet header, brand book p25</div></div><div><div style="font-weight:600;font-size:16px;color:var(--panel-title);background:var(--g900);padding:8px 12px;border-radius:8px;display:inline-block">Inter SemiBold 16px, container title</div><div class="ds-lab">Always #D9D9D9 on a panel, brand book p24</div></div><div><div style="font-size:16.5px;line-height:1.5;max-width:52ch">Inter Regular 16.5px is the body size. It is a floor, not a default. The audience is adults 50 to 65, so nothing smaller ships in the app.</div><div class="ds-lab">Inter Regular 16.5px, body</div></div><div><div style="font-size:14px;color:var(--g500)">Inter Regular 14px, caption</div><div class="ds-lab">Caption, marketing only</div></div></div><p style="font-size:12px;color:var(--g600);border-left:3px solid var(--ws-fire-red);padding-left:12px;margin-top:22px">Header to body spacing is 8pt. Text is left aligned. Never centre a paragraph.</p></body></html>
