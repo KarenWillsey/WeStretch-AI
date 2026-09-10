@@ -435,6 +435,27 @@ Source: https://developer.apple.com/videos/play/tech-talks/111433/
   requirements: third-party SDKs increasingly need signatures and privacy
   manifests. Worth folding into the existing ad/analytics SDK audit backlog
   item (device-fingerprinting) since it's the same audit surface.
+- **[2026-09-09]** Specifics for the bullet above, pinned down from live Apple
+  sources during the nightly run that folded the two audits together. Two hard
+  dates: **2024-05-01**, an App Store Connect upload is *blocked* if the app's
+  own code uses a required-reason API without an approved reason in its
+  `PrivacyInfo.xcprivacy`; **2025-02-12**, a new app (or an update that *adds* a
+  privacy-impacting SDK) must ship that SDK's privacy manifest, else an
+  **ITMS-91061 "Missing privacy manifest"** email naming the SDK and its bundle
+  path. Signatures are required where a listed SDK is a **binary** dependency;
+  source-built pods still need the manifest. Apple's list names **86** commonly
+  used SDKs, and any version of a listed SDK counts, as does anything that
+  repackages one. Manifest keys: `NSPrivacyTracking`, `NSPrivacyTrackingDomains`,
+  `NSPrivacyCollectedDataTypes`, `NSPrivacyAccessedAPITypes`. Xcode's Archive ->
+  Generate Privacy Report aggregates every manifest in the bundle into one
+  document, which is the thing to diff against the public App Store privacy
+  label. Source: https://developer.apple.com/support/third-party-SDK-requirements/
+- **[2026-09-09]** WeStretch's **live App Store privacy label** declares no
+  tracking, no data linked to the user, and only unlinked Usage Data ("Other
+  Usage Data"). It is publicly readable from the storefront HTML, so it can be
+  re-checked any time without App Store Connect, and it is the pass/fail anchor
+  for any SDK or privacy work: anything an SDK collects beyond that list makes
+  the public label inaccurate.
 - **[2026-09-01]** Developers can offer a separate consent control for local
   privacy-law compliance (e.g. GDPR, ePrivacy) distinct from the ATT prompt.
 - Provide in-app account deletion if users can create accounts.

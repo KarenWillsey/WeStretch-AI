@@ -25,12 +25,12 @@ gap while working the localization item below):
 Added 2026-09-01 by the monthly-refresh run (found via real
 developer.apple.com fetches; see Knowledge Base changelog):
 
-- [ ] Fold privacy-manifest and SDK-signature verification into the existing ad/analytics SDK audit item; Apple is expanding software-supply-chain integrity requirements for third-party SDKs.
 - [ ] Submit the drafted "7-Day Mobility Challenge" In-App Event (see Output/2026-08-29-in-app-event-7-day-mobility-challenge.md) for an Apple Featuring Nomination; In-App Events are now an explicitly nominate-able, featurable content type.
 - [ ] Evaluate offering a monthly subscription with a 12-month commitment as an additional plan tier alongside the existing Monthly/Annual options, and confirm whether "streamlined purchasing" (completing a purchase from outside the app) should stay on or be turned off.
 
 ## Done
 
+- [x] Fold privacy-manifest and SDK-signature verification into the existing ad/analytics SDK audit item; Apple is expanding software-supply-chain integrity requirements for third-party SDKs. (2026-09-09 (scheduled run)) consolidated v2 checklist that supersedes the 2026-09-04 fingerprinting-only one, covering all three rules (fingerprinting, privacy manifests, SDK signatures) in one pass: [Output/2026-09-09-sdk-audit-v2-privacy-manifests-and-signatures.md](Output/2026-09-09-sdk-audit-v2-privacy-manifests-and-signatures.md). Still a checklist, not a completed audit; re-verified this repo has no native dependency manifest. New anchor found: the **live App Store privacy label declares no tracking and no linked data, only unlinked Usage Data**, which the Xcode Privacy Report must match. **Incidental finding: WeStretch's Accessibility Nutrition Labels are entirely undeclared** ("the developer has not yet indicated which accessibility features this app supports"), so the app appears in none of the App Store's accessibility filters; flagged for the Manager, not self-added as a backlog item.
 - [x] Confirm enrollment in Apple's Small Business Program (15% commission rate). (2026-08-21 (manual test run)) checklist: [Output/2026-08-21-small-business-program-checklist.md](Output/2026-08-21-small-business-program-checklist.md)
 - [x] Enable Billing Grace Period and subscription-status notifications (App Store Server Notifications). (2026-08-21 (first scheduled run)) checklist: [Output/2026-08-21-billing-grace-period-and-server-notifications-checklist.md](Output/2026-08-21-billing-grace-period-and-server-notifications-checklist.md)
 - [x] Optimize the first three screenshots and set up a Product Page Optimization (A/B) test. (2026-08-22 (scheduled run)) plan: [Output/2026-08-22-ppo-test-first-3-screenshots.md](Output/2026-08-22-ppo-test-first-3-screenshots.md)

@@ -156,6 +156,62 @@ of what the backlog item asked for. If fixed dark, there is nothing to do.
 Record the answer here when someone checks, so a monthly refresh does not
 raise this a third time.
 
+## The App Privacy label and Accessibility labels are readable too (2026-09-09)
+
+Third finding in the same series as the 2026-09-06 / 2026-09-07 / 2026-09-08
+notes above: the storefront HTML also carries the **App Privacy** panel and the
+**Accessibility** panel. Search the HTML for `privacyTypes` and read the plain
+text that follows; `privacyHeader` and `privacyFooter` bracket the section.
+
+**WeStretch's declared privacy label, as of 2026-09-09:**
+
+- Data Used to Track You: **nothing declared**
+- Data Linked to You: **nothing declared**
+- Data Not Linked to You: Usage Data -> "Other Usage Data"
+
+That is near the floor of what an app can declare, and it is a genuinely useful
+audit yardstick: any SDK in the shipping build that tracks, or collects a data
+type not on that list, makes the *public label* wrong, which is a removal risk
+in its own right regardless of the SDK rules. Use it as the pass/fail anchor for
+anything privacy-shaped rather than reasoning about SDKs in the abstract.
+
+**Accessibility Nutrition Labels are entirely undeclared.** The live page says
+"The developer has not yet indicated which accessibility features this app
+supports." Nine categories are declarable (see the Knowledge Base 2026-08-21
+entry) and WeStretch currently appears in **none** of the App Store's
+accessibility filters. Given the older-adult positioning this is a real
+discovery miss, not a formality. The 2026-08-31 accessibility checklist did not
+catch it because that item checked whether the app *meets* the requirements, not
+whether the declaration was ever filled in. Flagged to the Manager 2026-09-09;
+not yet a backlog item.
+
+Same fetch also re-confirms: seller We Bananas Software Inc., 418.9 MB, Health &
+Fitness, iOS/iPadOS 15.2 minimum, **visionOS 1.0**, English/French/Spanish, 9+.
+
+## `state/last-run.log` is locked during every scheduled run; write the banner to stdout (2026-09-09)
+
+Recurring, wastes time every night until it is written down, so: the wrapper
+`run-nightly-action.ps1` pipes the CLI's entire output into `last-run.log` with
+`*>> $logFile`, and PowerShell holds that handle open for the whole run. **The
+skill's step 5 "append to state/last-run.log" therefore always fails** with
+"Device or resource busy" / "being used by another process", from Bash and from
+`Add-Content` alike. It is not a permissions problem and retrying will not help.
+
+**What works, and what earlier runs settled on:** print the banner line as part
+of the final response. The wrapper's redirect carries it into the log anyway.
+This is why several banner lines in the log start with a stray backtick or bold
+markers; they arrived through the transcript, not through a file append.
+
+**The underlying defect is worth fixing properly:** point the wrapper's `*>>`
+redirect at a separate transcript file (e.g. `state/nightly-transcript.log`) and
+leave `last-run.log` free for the skills to append to. Not done unprompted,
+since it means editing a live Scheduled Task's wrapper script.
+
+**Related, still open:** 7 of the scheduled runs so far (2026-08-22, 08-24,
+08-25, 08-27, 09-02, 09-03, 09-04) have a "Starting" line and no banner at all.
+08-24 and 08-25 are already tracked in `WORK-TRACKER.md` as a reliability gap;
+the others did produce `Output/` files, so those are banner-only misses.
+
 ## Knowledge Base baseline (2026-08-21)
 
 Karen provided a full, sourced Apple Developer checklist for WeStretch

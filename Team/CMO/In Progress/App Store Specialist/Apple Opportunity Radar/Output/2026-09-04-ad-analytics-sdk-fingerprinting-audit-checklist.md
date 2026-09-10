@@ -4,6 +4,12 @@ Backlog item: "Audit current ad/analytics SDKs against Apple's device-fingerprin
 
 Date: 2026-09-04
 
+> **Superseded 2026-09-09.** The privacy-manifest and SDK-signature
+> requirements have been folded into this same audit surface. Use
+> [2026-09-09-sdk-audit-v2-privacy-manifests-and-signatures.md](2026-09-09-sdk-audit-v2-privacy-manifests-and-signatures.md)
+> instead; it contains everything below plus the two new rules and a
+> live pass/fail anchor (WeStretch's public App Store privacy label).
+
 ## Why this is a checklist, not a completed audit
 
 This skill runs against the WeStretch-AI business-planning repo, which does
