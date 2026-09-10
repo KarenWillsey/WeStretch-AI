@@ -62,27 +62,6 @@ a personal tool for Karen only, not (yet) a template for other execs.
   2026-09-07 run did exactly that. Do not reopen this one; if a stale
   timestamp shows up again, the cause is something new.
 
-- **HTML bodies going out as literal escaped tags is the live recurring bug.**
-  Three runs in a row: Kari's rollup 2026-09-06 (first send unreadable,
-  corrected copy followed, so Kari got two emails), the Park Employee Email
-  reply draft 2026-09-07 (caught mid-run, nothing shipped), and Kari's rollup
-  again 2026-09-08 (two emails again, second one telling her to ignore the
-  first). **Root cause, confirmed 2026-09-08:** the body was passed to the
-  send tool *pre-escaped* rather than as raw HTML tags. Setting `bodyType:
-  html` is not enough on its own if the body string itself already contains
-  `&lt;p&gt;` instead of `<p>`. **How to apply:** pass raw, unescaped HTML
-  tags AND set the HTML body type, on every draft and every send, not just
-  the Kari rollup; then read the item back before moving on. Read-back has
-  caught this every single time, so detection is working and only prevention
-  is missing.
-  **First clean run 2026-09-09**: the Kari rollup and Karen's own brief both
-  rendered as real HTML on the first send, verified by read-back from Sent
-  Items, one send each, no correction email. The streak broke because the
-  orchestrator explicitly told the triage agent to pass raw unescaped tags and
-  read the item back. That instruction still lives in the caller, not in
-  `daily-brief-email-triage` itself, so a run invoked without it can still
-  regress. Do not treat this as fixed until the rule is in the skill.
-
 - **Oversized email bodies can be recovered from the saved tool-result file.**
   The Aug 12 Taylor Estates email (166,815 chars) was reported unreadable on
   every run from Aug 21 through Sep 7, because it exceeds the read tool's
@@ -93,6 +72,8 @@ a personal tool for Karen only, not (yet) a template for other execs.
   permanent gap. Fall back to the saved tool-result file before writing it
   off as a COULDN'T CHECK; a message big enough to break the reader is
   exactly the kind likely to be hiding something that matters.
+  **Written into the skill 2026-09-10** as its own "Oversized message bodies"
+  section, so it no longer depends on the caller remembering.
 - **Outlook reissues a message id on every folder move.** This is why the
   Kari inbox-activity delta can never re-read items that left the Inbox
   (confirmed again 2026-09-06 by batch-delete returning a different newId
@@ -101,15 +82,34 @@ a personal tool for Karen only, not (yet) a template for other execs.
 
 ## Resolved (kept so it is not re-investigated)
 
+- **Escaped-HTML email bodies: fixed at the source 2026-09-10.** The bug shipped
+  unreadable mail three runs running (Kari's rollup 2026-09-06, the Park Employee
+  Email draft 2026-09-07, Kari's rollup again 2026-09-08), then ran clean
+  2026-09-09 and 2026-09-10. It stayed open through both clean runs because
+  prevention lived in whatever was calling the skill, not in the skill. On
+  2026-09-10 the rule was written into `daily-brief-email-triage` (its own "HTML
+  bodies: pass raw tags, then read back" section, covering every draft and every
+  send) and into `daily-brief-compose` §4 for Karen's own brief. Both now require
+  raw unescaped tags AND the HTML body type AND a read-back before moving on.
+  Do not reopen on the strength of the old history; a new occurrence would be a
+  new failure.
+- **Karen's own brief landing in the Unsubscribe folder: closed 2026-09-10.**
+  Intercepted 2026-09-06 and 2026-09-07, then two clean mornings (2026-09-09 and
+  2026-09-10). The 2026-09-10 run pulled all 37 Unsubscribe items and found no
+  brief among them, with the 15 briefs from Aug 21 through Sep 9 sitting in the
+  Inbox where they belong. Reopen only on a fresh interception.
+- **Asana project names: fixed 2026-09-10.** `projects.name` added to the
+  `get_my_tasks` opt_fields list, and the skill now prints the real project name
+  or "no project", never "My Tasks" or a numeric id. Verified live the same run.
+
 - **Asana My Tasks pagination is fine.** An invalid pagination token on
   2026-09-07 made the task count unconfirmable and looked like a broken API.
   Two clean runs since: 2026-09-08 paged through 225 open tasks and 2026-09-09
   paged through 224, both across three pages with no gap. Treat that one day as
   transient. Tracker item deleted 2026-09-09; do not reopen without a new
   failure.
-- **Asana project names are still missing and this is a real gap, not a
-  pagination side effect.** `daily-brief-asana` requests only
+- **The Asana project-name gap was real, not a pagination side effect.** `daily-brief-asana` requests only
   `name,due_on,assignee_section.name,permalink_url`, so every task in the brief
-  reads as "My Tasks" or a bare numeric project id. Confirmed again 2026-09-09.
-  The fix is adding `projects.name` to the opt_fields list.
+  reads as "My Tasks" or a bare numeric project id. Confirmed again 2026-09-09. Fixed 2026-09-10 by adding `projects.name` to the opt_fields list; see the
+  entry above.
 

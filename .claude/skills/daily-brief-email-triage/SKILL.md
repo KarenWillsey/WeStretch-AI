@@ -24,6 +24,40 @@ The one exception: don't create a *second* Outlook reply draft for a thread that
 
 All moves-to-Deleted use `outlook_batch_delete_messages` (soft delete, recoverable from Deleted Items, up to 50 message ids per call, no full-message read required), not a permanent delete. `outlook_modify_labels` cannot be used for this; it explicitly refuses Trash-family destinations. Avoid `outlook_trash_thread` for this purpose: it requires a conversationId that can only be obtained by reading each message's full body first, which is needlessly expensive for routine spam cleanup.
 
+## HTML bodies: pass raw tags, then read back (non-negotiable)
+
+This applies to **every** draft this skill creates and **every** email it sends
+(reply drafts in §3, the Kari rollup in §4), with no exceptions.
+
+- Pass the body as **raw, unescaped HTML**: real `<p>`, `<b>`, `<ul>` characters.
+  Never pass a body string that already contains `&lt;p&gt;` or other escaped
+  entities in place of tags.
+- Also set the tool's HTML body type. Setting the flag alone is not enough if the
+  body string is already escaped; both halves are required.
+- After the draft is created or the mail is sent, **read the item back** (from
+  Drafts or Sent Items) and confirm the body renders as real HTML, not as visible
+  literal tags. Do this before moving on to the next step.
+- If read-back shows escaped tags, fix the item itself (update the draft; for a
+  sent message, send one corrected copy) and note it in `couldnt_check` so the
+  run reports the recurrence honestly.
+
+**Why:** escaped-HTML bodies shipped unreadable email on 2026-09-06, 2026-09-07
+and 2026-09-08. Read-back caught every occurrence, so detection works; this
+section exists so prevention lives in the skill rather than in whoever happens to
+be calling it. See the project `Memory.md` for the full history.
+
+## Oversized message bodies: recover, do not write off
+
+If a message body is too large for the read tool, that is **not** a COULDN'T
+CHECK. Fall back to the saved tool-result file on disk and read the full text
+from there before reporting anything as unreadable.
+
+**Why:** the Aug 12 Taylor Estates email (166,815 chars) was reported unreadable
+on every run from Aug 21 through Sep 7. Recovered from the saved tool-result
+file on 2026-09-08, it turned out to hold a live 27-day-old decision waiting on
+Karen. A message big enough to break the reader is exactly the kind likely to be
+hiding something that matters.
+
 ## 0. Setup
 
 1. Call the Microsoft 365 MCP `get_me` to confirm the mailbox this run is operating on. Record the address for the report header.

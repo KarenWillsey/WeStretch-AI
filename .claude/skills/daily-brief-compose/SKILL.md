@@ -57,6 +57,14 @@ After all housekeeping sections are composed, write a short "what actually matte
 
 - Recipient: Karen's own mailbox (the same address confirmed via `get_me` in `daily-brief-email-triage`).
 - Send via the Microsoft 365 MCP mail-send tool.
+- **Send the body as raw, unescaped HTML** (real `<p>`/`<b>`/`<ul>` characters, not
+  `&lt;p&gt;`) **and** set the tool's HTML body type. Both are required; the flag
+  alone does not help if the body string is already escaped.
+- After sending, **read the message back from Sent Items** and confirm it rendered
+  as real HTML rather than visible literal tags. If it did not, send one corrected
+  copy and say so in the run summary. Same recurring bug as
+  `daily-brief-email-triage`; see that skill's HTML section and the project
+  `Memory.md`.
 - The Kari activity rollup is **not** sent from here. `daily-brief-email-triage` already sends that separately to kari@kasa.ca in its own step.
 
 ## 4a. Token cost in the subject line (2026-08-10)
