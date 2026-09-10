@@ -30,10 +30,11 @@ website copy).
 - `Team/CMO/skills/male-actor-01-image-generator/` - reference-locked lifestyle
   image generation for Male Actor 01 (outdoor pickleball-court reference) in a
   user-supplied pose.
-- `.claude/skills/cmo-app-store-image-creation/`: CMO-persona review/guidance
-  companion to the app-store-image-creation pipeline; discoverable as a slash
-  command (see the root `CLAUDE.md` "Known issue" note on why this lives under
-  `.claude/skills/` instead of `Team/CMO/skills/`).
+- `Team/CMO/skills/app-store-image-creation/` - CMO review and production
+  guidance for App Store screenshots and image assets. A near-duplicate of
+  this lived at `.claude/skills/cmo-app-store-image-creation/` and had drifted
+  from it; Karen confirmed 2026-09-10 that this one is the real one and the
+  other was deleted.
 - `.claude/skills/cmo-jamie-meeting-notes/`: updates the running WeStretch
   team action-item list from Karen/Jamie Zoom transcripts; writes dated
   output to `Team/CMO/In Progress/Jamie Meeting Notes/Output/`.

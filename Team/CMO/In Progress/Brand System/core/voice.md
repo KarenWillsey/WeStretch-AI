@@ -282,6 +282,46 @@ movement.
 
 ---
 
+# Joint is an explanation word, not a headline word
+
+Added 2026-09-10 by Karen, after reviewing the free trial page.
+
+People think of stretching as something they do to a **muscle**. They feel a
+tight hamstring, a stiff shoulder, a sore lower back. Almost nobody walks around
+thinking about moving a joint through its range, even though that is what is
+physically happening.
+
+So when copy says "joint" in a fast-moving line, the reader has to translate
+before they can picture anything, and in a headline, a CTA or a quick step
+they will not bother. The sentence stops being filmable.
+
+**Where joint works.** In a longer explanation, where we have already earned a
+sentence or two of the reader's attention and are telling them why WeStretch
+covers what a video cannot. "Physiotherapists mapped how each joint is meant to
+travel" is doing real work in a paragraph about the method. Keep it there.
+
+**Where joint fails.** Headlines, subheads, CTAs, onboarding steps, feature
+lists, push notifications, ad copy. Anywhere the reader is skimming.
+
+| Don't write | Write instead |
+|---|---|
+| Which joints to leave alone | Which sore spots to skip |
+| Turn off the joints that hurt | Leave out anything that's sore |
+| Every joint, every direction | Every part of you, in every direction |
+| Improved joint health | Getting up off the floor without using your hands |
+| Choose joints to exclude | Choose the areas to skip today |
+
+**The test:** if the reader has to convert "joint" into "the bit that hurts"
+before the sentence means anything, use the everyday word. If we are explaining
+the method and they are already reading closely, joint is the accurate word and
+we should use it.
+
+Same rule for the rest of the clinical vocabulary: range of motion, mobility
+protocol, kinesiology, articulation. Precise in an explanation, a speed bump
+in a headline.
+
+---
+
 # Progress is an asset, not a debt
 
 WeStretch deliberately reminds people what their invested history is worth. That

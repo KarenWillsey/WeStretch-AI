@@ -35,9 +35,13 @@ Implementation Spec "Recommended next step."
   Manager's fail-loud staleness check. Read this first to resume the project.
 - `.claude/skills/app-store-specialist-monthly-refresh/SKILL.md` and
   `.claude/skills/app-store-specialist-nightly-action/SKILL.md`: the two
-  built skills (live under `.claude/skills/`, not here, since they need to
-  be actually invocable/schedulable; see root `CLAUDE.md`'s "Known issue"
-  note on why).
+  built skills. They live under `.claude/skills/` as real folders rather
+  than here, because this repo owns them outright and they are scheduled
+  directly. Since 2026-09-10 that is no longer the only way to make a skill
+  invocable: a skill kept beside its project is junctioned in by
+  `node scripts/sync-skill-links.mjs`, so a future skill here could live in
+  this folder instead. Moving these two is not required and has not been
+  done.
 - `run-nightly-action.ps1` / `run-monthly-refresh.ps1`, the Windows
   Scheduled Task wrapper scripts, same pattern as the daily brief's
   `run-daily-brief.ps1`.
