@@ -109,3 +109,32 @@ Durable facts for this folder only. Cross role facts go in the repo root `Memory
    `NAMING-CONVENTION.md` has said Title Case With Spaces since 2026-08-21.
    Keep `AGENTS.md` and `CLAUDE.md` in step.
 
+
+## Voice fine tuning 2026-09-10
+
+10. **"Joint" is an explanation word, not a headline word. Karen's call, 2026-09-10.**
+    - **Why:** everyday people think of stretching a muscle. They feel a tight
+      hamstring or a stiff shoulder. Almost nobody thinks about moving a joint
+      through its range, even though that is what is physically happening. In a
+      fast-moving line the reader has to translate before they can picture
+      anything, and in a headline or a quick step they will not bother. Karen's
+      words: "it's too big of a leap in thinking for a quick process."
+    - **How to apply:** joint is correct and useful inside a longer explanation
+      of the method, where we have already earned a few sentences of attention.
+      It fails in headlines, subheads, CTAs, onboarding steps, feature lists,
+      push notifications and ads. Full rule plus swap table is in
+      `core/voice.md`, section "Joint is an explanation word, not a headline
+      word". Same rule covers range of motion, mobility protocol, kinesiology
+      and articulation.
+
+11. **`/free-trial/` on the website is the first live test of the merged voice.**
+    - 19 lines rewritten 2026-09-10 in `Team/CMO/Ready/website-repo/src/pages/free-trial.astro`.
+      Working tree only, not committed, so `git checkout` reverts the whole test.
+    - Side-by-side old vs new with a per-line keep/tweak/revert mark:
+      https://claude.ai/code/artifact/98bb13b2-0cec-41b4-833d-ab6e60b5c6f4
+      Karen's marks live in that artifact's database, collection `verdicts`,
+      one document per line id. Read them back with `read_db` before making
+      further voice changes.
+    - **What the test surfaced:** the biggest single voice gap was not word
+      choice, it was contractions. The page avoided them everywhere, which read
+      formal and slightly legal. Seven of the 19 changes are only that.
