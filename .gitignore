@@ -4,30 +4,49 @@
 .env.*
 
 # Third-party skill junctions (.claude/skills/<name> -> .agents/skills/<name>)
-# Windows NTFS junctions, local filesystem state only — real content lives under
-# .agents/skills/. Git for Windows walks into these (core.symlinks=false) and
-# would otherwise duplicate every file. See CLAUDE.md "Third-party skill packages".
 /.claude/skills/ab-testing/
 /.claude/skills/ad-creative/
+/.claude/skills/ada-stretching-phone-image/
 /.claude/skills/ads/
 /.claude/skills/ai-seo/
 /.claude/skills/analytics/
+/.claude/skills/app-store-copy/
+/.claude/skills/app-store-image-creation/
 /.claude/skills/aso/
 /.claude/skills/attribution/
+/.claude/skills/budget-planning/
+/.claude/skills/cfo-jokes/
+/.claude/skills/cgo-jokes/
+/.claude/skills/chro-jokes/
 /.claude/skills/churn-prevention/
+/.claude/skills/cio-jokes/
 /.claude/skills/co-marketing/
 /.claude/skills/cold-email/
 /.claude/skills/community-marketing/
 /.claude/skills/competitor-profiling/
 /.claude/skills/competitors/
 /.claude/skills/content-strategy/
+/.claude/skills/coo-jokes/
 /.claude/skills/copy-editing/
 /.claude/skills/copywriting/
+/.claude/skills/create-4k-crop-master/
 /.claude/skills/cro/
+/.claude/skills/cro-jokes/
+/.claude/skills/cross-team-execution-plan/
+/.claude/skills/cto-jokes/
+/.claude/skills/customer-journey-audit/
 /.claude/skills/customer-research/
+/.claude/skills/cxo-jokes/
+/.claude/skills/data-governance-review/
+/.claude/skills/data-systems-audit/
 /.claude/skills/directory-submissions/
 /.claude/skills/emails/
+/.claude/skills/engineering-roadmap/
+/.claude/skills/female-actor-01-image-generator/
+/.claude/skills/female-actor-02-image-generator/
+/.claude/skills/financial-model-review/
 /.claude/skills/free-tools/
+/.claude/skills/growth-experiment-design/
 /.claude/skills/higgsfield-brandkit/
 /.claude/skills/higgsfield-generate/
 /.claude/skills/higgsfield-marketplace-cards/
@@ -36,11 +55,13 @@
 /.claude/skills/higgsfield-video-explainer/
 /.claude/skills/higgsfield-websites/
 /.claude/skills/higgsfield-youtube-thumbnail/
+/.claude/skills/hiring-plan/
 /.claude/skills/i-have-adhd/
 /.claude/skills/image/
 /.claude/skills/influencer-marketing/
 /.claude/skills/launch/
 /.claude/skills/lead-magnets/
+/.claude/skills/male-actor-01-image-generator/
 /.claude/skills/marketing-council/
 /.claude/skills/marketing-ideas/
 /.claude/skills/marketing-loops/
@@ -48,15 +69,23 @@
 /.claude/skills/marketing-psychology/
 /.claude/skills/offers/
 /.claude/skills/onboarding/
+/.claude/skills/ops-process-audit/
+/.claude/skills/org-culture-review/
 /.claude/skills/paywalls/
 /.claude/skills/popups/
 /.claude/skills/pricing/
+/.claude/skills/pricing-strategy/
 /.claude/skills/product-marketing/
 /.claude/skills/programmatic-seo/
 /.claude/skills/prospecting/
 /.claude/skills/public-relations/
+/.claude/skills/radio-ad-revise/
+/.claude/skills/reengagement-email-copy/
 /.claude/skills/referrals/
+/.claude/skills/retention-funnel-analysis/
+/.claude/skills/revenue-pipeline-review/
 /.claude/skills/revops/
+/.claude/skills/roadmap-prioritization/
 /.claude/skills/sales-enablement/
 /.claude/skills/schema/
 /.claude/skills/seo-audit/
@@ -64,4 +93,13 @@
 /.claude/skills/site-architecture/
 /.claude/skills/sms/
 /.claude/skills/social/
+/.claude/skills/tech-architecture-review/
+/.claude/skills/user-research-synthesis/
+/.claude/skills/ux-design-review/
 /.claude/skills/video/
+/.claude/skills/westretch-ada-image-gen/
+/.claude/skills/westretch-core/
+/.claude/skills/westretch-radio-ads/
+# Windows NTFS junctions, local filesystem state only — real content lives under
+# .agents/skills/. Git for Windows walks into these (core.symlinks=false) and
+# would otherwise duplicate every file. See CLAUDE.md "Third-party skill packages".

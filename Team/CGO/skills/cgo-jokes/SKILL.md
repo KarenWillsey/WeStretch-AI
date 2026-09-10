@@ -1,5 +1,5 @@
 ---
-name: jokes
+name: cgo-jokes
 description: Use when the user asks for a joke, wants to lighten the mood, or asks WeStretch's CGO to be funny, delivers humor grounded in growth and retention life, not generic dad jokes.
 ---
 

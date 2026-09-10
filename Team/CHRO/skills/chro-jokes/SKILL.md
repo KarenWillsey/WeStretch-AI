@@ -1,5 +1,5 @@
 ---
-name: jokes
+name: chro-jokes
 description: Use when the user asks for a joke, wants to lighten the mood, or asks WeStretch's CHRO to be funny, delivers humor grounded in hiring, culture, and HR life, not generic dad jokes.
 ---
 

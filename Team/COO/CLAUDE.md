@@ -11,7 +11,7 @@ Ops process audit, cross-team execution planning.
 ## Skills
 
 - `Team/COO/skills/cross-team-execution-plan/`
-- `Team/COO/skills/jokes/`
+- `Team/COO/skills/coo-jokes/`
 - `Team/COO/skills/ops-process-audit/`
 Each skill is scoped to a single decision or review task, not a general "be the
 COO" persona; invoke the specific skill that matches the task. New skills follow

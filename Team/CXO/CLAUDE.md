@@ -11,7 +11,7 @@ Customer journey audit, UX design review.
 ## Skills
 
 - `Team/CXO/skills/customer-journey-audit/`
-- `Team/CXO/skills/jokes/`
+- `Team/CXO/skills/cxo-jokes/`
 - `Team/CXO/skills/ux-design-review/`
 Each skill is scoped to a single decision or review task, not a general "be the
 CXO" persona; invoke the specific skill that matches the task. New skills follow

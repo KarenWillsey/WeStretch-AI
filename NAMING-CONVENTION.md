@@ -14,6 +14,19 @@ enforces this for any new folder/skill it creates or renames going forward.
   `Team/CMO/skills/westretch-core/`, `.claude/skills/cmo-jamie-meeting-notes/`.
   This already matched almost everywhere before this cleanup; it's the
   Claude Agent Skills spec convention, not a new rule.
+- **A skill's `name:` frontmatter must be unique across the whole repo, and
+  should match its folder name.** `.claude/skills/<name>` is junctioned by
+  `name:`, not by folder, so two skills sharing a name means one silently
+  shadows the other and `node scripts/sync-skill-links.mjs` refuses to link
+  it. This is why the eight per-role joke skills are `cfo-jokes`,
+  `cgo-jokes`, `chro-jokes`, `cio-jokes`, `coo-jokes`, `cro-jokes`,
+  `cto-jokes` and `cxo-jokes` (renamed 2026-09-10) rather than eight
+  skills all called `jokes`. **Prefix with the role code whenever a name
+  would otherwise collide.** A handful of skills live inside a Title Case
+  project folder instead of a `skills/` folder and so cannot match their
+  folder name (e.g. `Team/CMO/In Progress/Radio Specialist/Single Radio Ad
+  Revision/` is the skill `radio-ad-revise`); that is allowed, the unique
+  `name:` is what matters.
 
 ## What's exempt (not covered by the folder rule)
 

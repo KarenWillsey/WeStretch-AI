@@ -12,7 +12,7 @@ Data systems audit, data governance review.
 
 - `Team/CIO/skills/data-governance-review/`
 - `Team/CIO/skills/data-systems-audit/`
-- `Team/CIO/skills/jokes/`
+- `Team/CIO/skills/cio-jokes/`
 Each skill is scoped to a single decision or review task, not a general "be the
 CIO" persona; invoke the specific skill that matches the task. New skills follow
 the existing `SKILL.md` frontmatter pattern (`name`, `description` starting

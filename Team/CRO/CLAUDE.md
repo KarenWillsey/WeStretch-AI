@@ -10,7 +10,7 @@ Revenue pipeline review, pricing strategy.
 
 ## Skills
 
-- `Team/CRO/skills/jokes/`
+- `Team/CRO/skills/cro-jokes/`
 - `Team/CRO/skills/pricing-strategy/`
 - `Team/CRO/skills/revenue-pipeline-review/`
 Each skill is scoped to a single decision or review task, not a general "be the

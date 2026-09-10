@@ -11,7 +11,7 @@ Hiring plan, org/culture review.
 ## Skills
 
 - `Team/CHRO/skills/hiring-plan/`
-- `Team/CHRO/skills/jokes/`
+- `Team/CHRO/skills/chro-jokes/`
 - `Team/CHRO/skills/org-culture-review/`
 Each skill is scoped to a single decision or review task, not a general "be the
 CHRO" persona; invoke the specific skill that matches the task. New skills follow

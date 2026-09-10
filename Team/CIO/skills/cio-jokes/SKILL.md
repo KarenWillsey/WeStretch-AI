@@ -1,5 +1,5 @@
 ---
-name: jokes
+name: cio-jokes
 description: Use when the user asks for a joke, wants to lighten the mood, or asks WeStretch's CIO to be funny, delivers humor grounded in data systems and IT, not generic dad jokes.
 ---
 

@@ -12,7 +12,7 @@ Financial model review, budget planning.
 
 - `Team/CFO/skills/budget-planning/`
 - `Team/CFO/skills/financial-model-review/`
-- `Team/CFO/skills/jokes/`
+- `Team/CFO/skills/cfo-jokes/`
 Each skill is scoped to a single decision or review task, not a general "be the
 CFO" persona; invoke the specific skill that matches the task. New skills follow
 the existing `SKILL.md` frontmatter pattern (`name`, `description` starting

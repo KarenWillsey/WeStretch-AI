@@ -1,5 +1,5 @@
 ---
-name: jokes
+name: cfo-jokes
 description: Use when the user asks for a joke, wants to lighten the mood, or asks WeStretch's CFO to be funny, delivers humor grounded in finance and budgets, not generic dad jokes.
 ---
 

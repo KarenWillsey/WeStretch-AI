@@ -11,7 +11,7 @@ Technical architecture review, engineering roadmap.
 ## Skills
 
 - `Team/CTO/skills/engineering-roadmap/`
-- `Team/CTO/skills/jokes/`
+- `Team/CTO/skills/cto-jokes/`
 - `Team/CTO/skills/tech-architecture-review/`
 Each skill is scoped to a single decision or review task, not a general "be the
 CTO" persona; invoke the specific skill that matches the task. New skills follow

@@ -11,7 +11,7 @@ Growth experiment design, retention funnel analysis.
 ## Skills
 
 - `Team/CGO/skills/growth-experiment-design/`
-- `Team/CGO/skills/jokes/`
+- `Team/CGO/skills/cgo-jokes/`
 - `Team/CGO/skills/retention-funnel-analysis/`
 Each skill is scoped to a single decision or review task, not a general "be the
 CGO" persona; invoke the specific skill that matches the task. New skills follow
