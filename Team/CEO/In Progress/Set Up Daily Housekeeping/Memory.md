@@ -47,13 +47,33 @@ a personal tool for Karen only, not (yet) a template for other execs.
 
 ## Known failure modes (added 2026-09-06)
 
-- **Expired auth kills the run silently.** On 2026-09-05 the scheduled task
-  exited 1 with "Failed to authenticate: OAuth session expired and could not
-  be refreshed." Sep 2, Sep 3 and Sep 4 started but logged no completion
-  line. Nothing alerted Karen; the only evidence was a missing brief.
-  **How to apply:** when a brief is missing, read `state/last-run.log` first
-  before assuming the schedule didn't fire, and treat "started, no finish
-  line" as a failure, not an unknown.
+- **Expired auth kills the run silently. Alerting added 2026-09-11.** On
+  2026-09-05 the scheduled task exited 1 with "Failed to authenticate: OAuth
+  session expired and could not be refreshed." Sep 2, Sep 3 and Sep 4 started
+  but logged no completion line. Nothing alerted Karen; the only evidence was
+  a missing brief. **Fixed 2026-09-11** in `run-daily-brief.ps1`: it now
+  detects a previous "Starting" line with no matching finish line, enforces a
+  60 minute timeout (killed runs log exit 124), alerts on any non-zero exit,
+  and drops a `DAILY-BRIEF-FAILED.txt` marker on Karen's Desktop plus
+  `state/RUN-FAILED.txt`, clearing both on the next clean run. Marker files
+  rather than an alert email on purpose: expired auth is the main failure mode
+  and email is precisely what stops working then.
+  **How to apply:** when a brief is missing, check the Desktop marker and
+  `state/last-run.log` before assuming the schedule didn't fire, and treat
+  "started, no finish line" as a failure, not an unknown. The alert path has
+  been parse-checked but not yet exercised by a real failure, so the first
+  genuine failure is also its first live test.
+
+- **The brief has no memory of yesterday, and that loses dated commitments.**
+  The 2026-09-10 brief flagged a Sheer Illusions install on Mon Sep 14 with
+  $567.61 due on install. By 2026-09-11 that email was out of the Inbox, so
+  the source skill could not see it and the item would have vanished. The
+  compose step carried it forward by hand from `state/last-run.log` and
+  labelled it as unverified. **How to apply:** until this is built into
+  `daily-brief-compose`, check the previous run's log for dated commitments
+  whose date has not yet passed, and carry them forward explicitly marked as
+  "carried from the [date] brief, not confirmed in today's scan." Never
+  present a carried item as if it came from today's data.
 - **The Kari rollup timestamp used to be written at end of run, not at send
   time.** A run that sent the rollup and then died left
   `last_report_sent_at` stale, and the next successful run re-sent content

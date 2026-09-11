@@ -138,20 +138,20 @@ Midnight Grey #1F1F1F, with a charcoal RGB(12,13,14)->RGB(30,30,31) caption
 band. The CXO redesign prototype
 (`Team/CXO/In Progress/Westretch-UX/public/screens/westretch/`) is dark too;
 11 of 12 sampled screens. **So the current screenshots will not go stale when
-the redesign ships** — a risk worth not re-checking.
+the redesign ships**, a risk worth not re-checking.
 
 **How to inspect the live screenshots without App Store Connect:** the
 `itunes.apple.com/lookup` call already in this file returns `screenshotUrls`
 and `ipadScreenshotUrls` at thumbnail size. Swap the trailing
 `/320x480bb.jpg` for `/600x0w.png` to get a readable version. Measure mean
-luminance to triage, but **always look at a few** — WeStretch's brighter
+luminance to triage, but **always look at a few**: WeStretch's brighter
 screenshots (mean luma ~112) are sunlit lifestyle photography with a
 near-black app UI composited on top, so the number alone is misleading.
 
 **Still unanswered, and it needs the iOS project:** whether the app is
 *adaptive* (honours the system Light/Dark setting) or *hard-locked* to dark.
 The `UIUserInterfaceStyle` key in the app target's Info.plist decides it.
-If adaptive, the product page needs a *Light* Mode screenshot — the reverse
+If adaptive, the product page needs a *Light* Mode screenshot, the reverse
 of what the backlog item asked for. If fixed dark, there is nothing to do.
 Record the answer here when someone checks, so a monthly refresh does not
 raise this a third time.
@@ -187,6 +187,43 @@ not yet a backlog item.
 
 Same fetch also re-confirms: seller We Bananas Software Inc., 418.9 MB, Health &
 Fitness, iOS/iPadOS 15.2 minimum, **visionOS 1.0**, English/French/Spanish, 9+.
+
+## A Featuring Nomination needs the event to exist first, and the 3-month cap is real (2026-09-10)
+
+Two rules that reorder the whole In-App Event plan, settled during the
+2026-09-10 nightly run:
+
+1. **You cannot nominate an In-App Event that has not been created.** Apple's
+   nomination flow asks you to select the event, so the order is: build the
+   mechanic, create the event in App Store Connect, get it *approved*, then
+   nominate, then publish inside the 14-day promotion window. App Store Connect
+   holds up to 15 approved events and publishes up to 10, so "approved but not
+   published" is a legitimate holding state and is exactly what you want while
+   a nomination is under review. The backlog item implied the reverse order.
+2. **Nominations are accepted a maximum of 3 months ahead**, minimum 2 weeks.
+   That makes the January fitness-resolution surge un-bookable until autumn:
+   a Mon 2027-01-04 start is 116 days out, so its nomination window opens
+   **2026-10-06**. Recommended plan is to aim at 2027-01-04 and nominate the
+   day the window opens; fallback start Mon 2026-11-02, nomination due
+   2026-10-19.
+
+**Also readable from the storefront: whether any event is live or upcoming.**
+Fetch the storefront HTML as in the 2026-09-06 note and search for event data.
+An app with no events has only the empty `appEvents` slot in the page's module
+ordering list and no event payload. Confirmed 2026-09-10: **WeStretch has no
+In-App Event live or scheduled.** Do not assume the 7-Day Mobility Challenge
+was ever created.
+
+**The blank Accessibility Nutrition Labels are not just a discovery miss, they
+block this nomination.** Accessibility is one of Apple's seven stated
+evaluation criteria and WeStretch's pitch leans on older-adult usability, so
+nominating while the declaration is empty asks an Apple editor to take
+accessibility on trust when the listing itself says nothing. Fixing it needs no
+code. Same for ratings volume, one of the product-page-quality signals: **53
+ratings at 4.45 stars as of 2026-09-10**, which the still-unimplemented
+2026-08-28 native rating prompt plan is the lever for.
+
+Current live version as of 2026-09-10 is **8.1.33**, shipped that same day.
 
 ## `state/last-run.log` is locked during every scheduled run; write the banner to stdout (2026-09-09)
 
