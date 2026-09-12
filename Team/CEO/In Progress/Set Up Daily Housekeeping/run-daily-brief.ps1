@@ -90,14 +90,27 @@ Write-Log "Starting scheduled daily-brief run via $claudeExe"
 # capture to a temp file outside the repo and fold it into the log afterwards.
 $tempOut = Join-Path $env:TEMP "daily-brief-stdout-$([guid]::NewGuid()).txt"
 $tempErr = Join-Path $env:TEMP "daily-brief-stderr-$([guid]::NewGuid()).txt"
-$prompt = "Run the daily-brief skill end to end now (.claude/skills/daily-brief/SKILL.md) -- this is the scheduled unattended morning run."
+# The prompt MUST be passed as one quoted argument. Start-Process joins the
+# ArgumentList with spaces and quotes nothing, so an unquoted prompt is split on
+# every space and claude.exe receives only the first word. That is what broke
+# the 2026-09-12 run: the agent got the bare word "Run" and asked what to run
+# instead of running the brief. The prompt also must not contain "--", which
+# terminates option parsing.
+$prompt = "Run the daily-brief skill end to end now, following .claude/skills/daily-brief/SKILL.md in full. This is the scheduled unattended morning run and you are that run, so do not check whether a brief is already running and do not ask any clarifying questions; there is nobody awake to answer them."
+$quotedPrompt = '"' + $prompt.Replace('"', '\"') + '"'
 
 $proc = Start-Process -FilePath $claudeExe `
-    -ArgumentList @("--print", "--dangerously-skip-permissions", $prompt) `
+    -ArgumentList @("--print", "--dangerously-skip-permissions", $quotedPrompt) `
     -WorkingDirectory $repoRoot `
     -RedirectStandardOutput $tempOut `
     -RedirectStandardError $tempErr `
     -NoNewWindow -PassThru
+
+# Touch .Handle immediately. Without this, .NET drops the process handle when the
+# child exits and .ExitCode comes back EMPTY even on a clean run. That is why the
+# 2026-09-12 alert read "exited with code ." with no number. Verified 2026-09-12:
+# same launch without this line returns [], with it returns [0].
+try { $null = $proc.Handle } catch { }
 
 $timedOut = $false
 if (-not $proc.WaitForExit($timeoutMinutes * 60 * 1000)) {
@@ -113,7 +126,18 @@ foreach ($f in @($tempOut, $tempErr)) {
     }
 }
 
-$exitCode = if ($timedOut) { 124 } else { $proc.ExitCode }
+# Refresh first: without it ExitCode can come back empty on an already-exited
+# process, which produced the useless "exited with code ." alert on 2026-09-12.
+# Treat an unreadable exit code as a failure (125), never as success.
+if (-not $timedOut) { try { $proc.Refresh() } catch { } }
+$exitCode = if ($timedOut) {
+    124
+} elseif ($null -eq $proc.ExitCode -or "$($proc.ExitCode)" -eq "") {
+    Write-Log "Exit code could not be read from the process; treating as a failure."
+    125
+} else {
+    $proc.ExitCode
+}
 Write-Log "Run finished with exit code $exitCode"
 
 if ($timedOut) {

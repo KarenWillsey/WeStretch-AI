@@ -1,0 +1,1703 @@
+{
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T10:18:00-06:00",
+  "source_run": "scheduled, catch-up at 09:53 after the 05:00 failure",
+  "items": [
+    {
+      "id": "q1",
+      "section": "COULDNT_CHECK",
+      "line": "**Kari rollup** - 2 items left the inbox, folder untraceable.",
+      "name": "Kari rollup gap",
+      "detail_bullets": [
+        "Kari rollup inbox activity delta: 2 items left the Inbox since the Sep 11 snapshot and neither could be traced to a destination folder. read_resource returned NOT_FOUND for both: \"Tasks summary for 9/11/2026\" (donotreply@managebuilding.com) and \"AppStance - Apple Ads Daily Summary - Sep 10, 2026 - We Bananas Software Inc.\" (notifications@appstance.com). Known cause, Outlook reissues a message id on every folder move, so content is unavailable too. Reported to Kari as left the inbox, folder untraceable."
+      ],
+      "source": "email",
+      "ref": "n/a",
+      "draft_id": null,
+      "suggested_actions": [
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q2",
+      "section": "COULDNT_CHECK",
+      "line": "**Attachments** - none opened, 6 sets not covered.",
+      "name": "Unopened attachments",
+      "detail_bullets": [
+        "Attachments were not opened this run, so facts inside them are not covered: the Physics 30 course outline PDF, the four July month end spreadsheets and PDFs from OH Door, the #td_secure attachment (password protected), the clearmotive invoice, the Park July Reports pack, and the three Elena monthly report packs."
+      ],
+      "source": "email",
+      "ref": "n/a",
+      "draft_id": null,
+      "suggested_actions": [
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q3",
+      "section": "DECIDE",
+      "line": "**Travis Duncan** - yes/no on golf zones, he registers Mon.",
+      "name": "Travis Duncan",
+      "detail_bullets": [
+        "Travis Duncan is the new Athletic Director at St. Joseph, Mr. Levy moved away over the summer.",
+        "Asks you to confirm by email whether your boys proceed with Golf Zones. He registers Monday.",
+        "Zones Mon Sept 21 in High Level, 4 athletes max per age group.",
+        "Parent drivers may be required.",
+        "Provincials Sept 28 to 29 if they qualify."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BnzAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "yes",
+        "no",
+        "draft",
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q4",
+      "section": "DECIDE",
+      "line": "**Boys' Choir** - yes/no. Driver Mondays 4pm, plus setup.",
+      "name": "Boys' Choir",
+      "detail_bullets": [
+        "They need a driver from St. Gerard on Mondays at 4pm for a prep boy.",
+        "They also need help with Monday room setup.",
+        "From logistics@gpboyschoir.org, received 2026-09-09 23:58 UTC."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt2rYEnAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "yes",
+        "no",
+        "draft",
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q5",
+      "section": "DECIDE",
+      "line": "**Adobe Sign** - lease amendment waiting on your signature.",
+      "name": "Adobe Sign",
+      "detail_bullets": [
+        "Samantha Brothers (samantha@kasa.ca) requested your signature on \"2026_09_11 Lease Amending Agreement\".",
+        "Sent through Adobe Acrobat Sign, received 2026-09-11 20:37 UTC.",
+        "No reply to write, the action happens inside the Adobe link."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BnxAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q6",
+      "section": "DECIDE",
+      "line": "**clearmotive** - Mike wants your video verdict, 12 days.",
+      "name": "clearmotive",
+      "detail_bullets": [
+        "Mike Vecchiarelli is waiting on your verdict on the Analytics and UX videos.",
+        "Received 2026-08-31 17:05 UTC, 12 days unanswered.",
+        "He is also sending the final invoice. A separate invoice email from cmadmin@clearmotive.ca arrived Sep 3 and is in FYI.",
+        "The original Aug 20 message with both video links is also still in the Inbox."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylxAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "draft",
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q7",
+      "section": "DECIDE",
+      "line": "**School Engage** - Max's yearly form, portal only.",
+      "name": "School Engage",
+      "detail_bullets": [
+        "Yearly Registration Verification Form 2026-2027 for Max Willsey needs completing.",
+        "Alberta Education requires it every year.",
+        "Portal only, it cannot be answered by email.",
+        "Received 2026-09-10 19:41 UTC from donotreply@schoolengage.ca."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt3G0GnAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q8",
+      "section": "DECIDE",
+      "line": "**Kevin** - blinds email unanswered 3 days.",
+      "name": "Kevin (Blinds)",
+      "detail_bullets": [
+        "You sent \"Blinds\" to kevin@kasa.ca on 2026-09-09 19:20 UTC with an attachment.",
+        "No reply in 3 days.",
+        "Hidden behind the +1 more line in the email."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt2rYEdAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "draft",
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": true
+    },
+    {
+      "id": "q9",
+      "section": "REPLY",
+      "line": "**Owen at KMSC** - pleadings received, acknowledgment drafted.",
+      "name": "Owen at KMSC",
+      "detail_bullets": [
+        "Owen sent the filed Statement of Claim, Statement of Defence and Counterclaim for the GPCSD foundation matter.",
+        "Personal reference only until the court clerks send official copies.",
+        "Draft created this run and read back clean. Routine acknowledgment, not sent.",
+        "Received 2026-09-04 21:00 UTC."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynsAAA=",
+      "draft_id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AOBhGeMLk0kytmkJqyYJMcwALd_0ufgAA",
+      "suggested_actions": [
+        "send",
+        "edit",
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q10",
+      "section": "DATED",
+      "line": "**Sheer Illusions** - $567.61 due Mon Sep 14 (carried, unconfirmed).",
+      "name": "Sheer Illusions",
+      "detail_bullets": [
+        "Install Mon Sep 14 with $567.61 due on install.",
+        "Carried from the 2026-09-11 brief, not confirmed in today's scan.",
+        "The source email is no longer in the Inbox, so it could not be re-read this run."
+      ],
+      "source": "email",
+      "ref": "carried from 2026-09-11 brief",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q11",
+      "section": "DATED",
+      "line": "**Visualping** - log in by Mon or monitoring slows.",
+      "name": "Visualping",
+      "detail_bullets": [
+        "Visualping has not seen you in 3 months.",
+        "Asks you to log in within 3 days or monitoring frequency drops.",
+        "Received 2026-09-11 20:18 UTC, so the deadline lands about Mon Sep 14."
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BnwAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q12",
+      "section": "DELETED",
+      "line": "**Skool**, Lifestyle Founders workshop notice, event passed.",
+      "name": "Skool",
+      "detail_bullets": [
+        "Subject: Dan Harrison posted \"Grab a coffee. See you in 30.\"",
+        "Sender: noreply@skool.com",
+        "Moved to Deleted Items this run, recoverable."
+      ],
+      "source": "email",
+      "ref": "moved to Deleted Items",
+      "draft_id": null,
+      "suggested_actions": [
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q13",
+      "section": "DELETED",
+      "line": "**Skool**, AI Creator Academy weekly community digest.",
+      "name": "Skool",
+      "detail_bullets": [
+        "Subject: Weekly digest for Fri, Sep 4 2026",
+        "Sender: noreply@skool.com",
+        "Moved to Deleted Items this run, recoverable."
+      ],
+      "source": "email",
+      "ref": "moved to Deleted Items",
+      "draft_id": null,
+      "suggested_actions": [
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q14",
+      "section": "DELETED",
+      "line": "**Skool**, Sept 11 Weekly Workshop Matrix reminder, now past.",
+      "name": "Skool",
+      "detail_bullets": [
+        "Subject: 1 event happening tomorrow",
+        "Sender: noreply@skool.com",
+        "Moved to Deleted Items this run, recoverable."
+      ],
+      "source": "email",
+      "ref": "moved to Deleted Items",
+      "draft_id": null,
+      "suggested_actions": [
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q15",
+      "section": "TASKS",
+      "line": "**Asana** - 220 open, 30 today, 5 overdue.",
+      "name": "Asana",
+      "detail_bullets": [
+        "220 open tasks in My Tasks, paged in full.",
+        "30 in Today, 3 in Recently assigned.",
+        "5 flagged overdue. Each overdue task has its own queue entry below."
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/my_tasks",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q16",
+      "section": "TASKS",
+      "line": "**Contacts to revisit** - overdue 61 days.",
+      "name": "Make a complete list of contacts to revisit",
+      "detail_bullets": [
+        "Task: Make a complete list of contacts to revisit",
+        "Project: no project",
+        "Overdue by 61 days (due 2026-07-13)"
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/task/1215840028091589",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q17",
+      "section": "TASKS",
+      "line": "**Clickable prototypes** - Kelly, overdue 61 days.",
+      "name": "Challenge Clickable prototypes",
+      "detail_bullets": [
+        "Task: Challenge Clickable prototypes",
+        "Project: Kelly",
+        "Overdue by 61 days (due 2026-07-13)"
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/project/1211938301833056/task/1215460661310320",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q18",
+      "section": "TASKS",
+      "line": "**Jamie email** - marg/expert/chase, overdue 11 days.",
+      "name": "Jamie email through marg/expert/chase",
+      "detail_bullets": [
+        "Task: Jamie email through marg/expert/chase",
+        "Project: no project",
+        "Overdue by 11 days (due 2026-08-31)"
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/task/1216956726428736",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q19",
+      "section": "TASKS",
+      "line": "**Josee** - saving email funnels, overdue 11 days.",
+      "name": "Josee on how to save email funnels",
+      "detail_bullets": [
+        "Task: Josee on how to save email funnels",
+        "Project: no project",
+        "Overdue by 11 days (due 2026-09-01)"
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/task/1216538346650998",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q20",
+      "section": "TASKS",
+      "line": "**Patterson stats** - validate the software, overdue 11 days.",
+      "name": "Our statistics are reporting from Patterson question validate is there Software",
+      "detail_bullets": [
+        "Task: Our statistics are reporting from Patterson question validate is there Software",
+        "Project: no project",
+        "Overdue by 11 days (due 2026-09-01)"
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/task/1211627350256661",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q21",
+      "section": "TASKS",
+      "line": "**WEMVP-11850** - pose diagram, Sprint 204 ends Thu.",
+      "name": "WEMVP-11850",
+      "detail_bullets": [
+        "Draw diagram for pose, sequence what happens",
+        "Project: WeStretch App. Status: To Do. Priority: Medium. No due date.",
+        "Sprint 204 on the WEMVP board ends 2026-09-17.",
+        "Only ticket assigned to you in an active sprint."
+      ],
+      "source": "jira",
+      "ref": "https://webananas.atlassian.net/browse/WEMVP-11850",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q22",
+      "section": "FYI",
+      "line": "**Note to self** - \"P\", two photos, no text.",
+      "name": "Note to self",
+      "detail_bullets": [
+        "Subject: P",
+        "From: karen@kasa.ca",
+        "Received: 2026-09-12 15:29 UTC",
+        "Note to self from your iPhone",
+        "Two inline photos, IMG_2948.PNG and IMG_2949.PNG",
+        "No message text, so no action is stated"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Bn8AAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q23",
+      "section": "FYI",
+      "line": "**Claude Code** - weekly product newsletter.",
+      "name": "Claude Code",
+      "detail_bullets": [
+        "Subject: This week in Claude Code: /resume on desktop, start sessions from your phone, and more",
+        "From: no-reply@email.claude.com",
+        "Received: 2026-09-12 14:16 UTC",
+        "Product newsletter, unread",
+        "Covers Fable 5.1, background computer use, picking a model for subagents",
+        "No action needed"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCqAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q24",
+      "section": "FYI",
+      "line": "**Kevin at OH Door** - July month end, 4 files, no ask.",
+      "name": "Kevin at OH Door",
+      "detail_bullets": [
+        "Subject: July month end",
+        "From: kevinw@ohdoor.com",
+        "Received: 2026-09-12 13:10 UTC",
+        "Body is just \"As attached\"",
+        "To John Hanrahan, you, and Jake Willsey",
+        "Attached: 2026_07 Income statement.xlsx, 2026_07 Balance Sheet.xlsx, 2026_07 AP trial balance.pdf, 2026_07_31 AR aging report.pdf",
+        "No ask stated"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Bn7AAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q25",
+      "section": "FYI",
+      "line": "**Hubstaff** - Starter plan hit the 500 screenshot limit.",
+      "name": "Hubstaff",
+      "detail_bullets": [
+        "Subject: Upgrade your plan for more data",
+        "From: no-reply@hubstaff.com",
+        "Received: 2026-09-12 05:01 UTC",
+        "Some members on your Starter plan hit the monthly limit of 500 screenshots, apps and URLs",
+        "Upgrade offered to the Grow plan at $2 per seat",
+        "Kept rather than deleted because it reports a real account limit, not only a promotion"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Bn4AAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q26",
+      "section": "FYI",
+      "line": "**AppStance** - receipt 2013-7821, for records.",
+      "name": "AppStance",
+      "detail_bullets": [
+        "Subject: Your receipt from AppStance #2013-7821",
+        "From: invoice+statements@appstance.com",
+        "Received: 2026-09-11 23:03 UTC",
+        "Payment receipt with attachment",
+        "Receipt number 2013-7821",
+        "Record keeping only"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Bn1AAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q27",
+      "section": "FYI",
+      "line": "**Kyla Kaczmarek** - Physics 30, Max needs a calculator daily.",
+      "name": "Kyla Kaczmarek",
+      "detail_bullets": [
+        "Subject: Welcome to Physics 30 at St. Joes!",
+        "From: KylaKaczmarek@gpcsd.ca",
+        "Received: 2026-09-11 22:29 UTC",
+        "Kyla Kaczmarek is teaching Physics 30 this semester",
+        "Students need a scientific calculator in class daily",
+        "The Physics 30 diploma is 30% of the overall grade",
+        "Diploma exam Wednesday January 27, 2027, 9am to 12pm",
+        "Marks posted regularly in PowerSchool",
+        "Course outline PDF attached, school phone 780-532-7779",
+        "No reply requested"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Bn0AAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q28",
+      "section": "FYI",
+      "line": "**Interac** - Monica Chambers took your $165.00.",
+      "name": "Interac",
+      "detail_bullets": [
+        "Subject: Interac e-Transfer: Monica Chambers has accepted your transfer of $165.00",
+        "From: catch@payments.interac.ca",
+        "Received: 2026-09-11 21:57 UTC",
+        "Your $165.00 CAD transfer was deposited by Monica Chambers",
+        "Sent to willseyk@telus.net",
+        "Flagged high importance by the sender, confirmation only"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BnyAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q29",
+      "section": "FYI",
+      "line": "**TD** - Global Transfer terms change Oct 14.",
+      "name": "TD",
+      "detail_bullets": [
+        "Subject: Important Changes to TD Global Transfer Terms of Use",
+        "From: noreply@td.com",
+        "Received: 2026-09-11 16:45 UTC",
+        "TD is changing sections of the TD Global Transfer Terms of Use",
+        "Effective October 14, 2026",
+        "No action required"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BntAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q30",
+      "section": "FYI",
+      "line": "**Joe Zeplin** - the Claude prompts you asked for.",
+      "name": "Joe Zeplin",
+      "detail_bullets": [
+        "Subject: Your Claude prompts (sorry for the wait!)",
+        "From: joe@joezeplin.com",
+        "Received: 2026-09-11 01:03 UTC",
+        "Joe Zeplin sending the Claude prompts you requested from his newsletter",
+        "Sent by hand because his email automation broke",
+        "No action needed"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt3G0GwAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q31",
+      "section": "FYI",
+      "line": "**Note to self** - \"Phone\", attachment, no text.",
+      "name": "Note to self",
+      "detail_bullets": [
+        "Subject: Phone",
+        "From: karen@kasa.ca",
+        "Received: 2026-09-10 22:58 UTC",
+        "Note to self from your iPhone with an attachment",
+        "No message text"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt3G0GvAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q32",
+      "section": "FYI",
+      "line": "**Christa Erickson** - trades program, 8 Fridays, flyer.",
+      "name": "Christa Erickson",
+      "detail_bullets": [
+        "Subject: Explore Trades-Earn High School & College Credits",
+        "From: ChristaErickson@gpcsd.ca",
+        "Received: 2026-09-10 21:19 UTC",
+        "TD1010 trades program, high school and college credits in 8 Fridays",
+        "Registration flyer included",
+        "For parents and guardians, informational"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCkAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q33",
+      "section": "FYI",
+      "line": "**Rhonda Side** - meeting minutes attached, no ask.",
+      "name": "Rhonda Side",
+      "detail_bullets": [
+        "Subject: meeting minutes",
+        "From: Rhonda.Side@sidemanagement.ca",
+        "Received: 2026-09-09 20:48 UTC",
+        "To you and kevin@parkpmg.ca",
+        "Attachment holds the minutes, body is only Rhonda's signature block",
+        "No ask in the message"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt2rYEjAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q34",
+      "section": "FYI",
+      "line": "**NW Polytechnic** - Black and White Ball invitation.",
+      "name": "NW Polytechnic",
+      "detail_bullets": [
+        "Subject: You are invited to the 39th Annual NWP President's Black & White Ball",
+        "From: engage@nwpolytech.ca",
+        "Received: 2026-09-08 22:27 UTC",
+        "Northwestern Polytechnic invitation, presented by Nine10",
+        "Brings together alumni, business leaders and community supporters",
+        "No RSVP deadline stated in the message body"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt11f5SAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q35",
+      "section": "FYI",
+      "line": "**Elena** - August reports, Kasa and WeStretch.",
+      "name": "Elena",
+      "detail_bullets": [
+        "Subject: August - Monthly reports",
+        "From: elena@kasa.ca",
+        "Received: 2026-09-08 20:13 UTC",
+        "August 2026 reports attached, to you and Kevin",
+        "Dashboard",
+        "Kasa Management Ltd. and Kasa Financial (TC) Ltd balance sheet and income statement",
+        "WeStretch Software Inc. income statement"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt11f5KAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q36",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Sep 8.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, 2026-09-08, ~438,960 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-09-08 11:16 UTC",
+        "Your own automated brief",
+        "Reported the Kari rollup went out twice that day after the escaped HTML bug"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCOAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q37",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Sep 7.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, 2026-09-07, ~399,025 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-09-07 11:12 UTC",
+        "Your own automated brief",
+        "Reported the Taylor Estates body was over the read limit that day"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCPAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q38",
+      "section": "FYI",
+      "line": "**Kevin** - good program, discuss in September meeting.",
+      "name": "Kevin",
+      "detail_bullets": [
+        "Subject: RE: New Program: Leading Family Business Strategy, Virtual",
+        "From: kevin@kasa.ca",
+        "Received: 2026-09-05 13:50 UTC",
+        "Kevin says it looks like a good program",
+        "Suggests discussing it at the September meeting",
+        "Thread also includes jennifer.wood05@gmail.com and ghkroon@gmail.com",
+        "Subject rendered with a comma in place of the em dash Outlook shows"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCRAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q39",
+      "section": "FYI",
+      "line": "**Kelly Jarego at TD** - secure email, needs your password.",
+      "name": "Kelly Jarego at TD",
+      "detail_bullets": [
+        "Subject: #td_secure Update [I]",
+        "From: Kelly.Jarego@td.com",
+        "Received: 2026-09-04 22:32 UTC",
+        "TD Secure Email from Kelly Jarego, copied to Leon.Makombe@td.com",
+        "Attachment needs your TD Secure Password to open",
+        "Content not visible from the email body"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt2rYEPAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q40",
+      "section": "FYI",
+      "line": "**Christa Erickson** - district bulletin, footer only.",
+      "name": "Christa Erickson",
+      "detail_bullets": [
+        "Subject: Safe and Caring Schools",
+        "From: ChristaErickson@gpcsd.ca",
+        "Received: 2026-09-04 20:34 UTC",
+        "Grande Prairie Catholic School District bulletin",
+        "Body is the district mailing footer only",
+        "No action"
+      ],
+      "source": "email",
+      "ref": "2026-09-04 20:34 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q41",
+      "section": "FYI",
+      "line": "**NW Polytechnic** - Choose Your Side moved to Sep 24.",
+      "name": "NW Polytechnic",
+      "detail_bullets": [
+        "Subject: NEW Date Sept 24 - Choose Your Side",
+        "From: SideCentre@nwpolytech.ca",
+        "Received: 2026-09-04 17:28 UTC",
+        "Updated date for the Choose Your Side engagement session",
+        "Thursday, September 24, 2026",
+        "Location: Blue Box at the Blue Building project",
+        "Shaping the future of the Side Centre, for community partners"
+      ],
+      "source": "email",
+      "ref": "2026-09-04 17:28 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q42",
+      "section": "FYI",
+      "line": "**Christa Erickson** - class of 2027 grad planning.",
+      "name": "Christa Erickson",
+      "detail_bullets": [
+        "Subject: Graduation Information",
+        "From: ChristaErickson@gpcsd.ca",
+        "Received: 2026-09-04 15:16 UTC",
+        "Early planning note for the graduating class of 2027",
+        "Addressed to graduation parents and guardians",
+        "No date or action given in the opening"
+      ],
+      "source": "email",
+      "ref": "2026-09-04 15:16 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q43",
+      "section": "FYI",
+      "line": "**WeStretch team** - forwarded PayPal closure notice.",
+      "name": "WeStretch team",
+      "detail_bullets": [
+        "Subject: Fw: Your PayPal Account will be closed",
+        "From: team@westretch.ca",
+        "Received: 2026-09-03 14:48 UTC",
+        "Forwarded FYI to kari@kasa.ca, you and elena@kasa.ca",
+        "Original from service@updates.paypal.com to support@westretch.ca, sent Sept 2 8:27pm",
+        "No instruction attached to the forward"
+      ],
+      "source": "email",
+      "ref": "2026-09-03 14:48 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q44",
+      "section": "FYI",
+      "line": "**clearmotive** - invoice attached for handling.",
+      "name": "clearmotive",
+      "detail_bullets": [
+        "Subject: clearmotive Invoice",
+        "From: cmadmin@clearmotive.ca",
+        "Received: 2026-09-03 00:08 UTC",
+        "Invoice attached for handling, from Julie Newell, Office Manager",
+        "Copied to kayla.graham@clearmotive.ca and kari@kasa.ca",
+        "Related to the clearmotive engagement Mike is also chasing"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynBAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q45",
+      "section": "FYI",
+      "line": "**Kevin at Park** - 214 Place ceiling and lighting plan.",
+      "name": "Kevin at Park",
+      "detail_bullets": [
+        "Subject: FW: 214 Place Lobby - Proposed Ceiling/Lighting Plan Design",
+        "From: kevin@parkpmg.ca",
+        "Received: 2026-09-01 18:43 UTC",
+        "Forward of a Sept 1 11:20am message from Sabrina Jhamandas at hsea.ca to Leanne MacKinnon",
+        "Attachment holds the proposed ceiling and lighting plan",
+        "Copied to Rhonda Side"
+      ],
+      "source": "email",
+      "ref": "2026-09-01 18:43 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q46",
+      "section": "FYI",
+      "line": "**Kevin** - 84th Ave building appraised at $3.2 million.",
+      "name": "Kevin",
+      "detail_bullets": [
+        "Subject: FW: QWC - Monthly Financial Reports - Jul.2026",
+        "From: kevin@kasa.ca",
+        "Received: 2026-09-01 14:15 UTC",
+        "Kevin flags the appraisal for the building on 84th Ave beside the 707 building at $3.2 million",
+        "Forward of Tim Dewal's July 2026 QWC monthly financial reports",
+        "Attachment included"
+      ],
+      "source": "email",
+      "ref": "2026-09-01 14:15 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q47",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Sep 1.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, 2026-09-01, ~343,983 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-09-01 11:13 UTC",
+        "Your own automated brief",
+        "Reported the Unsubscribe folder capped at 50 of 79 items that day"
+      ],
+      "source": "email",
+      "ref": "2026-09-01 11:13 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q48",
+      "section": "FYI",
+      "line": "**Side Group** - Cadence login created, credentials sent.",
+      "name": "Side Group",
+      "detail_bullets": [
+        "Subject: Re: [#SR-20707] New employee login",
+        "From: support@sidegroup.ca",
+        "Received: 2026-08-31, 2 messages, 18:29 and 18:50 UTC",
+        "18:29: Donovan asks whether Cadence will sign into a PC other than Debbie's and confirms she needs shared mailbox access",
+        "18:50: Donovan confirms the computer login is created and sends credentials via a Bitwarden Send link",
+        "Addressed to Leanne MacKinnon, you and Kevin are copied",
+        "No action on you"
+      ],
+      "source": "email",
+      "ref": "2026-08-31 18:50 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q49",
+      "section": "FYI",
+      "line": "**Note to self** - \"P\", signature only.",
+      "name": "Note to self",
+      "detail_bullets": [
+        "Subject: P",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-29 23:14 UTC",
+        "Note to self from your iPhone",
+        "Signature only, no content"
+      ],
+      "source": "email",
+      "ref": "2026-08-29 23:14 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q50",
+      "section": "FYI",
+      "line": "**Elena** - Excel masterclass, Copilot and LAMBDA.",
+      "name": "Elena",
+      "detail_bullets": [
+        "Subject: FW: 2026 Excel Masterclass: Using Copilot, Automation and LAMBDA Functions",
+        "From: elena@kasa.ca",
+        "Received: 2026-08-28 16:36 UTC",
+        "Elena forwarded it as FYI",
+        "Original an Eventbrite campaign from Michael Davis, Aug 28 7:32am",
+        "No action"
+      ],
+      "source": "email",
+      "ref": "2026-08-28 16:36 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q51",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 28.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, 2026-08-28, ~452,550 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-28 11:13 UTC",
+        "Your own automated brief",
+        "Reported 50 of 53 Unsubscribe items retrieved that day"
+      ],
+      "source": "email",
+      "ref": "2026-08-28 11:13 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q52",
+      "section": "FYI",
+      "line": "**Note to self** - \"permission\", no content.",
+      "name": "Note to self",
+      "detail_bullets": [
+        "Subject: permission",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-28 01:54 UTC",
+        "Note to self",
+        "Signature block only, no content"
+      ],
+      "source": "email",
+      "ref": "2026-08-28 01:54 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q53",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 27.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, 2026-08-27, ~477,337 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-27 11:13 UTC",
+        "Your own automated brief",
+        "Reported 7 untraceable inbox departures that day"
+      ],
+      "source": "email",
+      "ref": "2026-08-27 11:13 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q54",
+      "section": "FYI",
+      "line": "**Leanne MacKinnon** - Sheer Illusions fabric, both sides same colour.",
+      "name": "Leanne MacKinnon",
+      "detail_bullets": [
+        "Subject: FW: Fabric BO with front and back same color",
+        "From: Leanne.MacKinnon@parkpmg.ca",
+        "Received: 2026-08-26 20:36 UTC",
+        "Forward of an Aug 6 2:31pm message from Sheer Illusions (Jenny, blinds@sheerillusions.com)",
+        "Attachment included",
+        "Relates to the same Sheer Illusions blinds work as the Sep 14 install"
+      ],
+      "source": "email",
+      "ref": "2026-08-26 20:36 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q55",
+      "section": "FYI",
+      "line": "**Kevin at Park** - Nordic Court, Ian Evans forward.",
+      "name": "Kevin at Park",
+      "detail_bullets": [
+        "Subject: Fw: Nordic Court??",
+        "From: kevin@parkpmg.ca",
+        "Received: 2026-08-26 20:09 UTC",
+        "Forward of an Aug 26 1:56pm message from Ian Evans at hsea.ca to Rhonda Side, Kevin copied",
+        "Attachment included",
+        "Second copy of the same underlying message arrived from Rhonda 27 seconds earlier"
+      ],
+      "source": "email",
+      "ref": "2026-08-26 20:09 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q56",
+      "section": "FYI",
+      "line": "**Rhonda Side** - same Nordic Court forward, duplicate.",
+      "name": "Rhonda Side",
+      "detail_bullets": [
+        "Subject: FW: Nordic Court??",
+        "From: Rhonda.Side@sidemanagement.ca",
+        "Received: 2026-08-26 20:08 UTC",
+        "Rhonda's forward of the same Ian Evans message",
+        "Attachment included",
+        "Duplicate content of Kevin's forward"
+      ],
+      "source": "email",
+      "ref": "2026-08-26 20:08 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q57",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 26.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, 2026-08-26, ~390,823 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-26 11:12 UTC",
+        "Your own automated brief",
+        "Reported 25 untraceable inbox departures that day"
+      ],
+      "source": "email",
+      "ref": "2026-08-26 11:12 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q58",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 25.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, Aug 25, 2026, ~301,281 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-25 11:10 UTC",
+        "Your own automated brief",
+        "Reported 18 untraceable inbox departures that day"
+      ],
+      "source": "email",
+      "ref": "2026-08-25 11:10 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q59",
+      "section": "FYI",
+      "line": "**Park accounting** - July reports pack, no ask.",
+      "name": "Park accounting",
+      "detail_bullets": [
+        "Subject: Park July Reports",
+        "From: accounting@parkpmg.ca",
+        "Received: 2026-08-24 19:55 UTC",
+        "Attached: trial balance, income statements by building and company, balance sheet, bank reconciliation and bank statement, dashboard, consolidated income statement comparison",
+        "Also to megan.skinner@sidemanagement.ca, Rhonda Side and Kevin",
+        "No ask stated"
+      ],
+      "source": "email",
+      "ref": "2026-08-24 19:55 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q60",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 24.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, Aug 24, 2026, ~345,382 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-24 11:11 UTC",
+        "Your own automated brief",
+        "Reported 4 AppStance emails and the Taylor Estates forward as unreadable that day"
+      ],
+      "source": "email",
+      "ref": "2026-08-24 11:11 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q61",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 23.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, Aug 23, 2026, ~306,038 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-23 11:10 UTC",
+        "Your own automated brief",
+        "Reported the Asana Recently Assigned section missing that day"
+      ],
+      "source": "email",
+      "ref": "2026-08-23 11:10 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q62",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 22.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, Aug 22, 2026, ~321,933 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-22 11:10 UTC",
+        "Your own automated brief",
+        "First run to confirm message ids change on a folder move"
+      ],
+      "source": "email",
+      "ref": "2026-08-22 11:10 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q63",
+      "section": "FYI",
+      "line": "**Daily Brief** - your own, Aug 21.",
+      "name": "Daily Brief",
+      "detail_bullets": [
+        "Subject: Daily Brief, Aug 21, 2026, ~312,511 tokens (excl. compose)",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-21 11:10 UTC",
+        "Your own automated brief",
+        "First run to report the oversized Taylor Estates body"
+      ],
+      "source": "email",
+      "ref": "2026-08-21 11:10 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q64",
+      "section": "FYI",
+      "line": "**clearmotive** - the original video links, Aug 20.",
+      "name": "clearmotive",
+      "detail_bullets": [
+        "Subject: clearmotive | Video Recordings of Analytics & UX Findings",
+        "From: mike.vecchiarelli@clearmotive.ca",
+        "Received: 2026-08-20 19:13 UTC",
+        "Mike and Jake produced the Analytics and UX walkthroughs as videos at your request",
+        "Links to both are in a shared folder",
+        "Kari, Josee, Kayla Graham and Jake Surrey are copied",
+        "The Aug 31 follow up on this thread is in DECIDE"
+      ],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtpb-JdAAA=",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q65",
+      "section": "FYI",
+      "line": "**Kari** - network equipment quote from IT Horizons.",
+      "name": "Kari",
+      "detail_bullets": [
+        "Subject: Fw: Quote 3795 - Network Equipment Replacement",
+        "From: kari@kasa.ca",
+        "Received: 2026-08-19 17:06 UTC",
+        "Kari forwarded a quote prepared by Paul Bomett at ithorizons.ca, sent Aug 19 10:36am",
+        "Subject is network equipment replacement",
+        "No instruction attached to the forward"
+      ],
+      "source": "email",
+      "ref": "2026-08-19 17:06 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q66",
+      "section": "FYI",
+      "line": "**Rhonda Side** - Q1 Edmonton office rates, interesting.",
+      "name": "Rhonda Side",
+      "detail_bullets": [
+        "Subject: FW: Q1 Greater Edmonton Commercial Market Report 2026",
+        "From: Rhonda.Side@sidemanagement.ca",
+        "Received: 2026-08-19 15:27 UTC",
+        "Rhonda's note: interesting office rate information",
+        "Original from NAI Commercial Real Estate Inc.",
+        "Also to kevin@parkpmg.ca"
+      ],
+      "source": "email",
+      "ref": "2026-08-19 15:27 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q67",
+      "section": "FYI",
+      "line": "**Park admin** - voicemail forward, audio attached.",
+      "name": "Park admin",
+      "detail_bullets": [
+        "Subject: FW: Voice Mail Message",
+        "From: admin@parkpmg.ca",
+        "Received: 2026-08-19 00:41 UTC",
+        "Mitel voicemail to email forward, original Aug 18 10:40:54pm UTC",
+        "Audio attachment included",
+        "Also to kevin@parkpmg.ca"
+      ],
+      "source": "email",
+      "ref": "2026-08-19 00:41 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q68",
+      "section": "FYI",
+      "line": "**Elena** - July reports, same pack.",
+      "name": "Elena",
+      "detail_bullets": [
+        "Subject: July - Monthly reports",
+        "From: elena@kasa.ca",
+        "Received: 2026-08-12 16:40 UTC",
+        "July 2026 reports attached, to you and Kevin",
+        "Dashboard, Kasa Management and Kasa Financial (TC) balance sheet and income statement, WeStretch Software Inc. income statement"
+      ],
+      "source": "email",
+      "ref": "2026-08-12 16:40 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q69",
+      "section": "FYI",
+      "line": "**Elena** - June reports, oldest of the three.",
+      "name": "Elena",
+      "detail_bullets": [
+        "Subject: June - Monthly reports",
+        "From: elena@kasa.ca",
+        "Received: 2026-08-11 18:02 UTC",
+        "June 2026 reports attached, same document set as July and August",
+        "Oldest of the three monthly report emails still sitting in the Inbox"
+      ],
+      "source": "email",
+      "ref": "2026-08-11 18:02 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q70",
+      "section": "FYI",
+      "line": "**Note to self** - lairdnrc.com link.",
+      "name": "Note to self",
+      "detail_bullets": [
+        "Subject: Home | Laird NRC",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-04 16:34 UTC",
+        "Note to self with the link https://www.lairdnrc.com/",
+        "No other content"
+      ],
+      "source": "email",
+      "ref": "2026-08-04 16:34 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q71",
+      "section": "FYI",
+      "line": "**Note to self** - gutsy.so link.",
+      "name": "Note to self",
+      "detail_bullets": [
+        "Subject: Gutsy, Test ideas with AI-lookalike audiences in seconds",
+        "From: karen@kasa.ca",
+        "Received: 2026-08-04 16:33 UTC",
+        "Note to self with the link https://gutsy.so/",
+        "Subject rendered with a comma in place of the em dash Outlook shows"
+      ],
+      "source": "email",
+      "ref": "2026-08-04 16:33 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    },
+    {
+      "id": "q72",
+      "section": "FYI",
+      "line": "**Kevin** - insurance endorsement and appraisal docs.",
+      "name": "Kevin",
+      "detail_bullets": [
+        "Subject: FW: Important Insurance Endorsement & Appraisal Documents Enclosed",
+        "From: kevin@kasa.ca",
+        "Received: 2026-07-23 13:57 UTC",
+        "Kevin forwarded it as FYI",
+        "Original from Lucy Falcone at nfp.ca, July 21 11:37am",
+        "Attachment included",
+        "Oldest message in the Inbox, 51 days old"
+      ],
+      "source": "email",
+      "ref": "2026-07-23 13:57 UTC",
+      "draft_id": null,
+      "suggested_actions": [
+        "open",
+        "delete",
+        "file",
+        "skip"
+      ],
+      "status": "open",
+      "hidden_behind_more": false
+    }
+  ]
+}
