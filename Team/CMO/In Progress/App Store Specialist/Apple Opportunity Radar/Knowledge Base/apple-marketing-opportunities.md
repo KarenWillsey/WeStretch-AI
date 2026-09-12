@@ -237,12 +237,41 @@ Source: https://developer.apple.com/app-store/in-app-events/
 - Consider Family Sharing when appropriate.
 - Family Sharing can include up to five additional family members.
 - Enabling Family Sharing for an applicable subscription cannot be undone.
-- **[2026-09-01]** Apple now supports monthly subscriptions with a 12-month
-  commitment as an additional plan structure, worth evaluating alongside
-  WeStretch's existing Monthly/Annual plans.
-- **[2026-09-01]** "Streamlined purchasing" lets a customer complete a
-  purchase from outside the app (this can be turned off if unwanted), worth
-  confirming whether WeStretch wants this on or off.
+- **[2026-09-01, corrected and expanded 2026-09-11]** Apple supports monthly
+  subscriptions with a **12-month commitment**. Rules verified live:
+  - **Not available in the United States or Singapore.** Available in the
+    other 173 App Store countries/regions.
+  - It is a billing option added to an existing **1-year** subscription, not a
+    separate product. **Upfront Billing availability must be set up first**;
+    monthly billing is only offered where upfront billing is.
+  - **The 12-payment total must be >= the upfront price and <= 1.5x the
+    upfront price.**
+  - Cancelling mid-commitment does not stop the payments ("they'll continue
+    paying until their commitment is complete," except in certain regions),
+    and completing 12 payments rolls into another 12-month commitment.
+  - Requires device OS **26.4+** and an app built with SDK **26.5+**
+    (excludes watchOS).
+  - Removable at any time: Availability -> Monthly with 12 Month Commitment ->
+    Remove Monthly Billing. Existing customers finish their commitment and do
+    not renew.
+  - Source: https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription/
+- **[2026-09-01, corrected 2026-09-11]** "Streamlined purchasing" lets a
+  customer complete a subscription purchase from inside the App Store without
+  opening the app. **On by default.** It is much narrower than the name
+  suggests: it applies **only to subscriptions merchandised on the App Store,
+  namely Contingent Pricing and Win-back Offers**, and explicitly *not* to
+  subscription offer codes or in-app purchase promo codes. Turn it off if the
+  purchase requires in-app steps such as signing in. **Turning it off requires
+  the latest approved binary to implement the `PurchaseIntent` StoreKit API
+  first.** Path: App Store Connect -> Apps -> app -> Subscriptions ->
+  Streamlined Purchasing -> Edit (Account Holder, Admin, App Manager or
+  Marketing role). Source:
+  https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-streamlined-purchasing/
+- **[2026-09-11]** **Contingent pricing** (referenced by the streamlined
+  purchasing rule above) is a discounted subscription price offered while the
+  customer is actively subscribed to a *different* subscription, from the same
+  developer or another one. Apple launched it as a pilot with staged
+  onboarding. Source: https://developer.apple.com/news/?id=6e9odqgu
 - **[2026-09-01]** Win-back offer discovery now spans more surfaces: the App
   Store product page, editorial/recommendation placements (Today/Games/Apps
   tabs), an automatic in-app offer sheet, the customer's Apple Account

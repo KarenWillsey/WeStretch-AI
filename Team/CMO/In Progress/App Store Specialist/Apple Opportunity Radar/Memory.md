@@ -225,6 +225,74 @@ ratings at 4.45 stars as of 2026-09-10**, which the still-unimplemented
 
 Current live version as of 2026-09-10 is **8.1.33**, shipped that same day.
 
+## Two Apple subscription levers, settled (2026-09-11)
+
+**The monthly-with-12-month-commitment plan is not available in the United
+States or Singapore.** Available in the other 173 storefronts. So it is an
+international-only lever, never a general "third tier." Three more rules that
+shape any future discussion of it:
+
+- It is a billing option layered on the **existing 1-year subscription**, not a
+  new product. Upfront Billing availability has to be set up first; monthly
+  billing is only offered where upfront billing is.
+- **The 12-payment total must be between 1.0x and 1.5x the annual upfront
+  price.** Because WeStretch's annual is priced well under 12x monthly, the
+  1.5x ceiling always lands *below* the standalone monthly price. The plan
+  cannot avoid looking like a discount while paying about 47% more than annual.
+- Cancelling mid-commitment does not stop the payments (except in certain
+  regions), and completing 12 payments rolls into **another** 12-month
+  commitment. Heavier lock-in than the annual plan.
+- Needs device OS 26.4+ and an app built with SDK 26.5+. Not a blocker (iOS
+  26.6.2 was current in early Sept 2026, iOS 27 shipped 2026-09-14) but
+  WeStretch's iOS 15.2 floor means older-device users never see it.
+
+**Streamlined purchasing only covers Win-back Offers and Contingent Pricing.**
+It is on by default and it is much narrower than its name suggests: it does
+*not* cover offer codes or promo codes. WeStretch has neither win-back offers
+nor contingent pricing configured, so **the setting is currently attached to
+nothing**. Do not treat a future "should we turn this off" question as urgent
+until win-back offers actually go live.
+
+**It also cannot be turned off today.** Apple requires the latest approved
+binary to implement the `PurchaseIntent` StoreKit API before the toggle is
+available. Recommendation recorded in the output: leave it ON, ship
+`PurchaseIntent` so an App-Store-side purchase reconciles to a WeStretch
+account, and only flip it off if that reconciliation proves impossible.
+
+## International pricing is real, differentiated, and roughly 40% cheaper in the UK and Germany (2026-09-11)
+
+Extends the 2026-09-07 IAP note. The same storefront-HTML `textPairs` trick
+works on **any** country code, so per-territory pricing is readable without App
+Store Connect. Read 2026-09-11:
+
+| | US | UK | Germany | Canada | Australia |
+|---|---|---|---|---|---|
+| Premium Monthly | $9.99 | £4.99 | €4.99 | C$9.99 | A$9.99 |
+| Premium Yearly | $59.99 | £34.99 | €34.99 | C$59.99 | A$69.99 |
+| Premium Quarterly | $20.99 | £11.99 | (not in top 10) | C$20.99 | A$22.99 |
+
+£4.99 is about US$6.30 and €4.99 about US$5.40. **Never assume US prices apply
+elsewhere** when doing any pricing or LTV math for this project.
+
+**Two SKUs exist that have never shown in the US list:** "Missed Day Token"
+(C$2.99 / A$2.99) and **"Pro Monthly" at €34.99** in Germany, next to Premium
+Monthly at €4.99. Apple caps the public list at 10 and orders it itself, so
+this may be display ordering rather than availability. But it is a second data
+point on the unresolved Premium-vs-Pro split from 2026-09-07, and it is a
+seven-fold price gap nothing in this repo explains.
+
+App confirmed unchanged from 2026-09-10: version 8.1.33, 53 ratings, 4.45
+stars, US IAP list identical.
+
+## The backlog ran dry on 2026-09-11
+
+The 2026-09-11 run took the last item in "Not started." Unless new items are
+seeded, the next nightly run is a legitimate no-op. Seeds come from the monthly
+refresh (next 2026-10-01) or from Karen/the Manager. Two candidates are already
+surfaced and waiting on a decision: the blank Accessibility Nutrition Labels
+(raised 2026-09-09) and shipping `PurchaseIntent` (raised 2026-09-11). Per the
+skill's own rule, a nightly run does not invent its own backlog items.
+
 ## `state/last-run.log` is locked during every scheduled run; write the banner to stdout (2026-09-09)
 
 Recurring, wastes time every night until it is written down, so: the wrapper
