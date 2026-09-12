@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Routine Screen Redesign | WeStretch</title>
+  <link rel="stylesheet" href="../../../CMO/In%20Progress/Brand%20System/core/tokens.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ws-white); background: var(--ws-midnight-grey); font-family: var(--ws-font-ui); font-size: 17px; line-height: 1.5; }
+    a { color: inherit; text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--ws-sunshine-gold); outline-offset: 5px; }
+    .skip { position: absolute; top: -100px; left: 24px; padding: 12px 20px; background: var(--ws-white); color: var(--ws-midnight-grey); z-index: 3; }
+    .skip:focus { top: 16px; }
+    .wrap { width: min(1600px, calc(100% - 64px)); margin-inline: auto; }
+    header { padding: 48px 0 30px; border-bottom: 1px solid var(--ws-container-stroke); }
+    .eyebrow { margin: 0 0 12px; color: var(--ws-red-100); font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+    h1 { margin: 0; font-family: var(--ws-font-display); font-size: clamp(30px, 3.5vw, 48px); line-height: 1.15; letter-spacing: -0.025em; }
+    .intro { margin: 14px 0 0; color: var(--ws-light-grey); font-size: 19px; }
+    nav { display: flex; gap: 8px 24px; flex-wrap: wrap; margin-top: 16px; }
+    nav a { display: inline-flex; align-items: center; min-height: 48px; font-weight: 600; }
+    main { padding: 32px 0 48px; }
+    .gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 24px; }
+    .concept { min-width: 0; }
+    .title { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; font-size: 19px; line-height: 1.3; font-weight: 650; }
+    .number { flex: 0 0 auto; display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--ws-container-stroke); border-radius: 10px; color: var(--ws-red-100); font-variant-numeric: tabular-nums; font-size: 15px; }
+    .preview { position: relative; display: block; overflow: hidden; border: 1px solid var(--ws-container-stroke); border-radius: 24px; background: var(--ws-grey-800); text-decoration: none; }
+    .preview img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 19.5; object-fit: contain; }
+    .open { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 10px 16px; color: var(--ws-white); background: var(--ws-grey-800); font-size: 16px; font-weight: 600; border-top: 1px solid var(--ws-container-stroke); }
+    .preview:hover .open, .preview:focus-visible .open { background: var(--ws-grey-700); }
+    .open svg { flex: 0 0 auto; width: 18px; height: 18px; }
+    .description { margin: 14px 2px 0; color: var(--ws-light-grey); font-size: 17px; }
+    .landscape { grid-column: 1 / -1; padding-top: 4px; }
+    .landscape .preview img { aspect-ratio: 19.5 / 9; max-height: 640px; }
+    footer { border-top: 1px solid var(--ws-container-stroke); padding: 24px 0 36px; color: var(--ws-grey-300); font-size: 16px; }
+    footer p { margin: 0; }
+    @media (min-width: 1450px) { .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); } .landscape { grid-column: span 3; align-self: start; } }
+    @media (max-width: 1000px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .wrap { width: calc(100% - 32px); } header { padding-top: 28px; } .gallery { grid-template-columns: 1fr; gap: 32px; } .title { font-size: 20px; } .landscape { grid-column: auto; } .preview { border-radius: 20px; } }
+    @media print { body { background: white; color: black; } .wrap { width: 100%; } header, footer { border-color: currentColor; } nav, .open, .skip { display: none; } .eyebrow, .intro, .description, footer, .number { color: inherit; } .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } .concept { break-inside: avoid; } .preview { border-radius: 0; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#concepts">Skip to the concepts</a>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">CXO / Round 01</p>
+      <h1>Routine screen redesign</h1>
+      <p class="intro">Concept images. Choose the layouts you want to refine.</p>
+      <nav aria-label="Project documents">
+        <a href="README.md">Project overview</a>
+        <a href="cxo.md">Design notes and testing</a>
+      </nav>
+    </div>
+  </header>
+  <main id="concepts" class="wrap">
+    <div class="gallery" aria-label="Ten routine screen concepts">
+      <article class="concept">
+        <h2 class="title" id="concept-01"><span class="number">01</span>Top countdown</h2>
+        <a class="preview" href="Output/Round%2001/01-top-countdown.png" aria-labelledby="concept-01 open-01">
+          <img src="Output/Round%2001/01-top-countdown.png" alt="Portrait routine concept with large hold seconds above Ada, captions beneath the timer and controls at the bottom.">
+          <span class="open" id="open-01">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Puts the hold countdown above the gym, with progress and controls grouped below.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-02"><span class="number">02</span>Bottom countdown</h2>
+        <a class="preview" href="Output/Round%2001/02-bottom-countdown.png" aria-labelledby="concept-02 open-02">
+          <img src="Output/Round%2001/02-bottom-countdown.png" alt="Portrait routine concept with Ada above a bottom panel containing hold seconds, progress, a next-pose thumbnail and controls.">
+          <span class="open" id="open-02">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Brings the timer and next-pose preview together in a bottom panel.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-03"><span class="number">03</span>Left timer rail</h2>
+        <a class="preview" href="Output/Round%2001/03-left-timer-rail.png" aria-labelledby="concept-03 open-03">
+          <img src="Output/Round%2001/03-left-timer-rail.png" alt="Portrait routine concept with hold seconds and vertical routine progress in a left rail, beside Ada in the gym." loading="lazy">
+          <span class="open" id="open-03">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Reserves the left side for the countdown and a vertical progress display.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-04"><span class="number">04</span>Right timer rail</h2>
+        <a class="preview" href="Output/Round%2001/04-right-timer-rail.png" aria-labelledby="concept-04 open-04">
+          <img src="Output/Round%2001/04-right-timer-rail.png" alt="Portrait routine concept with a large timer and next-pose preview in a right rail, progress above and playback controls below." loading="lazy">
+          <span class="open" id="open-04">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Places hold seconds and the next pose beside the gym, above a separate control area.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-05"><span class="number">05</span>Caption and timer header</h2>
+        <a class="preview" href="Output/Round%2001/05-caption-and-timer-header.png" aria-labelledby="concept-05 open-05">
+          <img src="Output/Round%2001/05-caption-and-timer-header.png" alt="Portrait routine concept pairing a large two-line movement instruction with hold seconds across the top of the gym." loading="lazy">
+          <span class="open" id="open-05">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Gives the instruction and countdown equal space in one large header.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-06"><span class="number">06</span>Progress dashboard</h2>
+        <a class="preview" href="Output/Round%2001/06-progress-dashboard.png" aria-labelledby="concept-06 open-06">
+          <img src="Output/Round%2001/06-progress-dashboard.png" alt="Portrait routine concept with a circular progress indicator and completed-pose count above Ada, and a timer panel below." loading="lazy">
+          <span class="open" id="open-06">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Makes routine progress prominent at the top while keeping hold seconds below the gym.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-07"><span class="number">07</span>Now and next cards</h2>
+        <a class="preview" href="Output/Round%2001/07-now-and-next-cards.png" aria-labelledby="concept-07 open-07">
+          <img src="Output/Round%2001/07-now-and-next-cards.png" alt="Portrait routine concept showing the current gym view and next-pose preview in separate adjacent cards, with hold seconds above." loading="lazy">
+          <span class="open" id="open-07">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Separates the current stretch and next-pose preview into two clearly labelled cards.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-08"><span class="number">08</span>Open gym, corner timer</h2>
+        <a class="preview" href="Output/Round%2001/08-open-gym-corner-timer.png" aria-labelledby="concept-08 open-08">
+          <img src="Output/Round%2001/08-open-gym-corner-timer.png" alt="Portrait routine concept with an open gym view, a corner hold timer and visible routine information and controls." loading="lazy">
+          <span class="open" id="open-08">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Keeps more of the gym visible with the countdown placed in a corner.</p>
+      </article>
+      <article class="concept">
+        <h2 class="title" id="concept-09"><span class="number">09</span>Paused, ready to resume</h2>
+        <a class="preview" href="Output/Round%2001/09-paused-resume.png" aria-labelledby="concept-09 open-09">
+          <img src="Output/Round%2001/09-paused-resume.png" alt="Paused routine concept with Resume as the main action and the hold time, progress, next pose and Exit still visible." loading="lazy">
+          <span class="open" id="open-09">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Shows how the screen can make the paused state and Resume action clear.</p>
+      </article>
+      <article class="concept landscape">
+        <h2 class="title" id="concept-10"><span class="number">10</span>Landscape stretch view</h2>
+        <a class="preview" href="Output/Round%2001/10-landscape-stretch-view.png" aria-labelledby="concept-10 open-10">
+          <img src="Output/Round%2001/10-landscape-stretch-view.png" alt="Landscape phone concept that uses the wider screen to place the gym view beside the routine timer and controls." loading="lazy">
+          <span class="open" id="open-10">Open full size <span aria-hidden="true">↗</span></span>
+        </a>
+        <p class="description">Explores a sideways phone layout with more horizontal room for the gym and routine information.</p>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap"><p>Built-in image generation. The final app will use the existing 3D gym asset.</p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "tool": "Built-in image_gen",
+  "edits": [
+    {
+      "id": "03",
+      "prompt": "Edit ONLY the caption background on this supplied app screen. Keep every pixel/element of the layout, the left timer rail, gym, Ada, all numbers, labels, controls, positions and colors unchanged. Replace the solid translucent black top caption bar with curved hard bottom edge by a beautiful smooth charcoal-to-transparent vertical gradient, inspired by an App Store photo fade: near-opaque charcoal behind 'Tilt left. Rotate left.', fading gradually away down through the empty ceiling and fully transparent well before Ada's head. NO curved boundary, NO hard edge, NO box. Caption text stays white and exactly as it is. Never cover Ada or change existing room."
+    },
+    {
+      "id": "04",
+      "prompt": "Make a tightly localized correction to the BOTTOM model-speed control group of this exact mobile UI image. Keep all other screen elements and gym/Ada absolutely unchanged. Remove the WRONG '1.5x' under Faster and remove the small '0.5x' under Slower. Change the group heading 'Model speed' to exact text 'Model speed: 0.5x', large and legible, centered above the red Pause circle. Left control says only 'Slower' in visibly disabled medium-grey text; right control says only 'Faster' in white. Both stay in the current positions. Current speed is0.5x, never show1.5x. No extra speed numbers. Keep the giant18, timer panel, next pose, captions, progress and full-body Ada identical."
+    },
+    {
+      "id": "06",
+      "prompt": "Improve this exact routine screen with ONE hierarchy adjustment: the hold countdown '18' in the bottom LEFT region needs to be MUCH larger, at least80 percent larger in visible height, comparable to a110px numeral at390px phone width. Give its bottom information console more vertical height by making the TOP circular progress dashboard shorter and shifting/reducing the gym viewport proportionally just enough to keep Ada's full head, hands and both feet unobscured. Keep same gym and Ada identity. The18 stays BELOW her feet, never on the model. Keep 'Hold' above, 'seconds left' below, next-pose preview card to right, Pause and Slower below. All other text identical, progress remains12/66 and18.2%, grey panel styling same, one red Pause only. Speed label 'Model speed: Normal' must be clearly readable at body size. Preserve smooth gradient instruction background. This is a large bottom timer plus round routine progress dashboard concept."
+    },
+    {
+      "id": "07",
+      "prompt": "Edit only the right NEXT POSE CARD in this existing UI mockup. The tiny T-pose Ada currently has hands/arms cropped by the card edges. Scale down the whole next-pose Ada proportionally until BOTH FULL outstretched arms including fingertips and her head and feet fit within the right card with clear margins, about60 percent of current figure height. Keep the next-pose model centered in her card. The active larger Ada in the LEFT gym stays exactly unchanged, same full-body size/pose and same existing gym. Next pose should be visibly a small secondary preview to avoid following the wrong model. Preserve words 'Next pose' and 'T-Pose' in current positions and every other pixel/layout/text/control/timer18/speed0.75x unchanged. No new elements or redesigned gym."
+    },
+    {
+      "id": "08",
+      "prompt": "Refine this exact app screen, preserving Ada's full body, existing gym geometry, and all currently correct UI. The corner hold countdown is too small: enlarge its top-left dark island slightly and make the numeral18 about50percent larger, staying entirely above the instruction band and clear of Ada. Add the plain text 'Model speed: Normal' in a comfortably readable line below the bottom controls. Replace the bottom-right 'Next pose / T-Pose' BUTTON-LIKE outlined rounded container by plain white text with NO border/fill/no rounded box, keep its position as a passive informational label. Keep Slower and red Pause where they are. Retain12/66 completed and progress18.2percent and Exit top-right, soft gradient caption. No extra numerals. No cropping any part of active Ada."
+    },
+    {
+      "id": "10",
+      "prompt": "Edit this landscape WeStretch UI screenshot ONLY to strengthen the smooth GRADIENT BACKGROUND behind the top instructional text 'Tilt left. Rotate left.' on the LEFT gym section. Apply an opaque Midnight Grey charcoal at very top, staying very dark behind the text and fading gently to transparent immediately below text but before Ada's face. Must be a continuous soft gradient with no hard lower boundary, no rectangle/card/bubble. Keep instruction text and Exit and ALL the other UI, layout,18 timer,12/66,0.75x, progress, original room and Ada unchanged. This is the same gym, no other visual changes. Retain landscape aspect ratio exactly."
+    }
+  ]
+}
