@@ -33,6 +33,13 @@
   --ws-red-100: #FC7E84;
   --ws-red-050: #FEDADC;
 
+  /* Primary button recipe. Matched to the website CTA. */
+  --ws-cta-top: #FC4850;
+  --ws-cta-middle: #FF5960;
+  --ws-cta-bottom: #E22931;
+  --ws-cta-hover: #9B1F25;
+  --ws-cta-fill: linear-gradient(180deg, var(--ws-cta-top) 0%, var(--ws-cta-middle) 50%, var(--ws-cta-bottom) 100%);
+
   /* Neutral ramp (Midnight Grey tints) */
   --ws-grey-900: #1F1F1F;
   --ws-grey-800: #353535;

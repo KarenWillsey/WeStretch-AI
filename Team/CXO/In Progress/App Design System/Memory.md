@@ -30,3 +30,11 @@ Durable facts for this folder only.
    - The reviewer hotspot debug highlight (`#14e39a` mint) is a dev-only overlay kept
      loud and off brand so it does not compete with the artwork. Turning it red would
      make it collide with every real Fire Red CTA.
+
+## Website button alignment, 2026-09-12
+
+5. **Primary buttons use the website CTA gradient.**
+   - **Why:** Karen selected the website button as the sample for app design.
+   - **How to apply:** use the shared core CTA token: `#FC4850` at 0%,
+     `#FF5960` at 50% and `#E22931` at 100%. Keep the app's 48px minimum
+     target and slight shadow. Fire Red remains `#FC4850`.

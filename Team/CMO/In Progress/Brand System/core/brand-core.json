@@ -36,7 +36,8 @@
   },
   "cta": {
     "shape": "rounded",
-    "fill": "vertical linear gradient of Fire Red",
+    "fill": "linear-gradient(180deg, #FC4850 0%, #FF5960 50%, #E22931 100%)",
+    "hover": "#9B1F25",
     "shadow": "slight drop shadow",
     "rule": "Primary action is always the big red button. Dismiss or Not now is small and hyperlinked.",
     "copy": "short and clear"

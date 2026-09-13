@@ -34,8 +34,19 @@ Durable facts for this folder only. Cross role facts go in the repo root `Memory
    - The prototype CTA gradient was `#ff7b6b` to `#e8423a`. The brand ramp is
      `#FC7E84` to `#E24048`. Near enough to look right in isolation, wrong when
      placed next to a correctly built asset.
-   - **How to apply:** never eyeball a brand colour. Copy the hex out of
-     `core/brand-core.json` or `core/tokens.css`.
+   - **Superseded 2026-09-12 for buttons:** Karen chose the website CTA as the
+     button sample. The shared button gradient is now `#FC4850` to `#FF5960`
+     to `#E22931`, with `#9B1F25` for hover. Fire Red remains `#FC4850`.
+   - **How to apply:** never eyeball a brand colour. Copy the solid Fire Red
+     and CTA recipe out of `core/brand-core.json` or `core/tokens.css`.
+
+## Website button alignment, 2026-09-12
+
+8. **The website CTA is the shared button sample.**
+   - **Why:** Karen asked the design files to use the website button gradient.
+   - **How to apply:** primary buttons use `#FC4850` at 0%, `#FF5960` at 50%
+     and `#E22931` at 100%. Hover is `#9B1F25`. The website's old general
+     accent `#FF5252` was corrected to brand Fire Red `#FC4850`.
 
 5. **Open, smaller: the Pro and Lite concept variants are still off brand on purpose.**
    `westretch-pro` uses purple `#7357d8`, `westretch-lite` uses coral `#e25d4f`.

@@ -40,7 +40,8 @@
   --app-ink-muted: var(--ws-grey-300);
 
   /* Primary action. Guideline p26: always red, rounded, vertical gradient, slight shadow. */
-  --app-cta-fill: linear-gradient(180deg, #FC7E84 0%, #FC4850 55%, #E24048 100%);
+  --app-cta-fill: var(--ws-cta-fill);
+  --app-cta-hover: var(--ws-cta-hover);
   --app-cta-ink: #FFFFFF;
   --app-cta-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   --app-cta-radius: 999px;

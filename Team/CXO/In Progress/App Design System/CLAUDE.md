@@ -26,10 +26,9 @@ components/             Component previews, synced to claude.ai/design
 
 ## Relationship to the Westretch-UX prototype
 
-`Team/CXO/In Progress/Westretch-UX/` is the live React prototype. Its
-`src/styles/global.css` currently uses a **green** palette that does not match
-the brand guideline. That conflict is unresolved and logged in `Memory.md` and
-`WORK-TRACKER.md`. Do not silently align one to the other. Ask Karen.
+`Team/CXO/In Progress/Westretch-UX/` is the live React prototype. Karen
+resolved the old green palette drift on 2026-09-09. Fire Red is the shared
+brand accent. The app kit uses the website's approved primary-button gradient.
 
 ## Producing work
 
