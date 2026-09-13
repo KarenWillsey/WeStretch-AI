@@ -32,7 +32,7 @@ Owner: CXO. Started 2026-09-12 at Karen's request.
 
 ## Open work
 
-- [ ] Select the direction to develop from the ten images.
+- [ ] Review the Round 03 quiet-playback recommendation and its long-caption state.
 - [ ] Test comprehension after two stretches, viewing distance, floor poses and wide poses on real phones.
 - [ ] Confirm Unity speed steps, hold timing, completed-count events, exit behavior and progress persistence.
 
@@ -55,3 +55,14 @@ These three items are mirrored in root WORK-TRACKER.md.
 - Put the circular routine progress at the top with the pose count inside it.
 - Test a layout with routine progress and hold countdown on either side of the closed captions.
 - Closed captions can reach 178 characters, so their size must adjust within a fixed safe region.
+
+## Round 03, 2026-09-13
+
+- Karen reported that the red Pause feels like quitting. This supersedes Round 02's red Pause direction.
+- Applied CXO reviews, Marg / Chase / Expert, research synthesis, copy editing, brand rules and published design principles. These are heuristic reviews, not participant testing.
+- Recommend neutral playback, one X/Y progress ring, plain countdown with s, and Slower / Pause / Next labels.
+- Full-width captions below the counters replace the cramped flanking arrangement. Delivered test fixture contains exactly 178 characters.
+- App kit and core CTA rule now allow neutral routine transport; the website red gradient stays correct.
+- See design-critique.md for grading, behavior, implementation constraints and honest limits.
+- Two inspected images saved in Output/Round 03; prior rounds preserved.
+- Existing phone-testing item includes the maximum caption, enlarged text, counter comprehension, mistaken exits and motion clearance.

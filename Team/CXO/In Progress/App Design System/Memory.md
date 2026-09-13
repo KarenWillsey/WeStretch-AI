@@ -38,3 +38,6 @@ Durable facts for this folder only.
    - **How to apply:** use the shared core CTA token: `#FC4850` at 0%,
      `#FF5960` at 50% and `#E22931` at 100%. Keep the app's 48px minimum
      target and slight shadow. Fire Red remains `#FC4850`.
+## Routine playback exception, 2026-09-13
+
+Karen reported that the red Pause feels like quitting. Use neutral charcoal with white content for running-routine Pause, Resume and speed controls. At most one red CTA per screen is permitted, not required. Start and commit buttons retain the website gradient. Keep Exit separate and accessible. This supersedes any earlier mandatory-red interpretation for playback.

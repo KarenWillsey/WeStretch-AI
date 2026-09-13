@@ -4,15 +4,26 @@
 
 [Open the visual gallery](review.html). Click any image to see it full size.
 
-## Round 02: minimal direction
+## Round 03: recommended revision, 2026-09-13
+
+[Revised screen](Output/Round%2003/01-calm-routine.png) | [178-character caption](Output/Round%2003/02-long-caption.png) | [Full critique, Marg review and specification](design-critique.md)
+
+- Quiet charcoal Pause, one progress ring and plain seconds.
+- Three useful labels: Slower, Pause and Next.
+- Captions have the full width beneath the counters.
+- The app kit now allows neutral playback controls. Website CTA colours remain correct.
+- These are inspected concepts. Phone comprehension and full-motion clearance remain untested.
+- [Exact generation prompts](round-03-prompts.json).
+
+## Round 02: superseded exploration
 
 [Open the minimal top-status mockup](Output/Round%2002/01-minimal-top-status.png).
 
 - The progress ring contains `12 / 66`.
 - The countdown shows only `18`.
-- The closed caption sits between them in a fixed area that can wrap up to four lines.
+- The caption sat between counters. Its proposed four-line area did not establish that 178 characters would fit readably.
 - Exit, slower, pause and next pose use symbols or imagery.
-- The Pause button uses the website CTA gradient.
+- The Pause button used the website CTA gradient. Karen rejected its visual prominence; Round 03 uses neutral playback.
 
 ## The ten concepts
 

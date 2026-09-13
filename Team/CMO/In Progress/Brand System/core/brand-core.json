@@ -39,7 +39,7 @@
     "fill": "linear-gradient(180deg, #FC4850 0%, #FF5960 50%, #E22931 100%)",
     "hover": "#9B1F25",
     "shadow": "slight drop shadow",
-    "rule": "Primary action is always the big red button. Dismiss or Not now is small and hyperlinked.",
+"rule": "Use the approved red gradient for a primary start or commit CTA, at most one per screen. Running-routine playback controls are neutral charcoal with white content, per Karen on 2026-09-13. Keep Exit visible and separate. Secondary actions retain accessible touch targets.",
     "copy": "short and clear"
   },
   "logo": {

@@ -176,6 +176,50 @@ The 2026-09-11 alerting work got its first real test on 2026-09-12 and did fire:
 `state/RUN-FAILED.txt` was written. The alert path works; what it reported was
 garbled, and that is what got fixed.
 
+## The runner bug that mattered most: a clean exit code is not delivery (2026-09-13)
+
+The 05:00 run on 2026-09-13 sent Karen nothing and told the runner it had
+succeeded. She found the missing brief herself, which is exactly the outcome the
+whole reliability bar exists to prevent.
+
+**What happened.** The run started, finished the Jira step, and was still inside
+email triage when it hit Claude Code's `--print` background-task wait ceiling
+(`CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS`, default 600000, ten minutes). The CLI
+terminated the still-running subagents, printed "Background tasks still running
+after 600s; terminating", and **exited 0**. Healthy runs take 10 to 15 minutes,
+so this ceiling was always going to fire; it just needed a triage step on the
+slower side of normal.
+
+**Why nothing alerted.** Every fail-loud check in the runner keyed off the exit
+code or a missing finish line in the log. This run produced a finish line and a
+zero. So the runner cleared `RUN-FAILED.txt` and the Desktop marker and exited
+happy. The alerting was not broken; it was checking the wrong thing.
+
+**Both fixes, in `run-daily-brief.ps1`:**
+
+- `$env:CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS = "0"` is set before the launch, so
+  a long triage is never cut off part way. Setting it to 0 is safe here because
+  the existing detached `$timeoutMinutes` kill (60 minutes) is what actually
+  bounds a hung run. Do not "tidy" this by putting the ceiling back to a finite
+  number; that is the bug.
+- Exit code 0 no longer ends the run. The runner now checks that
+  `state/YYYY-MM-DD-full.md` exists and was written within the last 12 hours,
+  because the compose step writes that file as its last act. A missing or stale
+  file raises the alert and exits 126.
+
+**The standing rule this leaves behind, and it is not specific to this script:**
+a fail-loud check on an exit code alone cannot catch a process that dies
+politely. Verify the artifact the work was supposed to produce, not just the
+status of the thing that was supposed to produce it. Anywhere in this repo where
+an automation reports its own success, ask what file proves it.
+
+**Partial state after the failure, worth knowing for any future catch-up run.**
+Triage got far enough to send Kari's rollup at 05:09 and advance
+`kari-activity-summary.json`, and the Jira step had already advanced
+`jira-mentions-state.json`. Nothing downstream of compose existed. A catch-up run
+must therefore respect those state files rather than assume a clean slate, or it
+will re-send Kari a rollup she already has.
+
 ## V2's first live run: 2026-09-12
 
 V2 shipped and ran end to end the same day it was built. The 05:00 scheduled run

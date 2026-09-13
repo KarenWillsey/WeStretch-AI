@@ -1,3 +1,7 @@
+# Current recommendation
+
+Round 03 supersedes the earlier recommendations below. See [the full critique and optimized specification](design-critique.md): neutral playback, distinct counters and full-width captions. Earlier concepts remain archived for comparison.
+
 # Routine Screen Redesign: CXO Review
 
 Owner: CXO. Started 2026-09-12. Skill applied: [UX Design Review](../../skills/ux-design-review/SKILL.md).
@@ -83,6 +87,6 @@ Suggested lean first round: five participants. Treat any repeated misunderstandi
 
 ## Open work
 
-- [ ] Select the direction to develop from the ten images.
+- [ ] Review the Round 03 quiet-playback recommendation and its long-caption state.
 - [ ] Test comprehension after two stretches, viewing distance, floor poses and wide poses on real phones.
 - [ ] Confirm Unity speed steps, hold timing, completed-count events, exit behavior and progress persistence.

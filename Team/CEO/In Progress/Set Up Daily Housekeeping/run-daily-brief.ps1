@@ -84,6 +84,15 @@ if (-not (Test-Path $claudeExe)) {
 }
 
 Set-Location $repoRoot
+
+# Without this, --print mode kills any still-running background subagent after
+# 600 seconds and then exits 0 anyway. That is exactly what broke the 2026-09-13
+# run: the Jira step finished, email triage was still going at the 10 minute
+# mark, everything was terminated, and the runner recorded a clean exit while
+# Karen got no brief at all. 0 means wait as long as the work takes; the
+# $timeoutMinutes kill below is what bounds a genuinely hung run.
+$env:CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS = "0"
+
 Write-Log "Starting scheduled daily-brief run via $claudeExe"
 
 # Run detached so the timeout can be enforced. Start-Process cannot append, so
@@ -148,6 +157,23 @@ if ($exitCode -ne 0) {
     Raise-Alert "The run exited with code $exitCode. Check the log for an auth or connector failure."
     exit $exitCode
 }
+
+# Exit code 0 is not proof a brief was sent. On 2026-09-13 the run was cut off
+# part way through and still exited 0, so nothing alerted and Karen found the
+# missing brief herself. The compose step always writes today's full-detail file
+# as its last act, so its absence means no brief went out.
+$today = Get-Date -Format "yyyy-MM-dd"
+$fullDetail = Join-Path $stateDir "$today-full.md"
+if (-not (Test-Path $fullDetail)) {
+    Raise-Alert "The run exited cleanly but never wrote $today-full.md, so the brief was not composed or sent."
+    exit 126
+}
+$age = (Get-Date) - (Get-Item $fullDetail).LastWriteTime
+if ($age.TotalHours -gt 12) {
+    Raise-Alert "$today-full.md exists but was last written $([int]$age.TotalHours) hours ago, so this run did not produce it."
+    exit 126
+}
+Write-Log "Verified brief artifact: $fullDetail"
 
 Clear-Alert
 exit 0

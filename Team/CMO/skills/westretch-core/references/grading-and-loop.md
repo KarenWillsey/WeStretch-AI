@@ -28,6 +28,8 @@ Marg grades → Expert rewrites the lowest-scoring dimensions → Marg re-grades
 When the asset is a sequence (e.g., video title cards) or a set (e.g., a screen series), grade each card/piece individually on the 5 dimensions with an average and letter grade, plus a one-line role tag (opener / trust / personalization / stakes / close) and note. This produces a "card bank" so the user can A/B test by swapping individual pieces, not just whole sequences. For mid-sequence cards, read "Attention" as "keeps me watching" and "Act" as "moves me forward."
 
 ## Known failure patterns from real review feedback
+
+- **Routine playback must not resemble quitting.** Karen, 2026-09-13: the red Pause button feels like an invitation to quit the routine. Root cause: applying a marketing CTA rule to ongoing playback. Use neutral Pause / Resume controls; retain clear Exit access. Judge attention by whether the user can follow Ada, not by button prominence.
 These are confirmed failure modes, found by an actual human reviewer, not hypothesized. Marg checks every new piece against this list in addition to the 5-dimension rubric. When length-editing (or any editing) triggers one of these, that is a real defect, not a style nitpick.
 
 - **Don't trim into a sentence fragment.** Cutting words to hit a length limit can leave a grammatically incomplete line. A card or title must remain a complete, standalone sentence or phrase after every edit, read it alone and confirm it parses.

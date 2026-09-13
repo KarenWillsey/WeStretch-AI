@@ -39,14 +39,20 @@
   --app-ink:       #FFFFFF;
   --app-ink-muted: var(--ws-grey-300);
 
-  /* Primary action. Guideline p26: always red, rounded, vertical gradient, slight shadow. */
+/* Start or commit CTA. Running-routine playback uses neutral transport tokens below. */
   --app-cta-fill: var(--ws-cta-fill);
   --app-cta-hover: var(--ws-cta-hover);
   --app-cta-ink: #FFFFFF;
   --app-cta-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   --app-cta-radius: 999px;
 
-  /* Secondary action is never a second coloured button. It is a small hyperlink. */
+  /* Routine transport: quiet controls, distinct from a start/commit CTA. */
+  --app-transport-fill: var(--ws-midnight-grey);
+  --app-transport-ink: var(--ws-white);
+  --app-transport-size: 56px;
+  --app-transport-shadow: none;
+
+  /* Secondary actions keep the minimum touch target, even when styled as links. */
   --app-link-ink: var(--ws-grey-300);
 }
 

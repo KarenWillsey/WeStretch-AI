@@ -40,3 +40,12 @@ Date: 2026-09-12. Scope: visual concept delivery, not product approval.
 - Static images do not implement pause, resume, exit, speed changes or completion events. The interaction behavior is specified in cxo.md and awaits Unity confirmation.
 - No browser was connected in this session. Browser discovery returned an empty list. The offline gallery's source and local references were checked, but its browser rendering and clicks were not executed.
 - Image generation stayed on the built-in tool. Exact original and refinement prompts are preserved in project JSON files.
+## Round 03 verification, 2026-09-13
+
+- Both delivered PNGs were visually inspected before copying into Output/Round 03.
+- Short-caption state: neutral Pause, one progress ring, 18s timer, Slower and Next labels; full body visible in this pose.
+- Long-caption state: complete 178-character test fixture visible in six lines. Initial undersized 177-character draft rejected.
+- Exact generation and refinement prompts saved in round-03-prompts.json.
+- Static images do not verify touch targets, actual font metrics, dynamic fitting, contrast through motion or two-stretch comprehension. The long caption approaches Ada's head; implementation must reserve more motion clearance.
+- Gym is generated reference art. Production must retain the existing Unity gym assets.
+- Gallery updated with Round 03 first and older rounds collapsed. Browser rendering was not tested in this session.

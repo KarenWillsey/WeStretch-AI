@@ -1,47 +1,10 @@
 {
-  "last_report_sent_at": "2026-09-13T11:09:01Z",
+  "last_report_sent_at": "2026-09-13T15:29:14Z",
   "last_message_ids": [
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Dd1AAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Dd0AAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcClAAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCkAAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCjAAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCiAAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcChAAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCgAAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37DdzAAA="
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Dd3AAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCmAAA="
   ],
   "last_inbox_snapshot": [
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoSAAA=",
-      "subject": " Your Mouseflow renewal is coming up - a few things to get ahead of",
-      "sender": "customer-success@mouseflow.com"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoRAAA=",
-      "subject": "Tasks summary for 9/13/2026",
-      "sender": "donotreply@managebuilding.com"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoQAAA=",
-      "subject": "AppStance - Apple Ads Daily Summary - Sep 12, 2026 - We Bananas Software Inc.",
-      "sender": "notifications@appstance.com"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoPAAA=",
-      "subject": "Your Pay Statement is Available",
-      "sender": "no-reply@payworks.ca"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoOAAA=",
-      "subject": "Nordic Court, NORDIC COURT BOILER SYSTEM 1 ALARM: RESET",
-      "sender": "servallmechservices@gmail.com"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoNAAA=",
-      "subject": "Nordic Court, NORDIC COURT BOILER SYSTEM 1 ALARM: ALARM",
-      "sender": "servallmechservices@gmail.com"
-    },
     {
       "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoMAAA=",
       "subject": "Harp Lessons ",
@@ -69,7 +32,7 @@
     },
     {
       "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCkAAA=",
-      "subject": "Explore Trades-Earn High School & College Credits",
+      "subject": "Explore Trades–Earn High School & College Credits",
       "sender": "ChristaErickson@gpcsd.ca"
     },
     {
@@ -79,7 +42,7 @@
     },
     {
       "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCRAAA=",
-      "subject": "RE: New Program: Leading Family Business Strategy, Virtual",
+      "subject": "RE: New Program: Leading Family Business Strategy—Virtual",
       "sender": "kevin@kasa.ca"
     },
     {
@@ -164,7 +127,7 @@
     },
     {
       "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHffAAA=",
-      "subject": "Gutsy, Test ideas with AI-lookalike audiences in seconds",
+      "subject": "Gutsy — Test ideas with AI-lookalike audiences in seconds",
       "sender": "karen@kasa.ca"
     },
     {

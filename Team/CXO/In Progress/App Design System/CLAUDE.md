@@ -18,8 +18,8 @@ components/             Component previews, synced to claude.ai/design
 
 1. **Minimum touch target 48px.** The audience is 50 to 65. Do not go smaller.
 2. **Minimum body text 16.5px.** Same reason.
-3. **One red button per screen.** The primary action is the big Fire Red button.
-   Dismiss and Not now are small hyperlinks, never a second coloured button.
+3. **At most one red CTA per screen.** Use the approved Fire Red gradient for starting or committing an action. During a running routine, Pause, Resume and speed controls are neutral charcoal with white content. Exit remains visible and separate. Karen requested this exception on 2026-09-13.
+   Secondary controls still need 48px touch targets.
 4. **Panels float.** 2D containers over the 3D gym background, 6% layer blur,
    `#1F1F1F` at 99% with a 1pt white 20% inner stroke.
 5. **Corner radius is 10% of container width.** Use the `--app-radius-*` steps.
