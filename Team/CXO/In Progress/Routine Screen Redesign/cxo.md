@@ -66,6 +66,21 @@ Do not choose a winner from the static images alone. Select a direction to test,
 
 Suggested lean first round: five participants. Treat any repeated misunderstanding, model obstruction or inability to read the timer as a revision trigger. This is a proposed test plan; no participant testing has happened yet.
 
+## Round 02 minimal direction
+
+- Keep the top layout fixed: progress ring, closed caption, countdown.
+- Put the completed count inside the progress ring as `X / Y`.
+- Show the countdown as a numeral only. Spoken guidance supplies its meaning.
+- Keep the caption region the same size so the two status circles never move.
+- Start captions at 24px. Reduce in steps only when required to fit: 20px for
+  longer copy, 18px for very long copy and 16.5px as the minimum.
+- Allow up to four lines and 178 characters. If 178 characters do not fit at
+  16.5px, change the caption copy or region. Do not shrink below the local
+  body-text floor.
+- Use an X for Exit, pause bars for Pause, a turtle for Slower and a small
+  unlabelled pose preview for Next.
+- The Pause circle uses the shared website CTA gradient.
+
 ## Open work
 
 - [ ] Select the direction to develop from the ten images.

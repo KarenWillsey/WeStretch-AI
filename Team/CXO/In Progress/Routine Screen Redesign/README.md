@@ -4,6 +4,16 @@
 
 [Open the visual gallery](review.html). Click any image to see it full size.
 
+## Round 02: minimal direction
+
+[Open the minimal top-status mockup](Output/Round%2002/01-minimal-top-status.png).
+
+- The progress ring contains `12 / 66`.
+- The countdown shows only `18`.
+- The closed caption sits between them in a fixed area that can wrap up to four lines.
+- Exit, slower, pause and next pose use symbols or imagery.
+- The Pause button uses the website CTA gradient.
+
 ## The ten concepts
 
 | # | Image | Main difference |
@@ -44,6 +54,7 @@
 - [Visual verification](verification.md)
 - [Exact original prompts](prompts.json)
 - [Exact refinement prompts](refinement-prompts.json)
+- [Round 02 generation prompt](Round%2002%20Prompt.md)
 - [Current screenshot A](References/current-routine-a.png)
 - [Current screenshot B](References/current-routine-b.png)
 - [Caption-gradient reference](References/caption-gradient-reference.png)

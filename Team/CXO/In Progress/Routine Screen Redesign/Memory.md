@@ -46,3 +46,12 @@ These three items are mirrored in root WORK-TRACKER.md.
 - Original screenshots and the gradient reference are preserved in References.
 - Minor generated scenery and character variations are concept-art limitations, not permission to alter the real gym.
 - Browser preview was unavailable. The ten images were inspected directly; gallery rendering was not tested in a browser.
+
+## Round 02 direction, 2026-09-12
+
+- Karen found Round 01 much too busy and requested extreme minimalism.
+- Avoid added labels where familiar symbols and placement communicate the action.
+- Use the website CTA gradient for the primary Pause control.
+- Put the circular routine progress at the top with the pose count inside it.
+- Test a layout with routine progress and hold countdown on either side of the closed captions.
+- Closed captions can reach 178 characters, so their size must adjust within a fixed safe region.
