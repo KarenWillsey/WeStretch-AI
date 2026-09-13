@@ -284,7 +284,7 @@ seven-fold price gap nothing in this repo explains.
 App confirmed unchanged from 2026-09-10: version 8.1.33, 53 ratings, 4.45
 stars, US IAP list identical.
 
-## The backlog ran dry on 2026-09-11
+## The backlog ran dry on 2026-09-11, first no-op run 2026-09-12
 
 The 2026-09-11 run took the last item in "Not started." Unless new items are
 seeded, the next nightly run is a legitimate no-op. Seeds come from the monthly
@@ -292,6 +292,13 @@ refresh (next 2026-10-01) or from Karen/the Manager. Two candidates are already
 surfaced and waiting on a decision: the blank Accessibility Nutrition Labels
 (raised 2026-09-09) and shipping `PurchaseIntent` (raised 2026-09-11). Per the
 skill's own rule, a nightly run does not invent its own backlog items.
+
+**2026-09-12 was the first of those no-ops and it behaved correctly:** the run read
+`Backlog.md`, found "Not started" empty, wrote no `Output/` file, changed no backlog
+state, and reported the no-op banner. A no-op is the designed outcome here, not a
+failure, so do not treat a dateless gap in `Output/` as a missed run while the
+backlog is dry; check the banner in `state/last-run.log` instead. This will repeat
+every night until a seed arrives.
 
 ## `state/last-run.log` is locked during every scheduled run; write the banner to stdout (2026-09-09)
 
