@@ -293,12 +293,15 @@ surfaced and waiting on a decision: the blank Accessibility Nutrition Labels
 (raised 2026-09-09) and shipping `PurchaseIntent` (raised 2026-09-11). Per the
 skill's own rule, a nightly run does not invent its own backlog items.
 
-**2026-09-12 was the first of those no-ops and it behaved correctly:** the run read
-`Backlog.md`, found "Not started" empty, wrote no `Output/` file, changed no backlog
-state, and reported the no-op banner. A no-op is the designed outcome here, not a
-failure, so do not treat a dateless gap in `Output/` as a missed run while the
-backlog is dry; check the banner in `state/last-run.log` instead. This will repeat
-every night until a seed arrives.
+**2026-09-12, 2026-09-13 and 2026-09-14 were the first three of those no-ops; all
+behaved correctly:** the run read `Backlog.md`, found "Not started" empty, wrote no
+`Output/` file, changed no backlog state, and reported the no-op banner. A no-op is
+the designed outcome here, not a failure, so do not treat a dateless gap in
+`Output/` as a missed run while the backlog is dry; check the banner in
+`state/last-run.log` instead. This will repeat every night until a seed arrives,
+which is up to 16 more nights if nothing is approved before the 2026-10-01 monthly
+refresh. Nothing is broken; the queue is
+just empty, and only Karen/the Manager (or the refresh) can fill it.
 
 ## `state/last-run.log` is locked during every scheduled run; write the banner to stdout (2026-09-09)
 

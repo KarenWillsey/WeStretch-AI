@@ -15,7 +15,7 @@ update.
 | **How WeStretch sounds** | `Team/CMO/In Progress/Brand System/core/voice.md` | Voice, tone, audience, characters, every banned word, per-channel examples, the editing checklist |
 | **What WeStretch is and why it wins** | `Team/CMO/In Progress/Brand System/core/positioning.md` | Product, problems, differentiation, competitors, objections, proof points, targets |
 | **How WeStretch looks** | `Team/CMO/In Progress/Brand System/core/tokens.css` and `Team/CMO/In Progress/Brand System/core/brand-core.json` | Colour, type, logo, shape |
-| **Ad, email, social and print sizes** | `Team/CMO/In Progress/Brand System/marketing/formats.md` | Every canvas size, safe areas, print versus screen |
+| **Ad, email, social, print and web display sizes** | `Team/CMO/In Progress/Brand System/marketing/formats.md` | Every canvas size, safe areas, print versus screen, Pattison Media news portal units |
 | **How this repo works** | `CLAUDE.md` at the repo root | Roles, folders, where work goes |
 | **Standing company rules** | `Memory.md` at the repo root | Karen's working preferences, org decisions |
 

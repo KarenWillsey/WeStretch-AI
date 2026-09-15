@@ -94,7 +94,7 @@ are not optional reading for copy or design work in any role.
 | **Voice, tone, audience, banned words, per-channel examples** | `Team/CMO/In Progress/Brand System/core/voice.md` |
 | **Product, differentiation, competitors, proof points** | `Team/CMO/In Progress/Brand System/core/positioning.md` |
 | **Colour, type, logo, shape** | `Team/CMO/In Progress/Brand System/core/tokens.css` and `core/brand-core.json` |
-| **Ad, email, social, print sizes** | `Team/CMO/In Progress/Brand System/marketing/formats.md` |
+| **Ad, email, social, print and web display sizes** | `Team/CMO/In Progress/Brand System/marketing/formats.md` |
 
 The architecture is **one brand core, two skins**. The CMO owns the core plus
 the marketing skin. The CXO owns the app skin

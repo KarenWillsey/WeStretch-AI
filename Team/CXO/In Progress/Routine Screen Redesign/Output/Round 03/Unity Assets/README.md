@@ -8,10 +8,11 @@ Transparent PNG assets recreated from `07-calm-routine-no-upper-gradient.png`.
 - `counter-background.png`: optional dark centre behind countdown or pose text.
 - `progress-track-ring.png`: smaller grey routine-progress track.
 - `pause-icon.png`: white pause glyph only.
+- `play-icon.png`: matching white play glyph.
 - `progress-fill-ring.png`: full Fire Red ring for Unity radial filling.
 - `progress-round-cap.png`: round endpoint used with the red radial fill.
 
-The ring assets are 512 x 512 px. The pause icon is 256 x 256 px. The endpoint is 64 x 64 px. All use transparent RGBA backgrounds.
+The ring assets are 512 x 512 px. The pause and play icons are 256 x 256 px. The endpoint is 64 x 64 px. All use transparent RGBA backgrounds.
 
 ## Unity import settings
 

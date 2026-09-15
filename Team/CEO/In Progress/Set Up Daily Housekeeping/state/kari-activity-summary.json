@@ -1,18 +1,54 @@
 {
-  "last_report_sent_at": "2026-09-13T15:29:14Z",
+  "last_report_sent_at": "2026-09-14T11:05:19Z",
   "last_message_ids": [
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Dd3AAA=",
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCmAAA="
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAo_fcCnAAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Dd4AAA=",
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Dd5AAA="
   ],
   "last_inbox_snapshot": [
     {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoMAAA=",
-      "subject": "Harp Lessons ",
-      "sender": "sherellecarey11@gmail.com"
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt5-n6oAAA=",
+      "subject": "AppStance - Apple Ads Weekly Summary - Sep 07, 2026 to Sep 13, 2026 - We Bananas Software Inc.",
+      "sender": "notifications@appstance.com"
     },
     {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCtAAA=",
-      "subject": "6 to decide, 1 to reply - Sat Sep 12",
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt50K-vAAA=",
+      "subject": "Invoice INV-013",
+      "sender": "noreply@wise.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt50K-uAAA=",
+      "subject": "Tasks summary for 9/14/2026",
+      "sender": "donotreply@managebuilding.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt50K-tAAA=",
+      "subject": "AppStance - Apple Ads Daily Summary - Sep 13, 2026 - We Bananas Software Inc.",
+      "sender": "notifications@appstance.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt50K-sAAA=",
+      "subject": "Nordic Court, NORDIC COURT BOILER SYSTEM 1 ALARM: RESET",
+      "sender": "servallmechservices@gmail.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt50K-rAAA=",
+      "subject": "Nordic Court, NORDIC COURT BOILER SYSTEM 1 ALARM: ALARM",
+      "sender": "servallmechservices@gmail.com"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoXAAA=",
+      "subject": "Land again",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoWAAA=",
+      "subject": "Land",
+      "sender": "karen@kasa.ca"
+    },
+    {
+      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoUAAA=",
+      "subject": "7 to decide, 0 to reply - Sun Sep 13",
       "sender": "karen@kasa.ca"
     },
     {
@@ -31,18 +67,8 @@
       "sender": "joe@joezeplin.com"
     },
     {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCkAAA=",
-      "subject": "Explore Trades–Earn High School & College Credits",
-      "sender": "ChristaErickson@gpcsd.ca"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt11f5KAAA=",
-      "subject": "August - Monthly reports ",
-      "sender": "elena@kasa.ca"
-    },
-    {
       "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCRAAA=",
-      "subject": "RE: New Program: Leading Family Business Strategy—Virtual",
+      "subject": "RE: New Program: Leading Family Business Strategy\u2014Virtual",
       "sender": "kevin@kasa.ca"
     },
     {
@@ -116,18 +142,8 @@
       "sender": "Rhonda.Side@sidemanagement.ca"
     },
     {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtkFu5LAAA=",
-      "subject": "July - Monthly reports ",
-      "sender": "elena@kasa.ca"
-    },
-    {
-      "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtjNhg-AAA=",
-      "subject": "June - Monthly reports ",
-      "sender": "elena@kasa.ca"
-    },
-    {
       "id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHffAAA=",
-      "subject": "Gutsy — Test ideas with AI-lookalike audiences in seconds",
+      "subject": "Gutsy \u2014 Test ideas with AI-lookalike audiences in seconds",
       "sender": "karen@kasa.ca"
     },
     {

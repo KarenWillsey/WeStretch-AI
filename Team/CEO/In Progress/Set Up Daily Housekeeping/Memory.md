@@ -346,3 +346,44 @@ left a date string on roughly 25 older FYI entries.
   reads as "My Tasks" or a bare numeric project id. Confirmed again 2026-09-09. Fixed 2026-09-10 by adding `projects.name` to the opt_fields list; see the
   entry above.
 
+
+## The Asana urgency heuristic cannot see old work (2026-09-14)
+
+`daily-brief-asana` builds `urgent_flags` from the `recently_assigned` slice
+only. On 2026-09-14 that produced three flags (Jamie email 14 days overdue,
+Josee email funnels 13, Patterson stats 13) and missed the two oldest overdue
+tasks Karen has, both 63 days past due: "Make a complete list of contacts to
+revisit" and "Challenge Clickable prototypes" (Kelly), due 2026-07-13. They came
+back as ordinary `today` entries with a past `due` and no flag.
+
+- **Why it matters:** the heuristic is inverted against the thing it exists to
+  catch. A task assigned last week and missed by two weeks gets flagged; a task
+  rotting for two months does not, precisely because nobody has touched it
+  recently. Compose has been papering over it since 2026-09-12 by re-deriving
+  overdue from `due_on`, which is why the brief reports five overdue while the
+  contract flags three, and why the 2026-09-13 brief shipped reading "4 overdue"
+  above five named overdue tasks.
+- **How to apply:** until the source is fixed, compose must keep computing
+  overdue from `due_on` across every task Asana returns and use that number in
+  the summary line, not `len(urgent_flags)`. Cross-check the two before sending;
+  if they disagree, the `due_on` count is the honest one. The real fix belongs in
+  `daily-brief-asana`, see `WORK-TRACKER.md`.
+- Note this is compose computing a fact rather than reformatting one, which cuts
+  against its own "reformats, never reinterprets" rule. That is the argument for
+  fixing it at the source rather than living with the workaround.
+
+## The 05:00 run finally proved itself unattended (2026-09-14)
+
+The scheduled task fired at 05:00, ran all four steps with no human in the loop,
+and `send-brief-email.ps1` reported `SENT` and `ATTACHMENTS: 1` before exiting 0.
+
+- **Why it matters:** every previous confirmation of the V2 send path came from a
+  hand-launched catch-up run, because 2026-09-12 and 2026-09-13 both died before
+  composing. The open question was whether Outlook COM would be reachable from
+  the scheduled task at all. It is.
+- **How to apply:** the exit-2 logged-off degradation is still theoretical and has
+  never fired. Do not treat it as a live problem, and do not re-engineer the send
+  path around it; keep the fallback where it is and leave the rest alone.
+- Shape of the run, for comparison: 29 Inbox messages, 6 to decide, 0 to reply,
+  5 dated, 10 deleted, 17 FYI, 49 queue items, 1:19 of audio, 361,480
+  data-gathering tokens.

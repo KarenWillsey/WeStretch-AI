@@ -79,6 +79,24 @@ $pauseBrush.Dispose()
 $pauseGraphics.Dispose()
 Save-Png $pause 'pause-icon.png'
 
+$play = New-Canvas 256
+$playGraphics = [System.Drawing.Graphics]::FromImage($play)
+$playGraphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
+$playGraphics.Clear([System.Drawing.Color]::Transparent)
+$playBrush = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::White)
+$playPath = [System.Drawing.Drawing2D.GraphicsPath]::new()
+$playPoints = [System.Drawing.Point[]]@(
+    [System.Drawing.Point]::new(76, 48),
+    [System.Drawing.Point]::new(200, 128),
+    [System.Drawing.Point]::new(76, 208)
+)
+$playPath.AddPolygon($playPoints)
+$playGraphics.FillPath($playBrush, $playPath)
+$playPath.Dispose()
+$playBrush.Dispose()
+$playGraphics.Dispose()
+Save-Png $play 'play-icon.png'
+
 $cap = New-Canvas 64
 $capGraphics = [System.Drawing.Graphics]::FromImage($cap)
 $capGraphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias

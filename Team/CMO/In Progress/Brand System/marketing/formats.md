@@ -16,6 +16,44 @@ asking for a render so nothing has to be re-cropped later.
 | Google Display responsive | 1200 x 628 and 1200 x 1200 | Both required |
 | YouTube thumbnail | 1280 x 720 | Face plus 3 to 5 words max |
 
+## News portal display (Pattison Media)
+
+Responsive HTML5 units that run on Pattison Media news portals. One HTML5 file
+per unit reflows across every screen size, so each unit is supplied as a set of
+key formats, not a single flattened image. The program fills the in-between
+sizes itself once the key formats exist.
+
+| Unit | Key formats (px) | Where it sits |
+|---|---|---|
+| Mid content | 1940 x 535, 1920 x 1080, 1200 x 1200 | Inside the main article content |
+| Sticky box | 1200 x 1200, 1940 x 535, 1920 x 1080 | Right sidebar |
+| Full page | 1920 x 1080, 768 x 1024, 320 x 568 | Middle of the page, revealed by scrolling |
+| Full width bookend | 2560 x 180, 1940 x 535, 1200 x 1000 | Top and bottom of the site |
+
+Supply all three key formats for a unit. Missing one leaves the builder
+guessing at the sizes between.
+
+### What Pattison needs from us
+
+1. **Every element as its own file.** Logo, background, photograph, headline
+   text, button and video each ship separately, so they can be moved
+   independently at each size. A flattened export of a finished layout cannot be
+   made responsive and will be sent back.
+2. **Asset formats:** high resolution PNG or JPG for graphics, MP4 for video, or
+   a YouTube or Vimeo link.
+3. **Working files, accepted and preferred:** PDF, PSD, AI, EPS or SVG.
+
+House rules for these units, on top of the universal rules below:
+
+- 2560 x 180 bookend is a 14:1 strip. Logo, 4 words, CTA. Nothing else fits.
+- 320 x 568 is the phone full page. Same message as 1920 x 1080 with the
+  headline cut to one line.
+- The 1200 x 1200 and 1920 x 1080 layouts reuse the Meta square and the web hero
+  art. Build those first and the rest are crops.
+
+Contact for spec questions: Pattison Media, 250.372.3322, info@pattisonmedia.com.
+Source: `Knowledge Base/Pattison Media Responsive Ads Size Guide.pdf`.
+
 ## Organic social
 
 | Format | Size (px) |

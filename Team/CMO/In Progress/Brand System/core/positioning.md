@@ -104,7 +104,7 @@ target, a conversion rate, or a spend level.
 |---|---|
 | Voice, tone, audience, banned words, per-channel examples | `voice.md` |
 | Colour, type, logo, shape | `tokens.css` and `brand-core.json` |
-| Ad, email, social, print sizes | `../marketing/formats.md` |
+| Ad, email, social, print and web display sizes | `../marketing/formats.md` |
 | Why the voice doc says what it says | `voice-doc-review.md` |
 
 *Maintained by the CMO. Last updated 2026-09-09.*

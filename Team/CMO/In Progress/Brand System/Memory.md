@@ -149,3 +149,22 @@ Durable facts for this folder only. Cross role facts go in the repo root `Memory
     - **What the test surfaced:** the biggest single voice gap was not word
       choice, it was contractions. The page avoided them everywhere, which read
       formal and slightly legal. Seven of the 19 changes are only that.
+
+## Pattison Media ad specs added 2026-09-15
+
+12. **Pattison Media news portal sizes live in `marketing/formats.md`, section
+    "News portal display (Pattison Media)".** Four responsive units: mid
+    content, sticky box, full page, full width bookend, each with three key
+    formats. Source PDF is `Knowledge Base/Pattison Media Responsive Ads Size
+    Guide.pdf`, the vendor's own guide, saved so the section can be checked
+    against it.
+    - **Why it is not just a size list:** these are responsive HTML5 units, one
+      file per unit reflowing across screen sizes. Pattison needs every element
+      as a separate high resolution file (logo, background, photo, headline
+      text, button, video) plus optional working files (PDF, PSD, AI, EPS,
+      SVG). A flattened JPG of a finished layout cannot be made responsive.
+    - **How to apply:** reference only, there is no Pattison buy running and
+      nothing is tracked against this. If one starts, design it as separable
+      layers from the start rather than flattening and unpicking later, since
+      nothing in the repo is produced that way today. Sizes themselves are safe
+      to change here, they are marketing skin, not core.

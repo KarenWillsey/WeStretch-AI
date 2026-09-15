@@ -15,6 +15,7 @@ per-role and per-project `CLAUDE.md` files automatically.
 | **Voice, tone, audience, banned words** | `Team/CMO/In Progress/Brand System/core/voice.md` |
 | **Product, differentiation, competitors, proof** | `Team/CMO/In Progress/Brand System/core/positioning.md` |
 | **Colour, type, logo, shape** | `Team/CMO/In Progress/Brand System/core/tokens.css` |
+| **Ad, email, social, print and web display sizes** | `Team/CMO/In Progress/Brand System/marketing/formats.md` |
 | **Marketing skill context** | `.agents/product-marketing.md` |
 
 These files are the authority. Everything below is a short floor in case you
