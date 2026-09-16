@@ -387,3 +387,25 @@ and `send-brief-email.ps1` reported `SENT` and `ATTACHMENTS: 1` before exiting 0
 - Shape of the run, for comparison: 29 Inbox messages, 6 to decide, 0 to reply,
   5 dated, 10 deleted, 17 FYI, 49 queue items, 1:19 of audio, 361,480
   data-gathering tokens.
+
+## A day with no start line is invisible to the runner (2026-09-16)
+
+No brief ran on 2026-09-15. The log has the 2026-09-14 finish line and then
+the 2026-09-16 05:00 start; Task Scheduler shows zero missed runs and a last
+run of 2026-09-16, so the task was never launched, most likely because the
+machine was asleep at 05:00. Nothing alerted: the runner's stale check looks
+for a "Starting" line with no finish, and a day that never started leaves no
+such line.
+
+- **Why it matters:** this is a third way a brief goes missing quietly, after
+  expired auth (2026-09-05) and the polite exit-0 death (2026-09-13). All three
+  share the same shape: the check watches the process, not the calendar.
+- **How to apply:** the runner should also alert when the previous finish line
+  is older than about 26 hours, and the scheduled task should be set to run as
+  soon as possible after a missed start and to wake the machine. Tracked in
+  `WORK-TRACKER.md`. Until then, the session-start staleness check in the
+  tracker's rule 8 is the only thing that catches it.
+- Shape of the 2026-09-16 run for comparison: 53 Inbox messages, 6 to decide,
+  1 to reply, 5 dated, 10 unfiled, 8 deleted, 36 FYI, 75 queue items, 1:13 of
+  audio, 630,047 data-gathering tokens (triage alone 533,975, roughly double
+  the 2026-09-14 figure, on a 53-message Inbox against 29).
