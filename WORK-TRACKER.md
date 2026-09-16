@@ -1,5 +1,9 @@
 # Work Tracker
 
+## CMO: Reviews actor photos
+
+- [x] Reviews actor updates deployed to Firebase at Karen's request. Tall rail-stretch duplicate and coffee-table shoulder photo removed. `https://westretch-website-dev.web.app/review/` (completed 2026-09-16).
+
 ## CEO: Yard Design
 
 - [ ] Karen to select one of three east and west parcel concepts for refinement.
