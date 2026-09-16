@@ -66,6 +66,10 @@ originated in CMO but apply to any deliverable-producing work across roles):
      - This holds in every conversation and every project, permanently. It is not something to re-earn per session.
      - Same rule already lives in the per-user auto-memory store as `user-reading-disability` and `feedback-concise-responses`. It is duplicated here on purpose so it travels with the repo.
 
+10. **Whenever Karen asks for a git commit and push, run the actual git commands on the cheapest model (Haiku), not whatever model is running the conversation.**
+    - **Why:** Karen said (2026-09-16) she doesn't want to have to ask for this every time. Committing/pushing is mechanical (stage, write message, push) and doesn't need a stronger model's reasoning.
+    - **How to apply:** There is no tool to change the *current* conversation's own model mid-session; that's a harness-level setting the user controls via `/model`, not something memory can flip. The working substitute: dispatch the actual `git add`/`git commit`/`git push` execution to a subagent via the Agent tool with `model: "haiku"`, giving it the commit scope/message context it needs (or, per item 4, "all" unstaged/untracked changes across the repo including dirty submodules). Do this automatically for commit-and-push requests without being asked each time. If Karen is directly steering the model herself (e.g. she's already on Haiku), just run the commands normally instead of adding a redundant subagent hop.
+
 ## Repo restructure (project)
 
 On 2026-08-17, the repo moved from one root `CLAUDE.md`/`Memory.md` to a
