@@ -1,5 +1,9 @@
 # Work Tracker
 
+## CMO: Hero Photo Corrections
+
+- [ ] Karen to review desktop, tablet and mobile wardrobe/body edits in `Team/CMO/Review ToDo/Hero Photo Corrections/` (2026-09-17).
+
 ## CMO: Reviews actor photos
 
 - [x] Reviews actor updates deployed to Firebase at Karen's request. Tall rail-stretch duplicate and coffee-table shoulder photo removed. `https://westretch-website-dev.web.app/review/` (completed 2026-09-16).
