@@ -50,29 +50,9 @@ set and carries it from the start. Karen decided 2026-09-10 to leave
 line. Do not change those three. **Any new actor skill from here on gets the
 calibration.**
 
-## website-repo deploy command (set 2026-09-01, Karen)
+## website-repo deploy command
 
-When Karen says "deploy to Firebase" / "push to Firebase" for
-`Team/CMO/Ready/website-repo` (the Astro site, submodule
-`westretch-website-astro`), run from inside that folder:
-
-```
-npm run build
-firebase deploy --only hosting:website-dev --project westretch-prod
-```
-
-or equivalently `./build-deploy-hosting.sh`. This publishes to the dev
-site at https://westretch-website-dev.firebaseapp.com/ (also reachable at
-https://westretch-website-dev.web.app). Firebase CLI is already installed
-and logged in as karen.westretch@gmail.com on Karen's machine, no login
-step needed there. `.firebaserc` targets Firebase project `westretch-prod`,
-hosting target `website-dev` → site `westretch-website-dev`.
-
-**Why:** Karen doesn't know the Firebase workflow herself and wants this
-run automatically on request rather than re-explained each time.
-
-**How to apply:** Any request like "deploy/push the website/site to
-Firebase" with no other target named should be read as this command
-against `website-repo`. If a different Firebase target or site is ever
-meant, confirm before running; this default is specific to
-`website-dev`/`westretch-prod`.
+Karen keeps this rule in `Team/CMO/Ready/website-repo/CLAUDE.md`'s
+Commands section (the checked-in file, since it travels with that repo),
+not here: see that file for the required `./build-deploy-hosting.sh`
+deploy command.
