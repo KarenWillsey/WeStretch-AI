@@ -70,6 +70,10 @@ originated in CMO but apply to any deliverable-producing work across roles):
     - **Why:** Karen said (2026-09-16) she doesn't want to have to ask for this every time. Committing/pushing is mechanical (stage, write message, push) and doesn't need a stronger model's reasoning.
     - **How to apply:** There is no tool to change the *current* conversation's own model mid-session; that's a harness-level setting the user controls via `/model`, not something memory can flip. The working substitute: dispatch the actual `git add`/`git commit`/`git push` execution to a subagent via the Agent tool with `model: "haiku"`, giving it the commit scope/message context it needs (or, per item 4, "all" unstaged/untracked changes across the repo including dirty submodules). Do this automatically for commit-and-push requests without being asked each time. If Karen is directly steering the model herself (e.g. she's already on Haiku), just run the commands normally instead of adding a redundant subagent hop.
 
+11. **Before running `git commit` and `git push`, always show what will be included: run `git status` and `git diff` first, then proceed with the commit/push without a blocking confirmation gate.**
+    - **Why:** Karen clarified (2026-09-16) she wants visibility into what is about to ship, but does not want a confirmation question that would block the operation. Show then proceed.
+    - **How to apply:** For any commit/push request, run `git status` and `git diff` (or relevant output showing what will be staged/committed), display it to Karen, then stage and commit without pausing for an `AskUserQuestion`. The display step is information, not a gate. Per item 4, scope-confirmation questions are out of scope anyway on "all" commands; this rule adds the information step before proceeding.
+
 ## Repo restructure (project)
 
 On 2026-08-17, the repo moved from one root `CLAUDE.md`/`Memory.md` to a
