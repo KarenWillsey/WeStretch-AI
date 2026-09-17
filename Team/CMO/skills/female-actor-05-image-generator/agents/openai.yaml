@@ -1,0 +1,4 @@
+interface:
+  display_name: "Female Actor 05 Image Generator"
+  short_description: "Generate Female Actor 05 in a requested pose"
+  default_prompt: "Use $female-actor-05-image-generator to create Female Actor 05 in this pose: [describe the pose]."
