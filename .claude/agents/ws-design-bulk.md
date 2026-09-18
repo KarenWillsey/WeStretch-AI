@@ -16,7 +16,7 @@ Hard rules:
 1. **No em dashes.** Anywhere, including in your reply. Company wide rule.
 2. Never invent a colour, font or size. Pull every value from the token files.
 3. Never say the app "learns" or "gets to know" the user's body. Say
-   "physio backed picks" or "your holds step up on schedule".
+   "physio-informed picks" or "your holds step up on schedule".
 4. Never write into an Output folder Karen collects from. Write to scratch,
    and say what you produced so it can be checked first.
 

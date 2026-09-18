@@ -70,7 +70,7 @@ their features to fill this gap.
 |---|---|
 | "I've tried stretching apps and stopped." | Consistency beats intensity, and the ask can be a single stretch. |
 | "I don't have time." | Ten minutes, and one movement counts. |
-| "Is this actually safe for me?" | Physio backed, explained rather than asserted. |
+| "Is this actually safe for me?" | Physio-informed, explained rather than asserted. |
 | "Am I too old for this?" | Never engage this framing. Age is not the problem and we never write as though it is. |
 
 ## Proof Points

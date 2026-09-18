@@ -2,7 +2,18 @@
 
 ## CMO: Hero Photo Corrections
 
-- [ ] Karen to review desktop, tablet and mobile wardrobe/body edits in `Team/CMO/Review ToDo/Hero Photo Corrections/` (2026-09-17).
+- [x] Karen reviewed and approved the desktop, tablet and mobile wardrobe/body edits; applied to the `/review/` page hero in `Team/CMO/Ready/website-repo/`. Folder moved to `Team/CMO/Ready/Hero Photo Corrections/` (completed 2026-09-17).
+
+## CMO: Meta Ads (Women 50-65, 25 concepts)
+
+- [ ] Karen to review 25 Meta ad concepts across 5 angles and shortlist a
+  wave-1 set to produce and test. No grounded customer-language corpus
+  (reviews/comments/winning ads) exists yet, so this batch is built from
+  documented self-recognition moments and differentiators, not real
+  customer language; flagged as a gap for a future regrounded batch. Also
+  open: whether traffic lands on the website (30-day trial) or drives App
+  Store installs directly (IAP trial length has historically differed).
+  (`Team/CMO/Review ToDo/Meta Ads/`, flagged 2026-09-17)
 
 ## CMO: Reviews actor photos
 
@@ -242,7 +253,7 @@ corrections the same day. Merged into
 - [ ] **Competitive landscape in `Team/CMO/In Progress/Brand System/core/positioning.md` is a stub.** Only Bend is named. Run the `competitor-profiling` skill and write real profiles into the CMO folder, then summarise there. Flagged 2026-09-09
 - [ ] **No quantitative proof points exist anywhere in the repo.** No user counts, outcome data or testimonials. `core/positioning.md` explicitly tells skills not to invent any and to ask Karen. Worth fixing so marketing copy can cite something. Flagged 2026-09-09
 - [ ] **Karen to review the free trial voice test, flagged 2026-09-10.** `/free-trial/` rewritten to `core/voice.md` as the first test of the new voice: 19 lines changed, site builds clean, **committed and pushed 2026-09-11 on Karen's instruction** (`d3e1d62` in website-repo), so it is no longer a one-command revert; `git revert` that commit, or pick lines back from it individually. Side-by-side old vs new with a keep/tweak/revert mark per line at https://claude.ai/code/artifact/98bb13b2-0cec-41b4-833d-ab6e60b5c6f4 . Her marks are saved in the artifact's database and get read back with `read_db` on collection `verdicts` to fine tune the voice file (`Team/CMO/Ready/website-repo`)
-- [ ] **"physio backed" is not the phrase the rest of the site uses, flagged 2026-09-10.** The voice file picks one phrase. `/free-trial/` now uses it. Seven other places say "physio-approved", "physiotherapist-approved" or "physio-informed": `30-day.astro` x2, `free-7day-trial.astro` x4, `about-us.astro` x3, `how-it-works.astro` x3, `src/data/site.ts` x2. Sitewide sweep needed (`Team/CMO/Ready/website-repo`)
+- [x] **The one true phrase is decided and swept everywhere: "physio-informed".** Flagged 2026-09-10 as a 3-way inconsistency; **Karen resolved it 2026-09-17**, matching the Strategic Thesis (`Team/CMO/skills/westretch-core/references/strategic-thesis.md`). `core/voice.md` was wrong since 2026-09-09 and is now corrected. Two passes the same day: (1) every "physio backed"/"physio-backed" instance repo-wide (brand docs, ad concepts, app-design-system previews, skill/agent instructions, `/free-trial/`); (2) the remaining "physio-approved"/"physiotherapist-approved" instances on `30-day.astro` (x2), `free-7day-trial.astro` (x4), and `about-us.astro` (x3). `how-it-works.astro` and `src/data/site.ts` already said "physio-informed" and needed no change. Completed and closed 2026-09-17 (`Team/CMO/Ready/website-repo`)
 - [ ] **The new joint rule has more work outside `/free-trial/`, flagged 2026-09-10.** Karen's call 2026-09-10: "joint" is an explanation word, not a headline word, because everyday people think of stretching a muscle, not moving a joint. Written into `core/voice.md`. Still to fix at skimming speed: `how-it-works.astro` comparison table ("Switch the joint off and it is left out of the build") and FAQ answers, `src/data/site.ts` ("Every joint, every direction, over time", which is shared pricing data on several pages), `30-day.astro` and `free-7day-trial.astro` image alt text, and the body-filter FAQ in `src/data/faqs.ts` which says joint five times in a set of instructions. Long explanatory FAQ answers can keep the word (`Team/CMO/Ready/website-repo`)
 - [ ] **Growth and funnel targets are not recorded.** The Goals section of `core/positioning.md` points at `Team/CGO/` and `Team/CRO/` but neither holds numbers a skill could use. Flagged 2026-09-09
 

@@ -75,6 +75,13 @@ Durable facts for this folder only. Cross role facts go in the repo root `Memory
      over fifty" became **50 to 65**; "tracking" retired alongside "learning";
      the inserted-name comma rule carried in; a Product copy channel section
      added because the draft only covered marketing surfaces.
+   - **Reverted 2026-09-17: "physio backed" was wrong, "physio-informed" is
+     the standard.** Karen's call: the Strategic Thesis
+     (`Team/CMO/skills/westretch-core/references/strategic-thesis.md`) has
+     always said "Physio-informed," so this 2026-09-09 alignment was the
+     drift, not the thesis. `core/voice.md` was corrected back and the whole
+     repo was swept the same day (brand docs, website copy, app-design-system
+     previews, ad concepts, skill/agent instructions).
 
 7. **Three tiers of file. Karen caught the duplication that made this necessary.**
    - **Why:** the first version of `.agents/product-marketing.md` (2026-09-09) was

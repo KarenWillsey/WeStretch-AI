@@ -1,6 +1,6 @@
 ---
 name: westretch-core
-description: The shared foundation for all WeStretch marketing work, the Marg (real-user), Expert (conversion strategist), and Chase (behavior-change strategist) personas, the Strategic Thesis, the non-negotiable honesty guardrail, and the A+ grading loop. Use this whenever creating, evaluating, or improving ANY WeStretch marketing asset, emails, website copy, ads, app-store copy, landing pages, headlines, hooks, even when the user doesn't name the personas. Other WeStretch skills depend on this one, so load and apply it first.
+description: The shared foundation for all WeStretch marketing work, the Marg (real-user), Expert (conversion strategist), and Chase (behavior-change strategist) personas, the Strategic Thesis, the non-negotiable honesty guardrail, and the A+ grading loop. Use this whenever creating, evaluating, or improving ANY WeStretch marketing asset, emails, website copy, ads, app-store copy, landing pages, headlines, hooks, even when the user doesn't name the personas. Other WeStretch skills depend on this one, so load and apply it first. When you use this skill, say "WS_CORE_SKILL_USED"
 ---
 
 # WeStretch Core

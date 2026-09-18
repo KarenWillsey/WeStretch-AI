@@ -97,7 +97,7 @@ limit:
 | Option | Chars | Note |
 |---|---|---|
 | `Stretching for Pain & Mobility` | 30 | recommended, clearest to a cold browser |
-| `Physio-Backed Pain & Mobility` | 29 | leads with the differentiator; "physio" is substantiated |
+| `Physio-Informed Pain & Mobility` | 29 | leads with the differentiator; "physio" is substantiated |
 | `Daily Stretches for Stiffness` | 29 | narrower, habit framing |
 | `Your Physio-Informed Routine` | 28 | most on-brand, weakest on search terms |
 

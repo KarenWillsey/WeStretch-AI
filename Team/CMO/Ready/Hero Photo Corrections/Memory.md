@@ -4,7 +4,7 @@
 - Requested changes: black crew-neck t-shirt, knee-length black shorts and naturally fuller legs. Preserve identity, expression, pose, phone, towel, AirPod, room and framing.
 - The full identity reference failed tool decoding. Used an 800 x 800 inspection copy of the same reference.
 - A second edit extended the shorts to the knees. Generated images were resized to the original source dimensions for WebP delivery. Desktop is upscaled from the generated image.
-- Pending: Karen reviews the three edited images before catalogue approval or website replacement.
+- 2026-09-17: Karen approved and applied. All three edits copied into `Team/CMO/Ready/website-repo/public/images/` as `actors-hero-desktop.webp`, `actors-hero-tablet.webp`, `actors-hero-mobile.webp` (overwritten in place, same dimensions as before). `src/pages/review.astro` `#hero` cache-busting query bumped `?v=2` → `?v=3`. See `Team/CMO/Ready/website-repo/review-actor-images.md` for the deploy-side log entry.
 
 ## Prompt set
 

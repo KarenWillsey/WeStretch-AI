@@ -104,6 +104,7 @@
 /.claude/skills/video/
 /.claude/skills/westretch-ada-image-gen/
 /.claude/skills/westretch-core/
+/.claude/skills/westretch-direct-response-marketing/
 /.claude/skills/westretch-radio-ads/
 # Windows NTFS junctions, local filesystem state only — real content lives under
 # .agents/skills/. Git for Windows walks into these (core.symlinks=false) and

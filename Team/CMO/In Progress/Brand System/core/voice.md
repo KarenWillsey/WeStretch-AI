@@ -58,7 +58,7 @@ Our voice is who we are and it doesn't change. Four things are always true.
 
 ## We know what we're talking about
 
-Every stretch is physio backed, and that confidence shows up as explanation
+Every stretch is physio-informed, and that confidence shows up as explanation
 rather than jargon. We say why something works in language people actually use.
 One useful explanation builds more trust than three impressive claims.
 
@@ -245,14 +245,15 @@ Use these consistently enough that readers begin associating them with
 WeStretch. Not every piece needs all three, so use them where they genuinely
 strengthen the message.
 
-## Physio backed
+## Physio-informed
 
 **Our credibility.** Every pose in the library was developed and validated with
 physiotherapists and movement specialists. It's why we can explain why something
 works instead of just asserting that it does.
 
-Use "physio backed" as the standard phrasing. Not "physio-informed", not
-"physiotherapist-designed". One phrase, used consistently, becomes ownable.
+Use "physio-informed" as the standard phrasing, matching the Strategic Thesis.
+Not "physio backed", not "physiotherapist-designed". One phrase, used
+consistently, becomes ownable.
 
 ## Evolves with you
 
@@ -544,3 +545,19 @@ backed**; "generally over fifty" became **50 to 65**; the word "tracking" was
 retired from the older principles file; the comma rule for inserted names was
 carried in from Karen's product copy feedback; a Product copy channel section
 was added because the draft only covered marketing surfaces.
+
+## Reverted 2026-09-17: back to "physio-informed"
+
+Karen reversed the "physio backed" call above. The Strategic Thesis
+(`Team/CMO/skills/westretch-core/references/strategic-thesis.md`, "Words we
+own") has always said "Physio-informed," and this file is the one that had
+drifted from it, not the other way around. **"Physio-informed" is the
+standard phrasing, full stop.** The entire repo was swept the same day:
+every "physio backed" / "physio-backed" instance found in brand docs,
+website copy, app-design-system previews, ad concepts, and skill/agent
+instructions was changed to "physio-informed." The separate, older
+inconsistency across the live website (some pages say "physio-approved,"
+others "physiotherapist-approved," tracked in `WORK-TRACKER.md` and
+`Team/CMO/Ready/website-repo/USER_TODO.md`) is now resolved in principle,
+"physio-informed" is the one true phrase, but that sitewide pass hasn't
+been executed yet and remains open.

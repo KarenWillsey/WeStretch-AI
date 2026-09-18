@@ -22,6 +22,13 @@ website copy).
   specifically, use `ada-stretching-phone-image` instead.
 - `Team/CMO/skills/app-store-image-creation/`: App Store screenshot pipeline.
 - `Team/CMO/skills/create-4k-crop-master/`: source-image crop mastering.
+- `Team/CMO/skills/westretch-direct-response-marketing/`: direct-response
+  campaign strategy, Halo customer-language research, AIDA static-ad
+  creation, 17-step landing-page audits, experiment design, and weekly
+  funnel reviews for WeStretch acquisition marketing. Portable/vendored-style
+  skill (has its own `LOCAL-LLM-USAGE.md` for use in other harnesses); route
+  general brand/UX copy elsewhere unless acquisition messaging is the main
+  task.
 - `Team/CMO/skills/female-actor-01-image-generator/` - reference-locked lifestyle
   image generation for Female Actor 01 in a user-supplied pose.
 - `Team/CMO/skills/female-actor-02-image-generator/` - reference-locked lifestyle
