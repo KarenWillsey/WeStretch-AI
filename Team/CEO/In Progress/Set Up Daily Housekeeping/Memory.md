@@ -409,3 +409,33 @@ such line.
   1 to reply, 5 dated, 10 unfiled, 8 deleted, 36 FYI, 75 queue items, 1:13 of
   audio, 630,047 data-gathering tokens (triage alone 533,975, roughly double
   the 2026-09-14 figure, on a 53-message Inbox against 29).
+
+## The missing day recurred: no brief on 2026-09-17 (2026-09-18)
+
+Same shape as 2026-09-16: `last-run.log` goes from the Sep 16 finish line
+straight to the Sep 18 05:00 start, no "Starting" line for Sep 17 at all.
+Nothing alerted, for the same reason as last time: the runner's stale-start
+check only catches a start with no finish, not a day with no start.
+
+- **Why it matters:** this is now two misses in three scheduled mornings
+  (Sep 15, then Sep 17), not a one-off. The two fixes proposed on 2026-09-16
+  (wake-the-machine + run-after-missed-start on the Scheduled Task, plus a
+  26-hour-staleness alert in `run-daily-brief.ps1`) are still unapplied.
+  Tracked in `WORK-TRACKER.md`.
+- **How to apply:** don't treat this as a fresh discovery next time it
+  happens; it is the same known gap. If it recurs a third time, that is the
+  point to stop deferring the fix and actually change the Scheduled Task
+  settings.
+- The 2026-09-18 run carried forward four DATED items from the 2026-09-16
+  brief (XGameDev invoice, Fisher Investments RSVP, FedEx card, Hyatt
+  Calgary deposit) since none of them resurfaced in the fresh scan, all
+  marked `(carried, unconfirmed)` per the standing carry-forward rule. One
+  DATED item from Sep 16 (Sr. Boys Volleyball paperwork, due Thu Sep 17) was
+  dropped rather than carried, since its date had already passed by the time
+  this run composed.
+- Shape of the 2026-09-18 run for comparison: 48 Inbox messages + 20
+  Unsubscribe scanned, 9 to decide (5 shown + 4 more), 1 to reply, 4 dated
+  (all carried), 0 unfiled, 6 deleted, 2 tasks, 29 FYI, 55 queue items, 1:02
+  of audio, 550,500 data-gathering tokens (triage 442,368, Asana 60,890,
+  Jira 47,242 — triage cost roughly in line with recent runs despite no new
+  reply drafts beyond one).

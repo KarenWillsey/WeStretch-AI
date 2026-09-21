@@ -1,1400 +1,977 @@
 {
-  "date": "2026-09-16",
-  "generated_at": "2026-09-16T05:18:54-06:00",
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T05:20:00-06:00",
   "items": [
     {
       "id": "q1",
-      "section": "COULDN'T CHECK",
-      "line": "**Attachments** - none opened, 25 of 53 carry them.",
-      "name": "Attachments",
-      "detail_bullets": [
-        "Attachments: none opened this run; 25 of 53 Inbox messages carry them (several are only inline signature images). Reports from Park, QWC, Overhead Door, Hubstaff, the Nordic Court design report and the 214 Place plan were summarized from the email bodies only."
-      ],
-      "source": "triage",
+      "section": "COULDNT_CHECK",
+      "line": "**TD Secure** - password-protected email, only Karen can open.",
+      "name": "TD Secure Update",
+      "detail_bullets": ["TD Secure Update [I] from Kelly.Jarego@td.com — password-protected secure email, only Karen can open."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [],
+      "suggested_actions": ["skip"],
       "status": "open"
     },
     {
       "id": "q2",
-      "section": "COULDN'T CHECK",
-      "line": "**TD secure PDF** - password-protected, only you can open it.",
-      "name": "TD secure PDF",
-      "detail_bullets": [
-        "TD secure PDF (#td_secure Update [I], Sep 4): password-protected, only you can open it."
-      ],
-      "source": "triage",
+      "section": "COULDNT_CHECK",
+      "line": "**Safe and Caring Schools** - confirmed empty, footer only.",
+      "name": "Safe and Caring Schools",
+      "detail_bullets": ["Safe and Caring Schools from ChristaErickson@gpcsd.ca — confirmed by full-body read: content is an empty placeholder plus an unsubscribe footer only, no real message text to summarize."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [],
+      "suggested_actions": ["skip"],
       "status": "open"
     },
     {
       "id": "q3",
-      "section": "COULDN'T CHECK",
-      "line": "**Safe and Caring Schools** - one image attachment, text not readable.",
-      "name": "Safe and Caring Schools",
-      "detail_bullets": [
-        "Safe and Caring Schools (Sep 4): body is a single image attachment, text not readable."
-      ],
-      "source": "triage",
+      "section": "COULDNT_CHECK",
+      "line": "**Asana overdue** - heuristic gap, can't confirm none overdue.",
+      "name": "Asana overdue detection",
+      "detail_bullets": ["Today's contract lists all 26 'today' tasks with due: null and empty recently_assigned/urgent_flags, so the overdue heuristic (which only looks at recently-assigned tasks) cannot independently confirm nothing is overdue this run. Known gap, tracked in project Memory.md and WORK-TRACKER.md."],
+      "source": "asana",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [],
+      "suggested_actions": ["skip"],
       "status": "open"
     },
     {
       "id": "q4",
-      "section": "COULDN'T CHECK",
-      "line": "**Kari delta** - 6 moved items traced by folder search, no gap.",
-      "name": "Kari delta",
-      "detail_bullets": [
-        "Kari inbox delta: read_resource returned NOT_FOUND for all 6 snapshot ids (Outlook reissues ids on move, known). All 6 were resolved by folder search instead: Invoice INV-013 found in Westretch (parentFolderId confirmed by read), the other 5 found in Deleted Items. Not a gap, noted so the method is on record."
-      ],
-      "source": "triage",
-      "ref": null,
+      "section": "DECIDE",
+      "line": "**Kevin (St Joe's)** - already paid Max's $170 fee?",
+      "name": "St Joe's - School Fees (Max Willsey 13515)",
+      "detail_bullets": ["Kevin is asking whether you already paid Max's $170 St Joseph's fee statement (Sem 1 due Sept 30). Only you know; not draftable."],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt9R2mxAAA=",
       "draft_id": null,
-      "suggested_actions": [],
+      "suggested_actions": ["yes, paid", "no, not yet", "draft"],
       "status": "open"
     },
     {
       "id": "q5",
-      "section": "COULDN'T CHECK",
-      "line": "**Archive search** - one AppStance lookup timed out, not needed.",
-      "name": "Archive search",
-      "detail_bullets": [
-        "One outlook_email_search against the Archive folder (sender appstance) timed out; not needed after Deleted Items resolved the items, not retried."
-      ],
-      "source": "triage",
-      "ref": null,
+      "section": "DECIDE",
+      "line": "**Dayna (Pattison)** - challenge plan, B2B, Nov date, 6 days open.",
+      "name": "WeStretch - follow up questions!",
+      "detail_bullets": ["Sent to you, Josee and Kari; open 6 days, no reply sent yet.", "(1) can she come see the October challenge plan", "(2) does WeStretch support corporate/B2B memberships", "(3) pick a November meeting date"],
+      "source": "email",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSE0AAA=",
       "draft_id": null,
-      "suggested_actions": [],
+      "suggested_actions": ["reply", "draft"],
       "status": "open"
     },
     {
       "id": "q6",
       "section": "DECIDE",
-      "line": "**STARS Rescue** - Heather at MNP, donate or buy a table, Oct 1.",
-      "name": "STARS Rescue",
-      "detail_bullets": [
-        "Subject: STARS Rescue Event. Sender: Heather.Hilhorst@mnp.ca. Received Sep 14, sent to you and Kevin.",
-        "Needs your call on a donation. Heather (MNP tax partner) is doing STARS Rescue in the North on Oct 1, goal $50,000; a company gift over $2,500 gets your logo on her flight suit; she also asks about buying a table at the Oct 1 gala."
-      ],
+      "line": "**IT Horizons** - Quote 3795 approve/decline, 33 days.",
+      "name": "Fw: Quote 3795 - Network Equipment Replacement",
+      "detail_bullets": ["Needs your decision: approve or decline IT Horizons quote 3795 (network equipment replacement).", "Flagged in Outlook, pending since Aug 19 (33 days)."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6AqbWAAA=",
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xtAAA=",
       "draft_id": null,
-      "suggested_actions": [
-        "yes",
-        "no",
-        "draft"
-      ],
+      "suggested_actions": ["approve", "decline"],
       "status": "open"
     },
     {
       "id": "q7",
-      "section": "DECIDE",
-      "line": "**IT Horizons** - approve or decline quote 3795, 28 days.",
-      "name": "IT Horizons",
-      "detail_bullets": [
-        "Subject: Fw: Quote 3795 - Network Equipment Replacement. Sender: kari@kasa.ca. Forwarded by Kari Aug 19, 28 days old, flagged in Outlook.",
-        "Approve or decline IT Horizons quote 3795 (Paul Bomett), online approval link in the email."
-      ],
+      "section": "REPLY",
+      "line": "**Owen at KMSC** - draft ready, acknowledgment pending send.",
+      "name": "RE: [External] As my lawyer ....",
+      "detail_bullets": ["Draft already pending in Drafts ('Ha, fair enough — I'm not holding my breath either...'); not re-drafted."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xtAAA=",
-      "draft_id": null,
-      "suggested_actions": [
-        "approve",
-        "decline",
-        "draft"
-      ],
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt8Xnt9AAA=",
+      "draft_id": "existing-unspecified",
+      "suggested_actions": ["send", "edit"],
       "status": "open"
     },
     {
       "id": "q8",
-      "section": "DECIDE",
-      "line": "**Nordic Court** - design report review, sent twice, 21 days.",
-      "name": "Nordic Court",
-      "detail_bullets": [
-        "Subject: Fw: Nordic Court?? / FW: Nordic Court??. Senders: kevin@parkpmg.ca and Rhonda.Side@sidemanagement.ca. Two identical forwards Aug 26 with no message from Kevin or Rhonda; Rhonda's copy id ...AAtsgkaLAAA=. 21 days old.",
-        "Review of the Nordic Court design report with revised cost estimate (HSEA, Ian Evans, PDF \"25139-Nordic Court-Design Report-FINAL\"). Ian says the rush caused wrong base-building vs tenant-improvement assumptions, so the cost consultant trimmed scope."
-      ],
+      "section": "REPLY",
+      "line": "**Mike at clearmotive** - draft ready, send final invoice.",
+      "name": "clearmotive | Checking In",
+      "detail_bullets": ["Draft already pending in Drafts ('sorry for slow reply... go ahead and send the final invoice'); not re-drafted.", "Older thread 'clearmotive | Video Recordings of Analytics & UX Findings' (Aug 20/31) is the same relationship, folded into FYI."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtsgkaMAAA=",
-      "draft_id": null,
-      "suggested_actions": [
-        "draft",
-        "file"
-      ],
+      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFYAAA=",
+      "draft_id": "existing-unspecified",
+      "suggested_actions": ["send", "edit"],
       "status": "open"
     },
     {
       "id": "q9",
-      "section": "DECIDE",
-      "line": "**clearmotive** - Mike wants your video verdict, 16 days.",
-      "name": "clearmotive",
-      "detail_bullets": [
-        "Subject: Re: clearmotive | Video Recordings of Analytics & UX Findings. Sender: mike.vecchiarelli@clearmotive.ca.",
-        "Needs your verdict on the Analytics and UX walkthrough videos (Box folder link in the Aug 20 email). Mike checked in Aug 31, 16 days ago, and said the final audit invoice follows this week. Thread is 2 messages (Aug 20 original id ...AAtpb-JdAAA= plus this Aug 31 nudge)."
-      ],
+      "section": "DATED",
+      "line": "**Alberta Precision Labs** - appt today 7:50am, Grande Prairie.",
+      "name": "Appointment Reminder - Alberta Precision Labs",
+      "detail_bullets": ["Appointment TODAY, Monday Sep 21, 7:50am", "Location: Grande Prairie, 101 - 11002 104 Ave", "Bring Alberta Health Card, photo ID, requisition"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrylxAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "draft"
-      ],
+      "suggested_actions": ["none, informational"],
       "status": "open"
     },
     {
       "id": "q10",
-      "section": "DECIDE",
-      "line": "**214 Place** - lobby ceiling plan feedback, 15 days.",
-      "name": "214 Place",
-      "detail_bullets": [
-        "Subject: FW: 214 Place Lobby - Proposed Ceiling/Lighting Plan Design. Sender: kevin@parkpmg.ca. Kevin forwarded Sep 1 with no message; 15 days old.",
-        "Review of HSEA's updated ceiling and lighting plan for the 214 Place main-floor lobby, now including the South lobby (PDF \"Option C1 - RCP - 2026.09.01\"). Sabrina Jhamandas offers a Teams walkthrough."
-      ],
-      "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymWAAA=",
+      "section": "DATED",
+      "line": "**XGameDev** - 5,712 AUD due today (carried, unconfirmed).",
+      "name": "XGameDev INV-013",
+      "detail_bullets": ["Carried from the 2026-09-14/16/18/19/20 briefs; not present in today's scan. Due date originally given as Sep 21."],
+      "source": "carried",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "draft",
-        "file"
-      ],
+      "suggested_actions": ["pay", "skip"],
       "status": "open"
     },
     {
       "id": "q11",
-      "section": "DECIDE",
-      "line": "**TD** - secure PDF needs your password, 12 days.",
-      "name": "TD",
-      "detail_bullets": [
-        "Subject: #td_secure Update [I]. Sender: Kelly.Jarego@td.com, cc Leon Makombe, Sep 4, flagged in Outlook, 12 days old.",
-        "Only you can open it; password-protected TD Secure PDF plus \"Income and Expense - Karen signed.pdf\"."
-      ],
+      "section": "DATED",
+      "line": "**Calgary Trip** - starts Wed, check-in link in email.",
+      "name": "Karen, your trip to Calgary is starting soon!",
+      "detail_bullets": ["Trip to Calgary starts Wednesday", "Check-in / itinerary link in email", "Duplicate notice also sits in Unsubscribe folder (see Unfiled)"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt2rYEPAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "open",
-        "file"
-      ],
+      "suggested_actions": ["none, informational"],
       "status": "open"
     },
     {
       "id": "q12",
-      "section": "REPLY",
-      "line": "**Owen at KMSC** - acknowledgment drafted, then email Mark Smith.",
-      "name": "Owen at KMSC",
-      "detail_bullets": [
-        "Subject: Education Foundation pleadings. Sender: Owen@kmsc.ca. Received Sep 16 02:26 UTC.",
-        "Draft \"Thanks Owen, I will reach out to Mark...\" saved in Drafts, not sent.",
-        "Separate action only you can do: email Mark Smith (msmith@stlawoffice.ca) for the statement of claim and the statement of defence and counterclaim; court clerks quote 3-4 weeks otherwise."
-      ],
-      "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFFAAA=",
-      "draft_id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AOBhGeMLk0kytmkJqyYJMcwALeoaPGAAA",
-      "suggested_actions": [
-        "send",
-        "edit",
-        "skip"
-      ],
+      "section": "DATED",
+      "line": "**Smartlook** - renew or lapse by Wed Sep 23 (carried).",
+      "name": "Smartlook",
+      "detail_bullets": ["Pro plan renewal, $139.00/15,000 units, renew-or-lapse decision by Wed Sep 23. Carried from the 2026-09-18/19/20 briefs; not present in today's scan."],
+      "source": "carried",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["renew", "lapse"],
       "status": "open"
     },
     {
       "id": "q13",
       "section": "DATED",
-      "line": "**Sr. Boys Volleyball** - paperwork by Thu Sep 17 or no bus.",
-      "name": "Sr. Boys Volleyball",
-      "detail_bullets": [
-        "Subject: SJCHS Sr. Boys Volleyball Parent/Guardian Meeting Reminder. Sender: DerekLogan@gpcsd.ca, plus Kevin's forward (kevin@kasa.ca, id ...AAt6hSE3AAA=).",
-        "Parent meeting was Tue Sep 15 6:45pm at St. Joseph Catholic High School (already passed)",
-        "Athlete paperwork must be returned by Thu Sep 17 or the player cannot board the bus Friday",
-        "Upcoming tournament in Sherwood Park",
-        "Kevin forwarded the same notice to you Sep 15 with no comment"
-      ],
-      "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSE2AAA=",
+      "line": "**Fisher Investments** - RSVP Sep 22-24 (carried, unconfirmed).",
+      "name": "Fisher Investments",
+      "detail_bullets": ["RSVP requested for client video conferences Sep 22–24. Carried; not present in today's scan."],
+      "source": "carried",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "done",
-        "file"
-      ],
+      "suggested_actions": ["rsvp", "skip"],
       "status": "open"
     },
     {
       "id": "q14",
       "section": "DATED",
-      "line": "**Hyatt Calgary** - Julia's Oct 8 stay, deposit charged Sep 18.",
-      "name": "Hyatt Calgary",
-      "detail_bullets": [
-        "Subject: Fwd: Reservation Details for Your Upcoming Stay at Hyatt Regency Calgary. Sender: juliawillsey@gmail.com.",
-        "Julia's Hyatt Regency Calgary booking, confirmation 56521216, forwarded with no note (body recovered from the saved tool-result file; over the read limit)",
-        "Check-in Thu Oct 8 3pm, check-out Sun Oct 11 12pm, 2 adults, 1 King Corner room, $189 CAD per night Oct 8 to 10 plus taxes",
-        "Cancellation: 21-day policy, one-night non-refundable deposit charged Sept 18"
-      ],
-      "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6Aqb_AAA=",
+      "line": "**FedEx** - card ending 3270 expires this month (carried).",
+      "name": "FedEx card",
+      "detail_bullets": ["Card ending 3270 expires this month; update via fedex.ca. Carried; not present in today's scan."],
+      "source": "carried",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "file"
-      ],
+      "suggested_actions": ["update", "skip"],
       "status": "open"
     },
     {
       "id": "q15",
       "section": "DATED",
-      "line": "**XGameDev** - 5,712 AUD INV-013 due Sun Sep 21 (carried, unconfirmed).",
-      "name": "XGameDev",
-      "detail_bullets": [
-        "Carried from the 2026-09-14 brief, not confirmed in today's scan. Invoice INV-013, 5,712 AUD, due Sun Sep 21.",
-        "Today's Kari delta found the email filed in the Westretch folder, and Asana has a new task \"Invoice INV-013\" assigned to you with no due date. Payment status unknown."
-      ],
+      "line": "**Network Solutions** - ~$107.49 auto-renews Oct 20 (carried amt).",
+      "name": "Reminder: Your services are going to renew",
+      "detail_bullets": ["Account #119659340, auto-renews to card on file", "Prior brief (Sep 20 queue) recorded this as We Bananas domains (webananas.team/.ca/.software), $107.49, renewal date 2026-10-20 — dollar figure not reconfirmed in today's snippet", "Call 877-840-7648 with questions"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt50K-vAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "done",
-        "skip"
-      ],
-      "status": "open",
-      "carried": true
+      "suggested_actions": ["cancel", "let it renew"],
+      "status": "open"
     },
     {
       "id": "q16",
-      "section": "DATED",
-      "line": "**Fisher Investments** - RSVP, client video conferences Sep 22 to 24.",
-      "name": "Fisher Investments",
-      "detail_bullets": [
-        "Subject: Fisher Investments Canada: RSVP for an Upcoming Client Video Conference!. Sender: clientvideoconference@fisherinvestmentsevents.com.",
-        "Client video conferences Sep 22 to 24, 2026, space still available, RSVP or decline links",
-        "Addressed to Mr. and Mrs. Willsey; Investment Counsellor line (800) 550-1071"
-      ],
+      "section": "UNFILED",
+      "line": "**8 TestFlight builds** - iOS 8.1.32/34, misfiled in Unsubscribe.",
+      "name": "WeStretch iOS TestFlight builds",
+      "detail_bullets": ["WeStretch 8.1.34 (20555) for iOS is ready to test", "WeStretch 8.1.32 (20554) for iOS is ready to test", "WeStretch 8.1.34 (20553) for iOS is ready to test", "WeStretch 8.1.34 (20552) for iOS is ready to test", "WeStretch 8.1.32 (20551) for iOS is ready to test", "WeStretch 8.1.32 (20550) for iOS is ready to test", "WeStretch 8.1.32 (20549) for iOS is ready to test", "WeStretch 8.1.32 (20548) for iOS is ready to test", "All from firebase-noreply@google.com, misfiled into Unsubscribe — belongs in Inbox, not spam. Recurring pattern from prior briefs."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSE1AAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "yes",
-        "no",
-        "delete"
-      ],
+      "suggested_actions": ["file to inbox", "skip"],
       "status": "open"
     },
     {
       "id": "q17",
-      "section": "DATED",
-      "line": "**FedEx** - card ending 3270 expires this month, update it.",
-      "name": "FedEx",
-      "detail_bullets": [
-        "Subject: Credit Card Expiration Notice. Sender: BillingOnline@FEDEX.COM.",
-        "Card on the FedEx account ending 4230 (card ending 3270) expires 09/2026",
-        "Update via fedex.ca/invoice, fedex.ca My Profile, or 1-800-463-3339 before month end to avoid service disruption"
-      ],
+      "section": "UNFILED",
+      "line": "**Standup video** - Sep 18 Atlassian view notice, your call.",
+      "name": "Your video has been viewed: Ws Daily Standup",
+      "detail_bullets": ["Your video has been viewed: Ws Daily Standup - September 18, 2026 (info@e.atlassian.com)", "Tied to active WeStretch team activity; ambiguous value, left for Karen to judge"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feDLAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "done",
-        "file"
-      ],
+      "suggested_actions": ["file to inbox", "skip"],
       "status": "open"
     },
     {
       "id": "q18",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**TestFlight** - WeStretch 8.1.32 build 20492 ready to test.",
-      "name": "TestFlight",
-      "detail_bullets": [
-        "Subject: WeStretch 8.1.32 (20492) for iOS is ready to test. Sender: firebase-noreply@google.com. In the Unsubscribe folder.",
-        "Live WeStretch TestFlight build notice in the Unsubscribe folder, belongs in the Inbox; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "UNFILED",
+      "line": "**Calgary Trip (dup)** - TripIt copy also sits in Unsubscribe.",
+      "name": "Karen, your trip to Calgary is starting soon! (duplicate)",
+      "detail_bullets": ["Duplicate of the Inbox copy, but tied to an active travel commitment (Wed trip)"],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["file to inbox", "skip"],
       "status": "open"
     },
     {
       "id": "q19",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**TestFlight** - WeStretch 8.1.32 build 20491 ready to test.",
-      "name": "TestFlight",
-      "detail_bullets": [
-        "Subject: WeStretch 8.1.32 (20491) for iOS is ready to test. Sender: firebase-noreply@google.com. In the Unsubscribe folder.",
-        "Live WeStretch TestFlight build notice in the Unsubscribe folder, belongs in the Inbox; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Megan Sumrell**, coaching/training newsletter promo.",
+      "name": "The trainings included with your ticket are so good",
+      "detail_bullets": ["Sender: megan@kjbm.megansumrell.com. Coaching/training newsletter promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q20",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**TestFlight** - WeStretch 8.1.32 build 20490 ready to test.",
-      "name": "TestFlight",
-      "detail_bullets": [
-        "Subject: WeStretch 8.1.32 (20490) for iOS is ready to test. Sender: firebase-noreply@google.com. In the Unsubscribe folder.",
-        "Live WeStretch TestFlight build notice in the Unsubscribe folder, belongs in the Inbox; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**LinkedIn**, reaction notification digest.",
+      "name": "Delaina Moug ... reacted to this post",
+      "detail_bullets": ["Sender: updates-noreply@linkedin.com. LinkedIn reaction notification digest. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q21",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**TestFlight** - WeStretch 8.1.32 build 20489 ready to test.",
-      "name": "TestFlight",
-      "detail_bullets": [
-        "Subject: WeStretch 8.1.32 (20489) for iOS is ready to test. Sender: firebase-noreply@google.com. In the Unsubscribe folder.",
-        "Live WeStretch TestFlight build notice in the Unsubscribe folder, belongs in the Inbox; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Poppy & Peonies**, suede handbag promo.",
+      "name": "NEW IN SUEDE: The Sunday Bag",
+      "detail_bullets": ["Sender: info@poppyandpeonies.com. Handbag promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q22",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**TestFlight** - WeStretch 8.1.32 build 20488 ready to test.",
-      "name": "TestFlight",
-      "detail_bullets": [
-        "Subject: WeStretch 8.1.32 (20488) for iOS is ready to test. Sender: firebase-noreply@google.com. In the Unsubscribe folder.",
-        "Live WeStretch TestFlight build notice in the Unsubscribe folder, belongs in the Inbox; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**WestJet**, Grande Prairie trip marketing promo.",
+      "name": "Let's curate your trip to Grande Prairie | FRTSZY",
+      "detail_bullets": ["Sender: noreply@notifications.westjet.com. WestJet marketing promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q23",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**SiteGround** - monthly performance report, westretch.app.",
-      "name": "SiteGround",
-      "detail_bullets": [
-        "Subject: Monthly performance report for westretch.app. Sender: noreply@siteground.com. In the Unsubscribe folder.",
-        "Your own hosting performance report, not marketing; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Simone Grace Seol**, SEO/coaching newsletter, clickbait.",
+      "name": "what am I even good for?",
+      "detail_bullets": ["Sender: simone@simonegraceseol.com. SEO/coaching newsletter, clickbait subject. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q24",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**SiteGround** - monthly performance report, westretch.ca.",
-      "name": "SiteGround",
-      "detail_bullets": [
-        "Subject: Monthly performance report for westretch.ca. Sender: noreply@siteground.com. In the Unsubscribe folder.",
-        "Your own hosting performance report, not marketing; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Halara**, denim sale promo.",
+      "name": "Down to CA$19.95: Denim Worth Living In",
+      "detail_bullets": ["Sender: halara@news.ca.halara.com. Clothing sale promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q25",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**SiteGround** - monthly performance report, kasa.ca.",
-      "name": "SiteGround",
-      "detail_bullets": [
-        "Subject: Monthly performance report for kasa.ca. Sender: noreply@siteground.com. In the Unsubscribe folder.",
-        "Your own hosting performance report, not marketing; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Wayfair**, speedy-delivery marketing promo.",
+      "name": "YESSS! Speedy delivery from Canada",
+      "detail_bullets": ["Sender: editor@members.wayfair.ca. Wayfair marketing promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q26",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**SiteGround** - monthly performance report, parkpmg.ca.",
-      "name": "SiteGround",
-      "detail_bullets": [
-        "Subject: Monthly performance report for parkpmg.ca. Sender: noreply@siteground.com. In the Unsubscribe folder.",
-        "Your own hosting performance report, not marketing; left untouched"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Rebelle Nutrition**, supplement promo.",
+      "name": "i can't believe people are paying for this...",
+      "detail_bullets": ["Sender: amie@rebellenutrition.com. Nutrition supplement promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q27",
-      "section": "UNFILED, SHOULD BE INBOX",
-      "line": "**Pro Coro** - concert Sat Sep 19, subscriptions close Fri Sep 18.",
-      "name": "Pro Coro",
-      "detail_bullets": [
-        "Subject: Once Upon a Dream. Sender: thechoir.procoro.ca@8ndhr5.sqspmail.com. In the Unsubscribe folder.",
-        "Pro Coro Canada newsletter you opened: Fairytale Dreams concert Sat Sep 19 7:30pm McDougall, season subscriptions close Fri Sep 18; ambiguous so left for you"
-      ],
-      "source": "unsubscribe",
+      "section": "DELETED",
+      "line": "**Cherrington Media**, side-income spam pitch.",
+      "name": "simple online 'side income' you can start today",
+      "detail_bullets": ["Sender: support@cherringtonmedia.com. Side-income spam pitch. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "move to inbox",
-        "delete"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q28",
       "section": "DELETED",
-      "line": "**Rebelle Nutrition**, AI social media manager pitch.",
-      "name": "Rebelle Nutrition",
-      "detail_bullets": [
-        "Subject: want me to be your social media manager?. Sender: amie@rebellenutrition.com. Source: inbox. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "inbox",
+      "line": "**Franc Talking**, AI-visibility marketing newsletter.",
+      "name": "Five steps to audit your own AI visibility",
+      "detail_bullets": ["Sender: franc-talking@mail.befranc.co.uk. Marketing newsletter. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q29",
       "section": "DELETED",
-      "line": "**Josh Linkner**, motivational newsletter.",
-      "name": "Josh Linkner",
-      "detail_bullets": [
-        "Subject: The Power of Making Mistakes. Sender: josh@josh-linkner.com. Source: inbox. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "inbox",
+      "line": "**DoorDash**, spontaneous-order promo.",
+      "name": "We're feeling spontaneous — you in?",
+      "detail_bullets": ["Sender: DoorDash via privaterelay. DoorDash promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q30",
       "section": "DELETED",
-      "line": "**Marriott Bonvoy**, work-travel promo.",
-      "name": "Marriott Bonvoy",
-      "detail_bullets": [
-        "Subject: Your Routine Doesn't Have to Pause for Work Travel. Sender: marriottbonvoy@email-marriott.com. Source: unsubscribe. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "unsubscribe",
+      "line": "**Mike Mandel**, hypnosis newsletter.",
+      "name": "Open Mike: I Wonder How Long We Were Asleep",
+      "detail_bullets": ["Sender: chris@mikemandelhypnosis.com. Hypnosis newsletter. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q31",
       "section": "DELETED",
-      "line": "**BlazeMeter**, software demo pitch.",
-      "name": "BlazeMeter",
-      "detail_bullets": [
-        "Subject: [DEMO] Transform Testing With BlazeMeter. Sender: mimi.benach.em@perforce.com. Source: unsubscribe. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "unsubscribe",
+      "line": "**Comfrt**, 2026 superlatives clothing promo.",
+      "name": "The Votes Are In: 2026 Superlatives",
+      "detail_bullets": ["Sender: info@comfrt.com. Comfrt clothing promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q32",
       "section": "DELETED",
-      "line": "**Upwork**, saved-freelancer review nudge.",
-      "name": "Upwork",
-      "detail_bullets": [
-        "Subject: Your saved freelancer just got a great review. Sender: upwork@email.upwork.com. Source: unsubscribe. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "unsubscribe",
+      "line": "**Halara**, BOGO clothing promo.",
+      "name": "Buy 1, Get 1 Free on Halara Picks",
+      "detail_bullets": ["Sender: halara@news.ca.halara.com. Clothing sale promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q33",
       "section": "DELETED",
-      "line": "**JustFly**, Hawaii flight deals.",
-      "name": "JustFly",
-      "detail_bullets": [
-        "Subject: Lahania-kapalua Flights from $100. Sender: justfly@email.justflyemail.com. Source: unsubscribe. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "unsubscribe",
+      "line": "**Wayfair**, toilets marketing promo.",
+      "name": "Toilets! Toilets! Toilets!",
+      "detail_bullets": ["Sender: editor@members.wayfair.ca. Wayfair marketing promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q34",
       "section": "DELETED",
-      "line": "**Generations Dental**, review request.",
-      "name": "Generations Dental",
-      "detail_bullets": [
-        "Subject: Please Review Us!. Sender: generations-dental@mg.swellcx.com. Source: unsubscribe. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "unsubscribe",
+      "line": "**Foreclosure Fortunes**, foreclosure listing spam.",
+      "name": "6 foreclosures added today",
+      "detail_bullets": ["Sender: hudhomesusa@search.foreclosurefortunes.net. Foreclosure listing spam. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q35",
       "section": "DELETED",
-      "line": "**Halara**, clothing sale promo.",
-      "name": "Halara",
-      "detail_bullets": [
-        "Subject: Stock Your Wardrobe: Buy 2, Get 1 Free. Sender: halara@news.ca.halara.com. Source: unsubscribe. Moved to Deleted Items (recoverable)."
-      ],
-      "source": "unsubscribe",
+      "line": "**SkipTheDishes**, 40% off promo.",
+      "name": "Dinner or groceries? 40% off.",
+      "detail_bullets": ["Sender: SkipTheDishes via privaterelay. SkipTheDishes promo. Source: unsubscribe."],
+      "source": "email",
       "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "restore"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q36",
-      "section": "TASKS",
-      "line": "**Asana** - 220 open, 24 today, none dated.",
-      "name": "Asana",
-      "detail_bullets": [
-        "open_task_total 220. Today section: 24 tasks, all without a due date. Nothing due today (search_tasks due_on 2026-09-16 returned empty). urgent_flags: none.",
-        "Today section tasks: routine screen new version; Major Working Chunks ~ Chat; Major Working Chunks ~ Onboarding UX; Jacque when he gets back; Planning for tomorrows meeting; Mike clearmotive summary; Bane Tickets for Tomorrow; yard design; look a like audiences; Order Physics workbooks; Matthew Dalen Lunch; Cathy Good Document; Design setting Screen; Leanne headset; Gym Girls gifts; Email; Clean up ASana and Structure; Fast instructions test.; Max mini; Pat Garrett Statement; How can we do continueing for PD for John (Advisory Board - Howie & Jen); Do this now; Drive my day with structure; Rx order parasite."
-      ],
-      "source": "asana",
-      "ref": "https://app.asana.com/0/my-tasks",
+      "section": "DELETED",
+      "line": "**SkipTheDishes**, 60% off promo.",
+      "name": "Dinner or groceries? 60% off.",
+      "detail_bullets": ["Sender: hello@updates.skipthedishes.com. SkipTheDishes promo. Source: unsubscribe."],
+      "source": "email",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "open"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q37",
-      "section": "TASKS",
-      "line": "**Asana backlog** - 42 past due outside Today, oldest Mar 2.",
-      "name": "Asana backlog",
-      "detail_bullets": [
-        "Compose cross-check (search_tasks, assignee me, incomplete, due before 2026-09-16): 42 tasks with a past due date, all in the Upcoming, Later, Daily 20 minute chunks or Waiting On sections, none in Today.",
-        "Oldest: Term insurance for both Raeanna and Mackenzie (Insurance Rob), due 2026-03-02.",
-        "The two 63-day items from the Sep 14 brief, Make a complete list of contacts to revisit and Challenge Clickable prototypes (Kelly), are still open, due 2026-07-13, now in Upcoming rather than Today.",
-        "Jamie email, Josee email funnels and Patterson stats no longer appear as overdue; Patterson stats is now due 2026-10-01 in Later."
-      ],
-      "source": "asana",
-      "ref": "https://app.asana.com/0/my-tasks",
+      "section": "DELETED",
+      "line": "**Vessi**, fall shoe promo.",
+      "name": "One pair, all fall",
+      "detail_bullets": ["Sender: information@vessi.com. Shoe promo. Source: unsubscribe."],
+      "source": "email",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "open"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q38",
-      "section": "TASKS",
-      "line": "**Invoice INV-013** - new Asana task, no due date.",
-      "name": "Invoice INV-013",
-      "detail_bullets": [
-        "recently_assigned: Invoice INV-013, no project, assigned by Karen. https://app.asana.com/1/91554875201048/task/1218480215184531"
-      ],
-      "source": "asana",
-      "ref": "https://app.asana.com/1/91554875201048/task/1218480215184531",
+      "section": "DELETED",
+      "line": "**WestJet**, privacy statement notice, no action.",
+      "name": "Updates to our Privacy Statement",
+      "detail_bullets": ["Sender: WestJet@rwds.westjet.com. Legal/policy notice, no action. Source: unsubscribe."],
+      "source": "email",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "open"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q39",
-      "section": "TASKS",
-      "line": "**WEMVP-11850** - pose diagram, Sprint 204 ends Thu.",
-      "name": "WEMVP-11850",
-      "detail_bullets": [
-        "Jira: Sprint 204 (WEMVP board) ends Sep 17. WEMVP-11850 Draw diagram for pose, sequence what happens. Project WeStretch App, status To Do, priority Medium, no due date. https://webananas.atlassian.net/browse/WEMVP-11850",
-        "new_mentions: none (best-effort text-match heuristic, capped at 7 days)."
-      ],
-      "source": "jira",
-      "ref": "WEMVP-11850",
+      "section": "DELETED",
+      "line": "**Kumon**, growth-story marketing email.",
+      "name": "A Year of Growth, One Step at a Time",
+      "detail_bullets": ["Sender: no-reply@email-kumon.com. Kumon marketing. Source: unsubscribe."],
+      "source": "email",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "open"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q40",
-      "section": "FYI",
-      "line": "**Dayna at Pattison** - Nov 20 booked, October visit still open.",
-      "name": "Dayna at Pattison",
-      "detail_bullets": [
-        "Subject: WeStretch - follow up questions!. Sender: Dayna.Venditello@pattisonmedia.com. Kind: follow_up.",
-        "You replied Sep 15 21:35 (sizes received, corporate memberships by company email are doable, any November day at 10am works). Ball is with Dayna to pick the day; you have since accepted her \"We Stretch Contract Renewal 2027\" invite for Fri Nov 20 10-11am MT. Still open from her email: her ask to pop by for the October challenge run-down."
-      ],
+      "section": "DELETED",
+      "line": "**Halara**, up to 80% off promo.",
+      "name": "Up to 80% Off Our Bestselling Styles",
+      "detail_bullets": ["Sender: hello@ca.halara.com. Clothing sale promo. Source: unsubscribe."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSE0AAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q41",
-      "section": "FYI",
-      "line": "**Buildium** - renters insurance digest, one policy updated.",
-      "name": "Buildium",
-      "detail_bullets": [
-        "Subject: My renters insurance summary for 9/16/2026. Sender: donotreply@managebuilding.com.",
-        "Buildium daily digest for Park Property Management, Sep 16",
-        "No new policies, no expired policies",
-        "Updated: 214 Place North - 140, tenant 1900823 Alberta Ltd. o/a AccData, Cooperators, $3,000,000 liability, Apr 27 2026 to Apr 27 2027"
-      ],
+      "section": "DELETED",
+      "line": "**Unbound Coach**, Thursday workshop promo.",
+      "name": "Join us on Thursday's online workshop: The Unbound Coach",
+      "detail_bullets": ["Sender: admin@propane-business.com. Coaching workshop promo. Source: unsubscribe."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFIAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q42",
-      "section": "FYI",
-      "line": "**Buildium** - tasks digest, hot office at Nordic Court 400.",
-      "name": "Buildium",
-      "detail_bullets": [
-        "Subject: Tasks summary for 9/16/2026. Sender: donotreply@managebuilding.com.",
-        "No upcoming tasks",
-        "New Sep 16 (system): Bell Generator Maintenance with Total Power quarterly at 214 Place North; Secondary Chilled Water Pump P-3 semi-annual at 214 Place North",
-        "In progress: hot office at 27.5 degrees, Nordic Court 400 (Noel Zamudio, Sep 15)",
-        "Completed Sep 15: Cooling Tower inspection Nordic Court; floor drain treatment 214 North and South; light fixture admin bathroom 214 South 150; Amazon office supplies 214 South",
-        "Closed: remind janitor to clean Suite 920, 214 Place North"
-      ],
+      "section": "DELETED",
+      "line": "**Krys Bowman**, Zoom Equinox newsletter.",
+      "name": "What to expect in our Tuesday Zoom Equinox gathering",
+      "detail_bullets": ["Sender: kryssamariebowman@v.kajabimail.net. Spiritual/wellness newsletter. Source: unsubscribe."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFHAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q43",
-      "section": "FYI",
-      "line": "**AppStance** - Sep 15: $10.47 spend, zero installs.",
-      "name": "AppStance",
-      "detail_bullets": [
-        "Subject: AppStance - Apple Ads Daily Summary - Sep 15, 2026 - We Bananas Software Inc.. Sender: notifications@appstance.com.",
-        "Apple Ads Sep 15: spend 10.47 CAD (down 31%), installs 0 (down 100%)"
-      ],
+      "section": "DELETED",
+      "line": "**MasterClass**, \"never too much\" promo.",
+      "name": "You were never too much",
+      "detail_bullets": ["Sender: support@email.masterclass.com. MasterClass promo. Source: unsubscribe."],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFGAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q44",
-      "section": "FYI",
-      "line": "**Interac** - Monica Chambers took your $255.00.",
-      "name": "Interac",
-      "detail_bullets": [
-        "Subject: Interac e-Transfer: Monica Chambers has accepted your transfer of $255.00. Sender: catch@payments.interac.ca.",
-        "$255.00 CAD e-transfer from Karen E Willsey deposited by Monica Chambers, Sep 16 02:17 UTC",
-        "Sent to willseyk@telus.net; marked high importance by Interac"
-      ],
-      "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFEAAA=",
+      "section": "TASKS",
+      "line": "**Asana** - 222 open, 26 today, overdue unconfirmed (gap).",
+      "name": "Asana",
+      "detail_bullets": ["total_open_tasks 222", "26 tasks in today's list, no due dates given (all null)", "recently_assigned empty, urgent_flags empty — known heuristic gap, can't independently confirm nothing is overdue"],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048",
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["review in Asana"],
       "status": "open"
     },
     {
       "id": "q45",
-      "section": "FYI",
-      "line": "**BioSteel** - welcome to Teams, account created.",
-      "name": "BioSteel",
-      "detail_bullets": [
-        "Subject: Welcome to BioSteel!. Sender: noreply@teams.biosteel.com.",
-        "Confirmation that karen@kasa.ca joined BioSteel Teams, Sep 16 01:13 UTC",
-        "Next steps listed: complete profile, create or join teams, connect with members"
-      ],
-      "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFDAAA=",
+      "section": "TASKS",
+      "line": "**WEMVP-11850** - pose diagram, Sprint 205 ends Oct 1.",
+      "name": "WEMVP-11850",
+      "detail_bullets": ["Draw diagram for pose, sequence what happens. Project WEMVP, status To Do, priority Medium, no due date.", "Sprint 205 (WEMVP) ends 2026-10-01T15:30:13.000Z."],
+      "source": "jira",
+      "ref": "https://webananas.atlassian.net/browse/WEMVP-11850",
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["review in Jira"],
       "status": "open"
     },
     {
       "id": "q46",
       "section": "FYI",
-      "line": "**BioSteel** - verification code, already read.",
-      "name": "BioSteel",
-      "detail_bullets": [
-        "Subject: Verify Your BioSteel Account. Sender: noreply@teams.biosteel.com.",
-        "Verification code 619737 for the BioSteel Teams app, Sep 16 01:13 UTC; already marked read"
-      ],
+      "line": "**AppStance** - weekly spend $50.37, up 89%.",
+      "name": "AppStance - Apple Ads Weekly Summary - Sep 14-20, 2026",
+      "detail_bullets": ["Spend $50.37 CAD for the week", "Up 89% vs. prior period"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFCAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q47",
       "section": "FYI",
-      "line": "**Brant Law** - Big Rock 2026 annual report filed, no action.",
-      "name": "Brant Law",
-      "detail_bullets": [
-        "Subject: 2026 Annual Report for Big Rock Developments Ltd. (the \"Company\"). Sender: ashley@brant.law.",
-        "Filed 2026 Annual Report attached (2026 Annual Report.pdf) for your records, sent to you and Lauralyn (lradford@shaw.ca)",
-        "Brant Law says all 2026 annual maintenance for the Company is complete; no action needed",
-        "Ashley Brant, Red Deer County, 403-967-1346"
-      ],
+      "line": "**Buildium** - no upcoming tasks, routine update.",
+      "name": "Tasks summary for 9/21/2026",
+      "detail_bullets": ["No upcoming tasks", "Recently updated: 'Check Janitor supplies every Monday'"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSFAAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q48",
       "section": "FYI",
-      "line": "**Christa Erickson** - grad update, scholarship page and grad wear.",
-      "name": "Christa Erickson",
-      "detail_bullets": [
-        "Subject: Grad Update. Sender: ChristaErickson@gpcsd.ca.",
-        "St. Joe's scholarship page: sjstudentservices.weebly.com, check regularly",
-        "2027 Grad Wear store is open for orders: st-joesgrad.itemorder.com"
-      ],
+      "line": "**AppStance** - Sep 20 spend $12.22, 0 installs.",
+      "name": "AppStance - Apple Ads Daily Summary - Sep 20, 2026",
+      "detail_bullets": ["Spend $12.22, 0 installs, CPA $0.00"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feDMAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q49",
       "section": "FYI",
-      "line": "**Emerald Beauty** - facial consultation Sat Oct 3, 10am.",
-      "name": "Emerald Beauty",
-      "detail_bullets": [
-        "Subject: Emerald Beauty has accepted your appointment. Sender: noreply@messaging.squareup.com.",
-        "Facial consultation Sat Oct 3, 2026, 10:00am MDT",
-        "Consultation form to complete before the appointment"
-      ],
+      "line": "**AppStance** - Sep 19 spend $0, 0 installs.",
+      "name": "AppStance - Apple Ads Daily Summary - Sep 19, 2026",
+      "detail_bullets": ["Spend $0, 0 installs"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSEyAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q50",
       "section": "FYI",
-      "line": "**Emerald Beauty** - card ending 2231 saved on file.",
-      "name": "Emerald Beauty",
-      "detail_bullets": [
-        "Subject: Your card has been linked by Emerald Beauty. Sender: notifications@messaging.squareup.com.",
-        "Card ending 2231 saved on file at Emerald Beauty for future charges; digital receipts will come to willseyk@telus.net"
-      ],
+      "line": "**AppStance** - Sep 18 daily report, routine.",
+      "name": "AppStance - Apple Ads Daily Summary - Sep 18, 2026",
+      "detail_bullets": ["Routine daily report, no unusual figures called out"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSExAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q51",
       "section": "FYI",
-      "line": "**Your forward to Elena** - Atlassian invoice paid, receipt.",
-      "name": "Your forward to Elena",
-      "detail_bullets": [
-        "Subject: Fwd: Your payment has been processed for the invoice IN-008-124-663. Sender: karen@kasa.ca (to elena@kasa.ca).",
-        "Your own forward to Elena, Sep 15, of Atlassian's paid-invoice receipt (invoice PDF attached); nothing awaited"
-      ],
+      "line": "**Nordic Court** - 10 boiler/AHU alarms, all reset.",
+      "name": "Nordic Court building alarms (Boiler System 1 + AHU-1 DX Solenoid)",
+      "detail_bullets": ["10 ALARM/RESET notices Sep 18–21 across Boiler System 1 and AHU-1 DX Solenoid", "Most recent: AHU RESET Sep 21 00:11, Boiler RESET Sep 21 06:39", "Every ALARM in this run has a matching RESET — nothing currently active", "Distribution list includes Kevin, John H (OH Door), Park PMG maintenance, on-site phones"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6hSEvAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q52",
       "section": "FYI",
-      "line": "**Ivey QuantumShift** - Ottawa Oct 22 to 23, $1,990.",
-      "name": "Ivey QuantumShift",
-      "detail_bullets": [
-        "Subject: QuantumShift Alumni Event (Oct 22-23) | Negotiating Now. Building for What's Next.. Sender: eamorse@ivey.ca.",
-        "Ivey QuantumShift alumni gathering in Ottawa: reception Wed Oct 21 7pm Lord Elgin, program Thu Oct 22 full day to Fri Oct 23 half day at KPMG Ottawa",
-        "$1,990 per person incl. materials and meals; preferred-rate rooms at Lord Elgin, book early",
-        "Speakers Frank McKenna and Ali Jaffery; Lee Valley Tools site visit; contact Jacklyn Jenner jjenner@ivey.ca",
-        "Next alumni event Apr 21-23, 2027, Calgary"
-      ],
+      "line": "**Kevin (Teams)** - PARK maintenance chat, lock issue noted.",
+      "name": "Kevin Willsey Teams messages",
+      "detail_bullets": ["'Thank you 😁' (Sep 20, 11:08pm)", "'Okay, now it locked. Weird, we will need to get ASI to check settings tomorrow' (Sep 20, 9:11pm)", "Context: PARK Maintenance Teams channel"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feDFAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q53",
       "section": "FYI",
-      "line": "**Upwork** - $2,114.35 paid Sep 14, balance zero.",
-      "name": "Upwork",
-      "detail_bullets": [
-        "Subject: Payment Received - Thank You!. Sender: donotreply@upwork.com.",
-        "$2,114.35 paid Sep 14 via PayPal to Kasa Management Ltd's Upwork account; balance now $0.00"
-      ],
+      "line": "**TELUS** - September e.Bill ready, acct 604737251.",
+      "name": "Your TELUS home services e.Bill is ready",
+      "detail_bullets": ["Bill month: September", "Account #604737251", "View full amount online (not shown in preview)"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feDJAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q54",
       "section": "FYI",
-      "line": "**Park accounting** - August reports pack, no ask.",
-      "name": "Park accounting",
-      "detail_bullets": [
-        "Subject: Park August Reports. Sender: accounting@parkpmg.ca.",
-        "Elena Mon sent the August 2026 Park package to Megan Skinner and Rhonda Side, cc you and Kevin, Sep 14",
-        "Attached: trial balance, income statements by building (214N, 214S, Nordic, OB, Park, PB) and consolidated, balance sheet, bank rec and statement, dashboard, Aug 2026 vs 2025 comparison (xlsx), vendor ledger, cash flow, general ledger incl. O'Brien costs",
-        "For information; questions to Elena"
-      ],
+      "line": "**Panago** - pickup order confirmation, Whitecourt.",
+      "name": "Your Panago Order Confirmation",
+      "detail_bullets": ["Pickup order, Whitecourt AB (4802 51 St)", "Callback number (780) 814-3694"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6AqbhAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q55",
       "section": "FYI",
-      "line": "**Hubstaff** - amounts owed report, not opened.",
-      "name": "Hubstaff",
-      "detail_bullets": [
-        "Subject: WeStretch Software Ltd Amounts Owed Report for last week. Sender: no-reply@hubstaff.com.",
-        "Hubstaff amounts-owed report for last week attached; not opened"
-      ],
+      "line": "**Tim Hortons** - two $2.93 receipts, XL steeped tea.",
+      "name": "Tim Hortons order receipts",
+      "detail_bullets": ["Order 9789, Sep 20, $2.93 (XL steeped tea)", "Order 9840, Sep 19, $2.93 (XL steeped tea)"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6AqbbAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q56",
       "section": "FYI",
-      "line": "**Hubstaff** - daily totals report, not opened.",
-      "name": "Hubstaff",
-      "detail_bullets": [
-        "Subject: WeStretch Software Ltd Daily totals (Weekly) for last week. Sender: no-reply@hubstaff.com.",
-        "Hubstaff daily totals report attached; not opened"
-      ],
+      "line": "**STARS Rescue** - Heather's Oct event, Kevin donated $1,000.",
+      "name": "STARS Rescue Event",
+      "detail_bullets": ["Heather Hilhorst selected to participate in STARS' Rescue in the North event, October", "Kevin donated $1,000 to STARS (Sep 20 fwd)"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6AqbaAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q57",
       "section": "FYI",
-      "line": "**Hubstaff** - time and activity report, not opened.",
-      "name": "Hubstaff",
-      "detail_bullets": [
-        "Subject: WeStretch Software Ltd Time and Activity - Time & Activity Report for last week. Sender: no-reply@hubstaff.com.",
-        "Hubstaff time and activity report attached; not opened"
-      ],
+      "line": "**Board agenda** - Kevin's handling it, no action needed.",
+      "name": "Board agenda",
+      "detail_bullets": ["Jennifer asked for agenda items ahead of end-of-month board meeting", "Kevin replied: he and Karen will touch base the evening before and provide thoughts", "No action needed from Karen yet"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6AqbZAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q58",
       "section": "FYI",
-      "line": "**Hubstaff** - Sep 7 to 13: 85:41 hours, 76% active.",
-      "name": "Hubstaff",
-      "detail_bullets": [
-        "Subject: Weekly Team Work Summary for WeStretch Software Ltd. Sender: no-reply@hubstaff.com.",
-        "Sep 7 to 13: 85:41 hours worked, 2 members, 76% activity",
-        "Jacques Leemans 43:39 (67% active), Melanie Leemans 42:02 (86% active)"
-      ],
+      "line": "**SJCHS Volleyball** - finished 6th of 9, home safe.",
+      "name": "SJCHS Sr. Boys Volleyball Update (season thread)",
+      "detail_bullets": ["Sep 15: parent/guardian meeting reminder", "Sep 17: all athlete paperwork received; Parent Meeting Q&A posted", "Sep 17: SCA Tournament Sherwood Park itinerary — depart 8am Friday", "Sep 18: arrived safely at venue", "Record progressed 3-1 → quarterfinals → 4-2 → finished 6th of 9 teams", "Team departed after final game, ~4.5 hr drive home, arrived late Sep 19"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feDGAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q59",
       "section": "FYI",
-      "line": "**Upwork** - weekly billing $2,013.67, Sep 7 to 13.",
-      "name": "Upwork",
-      "detail_bullets": [
-        "Subject: Karen, here is your weekly billing report. Sender: donotreply@upwork.com.",
-        "Kasa Management Ltd, Sep 7 to 13: timesheets $2,013.67, total charges $2,013.67"
-      ],
+      "line": "**GP Boys Choir** - weekly logistics update, Sep 19.",
+      "name": "Sept 19 Update",
+      "detail_bullets": ["Weekly GP Boys' Choir logistics update, attachment included"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feDKAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q60",
       "section": "FYI",
-      "line": "**Daily Brief** - your own, Sep 14.",
-      "name": "Daily Brief",
-      "detail_bullets": [
-        "Subject: 6 to decide, 0 to reply - Mon Sep 14. Sender: karen@kasa.ca.",
-        "Your own Monday brief, still in the Inbox"
-      ],
+      "line": "**Sr. Golf** - rules/handbook attached, signed copy due Mon.",
+      "name": "Sr. Golf Rules and Athlete Handbook",
+      "detail_bullets": ["NWASAA Golf Zone Rules + Athlete Handbook attached", "Signed handbook due before boys tee off Monday"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt6AqbUAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q61",
       "section": "FYI",
-      "line": "**Note to self** - \"Land again\", stitch yard photos, propose designs.",
-      "name": "Note to self",
-      "detail_bullets": [
-        "Subject: Land again. Sender: karen@kasa.ca.",
-        "Note to self Sep 13: stitch yard images into a layout and propose designs for the two parcels to the east"
-      ],
+      "line": "**Sr. Golf** - 3 registered, still need a 4th player.",
+      "name": "Sr. Golf",
+      "detail_bullets": ["Callum, James, Max registered; confirmed with High Level", "Still need a 4th player, a couple have declined", "AP form being done for Kevin"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoXAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q62",
       "section": "FYI",
-      "line": "**Note to self** - \"Land\", yard photos, no text.",
-      "name": "Note to self",
-      "detail_bullets": [
-        "Subject: Land. Sender: karen@kasa.ca.",
-        "Note to self Sep 13 with yard photo attachments, no text beyond signature"
-      ],
+      "line": "**Linda Side** - served with papers, no action for you.",
+      "name": "We have been served!",
+      "detail_bullets": ["Linda Side (SIDE Group) reports being served with legal papers", "Internal reply cheering on Linda & NMS-GRA, no action for Karen"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoWAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q63",
       "section": "FYI",
-      "line": "**Daily Brief** - your own, Sep 13.",
-      "name": "Daily Brief",
-      "detail_bullets": [
-        "Subject: 7 to decide, 0 to reply - Sun Sep 13. Sender: karen@kasa.ca.",
-        "Your own Sunday brief, still in the Inbox"
-      ],
+      "line": "**Board Action letter** - your own letter, only thanks back.",
+      "name": "Request for Immediate Board Action (Catholic school board letter)",
+      "detail_bullets": ["Karen's open letter (Sep 18) to trustees, superintendent and archbishop re: Statement of Claim filed against the District by the GP & District Foundation (filed Aug 5)", "ralphwoh thanked Karen, hopes the Board takes strong action", "owenjodi and cmerrett exchanged supportive replies", "Karen forwarded her own letter to Kevin for visibility"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37BoUAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q64",
       "section": "FYI",
-      "line": "**Claude Code** - weekly product newsletter.",
-      "name": "Claude Code",
-      "detail_bullets": [
-        "Subject: This week in Claude Code: /resume on desktop, start sessions from your phone, and more. Sender: no-reply@email.claude.com.",
-        "Weekly product newsletter, Sep 12; kept as FYI same as the last run"
-      ],
+      "line": "**Carey Studio** - Invoice 1213 shows $0.00, worth a glance.",
+      "name": "Invoice 1213 from 1612661 AB Ltd-Carey Studio",
+      "detail_bullets": ["Due 18/10/2026", "Amount shown as $0.00 in preview — worth a glance if that looks wrong"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCqAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q65",
       "section": "FYI",
-      "line": "**Kevin at OH Door** - July month end, 4 files, no ask.",
-      "name": "Kevin at OH Door",
-      "detail_bullets": [
-        "Subject: July month end. Sender: kevinw@ohdoor.com.",
-        "Kevin (Overhead Door) sent July 2026 month end to John Hanrahan, you and Jake, Sep 12, body \"As attached\"",
-        "Attached: 2026_07 income statement and balance sheet (xlsx), AP trial balance, AR aging at Jul 31"
-      ],
+      "line": "**Grad comms** - Sunrise event, scholarship links, Class of 2027.",
+      "name": "Grad-related school communications",
+      "detail_bullets": ["Senior Sunrise Grad Bonding Event — school-sanctioned, standard rules apply", "Scholarship info link shared", "General Graduation Information for Class of 2027"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt37Bn7AAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q66",
       "section": "FYI",
-      "line": "**Joe Zeplin** - the Claude prompts you asked for.",
-      "name": "Joe Zeplin",
-      "detail_bullets": [
-        "Subject: Your Claude prompts (sorry for the wait!). Sender: joe@joezeplin.com.",
-        "The Claude prompt files you requested from Joe Zeplin's newsletter, Google Drive folder link, plus three YouTube videos (Outlook skills, 365 social posts, Google Calendar skills)",
-        "Includes his Viraly affiliate link, code JOEZEPLIN 50% off"
-      ],
+      "line": "**clearmotive** - old video thread, superseded by reply draft.",
+      "name": "clearmotive | Video Recordings of Analytics & UX Findings",
+      "detail_bullets": ["Aug 20: analytics/UX walkthrough video links sent", "Aug 31: follow-up asking if Karen has watched yet", "Superseded by the newer 'Checking In' thread, which already has a pending reply draft"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAt3G0GwAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q67",
       "section": "FYI",
-      "line": "**Kevin** - family business program, discuss in Sept.",
-      "name": "Kevin",
-      "detail_bullets": [
-        "Subject: RE: New Program: Leading Family Business Strategy - Virtual. Sender: kevin@kasa.ca.",
-        "Jennifer Wood forwarded HBS \"Leading Family Business Strategy - Virtual\", Jan 30 and Feb 6, 2027, four live sessions over two Saturdays",
-        "Kevin replied Sep 5: looks good, discuss at the September meeting; Howie Kroon copied"
-      ],
+      "line": "**clearmotive** - invoice attached from Julie Newell.",
+      "name": "clearmotive Invoice",
+      "detail_bullets": ["Invoice attached from office manager Julie Newell"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCRAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q68",
       "section": "FYI",
-      "line": "**Christa Erickson** - safe and caring schools, image only.",
-      "name": "Christa Erickson",
-      "detail_bullets": [
-        "Subject: Safe and Caring Schools. Sender: ChristaErickson@gpcsd.ca.",
-        "Body is empty apart from one image attachment (ATT00001.png); content is in the image, not read"
-      ],
+      "line": "**Emerald Beauty** - Oct 3 facial confirmed, form pending.",
+      "name": "Emerald Beauty appointment",
+      "detail_bullets": ["Appointment accepted: Sat Oct 3, 10:00am, facial consultation", "Form to complete before appointment", "Card ending 2231 saved on file for future charges"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCGAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q69",
       "section": "FYI",
-      "line": "**Christa Erickson** - grad dates: Sunrise Thu 6am, meeting Oct 7.",
-      "name": "Christa Erickson",
-      "detail_bullets": [
-        "Subject: Graduation Information. Sender: ChristaErickson@gpcsd.ca.",
-        "Graduation Thu June 3, Bonnett's Energy Centre, 12-3pm",
-        "Google Classroom \"Grad Class 2026\", code 3fsmkd65",
-        "Senior Sunrise Thu Sep 17, 6-7:30am, CKC field",
-        "First Grad Dress Day Thu Sep 24 (Tight and Bright)",
-        "Parent grad meeting Wed Oct 7, 6:30pm, school library",
-        "Grad Fashion Show Mon Nov 23, 7pm (biggest fundraiser)",
-        "Parent Facebook page \"St. Joe's 2027 Grad Parent Page\"; contact Paulette Long"
-      ],
+      "line": "**Hyatt Calgary** - reservation fwd from Julia, ties to trip.",
+      "name": "Fwd: Reservation Details for Your Upcoming Stay at Hyatt Regency Calgary",
+      "detail_bullets": ["Forwarded by Julia Willsey", "Ties to the Calgary trip starting this week"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAo_feCFAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q70",
       "section": "FYI",
-      "line": "**clearmotive invoice** - forwarded to Elena Sep 14, done.",
-      "name": "clearmotive invoice",
-      "detail_bullets": [
-        "Subject: clearmotive Invoice. Sender: cmadmin@clearmotive.ca.",
-        "Invoice INV-11719 from Julie Newell, Sep 2, cc Kayla Graham and Kari, flagged",
-        "Effectively resolved: you forwarded it to Elena Sep 14 asking her to pay at her earliest convenience"
-      ],
+      "line": "**Park Accounting** - August reports pack, no ask.",
+      "name": "Park August Reports",
+      "detail_bullets": ["Trial balance, income statements by building/company, balance sheet, bank reconciliation, dashboard, consolidated income statement comparison — all attached"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrynBAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q71",
       "section": "FYI",
-      "line": "**Kevin** - QWC July reports, 84th Ave appraised $3.2 million.",
-      "name": "Kevin",
-      "detail_bullets": [
-        "Subject: FW: QWC - Monthly Financial Reports - Jul.2026. Sender: kevin@kasa.ca.",
-        "Kevin's note: the 84th Ave building beside the 707 building appraised at $3.2 million",
-        "Tim Dewald (QWC): July revenue $1.605MM, up $303K YOY, but $400K short of budget (softer E-Line, less Ovintiv/Birchcliff/Cenovus)",
-        "E-Line rebounded in August; Fox Creek (Whitecap, Cygnet) looks good for the new mast unit in 2027",
-        "W-015 retrofit a few weeks from operational; new shop appraisal $3.20MM submitted to RBC; July AP report to follow",
-        "Attached: operating budget, income vs budget, balance, AR, revenue by customer, appraisal PDF"
-      ],
+      "line": "**Daily Brief** - 6 of your own past copies, no action.",
+      "name": "Karen's own past daily brief emails",
+      "detail_bullets": ["6 self-sent prior briefs sitting in Inbox (Sep 13, 14, 16, 18, 19, 20) — historical record, no action"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvrymPAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q72",
       "section": "FYI",
-      "line": "**Side Group** - Cadence login created, Teams still on you.",
-      "name": "Side Group",
-      "detail_bullets": [
-        "Subject: Re: [#SR-20707] New employee login. Sender: support@sidegroup.ca. Thread (earlier message ...AAtvryl1AAA=).",
-        "Leanne asked SIDE Group IT for a login for new staff member Cadence Smith, Aug 31",
-        "Cadence needs info@parkpmg.ca shared mailbox, Debbie Allard's permissions copied, Foxit Reader, no equipment; PCs PMGGRA-MJ0L7SAK and PMGGRA-MJ0LA3HX",
-        "Donovan Appleby created the computer login (Bitwarden link) Aug 31; a Kasa-tenant Microsoft licence is needed for Outlook, Teams, SharePoint",
-        "You replied Aug 31 you would put her in Teams and SharePoint; no further action visible"
-      ],
+      "line": "**Note to self** - Land yard-design idea, photos attached.",
+      "name": "Land / Land again",
+      "detail_bullets": ["Karen's own idea note: design proposal for the two adjacent land parcels using current yard photos (attached in 'Land')"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtvryl3AAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q73",
       "section": "FYI",
-      "line": "**Rhonda Side** - Q1 Edmonton office rates, interesting.",
-      "name": "Rhonda Side",
-      "detail_bullets": [
-        "Subject: FW: Q1 Greater Edmonton Commercial Market Report 2026. Sender: Rhonda.Side@sidemanagement.ca.",
-        "NAI Commercial Q2 2026 Edmonton market report, Rhonda's note \"interesting office rate information\", Aug 19",
-        "Strong occupancy, thriving industrial, improving office, 15% population growth in four years; link to full report"
-      ],
+      "line": "**Kevin at OH Door** - July month-end financials, no ask.",
+      "name": "July month end",
+      "detail_bullets": ["OH Door July month-end financials attached"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtoE3xrAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q74",
       "section": "FYI",
-      "line": "**Note to self** - gutsy.so link.",
-      "name": "Note to self",
-      "detail_bullets": [
-        "Subject: Gutsy - Test ideas with AI-lookalike audiences in seconds. Sender: karen@kasa.ca.",
-        "Note to self Aug 4 with the link gutsy.so"
-      ],
+      "line": "**Joe Zeplin** - requested Claude prompts, delivered late.",
+      "name": "Your Claude prompts (sorry for the wait!)",
+      "detail_bullets": ["Fulfills a newsletter signup request; prompts sent manually due to automation delay"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtekHffAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
       "status": "open"
     },
     {
       "id": "q75",
       "section": "FYI",
-      "line": "**Kevin** - insurance endorsement and appraisal docs.",
-      "name": "Kevin",
-      "detail_bullets": [
-        "Subject: FW: Important Insurance Endorsement & Appraisal Documents Enclosed. Sender: kevin@kasa.ca.",
-        "Kevin's FYI forward Jul 23 of NFP (Lucy Falcone) endorsement and appraisal for policy KL45GU838, 7927 Creek Side Drive, County of Grande Prairie",
-        "Four PDFs: endorsement per property appraisal (Jul 9), payment schedule, Jun 10 appraisal, cover letter; no ask"
-      ],
+      "line": "**Kevin at Park** - 214 Place ceiling/lighting design fwd.",
+      "name": "FW: 214 Place Lobby - Proposed Ceiling/Lighting Plan Design",
+      "detail_bullets": ["Design proposal forwarded from Sabrina Jhamandas via Leanne MacKinnon, attachment included"],
       "source": "email",
-      "ref": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAtWq7UqAAA=",
+      "ref": null,
       "draft_id": null,
-      "suggested_actions": [
-        "delete",
-        "file",
-        "skip"
-      ],
+      "suggested_actions": ["none"],
+      "status": "open"
+    },
+    {
+      "id": "q76",
+      "section": "FYI",
+      "line": "**Kevin** - QWC reports, notes $3.2M 84th Ave appraisal.",
+      "name": "FW: QWC - Monthly Financial Reports - Jul.2026",
+      "detail_bullets": ["Note: appraisal for the building on 84th Ave beside the 707 building — $3.2 million"],
+      "source": "email",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["none"],
+      "status": "open"
+    },
+    {
+      "id": "q77",
+      "section": "FYI",
+      "line": "**Side Group IT** - Cadence's login resolved, no action.",
+      "name": "Re: [#SR-20707] New employee login",
+      "detail_bullets": ["IT created computer login for Cadence", "Follow-up questions on PC assignment and shared-mailbox access were resolved"],
+      "source": "email",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["none"],
+      "status": "open"
+    },
+    {
+      "id": "q78",
+      "section": "FYI",
+      "line": "**Nordic Court** - Ian Evans forward, no visible detail.",
+      "name": "Fw/FW: Nordic Court??",
+      "detail_bullets": ["Ian Evans (HSEA) responded on the Nordic Court matter, forwarded internally", "No further detail visible without opening attachment"],
+      "source": "email",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["none"],
+      "status": "open"
+    },
+    {
+      "id": "q79",
+      "section": "FYI",
+      "line": "**Rhonda Side** - Q1 Edmonton office market report.",
+      "name": "FW: Q1 Greater Edmonton Commercial Market Report 2026",
+      "detail_bullets": ["Office market rate report, forwarded for reference"],
+      "source": "email",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["none"],
+      "status": "open"
+    },
+    {
+      "id": "q80",
+      "section": "FYI",
+      "line": "**Note to self** - Gutsy AI lookalike-audience bookmark.",
+      "name": "Gutsy — Test ideas with AI-lookalike audiences in seconds",
+      "detail_bullets": ["Karen's own bookmark note (gutsy.so), no action"],
+      "source": "email",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["none"],
+      "status": "open"
+    },
+    {
+      "id": "q81",
+      "section": "FYI",
+      "line": "**Kevin** - insurance endorsement + appraisal docs, FYI.",
+      "name": "FW: Important Insurance Endorsement & Appraisal Documents Enclosed",
+      "detail_bullets": ["Insurance documents forwarded from Lucy Falcone (NFP), FYI only"],
+      "source": "email",
+      "ref": null,
+      "draft_id": null,
+      "suggested_actions": ["none"],
       "status": "open"
     }
   ]
