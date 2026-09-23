@@ -1,5 +1,63 @@
 # Work Tracker
 
+## CMO: 28-Day Reset Challenge Email Funnel (redline reviews)
+
+- [ ] Three independent redline reviews of the 9-email 28-Day Reset promo
+  funnel **all done**: round 1 (Marg x Chase x Expert, `westretch-core`,
+  graded A- 3.61 -> A- 3.78 funnel average over 2 loops), round 2 "Corey's
+  version" (product-marketing + copywriting, copy-editing, emails,
+  marketing-psychology, offers, cro, ab-testing, churn-prevention, launch,
+  lead-magnets, marketing-council, all from the vendored marketingskills
+  package, redlined against round 1's output rather than the original),
+  round 3 (`westretch-direct-response-marketing`, independent, against the
+  original). Karen to review all three PDFs and decide which lines to
+  ship; also unresolved whether the funnel should split copy by free vs.
+  lapsed-pro segment, since the original draft doesn't. This is now a
+  three-way independent convergence, not two: rounds 1 and 3 both land on
+  forking only Email 1's opening beat (round 1 also suggests Email 8/9's
+  close) for lapsed-pro rather than a parallel sequence, and round 2's
+  marketing-council session reaches the same conclusion a third way, via
+  Eugene Schwartz's awareness-stage framework (a lapsed-pro reader is
+  already solution-aware and the funnel treats them as problem-aware for
+  all nine emails). Round 1 also independently found and fixed the same
+  voice.md violation round 3 found (the "adapts as you progress and how
+  you're feeling changes" line repeated in Emails 2-5, reads as the app
+  sensing mood, the banned framing); round 2 caught that Email 6 still had
+  a version of that same violation ("adapts as you progress") which round
+  1 missed and its own notes incorrectly called already-fixed, corrected
+  in round 2's redline. (`Team/CMO/In Progress/28 Day Challenge/Email
+  Funnels/`, flagged 2026-09-22)
+- [ ] Round 3 found none of the 9 emails ever states the 28-Day Reset's
+  price, billing cadence, or refund/cancellation terms, even though
+  Emails 6-9 build real urgency toward a 5 PM PST deadline to buy it.
+  Needs Karen/ops to supply the real terms `[VERIFY: price, billing
+  terms, refund policy]` before send; recommended insertion point is
+  Email 5 or 6. Round 2 independently reached the same finding two more
+  ways (the `offers` skill's Anatomy-of-a-Complete-Offer check, and the
+  marketing-council's Hormozi seat applying the value equation), neither
+  round invented numbers to fill the gap. (`Team/CMO/In Progress/28 Day
+  Challenge/Email Funnels/Round 3 - Direct-Response Marketing Review.md`
+  and `Round 2 - Corey's Version.md`, flagged 2026-09-22)
+
+## CMO: 28-Day Reset Challenge Landing Page
+
+- [ ] Karen to review and approve the new `/28-day-reset/` landing page
+  before it's deployed (build not yet deployed or committed, per
+  instructions). Built in `Team/CMO/Ready/website-repo/src/pages/28-day-reset.astro`
+  with no sitewide header, reusing the homepage's dark two-card pricing
+  strip, and three new actor renders (hero + 2 supporting) generated for
+  it and sitting in `Team/CMO/Review ToDo/` pending her sign-off. Copy
+  implements the already-graded Final Copy from `Team/CMO/In Progress/28
+  Day Challenge/` (A-, 2026-09-21) rather than the slightly earlier draft,
+  including one added FAQ ("Is this actually safe for me?"). Lighthouse
+  (scoped run): performance 99, accessibility 100, best-practices 100,
+  seo 100, all above the 96 threshold. Two open items: (1) the PDF's
+  separate "Confirmation Page" copy was not built this pass, the existing
+  generic `ThankYouContent.astro` covers the download/login flow but has
+  no 28-Day-Reset-specific wording; (2) no campaign-specific Stripe link
+  was supplied, so the page reuses the site's existing real Annual/Monthly
+  Stripe Payment Links. (flagged 2026-09-23)
+
 ## CMO: Hero Photo Corrections
 
 - [x] Karen reviewed and approved the desktop, tablet and mobile wardrobe/body edits; applied to the `/review/` page hero in `Team/CMO/Ready/website-repo/`. Folder moved to `Team/CMO/Ready/Hero Photo Corrections/` (completed 2026-09-17).
@@ -148,7 +206,7 @@ removed from this list per rule 3.
 - [ ] Third-party SDK audit v2: fingerprinting + privacy manifests + SDK signatures. **Replaces the 2026-09-04 fingerprinting-only checklist above**; the two Apple rule sets cover the same dependency list, so they are now one audit. Still verification-shaped and still not confirmable from here (re-verified: no `Podfile*`, `*.xcodeproj`, `build.gradle`, `pubspec.yaml` or `PrivacyInfo.xcprivacy` anywhere in this repo or either submodule), so it is a checklist for whoever holds the iOS project. Adds the two dates that bite: **2024-05-01**, missing required-reason API declarations hard-block an App Store Connect upload; **2025-02-12**, an update that *adds* a listed SDK must ship that SDK's privacy manifest or get an ITMS-91061 rejection email. Apple names 86 SDKs; the checklist sorts them by stack (Flutter / React Native / native / Capacitor-Cordova-Unity) so step 0 is just reading the lockfile. **New and useful: the live App Store privacy label is publicly readable and gives the audit a hard pass/fail anchor**: WeStretch currently declares *no* tracking, *no* data linked to the user, and only unlinked "Other Usage Data". Anything an SDK does beyond that makes the public label wrong, which is its own removal risk. Practical timing note: a build that changes no dependencies is unlikely to be blocked today, so run this on a quiet week rather than discovering it mid-release. **Incidental finding worth its own item: WeStretch's Accessibility Nutrition Labels are entirely undeclared** (the live page says "the developer has not yet indicated which accessibility features this app supports"), so the app appears in none of the App Store's accessibility filters, a direct miss given the older-adult positioning, and something the 2026-08-31 accessibility checklist did not catch because it checked compliance, not the declaration. Nine categories are declarable; needs Karen/Manager to add it to the backlog. (`Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-09-09-sdk-audit-v2-privacy-manifests-and-signatures.md`, flagged 2026-09-09, scheduled nightly-action run)
 - [ ] Featuring Nomination submission runbook for the "7-Day Mobility Challenge" In-App Event. The backlog item said "submit"; this automation has no App Store Connect access, so it produced the sequence, the date math and the readiness gate instead. **Two corrections to the plan as it stood.** (1) **You cannot nominate an event that does not exist yet**: Apple's nomination flow asks you to select the event, so the event must be created and approved in App Store Connect *before* the nomination, then published inside its 14-day promotion window. Verified live tonight that no In-App Event exists on WeStretch's product page at all. (2) **The January slot is not bookable today**: Mon 2027-01-04 is 116 days out and Apple accepts nominations a maximum of 3 months ahead, so the earliest it can be nominated is **2026-10-06**. Fallback start is Mon 2026-11-02, nomination due 2026-10-19. **Two readiness gaps that would weaken the nomination itself:** the **blank Accessibility Nutrition Labels** (accessibility is one of Apple's seven stated evaluation criteria, and the pitch leans on older-adult usability, so nominating with the declaration empty asks an editor to take it on trust), and **ratings volume at 53 ratings / 4.45 stars**, which the still-unimplemented 2026-08-28 native rating prompt plan is the lever for. Both are fixable inside the runway a January start buys. **Karen's decisions needed:** start date, whether the "Day N unlocks" mechanic is buildable, long-description Option A or B, who holds App Store Connect, and whether the accessibility declaration becomes its own backlog item. Also noted: WeStretch shipped **version 8.1.33 today, 2026-09-10**. (`Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-09-10-featuring-nomination-submission-runbook.md`, flagged 2026-09-10, scheduled nightly-action run)
 - [ ] Monthly-with-12-month-commitment plan + streamlined purchasing. Two questions, both answered. **(1) The 12-month commitment plan cannot be sold in the United States.** Apple excludes the US and Singapore outright, so this is an international-only tier, not a new tier for WeStretch generally. It is not a separate product either: it is a billing option added on top of the existing Premium Yearly, and Apple caps the 12-payment total at 1.5x the annual upfront price, which lands *below* the standalone monthly price in every storefront checked. That makes it look like a discount while collecting roughly **47% more per subscriber-year than the annual plan**. The catch is real though: a customer who cancels in month three keeps paying for nine more, which sits badly with the older-adult positioning and with a thin 53-rating base. **Recommendation: do not roll out globally. Decide it with one number** (non-US share of subscription revenue, in App Store Connect Sales and Trends), then either park it or pilot UK + Canada for a quarter. Price bands already worked out for UK/Germany/Canada/Australia in the output. **(2) Streamlined purchasing: leave it ON.** It only affects Win-back Offers and Contingent Pricing, and WeStretch has neither configured, so the setting is currently attached to nothing. It also *cannot* be turned off today: Apple requires the latest approved binary to implement the `PurchaseIntent` StoreKit API first. The real work is shipping `PurchaseIntent` so an App-Store-side purchase can be reconciled to a WeStretch account (login is optional/guest-friendly per the CXO onboarding spec, while entitlement is account-bound), which keeps win-back offers low-friction *and* buys the option to turn the setting off later. **Incidental findings: UK and German prices are about 40% below the US** (£4.99/€4.99 monthly vs $9.99; £34.99/€34.99 yearly vs $59.99), which may be deliberate or a stale tier; and two SKUs show up internationally that are not in the US list, "Missed Day Token" (C$2.99/A$2.99) and a **"Pro Monthly" at €34.99** sitting next to Premium Monthly at €4.99, a second data point on the still-unresolved Premium-vs-Pro question from 2026-09-07. **Karen's decisions needed:** the non-US revenue share, whether a lock-in plan is acceptable for the brand, UK+Canada pilot or skip, whether `PurchaseIntent` goes on the iOS backlog now, and whether the UK/German prices are intentional. (`Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Output/2026-09-11-monthly-12-month-commitment-and-streamlined-purchasing.md`, flagged 2026-09-11, scheduled nightly-action run)
-- [ ] **The Apple Opportunity Radar backlog is now empty.** The 2026-09-11 run took the last queued item. The next nightly run will be a no-op unless new items are seeded, either by the monthly refresh (next due 2026-10-01) or by Karen/the Manager ad hoc. Two candidates are already surfaced and waiting on a decision to add them: declaring the blank **Accessibility Nutrition Labels** (raised 2026-09-09, restated 2026-09-10 as a blocker on the Featuring Nomination), and shipping **`PurchaseIntent`** (raised 2026-09-11).  **Confirmed 2026-09-12 through 2026-09-20 (nine evenings running):** all nine scheduled runs fired normally and were legitimate no-ops, not missed or hung runs; nothing had been seeded, so none took an item or wrote an output file. Every further nightly run repeats this until one of the two candidates above is approved or the 2026-10-01 monthly refresh seeds new items, i.e. **up to 10 more no-op nights**. (`Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Backlog.md`, flagged 2026-09-11, scheduled nightly-action run)
+- [ ] **The Apple Opportunity Radar backlog is now empty.** The 2026-09-11 run took the last queued item. The next nightly run will be a no-op unless new items are seeded, either by the monthly refresh (next due 2026-10-01) or by Karen/the Manager ad hoc. Two candidates are already surfaced and waiting on a decision to add them: declaring the blank **Accessibility Nutrition Labels** (raised 2026-09-09, restated 2026-09-10 as a blocker on the Featuring Nomination), and shipping **`PurchaseIntent`** (raised 2026-09-11).  **Confirmed 2026-09-12 through 2026-09-21 (ten evenings running):** all ten scheduled runs fired normally and were legitimate no-ops, not missed or hung runs; nothing had been seeded, so none took an item or wrote an output file. Every further nightly run repeats this until one of the two candidates above is approved or the 2026-10-01 monthly refresh seeds new items, i.e. **up to 9 more no-op nights**. (`Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Backlog.md`, flagged 2026-09-11, scheduled nightly-action run)
 
 ## CMO: Apple Opportunity Radar monthly refresh
 - [ ] **2026-09-01 (first scheduled run, fired 7:00 AM as registered):**

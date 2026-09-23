@@ -21,7 +21,18 @@ file before revising this copy further.
 ## Status
 
 Review complete (2026-09-21), landed at an A- average (3.75), up from 3.50 on
-the original draft. The final copy file has the full assembled page. Not yet
-applied to a live page; next step is Karen's sign-off, then someone applies
-it to the real landing page (this repo doesn't contain the page's live/build
-source, that lives wherever the challenge page is actually hosted).
+the original draft. The final copy file has the full assembled page.
+
+Built into a real page 2026-09-23: `Team/CMO/Ready/website-repo/src/pages/28-day-reset.astro`
+(route `/28-day-reset/`), implementing the Final Copy above (including its
+added safety FAQ). No sitewide header on this page, footer stays, every CTA
+anchors to this page's own `#pricing` strip (reuses the homepage's dark
+two-card Annual/Monthly layout). Three new actor images generated for it
+(hero + morning-stiffness + payoff) live in `public/images/` on the site and
+as reviewed copies in `Team/CMO/Review ToDo/`, pending Karen's sign-off.
+Lighthouse (scoped): performance 99, accessibility 100, best-practices 100,
+seo 100. Not yet deployed or committed, that's Karen's call. The PDF's
+"Confirmation Page" copy above was not built this pass; the existing
+`ThankYouContent.astro` / `thank-you-yearly.astro` covers download/login
+generically but has no Reset-specific wording, flagged as an open item in
+`WORK-TRACKER.md`.
