@@ -9,7 +9,7 @@ Create images in which Ada looks like the **same animated character in another f
 
 ## Canonical assets
 
-Inspect `assets/ada-references/` before every generation. Select a small, relevant set:
+Inspect `assets/ada-references/` before every generation. This folder is intentionally restricted to four identity anchors:
 
 | Need | Primary reference |
 | --- | --- |
@@ -17,7 +17,8 @@ Inspect `assets/ada-references/` before every generation. Select a small, releva
 | Alternate face and upper-body angle | `Ada_2.png` |
 | Full-body scale, outfit, shoes, leg mark | `Ada_front.png` |
 | Rear silhouette and outfit | `Ada_back.png` |
-| Other poses and angles | Ada-only originals later added to `assets/ada-references/` |
+
+Use `assets/pose-library/` only when its pose closely matches the request. A pose image controls joint placement, camera angle, and contact points only; it never controls Ada's face, body shape, clothing, branding, rendering style, or proportions. Use no more than two identity anchors plus one pose reference in a generation request. Never use files from `Team/CMO/Archive/Ada Source Images/` as generation inputs.
 
 `assets/branding/WeStretch_logo_reference.png` is the **complete transparent red-and-white WESTRETCH chest wordmark**. Preview it on charcoal, not white. Preserve its original pixels and alpha. `assets/branding/WeStretch_leg_logo_reference.png` is the canonical small red `WE` and dots used on Ada's upper leg. Use the two original assets for their specific placements; do not swap or redraw them.
 
@@ -42,7 +43,7 @@ Save every generated or edited Ada candidate to `Team/CMO/Review ToDo/` before r
 
 ## Production workflow
 
-1. **Select references.** View the target/pose image and canonical Ada images. Use a full-body and a face reference plus a relevant angle. Include the chest artwork as an input when supported. State each image's role.
+1. **Select references.** Use `Ada_front.png` plus the single closest face or rear identity anchor. Add at most one image from `assets/pose-library/` only when needed for biomechanics. Include the chest artwork when supported. State each image's role. Never browse or use the archive.
 2. **Generate or edit.** Use an image generation tool for the bitmap. Prompt for one Ada, the precise pose and background, her 3D identity, outfit, proportions, and exact branding. Use the prompt pattern below. For an accepted composition, use it as the edit target and change only the specified region.
 3. **Inspect at two scales.** At full frame check pose, perspective, integration and relative scale. At close crop check face, hands, shoes, fabric trim, chest letters, leg `WE` and dots. Compare to the closest original view. If Ada looks human or has a different face, revise using `Ada_1.png` and `Ada_front.png`.
 4. **Fix branding.** Generators can invent letters. Prefer placing the original transparent chest and leg artwork over the garment with a localized edit or deterministic compositing, transforming scale and perspective to follow the fabric. Do not redraw lettering. Visually verify every element and never claim a generated mark is exact without inspection.
