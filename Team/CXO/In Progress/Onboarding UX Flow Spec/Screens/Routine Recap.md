@@ -1,6 +1,6 @@
 # BOOK: Routine Recap
 
-No source mockup — not among the uploaded wireframes. Content fully
+No source mockup: not among the uploaded wireframes. Content fully
 dictated by Karen; formalized as its own book here (was previously only
 captured inline in `Storyline.md` step S1). Applies [[Brand-Voice-Principles]].
 
@@ -10,7 +10,7 @@ every session, or only the first time? Dictation implies first-time-only
 but wasn't stated outright.
 
 ## Chapter: default
-State: (none — first routine completion only, per the open question above)
+State: (none, first routine completion only, per the open question above)
 
 - Title: "Your routine was {routine_length_minutes} minutes long, {routine_path == 'full_body' ? 'full body' : chosen customize style}."
 - Subtitle: "Keep up your mobility."
@@ -19,7 +19,7 @@ State: (none — first routine completion only, per the open question above)
   use the account across multiple devices, and protect against losing
   everything on a new phone.
 - Button 1 "Sure, I'll log in" → {Screen: Sign Up} (existing app login
-  flow) — on success, `account_type` becomes `free`, then → {Screen: Leaderboard Explainer}
+  flow), on success, `account_type` becomes `free`, then → {Screen: Leaderboard Explainer}
 - Button 2 "Continue as guest" → {Screen: Leaderboard Explainer} (`account_type` stays `guest`)
 
 ---

@@ -6,14 +6,14 @@ Date: 2026-08-26 (scheduled nightly run)
 "App Store assets" spans two different things, and only one of them currently
 exists in English to localize:
 
-1. **Screenshot / app preview video copy** — exists (see `App Store Image
+1. **Screenshot / app preview video copy**: exists (see `App Store Image
    Text Copywriting/Output/Default/app-store-copy-default-cold-audience.md`).
    Translated below into French and Spanish.
-2. **Product page metadata** — app name, subtitle, keyword field, and
-   long-form description — **does not exist yet in English.**
+2. **Product page metadata**: app name, subtitle, keyword field, and
+   long-form description; **does not exist yet in English.**
    `App Store Description Copywriting/` is confirmed empty (a stub, per its
    own `CLAUDE.md`). There is nothing to localize because there is no source
-   copy. This part of the item is blocked, not done — see "What's still
+   copy. This part of the item is blocked, not done; see "What's still
    blocked" below. A new backlog item has been added for it.
 
 So this run delivers a complete localization of the screenshot/video copy
@@ -22,21 +22,21 @@ the metadata gap rather than skipping past it.
 
 Per `Knowledge Base/apple-marketing-opportunities.md`: "Localize metadata
 for English, French, and Spanish" (App Store Listing) and "Localize
-screenshots for each supported language" (Screenshots and Videos) — both
+screenshots for each supported language" (Screenshots and Videos), both
 apply here; French and Spanish were the two markets Karen specified.
 
 Translations follow the brand voice guardrails in `Team/CMO/skills/
 westretch-core/references/strategic-thesis.md`: second person, no em
 dashes, no fabricated outcomes/stats/testimonials, no fear/urgency framing.
 Register: formal "vous" in French and "tú" in Spanish (informal but
-standard for consumer app marketing) — **flagging "tú" vs. "usted" as an
+standard for consumer app marketing), **flagging "tú" vs. "usted" as an
 open call for Karen/CMO**, since the WeStretch ICP skews 50+ and "usted"
 may read as more respectful for that audience in some Spanish-speaking
 markets. Easy to swap once decided; noted so it isn't silently baked in.
 
 ---
 
-## App preview video — 7 title cards
+## App preview video, 7 title cards
 
 | # | English | French | Spanish |
 |---|---|---|---|
@@ -48,7 +48,7 @@ markets. Easy to swap once decided; noted so it isn't silently baked in.
 | 6 | Every session adapts to your body, your time, your goals. | Chaque séance s'adapte à votre corps, votre temps, vos objectifs. | Cada sesión se adapta a tu cuerpo, tu tiempo y tus objetivos. |
 | 7 | Give it honest minutes a day. Two weeks. Feel it yourself. | Accordez-lui quelques minutes honnêtes par jour. Deux semaines. Ressentez la différence par vous-même. | Dedícale unos minutos honestos al día. Dos semanas. Siéntelo tú mismo. |
 
-## Still screenshots — title + subtitle
+## Still screenshots, title + subtitle
 
 | Screen | English | French | Spanish |
 |---|---|---|---|
@@ -65,31 +65,31 @@ markets. Easy to swap once decided; noted so it isn't silently baked in.
 
 ## Next step for this copy (asset-shaped, routing elsewhere)
 
-This is translated copy only — not rendered screenshot/video assets. To
+This is translated copy only: not rendered screenshot/video assets. To
 actually ship localized App Store images:
 
 1. Hand this table to `Team/CMO/In Progress/App Store Specialist/App Store
    Image Creation/` (the screenshot build pipeline) as the French and
    Spanish text source, alongside the existing English source file.
 2. Confirm the pipeline's fonts render French/Spanish accented characters
-   (é, è, à, ê, ç, ñ, í, ó, ú) correctly before batch-generating — not
+   (é, è, à, ê, ç, ñ, í, ó, ú) correctly before batch-generating, not
    verified in this run, no image-rendering access from here.
 3. Re-check translated line lengths against whatever layout constraints
-   the image templates use — French in particular tends to run ~15-20%
+   the image templates use; French in particular tends to run ~15-20%
    longer than English and may wrap differently than the English source
    was designed for.
 
 ## What's still blocked
 
 No English app name, subtitle, keyword-field content, or long-form
-description exists anywhere in the repo — confirmed via `App Store
+description exists anywhere in the repo, confirmed via `App Store
 Description Copywriting/` (empty stub) and `Ideas/App Stores/App Store
 Keyword Creation/` (empty). Localizing metadata that doesn't exist yet
 isn't possible. Added to the backlog:
 
 > Draft English App Store product page metadata (name ≤30 chars, subtitle
 > ≤30 chars, keyword field ≤100 chars, promotional text ≤170 chars,
-> long-form description) — prerequisite for localizing product page
+> long-form description), prerequisite for localizing product page
 > metadata into French and Spanish. See `Knowledge Base/apple-marketing-
 > opportunities.md` "App Store Listing" section for the field limits and
 > rules.

@@ -1,0 +1,12 @@
+{
+  "name": "redline-pdf",
+  "version": "1.0.0",
+  "description": "Redline PDF generator for WeStretch email-funnel copy reviews",
+  "main": "redline_pdf.js",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "pdfkit": "^0.20.2"
+  }
+}

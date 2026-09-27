@@ -4,7 +4,7 @@ Source mockup: `Images/Screenshot 2026-08-19 151837.png` (screen 5, "time")
 Applies [[Brand-Voice-Principles]].
 
 New state variable this book introduces: `custom_length_minutes` (integer
-or null) — set by the `Minutes` screen, read back here to relabel button 3.
+or null), set by the `Minutes` screen, read back here to relabel button 3.
 
 ---
 
@@ -24,7 +24,7 @@ State: `custom_length_minutes != null`
 - Subtitle: "I build you a unique routine each time. You can choose from 3 to 60 minutes."
 - Button 1 "5 Minutes" → {Screen: Rating} (sets `routine_length_minutes = 5`)
 - Button 2 "10 Minutes" → {Screen: Rating} (sets `routine_length_minutes = 10`)
-- Button 3 "{custom_length_minutes} Minutes" → {Screen: Rating} (sets `routine_length_minutes = custom_length_minutes`) — label replaces "Custom Length" with the number chosen on the `Minutes` screen
+- Button 3 "{custom_length_minutes} Minutes" → {Screen: Rating} (sets `routine_length_minutes = custom_length_minutes`), label replaces "Custom Length" with the number chosen on the `Minutes` screen
 
 All three buttons on both chapters route to the same destination
 (`Rating`); only the label and the value written to `routine_length_minutes`

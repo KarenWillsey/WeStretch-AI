@@ -5,7 +5,7 @@ WeStretch logo, title and subtitle, matching the authorized reference design
 (Output/Default A/Screen 2.png, measured at 853x1844).
 
 All layout constants below are CALIBRATED from pixel measurements of the
-authorized reference image — do not change them without re-measuring.
+authorized reference image, do not change them without re-measuring.
 See Knowledge files/03, 04, 08 for the specs these implement.
 
 Modes:
@@ -77,7 +77,7 @@ def load_font_strict(path: Path, size: int) -> ImageFont.FreeTypeFont:
     """Load the exact font file or abort. Never silently substitute a font."""
     if not path.exists():
         die(f"Required font file not found: {path}\n"
-            "Fallback fonts are FORBIDDEN — install the Inter static TTFs in the Fonts folder.")
+            "Fallback fonts are FORBIDDEN, install the Inter static TTFs in the Fonts folder.")
     return ImageFont.truetype(str(path), size)
 
 
@@ -107,7 +107,7 @@ def fit_text(draw, text, font_path, H, W, target_pct, min_pct, box_w_pct, box_h_
             return font, lines, size, max_width
         size -= 1
     die(f"{label} does not fit in {max_lines} lines even at minimum size "
-        f"({min_size}px). Do not shrink further — ask the user to shorten the text.")
+        f"({min_size}px). Do not shrink further, ask the user to shorten the text.")
 
 
 def draw_text_block(draw, lines, font, W, H, top_pct, advance_pct):
@@ -134,7 +134,7 @@ def build_fade_overlay(W, H):
             a = 255
         else:
             t = (y - field_end) / max(1, clear - field_end)
-            s = t * t * (3 - 2 * t)  # smoothstep — no hard edge
+            s = t * t * (3 - 2 * t)  # smoothstep, no hard edge
             r, g, b = FADE_BOTTOM_RGB
             a = round(255 * (1 - s))
         overlay.paste((r, g, b, a), (0, y, W, y + 1))
@@ -275,10 +275,10 @@ def compose(photo_path, W, H, title, subtitle, logo_path, title_font_path, subti
 # focus_x/focus_y are fractions of the source image.
 #
 # CROP RULES (from the job owner, 2026-08-07): at most half a foot may be
-# cropped off — no other body part; the head AND hair must be fully visible.
+# cropped off, no other body part; the head AND hair must be fully visible.
 # Exceptions require the user's explicit permission recorded per job. If a
 # source photo cannot satisfy this for a required output size, STOP and ask.
-# These values are tuned per source photo — verify visually for a new photo.
+# These values are tuned per source photo, verify visually for a new photo.
 #
 # Current tuning: "source image one" (lying pose, toes 13.5%..hair 90% of
 # width). iPhone cannot fit that span; the user granted one-time permission
@@ -367,7 +367,7 @@ def main():
     print(f"Verification report: {report_path}")
 
     if not all_ok:
-        die("One or more outputs failed verification — DO NOT deliver these files.")
+        die("One or more outputs failed verification. DO NOT deliver these files.")
 
     if args.zip:
         zip_path = out_dir / f"WeStretch_App_Store_Images_{out_dir.name}.zip"

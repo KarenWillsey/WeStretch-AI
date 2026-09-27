@@ -1,15 +1,15 @@
-# Radio Specialist — Single Radio Ad Revision — Memory
+# Radio Specialist (Single Radio Ad Revision) Memory
 
 ## Feedback: avoid the fragmented rhetorical-question opener (2026-08-20)
 
 Do not open a 30-second WeStretch radio ad with a punchy rhetorical-question
-premise built on short staccato fragments — e.g. "Golf on Saturday. Yard work
-Sunday. A camping trip with the family next weekend. You've got plans — but
+premise built on short staccato fragments, e.g. "Golf on Saturday. Yard work
+Sunday. A camping trip with the family next weekend. You've got plans, but
 does your body?" Karen tried this specific line and it read confusingly out
 loud.
 
 **Why:** the fragmented, question-hook style doesn't land for this brand/
-audience — it reads as choppy rather than warm. Karen and her office
+audience; it reads as choppy rather than warm. Karen and her office
 independently converged on the same alternative: one full, flowing sentence
 that lists the audience's activities and then names the problem, e.g. "With
 golf, yard work, camping weekends, and more time with family filling your
@@ -34,7 +34,7 @@ e.g. "you choose how long" instead of "just ten minutes."
 ## Feedback: "animated instructor" over "on-screen avatar" (2026-08-28, watch for pattern)
 
 Karen's one edit when picking the final group-stretching ad (Version 2, "Grab your
-family") was swapping "on-screen avatar" for "animated instructor" — everything else
+family") was swapping "on-screen avatar" for "animated instructor"; everything else
 in the copy was accepted as written.
 
 **Why:** unstated, but she changed nothing else, so it's a deliberate wording call
@@ -65,8 +65,8 @@ dot CA, and keep doing the things you love."
 **Why:** Kari's version favors short, plain declarative sentences over
 dash-linked or subordinate-clause constructions (e.g. "so don't let pain
 and stiffness get in the way" instead of "there's a lot you want to keep
-doing — until pain and stiffness get in the way"), and drops corporate-
-sounding words like "solution" in favor of plainer ones like "app" — this
+doing, until pain and stiffness get in the way"), and drops corporate-
+sounding words like "solution" in favor of plainer ones like "app"; this
 independently confirms the same "solution" critique made earlier in this
 project. Karen treats Kari's ear for spoken naturalness as the bar for this
 copy.

@@ -1,6 +1,6 @@
-# Niche Dashboard — CLAUDE.md
+# Niche Dashboard; CLAUDE.md
 
-Scope: an idea, not yet started — build a niche dashboard (see
+Scope: an idea, not yet started; build a niche dashboard (see
 `Niche Dashboard.txt` for the source brief and reference video link). Read
 `Memory.md` alongside this file before starting real work.
 

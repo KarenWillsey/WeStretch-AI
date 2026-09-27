@@ -1,4 +1,4 @@
-# Onboarding UX Flow Spec — Memory
+# Onboarding UX Flow Spec; Memory
 
 Durable decisions for this project only. See `Team/CXO/Memory.md` for
 role-level memory and the root `Memory.md` for cross-role facts.
@@ -13,7 +13,7 @@ based user-flow to engineering/design:
    default.
    - **Why:** Karen wanted the dictated "if this, then do that" logic to be
      human-readable for her/the designer AND directly usable by engineers
-     without a translation step — she chose this over outline-only (too
+     without a translation step; she chose this over outline-only (too
      informal for eng) and over outline+JSON+Mermaid-always (extra
      diagramming work not needed for every screen).
    - **How to apply:** Every file in `Screens/` follows
@@ -25,7 +25,7 @@ based user-flow to engineering/design:
    `Storyline.md`, not folded into each screen's chapter conditions.**
    - **Why:** Karen's example (chapter 2 of post-workout education unlocks
      only after routine 2 *and* every step of chapter 1 was completed)
-     spans multiple screens and multiple sessions — gating logic like that
+     spans multiple screens and multiple sessions, gating logic like that
      would otherwise get duplicated across every screen it touches.
    - **How to apply:** A screen's own `Screens/<name>.md` file should stay
      scoped to that screen's own state-driven chapters. Any condition that
@@ -58,12 +58,12 @@ based user-flow to engineering/design:
      wants a real clickable-prototype feel (branches per user type),
      not a Gamma slide deck or diagrams-only.
    - **How to apply:** Don't build this artifact until the `Screens/`
-     books have real content — build it once a meaningful chunk of the
+     books have real content; build it once a meaningful chunk of the
      flow is drafted, not screen-by-screen. Load the `artifact-design`
      skill before building it, per the Artifact tool's own requirement.
 
 6. **Global Goals locked 2026-08-19 (qualitative only, numeric targets
-   TBD)** — see `Global-Goals.md`: (1) close the leaderboard dead-end by
+   TBD)**; see `Global-Goals.md`: (1) close the leaderboard dead-end by
    routing explored-leaderboard users to Home, (2) guest→account
    conversion, (3) free→pro paywall conversion, (4) drip-feed education
    actually gets engaged with, not just technically gated.
@@ -77,19 +77,19 @@ based user-flow to engineering/design:
    screens; plain structural placeholders only for screens that don't
    exist yet (e.g. Home).**
    - **Why:** Karen wants team-facing mockups to "stick strictly to what
-     is live in our app already" — the app is Unity with a 3D animated
+     is live in our app already"; the app is Unity with a 3D animated
      character, which no available tool here can faithfully regenerate.
      Fabricating AI-generated "Unity-style" art for undesigned screens and
      presenting it as accurate would misrepresent it as real.
    - **How to apply:** When building the clickable flow-map Artifact,
      embed the actual uploaded screenshots for existing screens. For new
      screens, use plain boxes/labels/button-position layouts in the
-     existing color language, clearly marked as layout-only/not final art
-     — never generate character/gym concept art and let it pass as
+     existing color language, clearly marked as layout-only/not final art;
+never generate character/gym concept art and let it pass as
      production-accurate.
    - Karen wants a Figma MCP connector added for real component access;
      no tool in this session can add a connector (requires her account
-     auth) — she was pointed at Settings → Connectors (matching how
+     auth); she was pointed at Settings → Connectors (matching how
      Asana/Gamma/Mailchimp/Microsoft 365 got connected) or Figma's own
      Dev Mode MCP Server as a custom connector. Once connected, prefer it
      over screenshots for any new-screen mockup work.
@@ -109,7 +109,7 @@ based user-flow to engineering/design:
    step-by-step wizard (First Screen → Second → pain/sport →
    standing/floor → Base Positions → Body Filter → Time); routine 7
    onward, `First Screen` routes straight into `Routine Type 2` instead.
-   - **Why:** Karen's own dictated structure — this is a big enough shift
+   - **Why:** Karen's own dictated structure; this is a big enough shift
      in the flow's shape that it's worth remembering explicitly rather
      than re-deriving it from scattered chapter conditions later.
    - **How to apply:** Any change to the wizard screens (Second, pain,
@@ -117,7 +117,7 @@ based user-flow to engineering/design:
      consider whether `Routine Type 2` needs the equivalent field, since
      it's the wizard's replacement for returning free users.
 
-10. **Trial/paywall model is routine-count based, not day-based — 7 (guest)
+10. **Trial/paywall model is routine-count based, not day-based, 7 (guest)
     + 7 (signup bonus, additive to remainder) = 14-routine typical budget,
     soft paywall at routine 8, hard paywall at routine 14.**
     - **Why:** Karen's first dictation pass used day counts, routine
@@ -128,23 +128,23 @@ based user-flow to engineering/design:
       timing should use `routines_completed` thresholds (8, 14), never
       calendar days. See `Storyline.md` "Trial & paywall structure."
     - Guest-never-signs-up-past-routine-7 is resolved (2026-08-21): same
-      gating as a budget-exhausted free user — Full Body only, other
+      gating as a budget-exhausted free user; Full Body only, other
       routine types visible but blurred, tap-through → paywall.
 
 11. **The uploaded `Leader board` wireframe (screen #22) is not the real
     leaderboard and is out of scope.** The actual live leaderboard has no
-    image in this project and Karen will not be altering it — treat any
+    image in this project and Karen will not be altering it; treat any
     navigation target to "the leaderboard" as a link-out, same as `Sign
     Up`, never as something to design.
     - **Why:** Karen clarified this directly after being asked whether
-      #22 was meant to become the real screen's redesign — it isn't, and
+      #22 was meant to become the real screen's redesign; it isn't, and
       she's not sure what #22 was for.
     - **How to apply:** Don't draft UI content for #22 or for the real
       leaderboard. If #22 turns out to serve some other purpose later,
       get that from Karen rather than guessing from the placeholder image.
 
 12. **Dictation phase closed 2026-08-21.** Karen confirmed she is not
-    drafting individual books for the remaining un-drafted screens — see
+    drafting individual books for the remaining un-drafted screens; see
     `Screen-Inventory.md` "Status as of 2026-08-21" for exactly what has
     content vs. mockup-only vs. neither.
 
@@ -159,22 +159,22 @@ based user-flow to engineering/design:
     - Mockup-only screens use an approximate crop: each wireframe sheet
       has N screens laid out left-to-right, so a screen's thumbnail uses
       CSS `background-size: N*100% 100%` + `background-position` at
-      `index/(N-1)*100%` — visually approximate, not a pixel-precise crop.
+      `index/(N-1)*100%`: visually approximate, not a pixel-precise crop.
       Good enough for spec-browsing; not a substitute for real assets.
     - **How to apply:** regenerate rather than hand-edit after any
-      `Screens/*.md` or `Storyline.md` change — re-run the same build
+      `Screens/*.md` or `Storyline.md` change, re-run the same build
       approach (template + base64 injection) so the artifact stays in
       sync with the git-tracked source of truth.
 
 14. **Consistency review 2026-08-21 found and fixed 2 real bugs in the
-    drafted books** (not just missing content — actual contradictions):
+    drafted books** (not just missing content, actual contradictions):
     - `Routine Type 2` locked ALL free users unconditionally, contradicting
       `First Screen`'s countdown chapters which assume free users keep full
       access until their trial budget runs out. Fixed: split into two
       chapters keyed on `trial_routines_remaining` (>0 = full access, <=0 =
       locked).
     - `First Screen` had no chapter for guest users past
-      `routines_completed == 3` — an undefined screen state. Fixed: added
+      `routines_completed == 3`: an undefined screen state. Fixed: added
       a chapter for `routines_completed >= 4, guest`, reusing the
       established 2-button pattern per Karen's own "same 2 buttons as
       above" rule.
@@ -186,23 +186,23 @@ based user-flow to engineering/design:
 
 ## Open items (project)
 
-- Master list of state variables is still growing — see
+- Master list of state variables is still growing; see
   `State-Variables.md` open items. **2026-08-21 updates:** pain/stiffness/
   speed confirmed as 3 separate variables (`pain_rating`,
-  `stiffness_rating`, `speed_rating` — "pace" dropped in favor of "speed");
+  `stiffness_rating`, `speed_rating`, "pace" dropped in favor of "speed");
   `routine_id` renamed to `sport_id` (mechanism still unconfirmed);
-  `body_filter`'s exact list dropped from tracking here per Karen — her
+  `body_filter`'s exact list dropped from tracking here per Karen, her
   team owns that detail.
 - Full screen inventory (23 screens across 4 uploaded images) is captured
   in `Screen-Inventory.md`, none drafted into `Screens/` yet. Two screens
   (positions 9 and 10, the pose-summary and body-filter sheets in the
-  second image) have no visible top-left label in the mockup — provisionally
+  second image) have no visible top-left label in the mockup, provisionally
   named "Base Positions" and "Body Filter" from their in-app headers;
   confirm with Karen before treating those as final.
 - Karen's dictated live-app flow mentions a "post-routine talk" from the
   animated character and a drip-feed screen with an undefined cadence
-  ("radus" — likely a transcription artifact for the actual word) — both
+  ("radus" (likely a transcription artifact for the actual word)) both
   need clarification before `Storyline.md` can be drafted for real. See
   `Global-Goals.md` "Open items."
 - Home screen (with summary cards) referenced as the fix-target for Goal 1
-  is not among the uploaded wireframes yet — will need its own mockup/book.
+  is not among the uploaded wireframes yet; will need its own mockup/book.

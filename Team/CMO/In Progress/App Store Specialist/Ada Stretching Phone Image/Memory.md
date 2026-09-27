@@ -1,7 +1,7 @@
-# Ada Stretching Phone Image — Memory
+# Ada Stretching Phone Image; Memory
 
 Folded in from this project's former `SESSION_NOTES.md` (2026-08-11 session
-that Karen called "an epic failure" — kept so the next session doesn't
+that Karen called "an epic failure"; kept so the next session doesn't
 repeat the same detours).
 
 ## What actually got done (kept, not wasted)
@@ -11,11 +11,11 @@ repeat the same detours).
   as full-length (waistband to ankle), a "Known failure modes" entry logged,
   and the `waiting for approval/` staging-folder convention added.
 - Locked reference asset added: `assets/ada-side-profile-leg-stripe-logo-reference.png`
-  (documented in `reference-map.md`) — ground truth for leg logo + stripe
+  (documented in `reference-map.md`), ground truth for leg logo + stripe
   placement.
 
 **None of the generated output from that session should be reused.** Every
-candidate was rejected — start image generation completely fresh, using the
+candidate was rejected; start image generation completely fresh, using the
 skill and reference assets above, not any prior attempt.
 
 ## Standing lessons (apply every time)
@@ -29,7 +29,7 @@ skill and reference assets above, not any prior attempt.
      starting if there's any doubt.
 
 2. **Neither `nano_banana_pro` nor `gpt_image_2` outputs true alpha
-   transparency**, regardless of prompt wording — every generation comes
+   transparency**, regardless of prompt wording; every generation comes
    back fully opaque (alpha=255) with a flat gray field standing in for
    "transparent." The Read-tool preview renders this as a misleading
    checkerboard.
@@ -39,7 +39,7 @@ skill and reference assets above, not any prior attempt.
      produces clean true-alpha PNGs at zero extra Higgsfield cost.
    - **How to apply:** always verify by sampling raw alpha at the four
      corners/edges and by compositing over two contrasting solid colors
-     (black and magenta) to check the silhouette edge matches on both — not
+     (black and magenta) to check the silhouette edge matches on both, not
      by eyeballing the preview.
 
 3. **Model choice matters a lot for logo/text fidelity.** `nano_banana_pro`
@@ -65,7 +65,7 @@ skill and reference assets above, not any prior attempt.
    leg logo, a mirrored leg logo, and missing dots were all invisible at
    normal viewing size and only showed up under 2-3x cropped zoom.
    - **How to apply:** always crop-and-zoom the hands, both logos, and the
-     phone silhouette edges before presenting a candidate — don't just
+     phone silhouette edges before presenting a candidate; don't just
      glance at the full image.
 
 6. **Check credit budget before starting.** The account was once down to 2

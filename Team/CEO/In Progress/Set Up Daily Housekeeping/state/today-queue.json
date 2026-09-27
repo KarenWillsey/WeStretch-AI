@@ -1,0 +1,385 @@
+{
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T05:00:00-06:00",
+  "items": [
+    {
+      "id": "q1",
+      "section": "DECIDE",
+      "line": "**Bethe Goldie** - confirm BEMER EVO setup went smoothly.",
+      "name": "Bethe Goldie",
+      "detail_bullets": ["needs your confirmation the BEMER EVO setup went smoothly before replying to Bethe"],
+      "source": "email",
+      "ref": "conversationId AAQkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNAAQABMhoW5Q8F5BlCZfbu-XJhs=",
+      "draft_id": null,
+      "suggested_actions": ["confirm", "reply", "draft"],
+      "status": "open"
+    },
+    {
+      "id": "q2",
+      "section": "DECIDE",
+      "line": "**clearmotive** - Mike wants your video verdict, 38 days open.",
+      "name": "clearmotive",
+      "detail_bullets": ["Mike still needs your verdict on the analytics/UX findings video, open since Aug 20"],
+      "source": "email",
+      "ref": "conversationId AAQkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNAAQAEftguAY9NFMpXAdVoZXyzY=",
+      "draft_id": null,
+      "suggested_actions": ["decide", "reply", "draft"],
+      "status": "open"
+    },
+    {
+      "id": "q3",
+      "section": "DECIDE",
+      "line": "**Boys' Choir** - rank 8 campout activities, due right away.",
+      "name": "Boys' Choir",
+      "detail_bullets": [
+        "Boys' Choir (Voice Changers/Men of Note) activity preference form for the Bear Lake campout",
+        "Each member ranks 8 activities (Giant Swing, Kayaking, Board Games, Climbing Wall, Football, Basketball, Beach Volleyball, Archery Tag, Archery, Guitar Jam)",
+        "Link: Google Form, sender asks it be completed 'right away'",
+        "This is a form-fill task, not an email reply"
+      ],
+      "source": "email",
+      "ref": "logistics@gpboyschoir.org: VC &MON need to complete right away.",
+      "draft_id": null,
+      "suggested_actions": ["fill form", "delegate"],
+      "status": "open"
+    },
+    {
+      "id": "q4",
+      "section": "REPLY",
+      "line": "**Disruptive Edge** - draft ready, send with your meeting times.",
+      "name": "Disruptive Edge",
+      "detail_bullets": ["draft acknowledges the proposal and says you'll send meeting times; review/send when ready"],
+      "source": "email",
+      "ref": "conversationId AAQkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNAAQABtRUK9KxJpPnFmsz-cGsDQ=",
+      "draft_id": "draft_exists=true",
+      "suggested_actions": ["review", "send"],
+      "status": "open"
+    },
+    {
+      "id": "q5",
+      "section": "DATED",
+      "line": "**GP Catholic Board** - response due ~Sep 28 (carried, unconfirmed).",
+      "name": "Grande Prairie Catholic School Board",
+      "detail_bullets": [
+        "Karen's Sept 18 letter asked for a written response within 10 days, due around Sept 28",
+        "Not present in today's scan; carried from the 2026-09-26 brief, not confirmed today"
+      ],
+      "source": "carried_forward",
+      "ref": "carried from 2026-09-26-full.md",
+      "draft_id": null,
+      "suggested_actions": ["follow up"],
+      "status": "open"
+    },
+    {
+      "id": "q6",
+      "section": "DATED",
+      "line": "**Boys' Choir Campout** - Tue Sep 29 5pm, RSVP + childcare needed.",
+      "name": "Boys' Choir Bear Lake Campout",
+      "detail_bullets": [
+        "Campout starts 5:00pm Tuesday Sept 29 at Bear Lake Bible Camp; all boys expected to attend, no sign-up needed",
+        "Allergy updates needed by Saturday (gluten/dairy/nuts already accommodated)",
+        "Optional: sign up to bake cookies or bring salad/dessert/drinks for the BBQ via SignUpGenius links",
+        "RSVP needed for the BBQ; arrange childcare for siblings"
+      ],
+      "source": "email",
+      "ref": "logistics@gpboyschoir.org: Bear Lake Campout update",
+      "draft_id": null,
+      "suggested_actions": ["rsvp", "arrange childcare"],
+      "status": "open"
+    },
+    {
+      "id": "q7",
+      "section": "DATED",
+      "line": "**Wildwood AGM** - Tue Sep 30 10am, condo AGM.",
+      "name": "Wildwood AGM",
+      "detail_bullets": ["Wildwood AGM - Sept 30 10:00am", "Asana task assigned by Karen"],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048/task/1218888926566003",
+      "draft_id": null,
+      "suggested_actions": ["attend", "reschedule"],
+      "status": "open"
+    },
+    {
+      "id": "q8",
+      "section": "DATED",
+      "line": "**FedEx** - card ending 3270 expires this month (carried, unconfirmed).",
+      "name": "FedEx",
+      "detail_bullets": ["card ending 3270 expires this month; update via fedex.ca", "Carried from the 2026-09-18 through 2026-09-26 briefs; not present in today's scan"],
+      "source": "carried_forward",
+      "ref": "carried from 2026-09-26-full.md",
+      "draft_id": null,
+      "suggested_actions": ["update card"],
+      "status": "open"
+    },
+    {
+      "id": "q9",
+      "section": "UNFILED",
+      "line": "**Google Play** - daily report, accounts flagged in error.",
+      "name": "Google Play",
+      "detail_bullets": [
+        "WeStretch business analytics tied to the active app (0 downloads, $0 revenue that day; last-30-days downloads down 60%, revenue down 41%)",
+        "The email itself also flags 'some of your accounts are in error' needing repair",
+        "Left in Unsubscribe folder per policy, will resurface until you deal with it"
+      ],
+      "source": "email",
+      "ref": "report@data.ai: Your Daily Report for Google Play: Sun, Sep 20",
+      "draft_id": null,
+      "suggested_actions": ["file to inbox", "investigate account error"],
+      "status": "open"
+    },
+    {
+      "id": "q10",
+      "section": "UNFILED",
+      "line": "**Alarm.com** - camera may be offline, check security system.",
+      "name": "Alarm.com (TELUS SmartHome Security)",
+      "detail_bullets": ["Possible real offline camera on your home security system, not pure marketing", "Left in Unsubscribe folder per policy, will resurface until you deal with it"],
+      "source": "email",
+      "ref": "info@email.alarm.com: Alert: Your Video Camera May Be Offline",
+      "draft_id": null,
+      "suggested_actions": ["file to inbox", "check camera"],
+      "status": "open"
+    },
+    {
+      "id": "q11",
+      "section": "DELETED",
+      "line": "**GrowthDay**, Brendon Burchard promo video.",
+      "name": "GrowthDay",
+      "detail_bullets": ["Brendon Burchard/GrowthDay newsletter promo video"],
+      "source": "email",
+      "ref": "support@kjbm.growthday.com: have you seen me do this?",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q12",
+      "section": "DELETED",
+      "line": "**Pinterest**, Terms of Service update notice.",
+      "name": "Pinterest",
+      "detail_bullets": ["Pinterest legal/policy notice, no action needed"],
+      "source": "email",
+      "ref": "recommendations@discover.pinterest.com: We're updating our Terms of Service and Privacy Policy",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q13",
+      "section": "DELETED",
+      "line": "**Skool**, community notification digest.",
+      "name": "Skool",
+      "detail_bullets": ["Skool community group post notification digest"],
+      "source": "email",
+      "ref": "noreply@skool.com: 1 new notification since 1:53 pm (Sep 25, 2026)",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q14",
+      "section": "DELETED",
+      "line": "**BeFranc**, dictation marketing newsletter.",
+      "name": "BeFranc",
+      "detail_bullets": ["Marketing newsletter"],
+      "source": "email",
+      "ref": "franc-talking@mail.befranc.co.uk: I've dictated 246,380 words. Most of it went to AI",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q15",
+      "section": "DELETED",
+      "line": "**GoDashed**, marketing promo email.",
+      "name": "GoDashed",
+      "detail_bullets": ["Marketing promo email"],
+      "source": "email",
+      "ref": "hello@godashed.com: Don't Listen to Us...",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q16",
+      "section": "DELETED",
+      "line": "**Simone Grace Seol**, financial-doom pitch.",
+      "name": "Simone Grace Seol",
+      "detail_bullets": ["Financial-doom marketing pitch"],
+      "source": "email",
+      "ref": "simone@simonegraceseol.com: financial systems are collapsing, so....",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q17",
+      "section": "DELETED",
+      "line": "**Halara**, clothing sale promo.",
+      "name": "Halara",
+      "detail_bullets": ["Clothing sale promo"],
+      "source": "email",
+      "ref": "halara@news.ca.halara.com: Fresh New Sweaters & Cardigans Up to 70% Off",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q18",
+      "section": "DELETED",
+      "line": "**Wayfair**, trash cans and recycling promo.",
+      "name": "Wayfair",
+      "detail_bullets": ["Wayfair product promo"],
+      "source": "email",
+      "ref": "editor@members.wayfair.ca: TRASH CANS & RECYCLING we see selling out (!)",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q19",
+      "section": "DELETED",
+      "line": "**Cherrington Media**, make-money spam pitch.",
+      "name": "Cherrington Media",
+      "detail_bullets": ["Make-money spam pitch"],
+      "source": "email",
+      "ref": "support@cherringtonmedia.com: He made $50K... from his bedroom",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q20",
+      "section": "TASKS",
+      "line": "**Asana** - 200 open, 32 today, 4 assigned, 0 urgent.",
+      "name": "Asana",
+      "detail_bullets": [
+        "200 total open tasks",
+        "32 in Today section, no due dates set on any of them",
+        "4 in Recently Assigned, all assigned by Karen",
+        "0 urgent flags",
+        "couldnt_check: Asana pagination token expired after page 2 of full My Tasks list; Today and Recently Assigned sections fully retrieved"
+      ],
+      "source": "asana",
+      "ref": "https://app.asana.com/1/91554875201048",
+      "draft_id": null,
+      "suggested_actions": ["review backlog"],
+      "status": "open"
+    },
+    {
+      "id": "q21",
+      "section": "TASKS",
+      "line": "**Jira** - Sprint 205 ends Oct 1, 3 assigned, 0 mentions.",
+      "name": "Jira",
+      "detail_bullets": [
+        "1 active sprint: Sprint 205 (WEMVP), ends 2026-10-01",
+        "3 tickets assigned to Karen, all To Do, Medium priority, no due dates: WEMVP-11930, WEMVP-11850, WEMVP-11828",
+        "0 new mentions in last 7 days, 0 couldnt_check issues"
+      ],
+      "source": "jira",
+      "ref": "https://webananas.atlassian.net/browse/WEMVP-11930",
+      "draft_id": null,
+      "suggested_actions": ["review sprint"],
+      "status": "open"
+    },
+    {
+      "id": "q22",
+      "section": "FYI",
+      "line": "**ManageBuilding** - 2 new maintenance tasks, 214 Place South.",
+      "name": "ManageBuilding",
+      "detail_bullets": [
+        "2 new maintenance tasks logged at 214 Place South: Chilled Water Pump (Semi-Annual) and Condenser Pump (Semi-Annual), both status New as of 9/27/2026",
+        "No upcoming tasks listed",
+        "No action needed from you; system-generated Park Property Management notice"
+      ],
+      "source": "email",
+      "ref": "donotreply@managebuilding.com: Tasks summary for 9/27/2026",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q23",
+      "section": "FYI",
+      "line": "**AppStance** - Apple Ads spend down 82%, $5.91 CAD.",
+      "name": "AppStance",
+      "detail_bullets": [
+        "Spend $5.91 CAD, down 82% day over day",
+        "0 installs, $0 revenue, ROAS 0.0",
+        "Top campaign US50-65+ down 68% in spend",
+        "Routine automated ad performance digest, no action needed"
+      ],
+      "source": "email",
+      "ref": "notifications@appstance.com: AppStance - Apple Ads Daily Summary - Sep 26, 2026",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q24",
+      "section": "FYI",
+      "line": "**Payworks** - pay statement ready, paid Sep 29.",
+      "name": "Payworks",
+      "detail_bullets": [
+        "Customer ID A04308, Pay Period 18",
+        "Payment date 2026-09-29",
+        "View at payroll.payworks.ca; no action needed unless something looks wrong"
+      ],
+      "source": "email",
+      "ref": "no-reply@payworks.ca: Your Pay Statement is Available",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q25",
+      "section": "FYI",
+      "line": "**Board agenda** - meeting confirmed, resolved, no reply needed.",
+      "name": "Board agenda",
+      "detail_bullets": [
+        "Board meeting confirmed: Monday dinner + Tuesday morning, 4-hour window",
+        "Howie arrives Monday 5:15pm on AC 8045, leaves Tuesday 4pm on WestJet",
+        "Agenda: succession planning (incl. HBS Leading Family Business Strategy program, gift of promissory note from Muriel to the kids), business unit updates, Overhead Door acquisition activity (near closing on a Winnipeg company, in talks re Calgary/Lethbridge/Cranbrook), WeStretch update - Karen presents for 1 hour",
+        "Kevin attached the Seven Generations planning workbook",
+        "No reply required from Karen; Jennifer's arrival-time question was directed at Howie/Jennifer, already answered by Kevin"
+      ],
+      "source": "email",
+      "ref": "kevin@kasa.ca: RE: Board agenda (thread with ghkroon@gmail.com, jennifer.wood05@gmail.com)",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q26",
+      "section": "FYI",
+      "line": "**NW Polytechnic** - Homecoming concert Oct 10, Willsey-sponsored.",
+      "name": "NW Polytechnic",
+      "detail_bullets": [
+        "Concert Saturday Oct 10, 2026, doors 7pm, performance 7:30pm, Collins Recital Hall, Northwestern Polytechnic",
+        "Series presented by The Willsey Family (sponsorship)",
+        "General admission $30, student/senior/staff $20",
+        "Also a free 2pm music-business talk by Michelle Lynne the same day"
+      ],
+      "source": "email",
+      "ref": "MDalen@nwpolytech.ca: InspireARTS Presents- Michelle Lynne: Homecoming",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    },
+    {
+      "id": "q27",
+      "section": "FYI",
+      "line": "**Jennifer Wood** - forwarded HBS program for board discussion.",
+      "name": "Jennifer Wood",
+      "detail_bullets": [
+        "HBS Executive Education program, virtual, Jan 30 & Feb 6, 2027",
+        "Forwarded by Jennifer explicitly as a board-meeting discussion item",
+        "Ties directly into the Board Agenda succession-planning topic above"
+      ],
+      "source": "email",
+      "ref": "jennifer.wood05@gmail.com: Fwd: Now Accepting Applications: Leading Family Business Strategy-Virtual",
+      "draft_id": null,
+      "suggested_actions": [],
+      "status": "open"
+    }
+  ]
+}

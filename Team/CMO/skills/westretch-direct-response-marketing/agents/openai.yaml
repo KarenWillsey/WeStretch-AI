@@ -1,0 +1,4 @@
+interface:
+  display_name: "WeStretch Direct Response Marketing"
+  short_description: "Build and optimize evidence-led WeStretch campaigns"
+  default_prompt: "Use $westretch-direct-response-marketing to create a research-backed WeStretch campaign and testing plan."

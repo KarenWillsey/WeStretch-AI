@@ -1,0 +1,33 @@
+/* WeStretch Marketing Skin
+   Built on core/tokens.css. Import that file first.
+   Use for ads, social posts, email, billboards, print and web.
+   Never redefine a brand colour here. Only scale, spacing and format rules.
+*/
+
+@import url("../core/tokens.css");
+
+:root {
+  /* Marketing type scale. Larger than the app: read at distance or while scrolling. */
+  --mk-display:   clamp(40px, 8vw, 120px); /* Work Sans Bold */
+  --mk-headline:  clamp(28px, 5vw, 64px);
+  --mk-subhead:   clamp(18px, 3vw, 32px);
+  --mk-body:      clamp(15px, 1.6vw, 20px);
+  --mk-caption:   14px;
+
+  /* Marketing spacing. Generous, poster logic. */
+  --mk-space-xs: 8px;
+  --mk-space-sm: 16px;
+  --mk-space-md: 32px;
+  --mk-space-lg: 64px;
+  --mk-space-xl: 120px;
+
+  /* Safe margin as a share of the shortest edge. Logo clearance sits inside this. */
+  --mk-safe-ratio: 0.08;
+
+  /* Surfaces */
+  --mk-bg-dark:  var(--ws-midnight-grey);
+  --mk-bg-light: var(--ws-white);
+  --mk-ink-on-dark:  var(--ws-white);
+  --mk-ink-on-light: var(--ws-midnight-grey);
+  --mk-accent: var(--ws-fire-red);
+}

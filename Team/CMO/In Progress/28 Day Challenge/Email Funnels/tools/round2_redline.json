@@ -1,0 +1,182 @@
+{
+  "emails": [
+    {
+      "label": "Email 1",
+      "subject_old": "For the stiffness that keeps showing up",
+      "subject_new": "For the stiffness that keeps showing up",
+      "preview_old": "What if this time, you didn't stop as soon as it felt better?",
+      "preview_new": "What if this time, you didn't stop as soon as it felt better?",
+      "paragraphs": [
+        {"old": "If your neck is regularly bothering you...", "new": "If your neck is regularly bothering you..."},
+        {"old": "Or your back has opinions about the way you slept...", "new": "Or your back has opinions about the way you slept..."},
+        {"old": "Or sitting for too long means taking a second to straighten up when you stand...", "new": "Or sitting for too long means taking a second to straighten up when you stand..."},
+        {"old": "Then this is for you.", "new": "Then this is for you."},
+        {"old": "On October 19, we're kicking off the **28-Day Reset Challenge.**", "new": "On October 19, we're kicking off the **28-Day Reset Challenge.**"},
+        {"old": "For four weeks, you'll spend 15 minutes a day stretching what *your* body needs.", "new": "For four weeks, you'll spend 15 minutes a day stretching what *your* body needs."},
+        {"old": "Tell WeStretch what's bothering you. WeStretch draws from a stretch library developed with physiotherapists to personalize your stretches around those areas.", "new": "Tell WeStretch what's bothering you. It draws from a stretch library developed with physiotherapists to personalize your stretches around those areas."},
+        {"old": "So instead of working around the tight hip, sore neck or back that keeps acting up, you'll spend a little time every day working on it.", "new": "So instead of working around the tight hip, sore neck or back that keeps acting up, you'll spend a little time every day working on it."},
+        {"old": "And you're going to feel the difference.", "new": "And you're going to feel the difference."},
+        {"old": "You'll get up easier. Get out of the car without thinking about your hip. Bend, reach and turn without thinking so much about how your body feels.", "new": "You'll get up easier. Get out of the car without thinking about your hip. Bend, reach and turn without thinking so much about how your body feels."},
+        {"old": "**15 minutes a day for a body that feels better all day.**", "new": "**15 minutes a day for a body that feels better all day.**"},
+        {"old": "The Reset starts October 19.", "new": "The Reset starts October 19."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "copy-editing (Sweep 2, voice/repetition): two consecutive sentences both opened with 'WeStretch' as the subject, mechanical when read aloud. Second instance changed to 'It'. No other skill flagged this email; clean otherwise."
+    },
+    {
+      "label": "Email 2",
+      "subject_old": "If you only stretch when something bothers you...",
+      "subject_new": "If you only stretch when something bothers you...",
+      "preview_old": "You're stopping at exactly the wrong time.",
+      "preview_new": "You're stopping at exactly the wrong time.",
+      "paragraphs": [
+        {"old": "Most people don't decide to stretch at 2:17 on a perfectly comfortable Tuesday.", "new": "Most people don't decide to stretch at 2:17 on a perfectly comfortable Tuesday."},
+        {"old": "They stretch because something is bothering them.", "new": "They stretch because something is bothering them."},
+        {"old": "Their back feels stiff. Their hip is tight. Their neck is acting up again.", "new": "Their back feels stiff. Their hip is tight. Their neck is acting up again."},
+        {"old": "And when nothing is complaining, stretching is pretty easy to forget.", "new": "And when nothing is complaining, stretching is pretty easy to forget."},
+        {"old": "**That's what the 28-Day Reset Challenge changes.**", "new": "**That's what the 28-Day Reset Challenge changes.**"},
+        {"old": "For four weeks, you stretch for 15 minutes a day. Not just on the days your back is stiff or your neck is acting up.", "new": "Starting October 19, you stretch for 15 minutes a day for four weeks. Not just on the days your back is stiff or your neck is acting up."},
+        {"old": "And you don't have to figure out what to do. Your stretching follows a routine physiotherapists mapped out, personalized to what you tell WeStretch and building as you go.", "new": "And you don't have to figure out what to do. Your stretching follows a routine physiotherapists mapped out, personalized to what you tell WeStretch and building as you go."},
+        {"old": "So when you start feeling better, you don't stop and wait for the next reminder.", "new": "So when you start feeling better, you don't stop and wait for the next reminder."},
+        {"old": "You keep going.", "new": "You keep going."},
+        {"old": "Give your body 15 minutes a day for four weeks and feel what changes when you give it some real consistency.", "new": "Give your body 15 minutes a day for four weeks and feel what changes when you give it some real consistency."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "copy-editing (Sweep 1, specificity) + cro: the only one of Emails 1-5 that never stated a start date, weakening the 'why act now' of its CTA. This is the exact gap Marg's Round 1 notes flagged and Round 1 never fixed ('Email 2's CTA felt like the weakest why-act-now of the bunch'). Added 'Starting October 19' to match the anchor every other early email already has."
+    },
+    {
+      "label": "Email 3",
+      "subject_old": "The problem is, you can live with it",
+      "subject_new": "The problem is, you can live with it",
+      "preview_old": "And that's exactly how stiffness quietly becomes your normal.",
+      "preview_new": "And that's exactly how stiffness quietly becomes your normal.",
+      "paragraphs": [
+        {"old": "The annoying thing about stiffness is that it's usually pretty easy to live with.", "new": "The annoying thing about stiffness is that it's usually pretty easy to live with."},
+        {"old": "You find the position where your back doesn't bother you as much. You take a second to straighten up after sitting for a while. You turn a little differently when your neck is acting up.", "new": "You find the position where your back doesn't bother you as much. You take a second to straighten up after sitting for a while. You turn a little differently when your neck is acting up."},
+        {"old": "None of it is a big deal.", "new": "None of it is a big deal."},
+        {"old": "And that's exactly why it's so easy to keep putting up with.", "new": "And that's exactly why it's so easy to keep putting up with."},
+        {"old": "You adjust. You carry on. Eventually, the little things you do because your body feels stiff become part of how you move through the day.", "new": "You adjust. You carry on. Eventually, the little things you do because your body feels stiff become part of how you move through the day."},
+        {"old": "**But \"I can live with it\" is a pretty low bar for how your body should feel.**", "new": "**But \"I can live with it\" is a pretty low bar for how your body should feel.**"},
+        {"old": "You don't need to wait for your back to get worse. Or your hip to become a bigger problem. You can decide that being mildly annoyed by your body every day is reason enough to do something about it.", "new": "You don't need to wait for your back to get worse. Or your hip to become a bigger problem. You can decide that being mildly annoyed by your body every day is reason enough to do something about it."},
+        {"old": "That's what the **28-Day Reset Challenge** is for.", "new": "That's what the **28-Day Reset Challenge** is for."},
+        {"old": "Starting October 19, you'll spend 15 minutes a day with stretching built around what's bothering you and how you're progressing, using a routine physiotherapists mapped out.", "new": "Starting October 19, you'll spend 15 minutes a day with stretching built around what's bothering you and how you're progressing, using a routine physiotherapists mapped out."},
+        {"old": "Give it four weeks.", "new": "Give it four weeks."},
+        {"old": "**Not because your body feels terrible. Because \"fine\" isn't the same as feeling good.**", "new": "**Not because your body feels terrible. Because \"fine\" isn't the same as feeling good.**"},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "Clean pass across every applied skill. No changes."
+    },
+    {
+      "label": "Email 4",
+      "subject_old": "This isn't about stretching",
+      "subject_new": "This isn't about stretching",
+      "preview_old": "It's about everything you want your body to let you do.",
+      "preview_new": "It's about everything you want your body to let you do.",
+      "paragraphs": [
+        {"old": "You probably don't care about becoming impressively flexible.", "new": "You probably don't care about becoming impressively flexible."},
+        {"old": "You care about going for the long walk without wondering how your back will feel later.", "new": "You care about going for the long walk without wondering how your back will feel later."},
+        {"old": "Sitting through dinner without having to keep finding a more comfortable position.", "new": "Sitting through dinner without having to keep finding a more comfortable position."},
+        {"old": "Getting up the next morning without immediately noticing your neck, your back or that same tight hip.", "new": "Getting up the next morning without immediately noticing your neck, your back or that same tight hip."},
+        {"old": "That's the real point of stretching.", "new": "That's the real point of stretching."},
+        {"old": "Not touching your toes, or becoming someone who loves stretching.", "new": "Not touching your toes, or becoming someone who loves stretching."},
+        {"old": "It's having a body you don't have to think about quite so much.", "new": "It's having a body you don't have to think about quite so much."},
+        {"old": "That's what the **28-Day Reset Challenge** is about.", "new": "That's what the **28-Day Reset Challenge** is about."},
+        {"old": "Starting October 19, you'll spend 15 minutes a day with a routine physiotherapists mapped out, personalized to you and building as you progress.", "new": "Starting October 19, you'll spend 15 minutes a day with a routine physiotherapists mapped out, personalized to you and building as you progress."},
+        {"old": "Four weeks of giving your body the consistent stretching it hasn't been getting.", "new": "Four weeks of giving your body the consistent stretching it hasn't been getting."},
+        {"old": "Because the best thing about feeling better in your body is getting on with everything else.", "new": "Because the best thing about feeling better in your body is getting on with everything else."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "Clean pass. Strongest filmable writing in the funnel per Round 1; agreed, left untouched."
+    },
+    {
+      "label": "Email 5",
+      "subject_old": "\"I should stretch more\" isn't a plan",
+      "subject_new": "\"I should stretch more\" isn't a plan",
+      "preview_old": "So give it a start date: October 19.",
+      "preview_new": "So give it a start date: October 19.",
+      "paragraphs": [
+        {"old": "You've probably thought it before:", "new": "You've probably thought it before:"},
+        {"old": "**I really should stretch more.**", "new": "**I really should stretch more.**"},
+        {"old": "The problem with \"more\" is that it can start tomorrow.", "new": "The problem with \"more\" is that it can start tomorrow."},
+        {"old": "There's no start date. No finish line. No answer to how often, how long or what stretches you should actually be doing.", "new": "There's no start date. No finish line. No answer to how often, how long or what stretches you should actually be doing."},
+        {"old": "So it stays something you *should* do.", "new": "So it stays something you *should* do."},
+        {"old": "That's exactly what the **28-Day Reset Challenge** takes off your plate.", "new": "That's exactly what the **28-Day Reset Challenge** takes off your plate."},
+        {"old": "Starting October 19, you stretch for 15 minutes a day. Your routine follows a progression physiotherapists mapped out, personalized to you as you go.", "new": "Starting October 19, you stretch for 15 minutes a day. Your routine follows a progression physiotherapists mapped out, personalized to you as you go."},
+        {"old": "For four weeks, there's no wondering whether you should stretch today or what you should do. You open WeStretch, your routine is there, and you do it.", "new": "For four weeks, there's no wondering whether you should stretch today or what you should do. You open WeStretch, your routine is there, and you do it."},
+        {"old": "And that gives you something another month of *I really should stretch more* never will:", "new": "And that gives you something another month of *I really should stretch more* never will:"},
+        {"old": "The chance to find out how much better your body can feel.", "new": "The chance to find out how much better your body can feel."},
+        {"old": "You can keep meaning to stretch more.", "new": "You can keep meaning to stretch more."},
+        {"old": "Or you can give it 28 days and finally see what happens when you do.", "new": "Or you can give it 28 days and finally see what happens when you do."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "Clean pass. No changes."
+    },
+    {
+      "label": "Email 6",
+      "subject_old": "Got plans Monday?",
+      "subject_new": "Got plans Monday?",
+      "preview_old": "The 28-Day Reset starts October 19. 15 minutes a day. Four weeks to feel the difference.",
+      "preview_new": "The 28-Day Reset starts October 19. 15 minutes a day. Four weeks to feel the difference.",
+      "paragraphs": [
+        {"old": "What are you doing Monday, [First Name]?", "new": "What are you doing Monday, [First Name]?"},
+        {"old": "Because the **28-Day Reset Challenge starts October 19.**", "new": "Because the **28-Day Reset Challenge starts October 19.**"},
+        {"old": "For the next four weeks, give your body 15 minutes of personalized stretching a day.", "new": "For the next four weeks, give your body 15 minutes of personalized stretching a day."},
+        {"old": "Your routine is built for you and adapts as you progress, so all you have to do is open WeStretch and stretch.", "new": "Your routine follows a physiotherapist-mapped progression, so all you have to do is open WeStretch and stretch."},
+        {"old": "15 minutes a day to work on what's bothering you, so it can bother you less.", "new": "15 minutes a day to work on what's bothering you, so it can bother you less."},
+        {"old": "We start Monday.", "new": "We start Monday."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "Biggest single fix in this round. Round 1's cross-funnel finding #1 said the 'adapts... how you're feeling changes' mechanism overclaim (voice.md's banned 'it adapts to what your body is telling it' framing) was fixed in every instance across Emails 2-5; Email 6's 'adapts as you progress' was left in and Round 1's own notes incorrectly called it 'already the accurate version.' Rewritten to the same physiotherapist-mapped-progression framing used everywhere else, worded differently per voice.md's 'repeat beliefs, rotate language' rule. Caught on a direct re-read against voice.md, confirmed by copy-editing and marketing-psychology. Subject line 'Got plans Monday?' has an untested but plausible Challenge-specific alternative ('Your Reset starts Monday') per ab-testing; not shipped, recorded as a test idea only."
+    },
+    {
+      "label": "Email 7",
+      "subject_old": "Tomorrow could be another Monday",
+      "subject_new": "Tomorrow could be another Monday",
+      "preview_old": "Or you could start feeling better.",
+      "preview_new": "Or you could start feeling better.",
+      "paragraphs": [
+        {"old": "Tomorrow could be another Monday.", "new": "Tomorrow could be another Monday."},
+        {"old": "Your back feels how it feels. That tight spot is still that tight spot. You notice it, work around it and get on with your day.", "new": "Your back feels how it feels. That tight spot is still that tight spot. You notice it, work around it and get on with your day."},
+        {"old": "Or tomorrow could be the day you finally start doing something about it [First Name].", "new": "Or tomorrow could be the day you finally start doing something about it [First Name]."},
+        {"old": "The 28-Day Reset starts tomorrow.", "new": "The 28-Day Reset starts tomorrow."},
+        {"old": "For the next four weeks, give your body 15 minutes of personalized stretching a day and work on the things that keep bothering you instead of continuing to work around them.", "new": "For the next four weeks, give your body 15 minutes of personalized stretching a day and work on the things that keep bothering you instead of continuing to work around them."},
+        {"old": "So your back isn't the first thing you notice when you stand up. And that tight spot stops getting a say in how you move through your day.", "new": "So your back isn't the first thing you notice when you stand up. And that tight spot stops getting a say in how you move through your day."},
+        {"old": "That's what feeling better looks like.", "new": "That's what feeling better looks like."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"}
+      ],
+      "notes": "Clean pass. No changes."
+    },
+    {
+      "label": "Email 8",
+      "subject_old": "Still thinking this might be what you need?",
+      "subject_new": "Still thinking this might be what you need?",
+      "preview_old": "The Reset Challenge starts today. You can still join.",
+      "preview_new": "The Reset Challenge starts today. You can still join.",
+      "paragraphs": [
+        {"old": "Maybe you've been reading about the **28-Day Reset** and thinking, *this might actually be what I need.*", "new": "Maybe you've been reading about the **28-Day Reset** and thinking, *this might actually be what I need.*"},
+        {"old": "Something simple enough to stick with. Personalized to what's bothering you, using a stretch library developed with physiotherapists. And long enough to finally do something about the things that keep bothering you.", "new": "Something simple enough to stick with. Personalized to what's bothering you, using a stretch library developed with physiotherapists. And long enough to finally make progress on the things you've been working around."},
+        {"old": "If that's you, you haven't missed it.", "new": "If that's you, you haven't missed it."},
+        {"old": "The Reset starts today, and there's still time to join us. But not much time.", "new": "The Reset starts today, and there's still time to join us. But not much time."},
+        {"old": "Registration closes today at 5 PM PST.", "new": "Registration closes today at 5 PM PST."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN BEFORE 5 PM]"}
+      ],
+      "notes": "Two fixes. copy-editing (Sweep 2, repetition): 'bothering you' appeared twice in one short email; second instance reworded to 'finally make progress on the things you've been working around', tying into the 'work around' motif already used in Emails 1, 2 and 7. cro + marketing-psychology (converging finding): CTA changed to state the actual deadline at the decision point, scoped to this email and Email 9 only, since they're the only two with a same-day deadline in the body copy. Disagrees, narrowly, with Round 1's deliberate choice not to touch the CTA anywhere; agreed for Emails 1-7, disagreed here because a real deadline now exists to put on the button. Recommended as an A/B test against the control CTA, not assumed correct without measurement (see ab-testing)."
+    },
+    {
+      "label": "Email 9",
+      "subject_old": "In one hour, it's off the table",
+      "subject_new": "In one hour, it's off the table",
+      "preview_old": "There's no \"maybe later\" after 5.",
+      "preview_new": "There's no \"maybe later\" after 5.",
+      "paragraphs": [
+        {"old": "For the past couple of weeks, joining the **28-Day Reset** has been something you could think about.", "new": "For the past couple of weeks, joining the **28-Day Reset** has been something you could think about."},
+        {"old": "In one hour, it won't be.", "new": "In one hour, it won't be."},
+        {"old": "Registration closes at **5 PM PST**, and after that, the Reset Challenge is underway and this round is closed.", "new": "Registration closes at **5 PM PST**, and after that, the Reset Challenge is underway and this round is closed."},
+        {"old": "So if there's still a part of you thinking, *I actually want to do this,* listen to it.", "new": "So if there's still a part of you thinking, *I actually want to do this,* listen to it."},
+        {"old": "You don't need another email from us. You need to decide before 5.", "new": "You don't need another email from us. You need to decide before 5."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN BEFORE 5 PM]"}
+      ],
+      "notes": "Same CTA fix as Email 8, same reasoning. Otherwise unchanged: already clean, honest and well-paced per Round 1, agreed."
+    }
+  ]
+}

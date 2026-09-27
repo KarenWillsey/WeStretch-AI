@@ -1,6 +1,6 @@
 # WeStretch Re-Engagement Emails: Flow 2 & 3, Verified and Improved
 
-**Steps run:** Chase (strategy) OK, Expert (copy) OK, Marg (grading) OK — 2 loops, all three personas touched each loop.
+**Steps run:** Chase (strategy) OK, Expert (copy) OK, Marg (grading) OK, 2 loops, all three personas touched each loop.
 
 Source input: `WeStretch - re-engagement - flow 2 & 3.md` and `WeStretch Re-Engagement Emails - Voice & Approach.md`. Graded against the `westretch-core` personas and rubric, specialized by this folder's `reengagement-email-copy` skill.
 
@@ -10,7 +10,7 @@ Source input: `WeStretch - re-engagement - flow 2 & 3.md` and `WeStretch Re-Enga
 
 **Identity anchor (FATE):** "I'm someone who takes care of how I move." Every email is a small, repeatable proof of that identity, never a task to catch up on.
 
-**Six-Axis read across the sequence:** readiness rises from day 7 to day 30. Day 7 only needs *openness* (a gentle re-entry, no ask beyond noticing). Day 11 and 16 build *expectancy* (this will be easy, it will fit). Day 23 adds *connection* to the felt payoff. Day 30 is the only slot that can responsibly reach for *identity/compliance* ("this is who I am, long-term") — and it's exactly where the ethical guardrail against exploiting aging/decline anxiety has to be enforced hardest, because "long-term" framing is the one most tempted to lean on stakes instead of gain.
+**Six-Axis read across the sequence:** readiness rises from day 7 to day 30. Day 7 only needs *openness* (a gentle re-entry, no ask beyond noticing). Day 11 and 16 build *expectancy* (this will be easy, it will fit). Day 23 adds *connection* to the felt payoff. Day 30 is the only slot that can responsibly reach for *identity/compliance* ("this is who I am, long-term"), and it's exactly where the ethical guardrail against exploiting aging/decline anxiety has to be enforced hardest, because "long-term" framing is the one most tempted to lean on stakes instead of gain.
 
 **Drift check against the theme table:** two slots had drifted from their assigned theme (flagged to Marg and Expert, see Loop 1):
 - **Flow 2, Day 30** ("Your future self") had slid from identity-building into stakes/decline framing ("staying mobile isn't something you sort out later" implies loss if you don't).

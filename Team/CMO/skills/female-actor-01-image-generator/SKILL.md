@@ -1,12 +1,14 @@
 ---
 name: female-actor-01-image-generator
-description: Use when the user says "create image of female actor 01 in pose ...", asks to generate Female Actor 01 in a dynamic or specified pose, or requests another image of Female Actor 01. Generate a photorealistic 3:4 lifestyle image using the bundled identity reference while changing only the requested pose and preserving the actor, wardrobe, room, lighting, and clean App Store source-photo composition. Save reviewed outputs to Team/CMO/Review ToDo/ unless the user specifies another destination.
+description: Use when the user says "create image of female actor 01 in pose ...", asks to generate Female Actor 01 in a dynamic or specified pose, or requests another image of Female Actor 01. Generate a photorealistic 3:4 lifestyle image using the bundled identity reference while preserving the actor and, by default, the wardrobe, room, lighting, and clean App Store source-photo composition. Apply an explicitly requested scene or wardrobe change narrowly. Save reviewed outputs to Team/CMO/Review ToDo/ unless the user specifies another destination.
 ---
 
 # Female Actor 01 Image Generator
 
 Generate the requested image directly. Do not return only a suggested prompt.
-Treat the user's pose description as the single dynamic input.
+Treat the user's pose description as the required dynamic input. Keep every
+other property locked by default, but honor an explicit user-requested change
+such as `outdoors` by overriding only the conflicting lock.
 
 ## Canonical resources
 
@@ -42,9 +44,10 @@ ask for one concise pose description and stop.
 ## Generate
 
 1. Inspect `assets/female-actor-01-reference.png` before the first generation.
-2. Replace only `{{POSE}}` in `references/prompt-template.md` with the user's
-   pose. Keep every identity, wardrobe, setting, lighting, composition, and
-   output constraint unchanged.
+2. Replace `{{POSE}}` in `references/prompt-template.md` with the user's pose.
+   Keep every identity, wardrobe, setting, lighting, composition, and output
+   constraint unchanged unless the user explicitly overrides one. In that
+   case, modify only the conflicting prompt lock and preserve all others.
 3. Use the image tool in reference-image or edit mode with the canonical asset
    as the identity anchor. Set identity/reference preservation high when the
    tool exposes that control.
@@ -67,8 +70,8 @@ Regenerate or make a targeted correction before showing it if any check fails:
   malformed.
 - The head or hair is cropped, or the framing prevents the full pose from
   being understood.
-- The living room, warm camera-left daylight, 3:4 style, or upper negative
-  space changes materially.
+- Unless explicitly overridden, the living room, warm camera-left daylight,
+  3:4 style, or upper negative space changes materially.
 - Text, logos, watermarks, extra people, device frames, or UI appear.
 
 ## Output location
@@ -79,8 +82,11 @@ Regenerate or make a targeted correction before showing it if any check fails:
 - Honor the user's requested file format. If none is specified, use PNG.
 - Use a descriptive lowercase kebab-case filename based on the pose, setting,
   and orientation when relevant.
-- Never overwrite an existing file unless the user explicitly requests it.
-  Add `-v2`, `-v3`, and so on when a filename already exists.
+- Never overwrite an existing file by default. Add `-v2`, `-v3`, and so on
+  when a filename already exists.
+- Treat `Team/CMO/Image Catalogue/` as append-only. Never overwrite or replace
+  a catalogue image, even when a revision is requested. If a destination name
+  already exists there, preserve it and use the next available version suffix.
 - Do not leave a project-bound final only in the image tool's generated-images
   directory.
 
@@ -91,10 +97,12 @@ for user approval. Never place an unreviewed generation in an App Store
 Once Karen approves the image, move it from `Team/CMO/Review ToDo/` into
 `Team/CMO/Image Catalogue/` (skip this step if the user saved to a different
 destination). Leave rejected or superseded candidates in `Review ToDo/`, or
-delete them — they never move to `Image Catalogue/`.
+delete them; they never move to `Image Catalogue/`.
 
 ## Revisions
 
 Use the previously approved candidate as the edit target. Change only the
-newly requested pose detail and preserve every unmentioned element. Re-run the
-same review before presenting the revision.
+newly requested pose detail and preserve every unmentioned element. Save the
+revision outside `Image Catalogue/`, re-run the same review, and present it for
+approval. Once approved, add it to the catalogue as a new image with a unique
+filename; never replace the original catalogue file.

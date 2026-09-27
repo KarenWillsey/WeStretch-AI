@@ -189,7 +189,7 @@ footer code{font-family:var(--mono); background:var(--surface-2); padding:1px 6p
 <div class="topbar">
   <div class="topbar-inner">
     <div class="wordmark">we<span>stretch</span> / onboarding flow</div>
-    <div class="topbar-sub">Interactive spec browser — draft, not final</div>
+    <div class="topbar-sub">Interactive spec browser, draft, not final</div>
     <nav class="topnav">
       <a href="#goals">Goals</a>
       <a href="#overview">Overview</a>
@@ -208,12 +208,12 @@ footer code{font-family:var(--mono); background:var(--surface-2); padding:1px 6p
 <div class="wrap">
   <div class="hero">
     <h1 class="title">Onboarding &amp; first-routine flow</h1>
-    <p>Every screen ("book") from Karen's wireframes and dictation, in journey order. Click any screen to see its chapters — the conditional copy and button targets that drive it. Source of truth for engineering is the git-tracked <code>Screens/*.md</code> files this page is built from; this page is the walkthrough layer.</p>
+    <p>Every screen ("book") from Karen's wireframes and dictation, in journey order. Click any screen to see its chapters, the conditional copy and button targets that drive it. Source of truth for engineering is the git-tracked <code>Screens/*.md</code> files this page is built from; this page is the walkthrough layer.</p>
     <div class="legend">
-      <span class="badge ok"><span class="dot"></span>Drafted — chapters + JSON ready</span>
-      <span class="badge warn"><span class="dot"></span>Mockup only — no copy written</span>
-      <span class="badge muted"><span class="dot"></span>Not specified — no mockup, no copy</span>
-      <span class="badge accent"><span class="dot"></span>External — not part of this spec</span>
+      <span class="badge ok"><span class="dot"></span>Drafted, chapters + JSON ready</span>
+      <span class="badge warn"><span class="dot"></span>Mockup only, no copy written</span>
+      <span class="badge muted"><span class="dot"></span>Not specified, no mockup, no copy</span>
+      <span class="badge accent"><span class="dot"></span>External, not part of this spec</span>
     </div>
   </div>
 
@@ -225,11 +225,11 @@ footer code{font-family:var(--mono); background:var(--surface-2); padding:1px 6p
       <div class="goal-card"><span class="num">03</span><h3>Free → Pro conversion</h3><p>The paywall is a deliberate conversion moment, not incidental placement.</p></div>
       <div class="goal-card"><span class="num">04</span><h3>Drip education actually lands</h3><p>The gated education sequence should get seen and completed, not just be technically gate-able.</p></div>
     </div>
-    <p class="topbar-sub" style="margin-top:-4px;">Numeric targets intentionally TBD — qualitative goals locked 2026-08-19.</p>
+    <p class="topbar-sub" style="margin-top:-4px;">Numeric targets intentionally TBD, qualitative goals locked 2026-08-19.</p>
   </section>
 
   <section id="overview">
-    <div class="section-head"><h2>Flow overview</h2><span class="section-note">simplified — full conditional logic is in each screen's detail</span></div>
+    <div class="section-head"><h2>Flow overview</h2><span class="section-note">simplified; full conditional logic is in each screen's detail</span></div>
     <pre class="mermaid">
 graph TD
   L[Westretch splash] --> S[splash screen] --> F[First Screen]
@@ -253,7 +253,7 @@ graph TD
   </section>
 
   <section id="wizard">
-    <div class="section-head"><h2>Step-by-step wizard</h2><span class="section-note">routines 1–6 only — routine 7+ skips straight to Routine Type 2</span></div>
+    <div class="section-head"><h2>Step-by-step wizard</h2><span class="section-note">routines 1–6 only, routine 7+ skips straight to Routine Type 2</span></div>
     <div class="card-grid" id="grid-wizard"></div>
     <div class="detail" id="detail-Time"></div>
   </section>
@@ -270,7 +270,7 @@ graph TD
     <div class="section-head"><h2>Post-routine sequence</h2><span class="section-note">reward beats, then the education drip, then leaderboard</span></div>
     <div class="card-grid" id="grid-postroutine"></div>
 
-    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Fixed sequence — first routine completion</h3>
+    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Fixed sequence, first routine completion</h3>
     <div class="card-grid" id="grid-fixed"></div>
     <div class="detail" id="detail-Routine Recap"></div>
     <div class="detail" id="detail-Leaderboard Explainer"></div>
@@ -278,25 +278,25 @@ graph TD
     <div class="detail" id="detail-Set Your Goal"></div>
     <div class="detail" id="detail-Streak Saver Offer"></div>
 
-    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Proposed drip sequence <span class="badge accent" style="vertical-align:middle;">Claude's draft — not decided</span></h3>
+    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Proposed drip sequence <span class="badge accent" style="vertical-align:middle;">Claude's draft, not decided</span></h3>
     <p class="topbar-sub">Anchored to every timing signal Karen gave explicitly; everything else is a placement guess flagged for her review. See <code>Storyline.md</code> for the full reasoning.</p>
     <div style="overflow-x:auto;">
       <table class="freq" id="sequence-table"></table>
     </div>
 
-    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Unanchored / recurring — not slotted to a routine number</h3>
+    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Unanchored / recurring, not slotted to a routine number</h3>
     <div class="drip-groups" id="drip-groups"></div>
   </section>
 
   <section id="returning">
-    <div class="section-head"><h2>Returning users — First Screen</h2><span class="section-note">click a cell to open that chapter</span></div>
+    <div class="section-head"><h2>Returning users; First Screen</h2><span class="section-note">click a cell to open that chapter</span></div>
     <p class="topbar-sub">Guest gets 2 buttons throughout (Full Body / Customize). Free gets a 3rd ("Last routine settings") from routine 1 onward, and a countdown message from routine 3 as the trial pool depletes.</p>
     <div style="overflow-x:auto;">
       <table class="freq" id="returning-table"></table>
     </div>
 
-    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Routine Type 2 — routine 7+ entry &amp; the free-tier lock</h3>
-    <p class="topbar-sub">From routine 7, free users land here directly instead of the wizard. Only Full Body is tappable — everything else is visible but locked.</p>
+    <h3 style="font-family:var(--display); font-size:1rem; margin:28px 0 10px;">Routine Type 2, routine 7+ entry &amp; the free-tier lock</h3>
+    <p class="topbar-sub">From routine 7, free users land here directly instead of the wizard. Only Full Body is tappable; everything else is visible but locked.</p>
     <div class="lock-demo">
       <div class="lockcard">Full Body</div>
       <div class="lockcard locked">Pain Relief &amp; Rehab</div>
@@ -318,14 +318,14 @@ graph TD
       <div class="tpoint" style="left:57%;"></div>
       <div class="tlabel" style="left:57%;"><b>Routine 8</b>Soft paywall appears</div>
       <div class="tpoint" style="left:100%;"></div>
-      <div class="tlabel" style="left:100%; transform:translateX(-90%);"><b>Routine 14</b>Hard paywall — last unlocked routine</div>
+      <div class="tlabel" style="left:100%; transform:translateX(-90%);"><b>Routine 14</b>Hard paywall, last unlocked routine</div>
     </div>
     <p class="note" style="margin-top:56px;">A guest who passes routine 7 <em>without</em> signing up gets the same gating as a budget-exhausted free user: Full Body only, other types blurred, tap → paywall.</p>
     <p class="note">The day-5/routine-5 "60 days for $2 + bonus coins + streak tokens" offer and the Routine Type 2 lock banner's share offer are the <b>same promotion</b>. Shown plain first; the share-with-a-friend version is introduced later, not bundled with the first appearance.</p>
   </section>
 
   <section id="voice">
-    <div class="section-head"><h2>Brand voice — applies everywhere</h2></div>
+    <div class="section-head"><h2>Brand voice, applies everywhere</h2></div>
     <div class="voice-grid" id="voice-grid"></div>
   </section>
 
@@ -335,7 +335,7 @@ graph TD
   </section>
 
   <footer>
-    Source of truth: <code>Team/CXO/In Progress/Onboarding UX Flow Spec/Screens/*.md</code> + <code>Storyline.md</code> in the WeStretch-AI repo. This page is the presentation layer built from that content on 2026-08-21 — regenerate it after any book changes rather than editing it by hand.
+    Source of truth: <code>Team/CXO/In Progress/Onboarding UX Flow Spec/Screens/*.md</code> + <code>Storyline.md</code> in the WeStretch-AI repo. This page is the presentation layer built from that content on 2026-08-21, regenerate it after any book changes rather than editing it by hand.
   </footer>
 </div>
 
@@ -420,14 +420,14 @@ const SEQUENCE = [
   ['2','Coins explainer','Karen: "routine 2 or 3"','Goal 4'],
   ['3','Streak explainer','Karen: "early"','Goal 4'],
   ['4','Body Filter / Position Filter explainer','Karen: "within 14 days of Pro"','Goal 4'],
-  ['5','Day-5 offer — 60 days for $2 + bonus coins + streak tokens (plain, no share)','Karen: explicit','Goal 3'],
+  ['5','Day-5 offer, 60 days for $2 + bonus coins + streak tokens (plain, no share)','Karen: explicit','Goal 3'],
   ['6','Pre–Routine Type 2 transition explainer','Karen: "the session before" routine 7','Goal 4'],
-  ['7','(structural — routes into Routine Type 2, no drip sheet)','dictated, fixed','—'],
+  ['7','(structural (routes into Routine Type 2, no drip sheet)','dictated, fixed',') '],
   ['8','Soft paywall','Karen: explicit','Goal 3'],
   ['9','Notification reminders','Karen: "earlier than the 10th"','Goal 4'],
   ['10','Increase routine time nudge','Karen: explicit "~10th routine"','Goal 4'],
-  ['11','Ada speed control','unanchored — Claude placed here','Goal 4'],
-  ['12','Badges explainer','unanchored — Claude placed here','Goal 4'],
+  ['11','Ada speed control','unanchored; Claude placed here','Goal 4'],
+  ['12','Badges explainer','unanchored; Claude placed here','Goal 4'],
   ['13','Family Share','Karen: "maybe before the paywall"','Goal 3'],
   ['14','Hard paywall','Karen: explicit','Goal 3'],
 ];
@@ -436,8 +436,8 @@ seqEl.innerHTML = `<thead><tr><th>Routine</th><th>Sheet</th><th>Anchor</th><th>G
 <tbody>${SEQUENCE.map(r=>`<tr><td class="n">${r[0]}</td><td>${r[1]}</td><td style="color:var(--text-dim); font-size:.8rem;">${r[2]}</td><td><span class="badge accent" style="font-size:.65rem;">${r[3]}</span></td></tr>`).join('')}</tbody>`;
 
 const DRIP_GROUPS = [
-  {name:'Unanchored — proposed as routine 15+, one per session (order not meaningful)', items:['Closed captioning / font size','Sound options','Profile setup','Meet Ada (+ Bruce)','Gym setting','Sport type explainer','Sharing (30-day gift)','Alberta tour','Feedback ask','Time-off reassurance','Share-variant of the day-5 offer']},
-  {name:'Recurring / conditional — not tied to one routine number', items:['Stiffness progress stats (~every 8 routines — first lands same session as the soft paywall, flag as possible crowding)','Streak Saver Offer (after missed day, 5-day streak)','Guest sign-up nudge (every 3 days, calendar-based)','Random reactivation gift (lapsed Pro, random schedule)','"Turn Pro" banner (persistent, Home)']},
+  {name:'Unanchored, proposed as routine 15+, one per session (order not meaningful)', items:['Closed captioning / font size','Sound options','Profile setup','Meet Ada (+ Bruce)','Gym setting','Sport type explainer','Sharing (30-day gift)','Alberta tour','Feedback ask','Time-off reassurance','Share-variant of the day-5 offer']},
+  {name:'Recurring / conditional (not tied to one routine number', items:['Stiffness progress stats (~every 8 routines) first lands same session as the soft paywall, flag as possible crowding)','Streak Saver Offer (after missed day, 5-day streak)','Guest sign-up nudge (every 3 days, calendar-based)','Random reactivation gift (lapsed Pro, random schedule)','"Turn Pro" banner (persistent, Home)']},
 ];
 const dg = document.getElementById('drip-groups');
 DRIP_GROUPS.forEach(g=>{
@@ -447,11 +447,11 @@ DRIP_GROUPS.forEach(g=>{
 });
 
 const VOICE = [
-  'The app is intelligent and personalized — every routine is built from the user\\'s history and today\\'s customizations.',
-  'Ada is smart and advancing — hold times and difficulty increase as the user improves; credit Ada with tracking progress.',
+  'The app is intelligent and personalized; every routine is built from the user\\'s history and today\\'s customizations.',
+  'Ada is smart and advancing; hold times and difficulty increase as the user improves; credit Ada with tracking progress.',
   'Core goal: inspire daily stretching by motivating users to come back.',
-  'Conversion lever: FOMO on invested progress — the fear of losing history/progress is an ongoing pull toward Pro.',
-  'Speak to the user\\'s ego and point of view — their achievements, their body, their progress.'
+  'Conversion lever: FOMO on invested progress; the fear of losing history/progress is an ongoing pull toward Pro.',
+  'Speak to the user\\'s ego and point of view, their achievements, their body, their progress.'
 ];
 const vg = document.getElementById('voice-grid');
 VOICE.forEach((v,i)=>{
@@ -461,13 +461,13 @@ VOICE.forEach((v,i)=>{
 });
 
 const GAPS = [
-  {t:'Home, Set Your Goal, Streak Saver Offer have no visual design', d:'Copy/logic is now drafted for all three (2026-08-21), but none have a mockup — needed before Goal 1 (leaderboard dead-end) can actually ship.'},
-  {t:'Goal 1 fix direction not chosen', d:'Two candidates proposed in Home.md — auto-advance from Leaderboard to Home, or an explicit CTA on the leaderboard. Needs a decision.'},
-  {t:'Proposed drip sequence needs Karen\\'s review', d:'Routine-by-routine order is drafted (see table above) — several placements (Ada speed control, Badges explainer, all 10 unanchored sheets) are Claude\\'s judgment call, not dictated.'},
-  {t:'"Leader board" wireframe (#22) — not the real leaderboard', d:'Karen confirmed she doesn\\'t know what it was for and hasn\\'t uploaded the actual live leaderboard. Do not design against it; the real leaderboard is out of scope for this spec.'},
-  {t:'Stiffness progress stats may crowd the soft paywall', d:'Both are proposed to land on routine 8 — the ~every-8-routines stats sheet and the soft paywall appearance. Worth spacing apart.'},
+  {t:'Home, Set Your Goal, Streak Saver Offer have no visual design', d:'Copy/logic is now drafted for all three (2026-08-21), but none have a mockup; needed before Goal 1 (leaderboard dead-end) can actually ship.'},
+  {t:'Goal 1 fix direction not chosen', d:'Two candidates proposed in Home.md, auto-advance from Leaderboard to Home, or an explicit CTA on the leaderboard. Needs a decision.'},
+  {t:'Proposed drip sequence needs Karen\\'s review', d:'Routine-by-routine order is drafted (see table above), several placements (Ada speed control, Badges explainer, all 10 unanchored sheets) are Claude\\'s judgment call, not dictated.'},
+  {t:'"Leader board" wireframe (#22), not the real leaderboard', d:'Karen confirmed she doesn\\'t know what it was for and hasn\\'t uploaded the actual live leaderboard. Do not design against it; the real leaderboard is out of scope for this spec.'},
+  {t:'Stiffness progress stats may crowd the soft paywall', d:'Both are proposed to land on routine 8, the ~every-8-routines stats sheet and the soft paywall appearance. Worth spacing apart.'},
   {t:'Do routine: "Too fast" stacking behavior unconfirmed', d:'Unclear whether a second tap adds another 25% slower or caps at one adjustment.'},
-  {t:'Do routine: abandoned-routine assumption unconfirmed', d:'Assumed exiting before 75% does not increment routines_completed — inferred, not stated outright.'},
+  {t:'Do routine: abandoned-routine assumption unconfirmed', d:'Assumed exiting before 75% does not increment routines_completed, inferred, not stated outright.'},
   {t:'body_filter\\'s full 12-part list not confirmed', d:'Mockup shows 6 upper + 6 lower with some excluded by default; canonical part names still need confirming.'},
 ];
 const gl = document.getElementById('gaps-list');
@@ -505,12 +505,12 @@ renderBook('First Screen','First Screen','Source: Images/Screenshot 2026-08-19 1
   {cond:'routines_completed == 1 · free', title:'Welcome back, {first_name}', sub:'Explore all the customizations available to fit your needs today.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'},{label:'Last routine settings',target:'Rating'}]},
   {cond:'routines_completed == 2 · guest', title:'Welcome back to your 3rd routine', sub:'Take notice of the shifts occurring in your body.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'}]},
   {cond:'routines_completed == 2 · free', title:'Welcome back for your 3rd routine, {first_name}', sub:'Look around and take full advantage of our customizations.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'},{label:'Last routine settings',target:'Rating'}]},
-  {cond:'routines_completed == 3 · guest', title:'Welcome back to your 4th routine', sub:'Changing phones or want to use multiple devices? Sign up and your data will be saved.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'}], note:'Drafted by Claude from Karen\\'s dictated content — confirm exact wording.', flag:true},
-  {cond:'routines_completed == 3 · free', title:'Welcome back to your 4th routine, {first_name}', sub:'As a free user, you get 11 fully unlocked routines as our gift — after that, go Pro to keep everything unlocked.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'},{label:'Last routine settings',target:'Rating'}], note:'"11 routines" checks out: 14-routine typical trial budget minus 3 completed.'},
-  {cond:'routines_completed >= 4 · guest', title:'Welcome back to your {n}th routine', sub:'(none dictated for this range)', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'}], note:'Bug fix 2026-08-21: this chapter was missing entirely — guests past routine 3 had no defined screen. Reuses the established guest 2-button pattern.', flag:true},
-  {cond:'routines_completed == 4 · free', title:'10 routines left, {first_name}', sub:'Your full-body routine moves every joint, every direction — see how far you\\'ve come.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'},{label:'Last routine settings',target:'Rating'}], note:'Drafted by Claude — Karen asked directly for help with this one\\'s copy.', flag:true},
-  {cond:'routines_completed >= 6 · free', title:'Welcome back for your {n}th routine', sub:'All your customizations are now on one screen.', buttons:[{label:'Continue',target:'Routine Type 2'}], note:'From routine 7, the step-by-step wizard is skipped entirely — this routes straight into Routine Type 2.'},
-], null, `<div class="note">Guest past the 7-routine trial pool (no signup): same gating as a budget-exhausted free user — Full Body only, other options blurred, tap → paywall. See Routine Type 2.</div><div class="note">No Pro-tier chapter has been dictated yet — flagged as an open item, not invented.</div>`);
+  {cond:'routines_completed == 3 · guest', title:'Welcome back to your 4th routine', sub:'Changing phones or want to use multiple devices? Sign up and your data will be saved.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'}], note:'Drafted by Claude from Karen\\'s dictated content; confirm exact wording.', flag:true},
+  {cond:'routines_completed == 3 · free', title:'Welcome back to your 4th routine, {first_name}', sub:'As a free user, you get 11 fully unlocked routines as our gift; after that, go Pro to keep everything unlocked.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'},{label:'Last routine settings',target:'Rating'}], note:'"11 routines" checks out: 14-routine typical trial budget minus 3 completed.'},
+  {cond:'routines_completed >= 4 · guest', title:'Welcome back to your {n}th routine', sub:'(none dictated for this range)', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'}], note:'Bug fix 2026-08-21: this chapter was missing entirely; guests past routine 3 had no defined screen. Reuses the established guest 2-button pattern.', flag:true},
+  {cond:'routines_completed == 4 · free', title:'10 routines left, {first_name}', sub:'Your full-body routine moves every joint, every direction (see how far you\\'ve come.', buttons:[{label:'Full Body',target:'Time'},{label:'Customize',target:'Second'},{label:'Last routine settings',target:'Rating'}], note:'Drafted by Claude) Karen asked directly for help with this one\\'s copy.', flag:true},
+  {cond:'routines_completed >= 6 · free', title:'Welcome back for your {n}th routine', sub:'All your customizations are now on one screen.', buttons:[{label:'Continue',target:'Routine Type 2'}], note:'From routine 7, the step-by-step wizard is skipped entirely; this routes straight into Routine Type 2.'},
+], null, `<div class="note">Guest past the 7-routine trial pool (no signup): same gating as a budget-exhausted free user (Full Body only, other options blurred, tap → paywall. See Routine Type 2.</div><div class="note">No Pro-tier chapter has been dictated yet) flagged as an open item, not invented.</div>`);
 
 renderBook('Time','Time','Source: Images/Screenshot 2026-08-19 151837.png (screen 5)', [
   {cond:'custom_length_minutes == null', title:'How long would you like your routine to be?', sub:'I build you a unique routine each time. You can choose from 3 to 60 minutes.', buttons:[{label:'5 Minutes',target:'Rating'},{label:'10 Minutes',target:'Rating'},{label:'Custom Length',target:'Minutes'}]},
@@ -518,11 +518,11 @@ renderBook('Time','Time','Source: Images/Screenshot 2026-08-19 151837.png (scree
 ]);
 
 renderBook('Rating','Rating','Source: Images/Screenshot 2026-08-19 151851.png (screen 2)', [
-  {cond:'always', title:'Well, your routine is being custom built for you…', sub:'Let\\'s check in on how you are feeling today.', buttons:[{label:'(slider) Body Stiffness 0–10',target:'Do routine'}], note:'0 = "Can\\'t get any stiffer / stiff as a board", 5 = "Moveable", 10 = "Feeling good" — confirm labels against the real mockup, transcription was unclear.', flag:true}
+  {cond:'always', title:'Well, your routine is being custom built for you…', sub:'Let\\'s check in on how you are feeling today.', buttons:[{label:'(slider) Body Stiffness 0–10',target:'Do routine'}], note:'0 = "Can\\'t get any stiffer / stiff as a board", 5 = "Moveable", 10 = "Feeling good"; confirm labels against the real mockup, transcription was unclear.', flag:true}
 ]);
 
 renderBook('Do routine','Do routine','Source: Images/Screenshot 2026-08-19 151851.png (screen 3, placeholder)', null, null, `
-  <p class="csub">Not chapter-driven — one continuous interactive screen.</p>
+  <p class="csub">Not chapter-driven, one continuous interactive screen.</p>
   <div class="elements-grid">
     <div class="elcard"><span class="k">pose_index / pose_total</span><p>Top-left "X out of Y" counter, wrapped in a circular completion ring.</p></div>
     <div class="elcard"><span class="k">pose_countdown_seconds</span><p>Top-right countdown for the current pose.</p></div>
@@ -531,44 +531,44 @@ renderBook('Do routine','Do routine','Source: Images/Screenshot 2026-08-19 15185
     <div class="elcard"><span class="k">too_fast_button</span><p>Sets speed_adjustment to 25% slower. Stacking on repeat taps unconfirmed.</p></div>
     <div class="elcard"><span class="k">next_button</span><p>Bottom button, advances to next pose immediately.</p></div>
   </div>
-  <div class="note">Completion rule: reaching ≥75% counts as <b>completed</b>, even if stopped before 100%. Either way, auto-routes to Post Rating — no explicit "done" tap required.</div>
+  <div class="note">Completion rule: reaching ≥75% counts as <b>completed</b>, even if stopped before 100%. Either way, auto-routes to Post Rating, no explicit "done" tap required.</div>
 `);
 
 renderBook('Post Rating','Post Rating','Source: Images/Screenshot 2026-08-19 151851.png (screen 4)', [
-  {cond:'always', title:'Congratulations! Let\\'s check in on how you feel', sub:'I would like to work you up to 15 minutes a day for amazing results.', buttons:[{label:'if badges_earned → ',target:'Badges'},{label:'else → ',target:'Streak Progress'}], note:'This is the "post-routine talk" — Karen confirmed the animated character\\'s check-in happens here, not on a separate screen.'}
+  {cond:'always', title:'Congratulations! Let\\'s check in on how you feel', sub:'I would like to work you up to 15 minutes a day for amazing results.', buttons:[{label:'if badges_earned → ',target:'Badges'},{label:'else → ',target:'Streak Progress'}], note:'This is the "post-routine talk"; Karen confirmed the animated character\\'s check-in happens here, not on a separate screen.'}
 ]);
 
 renderBook('Routine Type 2','Routine Type 2','Source: Images/Screenshot 2026-08-19 151851.png (screen 1) · entry point for routine 7+ (free)', [
-  {cond:'account_type != free', title:'Customize Your Routine', sub:'Routine Length, Routine Type, Body Filter, Base Positions — all fields editable, all routine types tappable.', buttons:[{label:'Let\\'s Go / Let\\'s stretch',target:'Rating'}]},
-  {cond:'free · trial_routines_remaining > 0', title:'Customize Your Routine', sub:'Full access, same as above — nothing locked yet (typically routines 7–13).', buttons:[{label:'Let\\'s Go / Let\\'s stretch',target:'Rating'}], note:'Bug fix 2026-08-21: this chapter was missing — the original draft locked ALL free users unconditionally, contradicting First Screen\\'s countdown chapters which assume full access continues until the budget runs out.', flag:true},
-  {cond:'free · trial_routines_remaining <= 0', title:'Customize Your Routine', sub:'Only Full Body is tappable. Other routine type cards are blurred/greyed; tapping any of them, or the "Fully unlock every customization" banner, opens the paywall.', buttons:[{label:'Let\\'s Go / Let\\'s stretch',target:'Rating'},{label:'locked type tapped',target:'paywall place holder'}], note:'This is the real hard-paywall state (routine 14+). The banner\\'s share-to-friend offer is the same promotion as the day-5 offer — shown plain first, share variant introduced later.'}
+  {cond:'account_type != free', title:'Customize Your Routine', sub:'Routine Length, Routine Type, Body Filter, Base Positions, all fields editable, all routine types tappable.', buttons:[{label:'Let\\'s Go / Let\\'s stretch',target:'Rating'}]},
+  {cond:'free · trial_routines_remaining > 0', title:'Customize Your Routine', sub:'Full access, same as above (nothing locked yet (typically routines 7–13).', buttons:[{label:'Let\\'s Go / Let\\'s stretch',target:'Rating'}], note:'Bug fix 2026-08-21: this chapter was missing) the original draft locked ALL free users unconditionally, contradicting First Screen\\'s countdown chapters which assume full access continues until the budget runs out.', flag:true},
+  {cond:'free · trial_routines_remaining <= 0', title:'Customize Your Routine', sub:'Only Full Body is tappable. Other routine type cards are blurred/greyed; tapping any of them, or the "Fully unlock every customization" banner, opens the paywall.', buttons:[{label:'Let\\'s Go / Let\\'s stretch',target:'Rating'},{label:'locked type tapped',target:'paywall place holder'}], note:'This is the real hard-paywall state (routine 14+). The banner\\'s share-to-friend offer is the same promotion as the day-5 offer, shown plain first, share variant introduced later.'}
 ]);
 
-renderBook('Routine Recap','Routine Recap + login prompt','Storyline.md — Fixed sequence, step S1 (first routine completion)', [
-  {cond:'always, first completion', title:'Your routine was {routine_length_minutes} minutes long, {routine style}.', sub:'Keep up your mobility.', buttons:[{label:'Sure, I\\'ll log in',target:'Sign Up'},{label:'Continue as guest',target:'Leaderboard Explainer'}], note:'Explains the app builds the next routine from history, so routines evolve — logging in protects that history across devices.'}
-], null, `<div class="note flag">Not yet in Screen-Inventory.md as its own book — add as "Routine Recap" if this reading is confirmed. Unclear whether S1/S2 repeat every session or first-time only.</div>`);
+renderBook('Routine Recap','Routine Recap + login prompt','Storyline.md; Fixed sequence, step S1 (first routine completion)', [
+  {cond:'always, first completion', title:'Your routine was {routine_length_minutes} minutes long, {routine style}.', sub:'Keep up your mobility.', buttons:[{label:'Sure, I\\'ll log in',target:'Sign Up'},{label:'Continue as guest',target:'Leaderboard Explainer'}], note:'Explains the app builds the next routine from history, so routines evolve, logging in protects that history across devices.'}
+], null, `<div class="note flag">Not yet in Screen-Inventory.md as its own book; add as "Routine Recap" if this reading is confirmed. Unclear whether S1/S2 repeat every session or first-time only.</div>`);
 
-renderBook('Leaderboard Explainer','Leaderboard Explainer','Storyline.md — Fixed sequence, step S2', [
+renderBook('Leaderboard Explainer','Leaderboard Explainer','Storyline.md; Fixed sequence, step S2', [
   {cond:'always, before first leaderboard visit', title:'Leaderboards are to help you motivate and show up every day.', sub:'It\\'s based on how many minutes you stretch in a day. Set a little personal goal to move up, or stay in the top league.', buttons:[{label:'Take me to the leaderboard',target:'Leaderboard (real)'}]}
 ]);
 
-renderBook('Home','Home','No source mockup — partial book, drafted 2026-08-21 from dictated elements only', null, null, `
+renderBook('Home','Home','No source mockup, partial book, drafted 2026-08-21 from dictated elements only', null, null, `
   <div class="elements-grid">
-    <div class="elcard"><span class="k">summary_cards</span><p>"The full picture" of the user's progress — content not specified, needs a design pass. This is what Goal 1 wants users routed back to.</p></div>
+    <div class="elcard"><span class="k">summary_cards</span><p>"The full picture" of the user's progress; content not specified, needs a design pass. This is what Goal 1 wants users routed back to.</p></div>
     <div class="elcard"><span class="k">guest_banner</span><p>Guests only: "You are a guest user. Sign up anytime to save your history." → Sign Up</p></div>
     <div class="elcard"><span class="k">history_widget</span><p>Tapping the top widget opens a calendar view of stretch history.</p></div>
     <div class="elcard"><span class="k">turn_pro_banner</span><p>Free users: persistent banner → paywall place holder</p></div>
     <div class="elcard"><span class="k">bottom_nav</span><p>Confirmed: Leaderboard, Notifications, Settings. Full list (incl. Home itself) unconfirmed.</p></div>
   </div>
-  <div class="note flag">Proposed fix for Goal 1 (not decided): either auto-advance from Leaderboard to Home after the user explores it, or add an explicit "see your full summary" CTA on the leaderboard. Real leaderboard is out of scope for this spec either way — the decision needs sign-off outside these books.</div>
+  <div class="note flag">Proposed fix for Goal 1 (not decided): either auto-advance from Leaderboard to Home after the user explores it, or add an explicit "see your full summary" CTA on the leaderboard. Real leaderboard is out of scope for this spec either way; the decision needs sign-off outside these books.</div>
 `);
 
-renderBook('Set Your Goal','Set Your Goal','No source mockup — reached ~routine 6–7, exact trigger TBD', [
-  {cond:'first visit', title:null, sub:'Set your default routine length here. But remember to come back every few weeks and add a minute or two — or 10, if you\\'re cheeky.', buttons:[], note:'Toggle: Everyday Stretcher (ties to streaks) vs. Weekday Stretcher. Save target and Weekday behavior not specified.', flag:true}
+renderBook('Set Your Goal','Set Your Goal','No source mockup, reached ~routine 6–7, exact trigger TBD', [
+  {cond:'first visit', title:null, sub:'Set your default routine length here. But remember to come back every few weeks and add a minute or two, or 10, if you\\'re cheeky.', buttons:[], note:'Toggle: Everyday Stretcher (ties to streaks) vs. Weekday Stretcher. Save target and Weekday behavior not specified.', flag:true}
 ]);
 
-renderBook('Streak Saver Offer','Streak Saver Offer','No source mockup, minimal dictated content — Karen referenced this as an existing sheet not provided', [
-  {cond:'streak_count reached ≥5, then a day missed, user returned', title:'(copy not dictated)', sub:'Offers the user their "streak freeze" to preserve the streak despite the missed day.', buttons:[], note:'Stub only — needs real copy from Karen or a designer before use.', flag:true}
+renderBook('Streak Saver Offer','Streak Saver Offer','No source mockup, minimal dictated content; Karen referenced this as an existing sheet not provided', [
+  {cond:'streak_count reached ≥5, then a day missed, user returned', title:'(copy not dictated)', sub:'Offers the user their "streak freeze" to preserve the streak despite the missed day.', buttons:[], note:'Stub only; needs real copy from Karen or a designer before use.', flag:true}
 ]);
 
 function toggleDetail(id){
@@ -584,9 +584,9 @@ const RETURN_ROWS = [
   ['1','Welcome back','Welcome back, {first_name}'],
   ['2','Welcome back to your 3rd routine','Welcome back for your 3rd routine, {first_name}'],
   ['3','Welcome back to your 4th routine*','As a free user, you get 11 fully unlocked routines as our gift'],
-  ['4','—','10 routines left, {first_name}*'],
-  ['5','—','9 routines left, {first_name}*'],
-  ['6+','—','Welcome back for your {n}th routine → Routine Type 2'],
+  ['4','-','10 routines left, {first_name}*'],
+  ['5','-','9 routines left, {first_name}*'],
+  ['6+','; ','Welcome back for your {n}th routine → Routine Type 2'],
 ];
 const rt = document.getElementById('returning-table');
 rt.innerHTML = `<thead><tr><th>Routines completed</th><th>Guest</th><th>Free</th></tr></thead>

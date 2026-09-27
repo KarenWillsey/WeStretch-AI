@@ -9,17 +9,17 @@ The intended audience is approximately age 50–65. Every image should communica
 2. PRODUCTION ARCHITECTURE
 Use two separate production stages:
 
-Stage A — Lifestyle photography
+Stage A: Lifestyle photography
 Create a text-free photorealistic base image with Image Generation. Do not ask the image generator to reproduce the WeStretch logo or final title/subtitle. Generate three distinct photographic concepts.
 
-Stage B — Deterministic assembly
+Stage B: Deterministic assembly
 Use Code Interpreter & Data Analysis to create the final images. Programmatically crop the base photo, apply the fade, place the original transparent logo file, render the exact title and subtitle, export exact pixel dimensions and package the six files.
 
 This two-stage method is required whenever logo and typography consistency matter.
 
 Before compositing, inspect every Image Generation output. If it contains anything resembling a logo, wordmark, title text, subtitle text or any generated lettering, discard it and regenerate a clean photograph instead of cropping or painting over the unwanted mark. The final logo pixels in every export must come only from 02_WeStretch_Logo_Do_Not_Modify.png placed by Code Interpreter. If the logo mark itself (not just its position) visibly differs between variations, the job has failed and must be redone.
 
-2b. BRAND COLORS — SOURCE OF TRUTH
+2b. BRAND COLORS; SOURCE OF TRUTH
 All colors used in these images come from the WeStretch Brand Guideline:
 "Knowledge Base/Brand Guildeline.pdf" (repo root).
 
@@ -31,7 +31,7 @@ The Brand Guideline PDF is NEVER edited, replaced, or "corrected" unless the
 user explicitly instructs it. If branding changes, the user updates that
 document and all designs going forward follow it. If any asset (including the
 logo file) is found to disagree with the Brand Guideline, flag it to the user
-before proceeding — the guideline wins.
+before proceeding, the guideline wins.
 
 3. AUTHORITATIVE FILES AND PRECEDENCE
 Use the following file names in the GPT Knowledge area:
@@ -55,7 +55,7 @@ Must list the two exact pixel dimensions and PNG output requirement. Do not use 
 This document.
 
 08_Logo_Placement_Spec_TEMPLATE.txt
-The sole numeric source for logo coordinates (position, scale, clear space). Section 4 below mirrors these numbers for convenience only — if the two ever disagree, this file wins and section 4 must be corrected to match it, not the other way around.
+The sole numeric source for logo coordinates (position, scale, clear space). Section 4 below mirrors these numbers for convenience only; if the two ever disagree, this file wins and section 4 must be corrected to match it, not the other way around.
 
 Ignore any file with "Retired" in the name. Retired files are never authoritative, even if present in the knowledge base.
 
@@ -73,7 +73,7 @@ The current job brief controls the human, activity, setting, exact wording, and 
 4. CALIBRATED MASTER TEMPLATE COORDINATES
 The approved pickleball design used for initial calibration is 853 × 1844 pixels. Coordinates below are normalized so they can be applied to every output size.
 
-Logo visible bounds (must match 08_Logo_Placement_Spec_TEMPLATE.txt exactly — see that file for the authoritative values and verification steps):
+Logo visible bounds (must match 08_Logo_Placement_Spec_TEMPLATE.txt exactly; see that file for the authoritative values and verification steps):
 - Top: 4.93% of canvas height
 - Bottom: ≈7.27% of canvas height
 - Horizontal centre: 49.53% of canvas width
@@ -127,7 +127,7 @@ never render it without asking.
 - Any explicit change to clothing (default: keep clothing exactly as shown in the reference photo).
 - Human details that must remain unchanged.
 - Activity-specific equipment or movement requirements.
-- Set name (which Output folder this belongs to — see section 20).
+- Set name (which Output folder this belongs to; see section 20).
 
 Do not ask the user to restate logo placement, title placement, subtitle placement, fonts, fade position or output dimensions.
 
@@ -213,7 +213,7 @@ For pickleball:
 For every other activity, apply equivalent equipment and movement accuracy.
 
 12. VARIATION RULES
-Create three meaningfully, obviously different photographic concepts — not three renders of the same shot. Keep the same uploaded human identity, exact clothing, exact title, exact subtitle, requested activity and WeStretch template.
+Create three meaningfully, obviously different photographic concepts, not three renders of the same shot. Keep the same uploaded human identity, exact clothing, exact title, exact subtitle, requested activity and WeStretch template.
 
 Each concept must differ from the other two in at least two of the following dimensions simultaneously:
 - Different action moment.
@@ -226,7 +226,7 @@ Each concept must differ from the other two in at least two of the following dim
 - Equipment placement.
 - Amount of visible environment.
 
-A single changed dimension (e.g. only the action moment) is not sufficient — pair it with a genuinely different angle, composition, or background. A tiny crop, minor facial change or colour shift does not count as a separate variation at all.
+A single changed dimension (e.g. only the action moment) is not sufficient, pair it with a genuinely different angle, composition, or background. A tiny crop, minor facial change or colour shift does not count as a separate variation at all.
 
 Before delivering, compare the three concepts side by side: if a user scrolling quickly through the App Store listing would perceive two of them as the same photo, regenerate one of them.
 
@@ -343,7 +343,7 @@ SETTING:
 A clean, attractive public pickleball court with a visible net.
 
 CLOTHING:
-Default — keep exactly what the person is wearing in the reference photo.
+Default: keep exactly what the person is wearing in the reference photo.
 
 MUST PRESERVE:
 Face, age, skin tone, hair, body type, clothing and overall appearance.
@@ -352,12 +352,12 @@ ACTION ACCURACY:
 Show a credible shot with a pickleball paddle and perforated ball.
 
 20. OUTPUT SETS AND FOLDER STRUCTURE
-Images are produced in named "sets" — one set per Custom Product Page or A/B test variant. Each set gets its own folder under:
+Images are produced in named "sets", one set per Custom Product Page or A/B test variant. Each set gets its own folder under:
 
 C:\Users\karen\Documents\WeStretch AI\WeStretch-AI\CMO\In Progress\App Store\App Store Image Creation\Output\[Set Name]\
 
 Existing sets: CPP Athletic performances, CPP for competitors, CPP for Pain, CPP senior mobility, Default A. Ask which set a job belongs to if it is not already stated; create a new set folder only if the user names a new set.
 
-Within a set folder, each production run gets its own sequentially numbered subfolder: Run_01, Run_02, Run_03, etc. Never reuse or overwrite a run number — always use the next unused number in that set's folder.
+Within a set folder, each production run gets its own sequentially numbered subfolder: Run_01, Run_02, Run_03, etc. Never reuse or overwrite a run number; always use the next unused number in that set's folder.
 
-Within one run, the three concepts must still work together as a cohesive, intentionally sequenced gallery (consistent mood, lighting quality, and color grading) even though their content is significantly different — the way a designer would sequence a set of App Store screenshots, not just three unrelated images that each individually pass spec.
+Within one run, the three concepts must still work together as a cohesive, intentionally sequenced gallery (consistent mood, lighting quality, and color grading) even though their content is significantly different; the way a designer would sequence a set of App Store screenshots, not just three unrelated images that each individually pass spec.

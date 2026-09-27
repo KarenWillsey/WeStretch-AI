@@ -3,8 +3,8 @@
 ## What it is
 
 A social stretching mode where 2+ WeStretch users complete a stretching routine together, either:
-- **Live/synced session** — friends join a real-time room, follow the same routine in step, see each other's presence (avatar/status, not necessarily video).
-- **Async "stretch party"** — friends are invited to complete the same routine within a time window (e.g., "today's 10-min stretch"); completions and streaks are visible to the group afterward.
+- **Live/synced session**: friends join a real-time room, follow the same routine in step, see each other's presence (avatar/status, not necessarily video).
+- **Async "stretch party"**: friends are invited to complete the same routine within a time window (e.g., "today's 10-min stretch"); completions and streaks are visible to the group afterward.
 
 ## Why
 
@@ -28,6 +28,6 @@ This folder contains one planning document per relevant executive function, each
 | [cfo.md](cfo.md) | CFO | `budget-planning` |
 | [cio.md](cio.md) | CIO | `data-governance-review` |
 | [chro.md](chro.md) | CHRO | `hiring-plan` |
-| [synthesis.md](synthesis.md) | — | cross-role summary and recommendation |
+| [synthesis.md](synthesis.md) |, | cross-role summary and recommendation |
 
-All figures below (CAC, budget, timelines) are illustrative estimates for planning purposes, not actuals — they're flagged inline where used.
+All figures below (CAC, budget, timelines) are illustrative estimates for planning purposes, not actuals; they're flagged inline where used.

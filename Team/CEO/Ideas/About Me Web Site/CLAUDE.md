@@ -1,4 +1,4 @@
-# About Me Web Site — CLAUDE.md
+# About Me Web Site; CLAUDE.md
 
 Scope: an idea, not yet started. See `About me Instructions.txt` for the
 source brief. Read `Memory.md` alongside this file before starting real work.

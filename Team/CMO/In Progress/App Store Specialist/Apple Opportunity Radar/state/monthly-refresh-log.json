@@ -42,5 +42,46 @@
       "https://developer.apple.com/news/ (Apple Developer News feed -- solid candidate, general not App-Store-specific)",
       "Apple Search Ads: no clean developer.apple.com canonical page found (product site is searchads.apple.com, different domain) -- needs a human decision"
     ]
+  },
+  {
+    "run_at": "2026-09-01T07:00:00-06:00",
+    "run_type": "scheduled",
+    "urls_checked": [
+      {"url": "https://developer.apple.com/app-store/product-page/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/ratings-and-reviews/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/custom-product-pages/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/app-store/product-page-optimization/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/in-app-events/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/app-store/subscriptions/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/small-business-program/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/videos/play/tech-talks/111433/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/app-store/user-privacy-and-data-use/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/review/guidelines/", "status": "ok", "changed": false},
+      {"url": "https://developer.apple.com/distribute/app-review/", "status": "ok", "changed": true},
+      {"url": "https://developer.apple.com/app-store/getting-featured/", "status": "ok", "changed": true}
+    ],
+    "changes_found": [
+      "App Store Listing: in-app purchase/subscription showcase on product page (up to 20 items, 35/55-char name/description limits)",
+      "Screenshots and Videos: recommend a Dark Mode screenshot if the app supports Dark Mode",
+      "Ratings and Reviews: AI-generated review summaries (iOS/iPadOS 18.4+, EN/US only); per-territory rating reset; new edited-review email alert; direct billing/download complaints to Apple Support",
+      "App Store A/B Testing: one test at a time; up to 90 days duration; 90% confidence threshold; traffic split across treatments not per-treatment; icon variants must ship in binary; non-icon tests can submit independent of app version",
+      "Subscriptions and Free Trials: monthly subscription with 12-month commitment; streamlined purchasing (complete purchase outside app); win-back offer discovery expanded across more surfaces with priority ranking",
+      "Analytics and Measurement: new Offers dashboard, Subscription Retention view, expanded trackable subscription events, proceeds-rate filter/grouping",
+      "Revenue and Apple Commissions: Small Business Program members under 2M first-time downloads get free Apple Foundation Models / Private Cloud Compute access (CTO-adjacent)",
+      "Privacy and Customer Accounts: broadened 'tracking' definition (unintentional SDK data-combining, webview tracking both require ATT); expanding SDK signature/privacy-manifest requirements; separate local-privacy-law consent controls allowed; deferred account-deletion option (schedule at subscription expiry, alongside immediate deletion)",
+      "App Review and Releases: bug-fix reviews can defer newly-found non-critical issues to next submission; 30-minute App Review Webex consultation appointments now available",
+      "Getting Featured by Apple: In-App Events now an explicit nominate-able/featurable content type; additional featuring mechanisms documented (App/Game of the Day, Lists, Personalized recommendations, Editors' Choice badge); eligibility not category-restricted"
+    ],
+    "new_backlog_items": [
+      "Configure the in-app purchase/subscription showcase on the product page",
+      "Confirm Dark Mode support and add a Dark Mode screenshot if applicable",
+      "Fold privacy-manifest/SDK-signature verification into the existing SDK audit item",
+      "Submit the drafted 7-Day Mobility Challenge In-App Event for an Apple Featuring Nomination",
+      "Evaluate a monthly-with-12-month-commitment subscription tier and streamlined-purchasing on/off decision"
+    ],
+    "candidate_urls_found": [
+      "https://developer.apple.com/app-store/promote/ (Apple Search Ads / \"Promoting your apps\" -- solid on-domain candidate, better than the searchads.apple.com off-domain option found 2026-08-21)"
+    ]
   }
 ]

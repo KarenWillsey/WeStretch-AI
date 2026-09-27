@@ -1,4 +1,4 @@
-# Build an Advisory Board — CLAUDE.md
+# Build an Advisory Board; CLAUDE.md
 
 Scope: an idea, not yet started. See `How to build advisory board.txt` for
 the source brief. Read `Memory.md` alongside this file before starting real

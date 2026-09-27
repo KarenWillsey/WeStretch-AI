@@ -1,0 +1,251 @@
+{
+  "emails": [
+    {
+      "label": "Landing Page — Hero",
+      "subject_old": "THE 28-DAY RESET CHALLENGE",
+      "subject_new": "THE 28-DAY RESET CHALLENGE",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Stop working around the stiffness. Start working on it.", "new": "Stop working around the stiffness. Start working on it."},
+        {"old": "Get personalized stretching routines focused on where you feel tight, so you can spend 15 minutes a day on what's actually bothering you instead of adjusting around it.", "new": "Get personalized stretching routines focused on where you feel tight, so you can spend 15 minutes a day on what's actually bothering you instead of adjusting around it."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"},
+        {"old": "28 days · 15 minutes a day · Starts October 19", "new": "28 days · 15 minutes a day · Starts October 19"}
+      ],
+      "notes": null
+    },
+    {
+      "label": "Maybe you've started working around it",
+      "subject_old": "Maybe you've started working around it without realizing it.",
+      "subject_new": "Maybe you've started working around it without realizing it.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Your neck bothers you after sleeping funny. Your back feels stiff when you stand up. You do a little more than usual and somehow you're sore.", "new": "Your neck bothers you after sleeping funny. Your back feels stiff when you stand up. You do a little more than usual and somehow you're sore."},
+        {"old": "Maybe you still do everything you want to do. Or maybe you've started moving differently, thinking twice about certain things or doing a little less because you know you'll feel it later.", "new": "Maybe you still do everything you want to do. Or maybe you've started moving differently, thinking twice about certain things or doing a little less because you know you'll feel it later."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "What if there were less to work around?",
+      "subject_old": "What if there were simply less to work around?",
+      "subject_new": "What if there were less to work around?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Less stiffness when you get up. Less soreness after doing something ordinary. Less adjusting around whatever happens to be bothering you.", "new": "Getting up without your back announcing itself. Reaching the top shelf without thinking about your shoulder first. Less adjusting around whatever happens to be bothering you today."},
+        {"old": "Give your body 15 minutes a day for 28 days and see how much better it can feel.", "new": "Give your body 15 minutes a day for 28 days and see how much better it can feel."}
+      ],
+      "notes": "Cut 'simply' (filler). Replaced the generic, unfilmable 'less stiffness / less soreness' claims with two specific, concrete images."
+    },
+    {
+      "label": "How It Works — Step 1",
+      "subject_old": "1. Tell WeStretch what feels tight.",
+      "subject_new": "1. Tell WeStretch what feels tight.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Get a personalized routine focused on what's bothering you.", "new": "Physiotherapists already mapped which stretches are safe and in what order. WeStretch uses what you tell it, plus your goals and your time, to hand you today's routine from that plan."}
+      ],
+      "notes": "Replaced the unproven 'personalized routine' assertion with the physiotherapist-mapped authority claim."
+    },
+    {
+      "label": "How It Works — Step 2",
+      "subject_old": "2. Stretch for 15 minutes a day.",
+      "subject_new": "2. Follow along for 15 minutes a day.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Follow your personalized routine for just 15 minutes a day.", "new": "An animated guide walks you through every movement in real time, so you're never guessing at a still picture. Just follow along."}
+      ],
+      "notes": "Named the animated guide as the reason you're not guessing at a still picture; cut filler 'just' from the old line."
+    },
+    {
+      "label": "How It Works — Step 3 & mid-page CTA",
+      "subject_old": "3. Stay consistent.",
+      "subject_new": "3. Stay consistent.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Keep showing up for weekly prize chances and two grand prizes.", "new": "Keep showing up for weekly prize chances and two grand prizes."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"},
+        {"old": "Starts October 19 · Ends November 15", "new": "Starts October 19 · Ends November 15"}
+      ],
+      "notes": null
+    },
+    {
+      "label": "The difference is sticking with it",
+      "subject_old": "The difference is sticking with it.",
+      "subject_new": "The difference is sticking with it.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "It's easy to stretch when something bothers you and stop when it feels better.", "new": "It's easy to stretch when something bothers you and stop when it feels better."},
+        {"old": "The Reset gives you 28 days to see what happens when you keep going.", "new": "The Reset gives you 28 days to see what happens when you keep going."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "See what feels different after 28 days",
+      "subject_old": "See what feels different after 28 days.",
+      "subject_new": "See what feels different after 28 days.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Maybe you feel less stiff getting up. The spot that always seems to bother you bothers you less. Things you've been adjusting around start feeling easier again.", "new": "Maybe you feel less stiff getting up. The spot that always seems to bother you bothers you less. Things you've been adjusting around start feeling easier again."},
+        {"old": "You don't need to wait until it gets worse. You can just want your body to feel better.", "new": "You don't need to wait until it gets worse. You can just want your body to feel better."},
+        {"old": "[JOIN THE 28-DAY RESET]", "new": "[JOIN THE 28-DAY RESET]"},
+        {"old": "28 days · 15 personalized minutes a day · Starts October 19", "new": "28 days · 15 personalized minutes a day · Starts October 19"}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — What if I'm really stiff or haven't stretched in a long time?",
+      "subject_old": "What if I'm really stiff or haven't stretched in a long time?",
+      "subject_new": "What if I'm really stiff or haven't stretched in a long time?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "That's completely fine. You don't need to be flexible or already have a stretching habit to join. The challenge is simply about spending a little time each day helping your body feel and move better.", "new": "That's completely fine. You don't need to be flexible or already have a stretching habit to join. The challenge is simply about spending a little time each day helping your body feel and move better."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — Is this actually safe for me? (new)",
+      "subject_old": null,
+      "subject_new": "Is this actually safe for me?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": null, "new": "Every stretch was developed and validated with physiotherapists and movement specialists, who mapped which stretches are safe and in what order. WeStretch uses what you tell it about what's bothering you to decide which of those stretches you get. If something's off-limits for you, it's left out."}
+      ],
+      "notes": "New FAQ added to back up the physiotherapist-mapping claim introduced earlier in How It Works."
+    },
+    {
+      "label": "FAQ — Do I have to do all 15 minutes at once?",
+      "subject_old": "Do I have to do all 15 minutes at once?",
+      "subject_new": "Do I have to do all 15 minutes at once?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "No. You can spread your stretching throughout the day. Do a few stretches when you have time and finish the rest later. What matters is making those 15 minutes part of your day.", "new": "No. You can spread your stretching throughout the day. Do a few stretches when you have time and finish the rest later. What matters is making those 15 minutes part of your day."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — Do I have to do all 28 days?",
+      "subject_old": "Do I have to do all 28 days?",
+      "subject_new": "Do I have to do all 28 days?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "The goal is to give your body 15 minutes a day for 28 days and see what changes. But if you miss a day, just get back to it the next day. The point is consistency, not perfection.", "new": "The goal is to give your body 15 minutes a day for 28 days and see what changes. But if you miss a day, just get back to it the next day. The point is consistency, not perfection."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — What if a different area starts bothering me?",
+      "subject_old": "What if a different area starts bothering me?",
+      "subject_new": "What if a different area starts bothering me?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "That's okay. Your stretching is personalized, so it can change with you. If your neck is bothering you today and your hips feel tight tomorrow, WeStretch can adjust what you're working on.", "new": "That's okay. Your stretching is personalized, so it can change with you. If your neck is bothering you today and your hips feel tight tomorrow, WeStretch can adjust what you're working on."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — Are there prizes?",
+      "subject_old": "Are there prizes?",
+      "subject_new": "Are there prizes?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Yes. You'll have a chance to win prizes each week for participating, plus the chance to win one of two grand prizes at the end of the challenge.", "new": "Yes. You'll have a chance to win prizes each week for participating, plus the chance to win one of two grand prizes at the end of the challenge."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — When does the challenge start?",
+      "subject_old": "When does the challenge start?",
+      "subject_new": "When does the challenge start?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "The 28-Day Reset starts October 19 and runs through November 15. Everyone does the challenge over the same four weeks.", "new": "The 28-Day Reset starts October 19 and runs through November 15. Everyone does the challenge over the same four weeks."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "FAQ — How do I join?",
+      "subject_old": "How do I join?",
+      "subject_new": "How do I join?",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Join WeStretch with a monthly or annual subscription. You'll get full access to the app right away, so you can start stretching immediately. Then on October 19, you'll get access to the 28-Day Reset Challenge.", "new": "Join WeStretch with a monthly or annual subscription. You'll get full access to the app right away, so you can start stretching immediately. Then on October 19, you'll get access to the 28-Day Reset Challenge."}
+      ],
+      "notes": null
+    },
+    {
+      "label": "Subscription Screen — Headline",
+      "subject_old": "Give your body 28 days. See how much better it can feel.",
+      "subject_new": "Give your body 28 days. See how much better it can feel.",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "You've probably stretched when something starts bothering you. The difference this time is you're not stopping after a day or two.", "new": "You've probably stretched when something starts bothering you. The difference this time is you're not stopping after a day or two."},
+        {"old": "For 28 days, you'll give your body 15 minutes of personalized stretching every day. Enough time to stop reacting to whatever feels tight today and find out what consistency can actually change.", "new": "For 28 days, you'll follow a routine physiotherapists helped map, built around what's bothering you, for 15 minutes a day. Enough time to stop reacting to whatever feels tight today and find out what consistency can actually change."}
+      ],
+      "notes": "Added a clause naming the physiotherapist-mapped routine right before the price choice."
+    },
+    {
+      "label": "Subscription Screen — Checklist",
+      "subject_old": "Everything you get when you join:",
+      "subject_new": "Everything you get when you join:",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "✓ Personalized stretching focused on what's bothering you", "new": "✓ Personalized, physio-informed stretching focused on what's bothering you"},
+        {"old": "✓ Progress tracked throughout the challenge", "new": "✓ Progress tracked throughout the challenge"},
+        {"old": "✓ Chance to win weekly prizes and one of two grand prizes", "new": "✓ Chance to win weekly prizes and one of two grand prizes"},
+        {"old": "✓ Full access to the WeStretch app starting today", "new": "✓ Full access to the WeStretch app starting today"},
+        {"old": "The 28-Day Reset starts October 19.", "new": "The 28-Day Reset starts October 19."}
+      ],
+      "notes": "Added 'physio-informed' to the first checklist line."
+    },
+    {
+      "label": "Subscription Screen — Pricing Cards",
+      "subject_old": "Choose your WeStretch plan",
+      "subject_new": "Choose your WeStretch plan",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Both plans include full access to WeStretch and the 28-Day Reset Challenge.", "new": "Both plans include full access to WeStretch and the 28-Day Reset Challenge."},
+        {"old": "Annual — BEST VALUE · SAVE 50%", "new": "Annual — BEST VALUE · SAVE 50%"},
+        {"old": "$4.99/month — $59.99 billed yearly · Save $60", "new": "$4.99/month — $59.99 billed yearly · Save $60"},
+        {"old": "✓ 28-Day Reset Challenge / ✓ Personalized stretching every day / ✓ Weekly prizes + two grand prizes / ✓ Full WeStretch access starting today", "new": "✓ 28-Day Reset Challenge / ✓ Personalized stretching every day / ✓ Weekly prizes + two grand prizes / ✓ Full WeStretch access starting today"},
+        {"old": "[CHOOSE ANNUAL]", "new": "[CHOOSE ANNUAL]"},
+        {"old": "Monthly — $9.99/month, billed monthly", "new": "Monthly — $9.99/month, billed monthly"},
+        {"old": "✓ 28-Day Reset Challenge / ✓ Personalized stretching every day / ✓ Weekly prizes + two grand prizes / ✓ Full WeStretch access starting today", "new": "✓ 28-Day Reset Challenge / ✓ Personalized stretching every day / ✓ Weekly prizes + two grand prizes / ✓ Full WeStretch access starting today"},
+        {"old": "[CHOOSE MONTHLY]", "new": "[CHOOSE MONTHLY]"}
+      ],
+      "notes": null
+    },
+    {
+      "label": "Confirmation Page",
+      "subject_old": "You're officially in the 28-Day Reset Challenge!",
+      "subject_new": "You're officially in the 28-Day Reset Challenge!",
+      "preview_old": null,
+      "preview_new": null,
+      "paragraphs": [
+        {"old": "Your Reset starts October 19 in the WeStretch app. That's when you'll get access to the challenge and start your 28 days.", "new": "Your Reset starts October 19 in the WeStretch app. That's when you'll get access to the challenge and start your 28 days."},
+        {"old": "In the meantime, WeStretch is ready for you now. Download the app, log in and start stretching today.", "new": "In the meantime, WeStretch is ready for you now. Download the app, log in and start stretching today."},
+        {"old": "Get the WeStretch app — Download WeStretch from the App Store or Google Play and log in with the same email and password you used to join the challenge.", "new": "Get the WeStretch app — Download WeStretch from the App Store or Google Play and log in with the same email and password you used to join the challenge."},
+        {"old": "[APP STORE] [GOOGLE PLAY]", "new": "[APP STORE] [GOOGLE PLAY]"},
+        {"old": "Check your email — We've sent you more details about the Reset Challenge, including everything you need to know before October 19.", "new": "Check your email — We've sent you more details about the Reset Challenge, including everything you need to know before October 19."}
+      ],
+      "notes": null
+    }
+  ]
+}
