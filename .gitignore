@@ -109,3 +109,6 @@
 # Windows NTFS junctions, local filesystem state only — real content lives under
 # .agents/skills/. Git for Windows walks into these (core.symlinks=false) and
 # would otherwise duplicate every file. See CLAUDE.md "Third-party skill packages".
+
+# Node.js dependencies (any package.json under the repo, e.g. tooling scripts)
+node_modules/

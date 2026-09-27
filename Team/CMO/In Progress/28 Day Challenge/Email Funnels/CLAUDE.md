@@ -29,11 +29,18 @@ Read `Memory.md` alongside this file before revising this copy further.
   directly to the original draft (independent of rounds 1 and 2).
 - `28-Day Reset Challenge Email Funnel - Redline 3 (Direct-Response Marketing).pdf`:
   redline of the original against Round 3's edits.
-- `tools/redline_pdf.py`: shared generator. Takes a JSON file (old/new
-  paragraph pairs per email) and renders a PDF with removed text struck
-  through in red and replacement text underlined in green, in the same
-  flowing document. Reused across all three rounds; see the docstring for
-  the JSON schema.
+- `tools/redline_pdf.js`: shared generator, the one to run going forward
+  (Node/pdfkit port of `redline_pdf.py` below, 2026-09-23; `npm install` in
+  `tools/` once to pull in pdfkit). Takes a JSON file (old/new paragraph
+  pairs per email) and renders a PDF with removed text struck through in
+  red and replacement text underlined in green, in the same flowing
+  document. Reused across all three rounds; see the file's header comment
+  for the JSON schema and usage. Word-level diffing is a JS port of Python's
+  `difflib.SequenceMatcher` (longest-matching-block algorithm) so wording
+  changes group the same way the original tool did, not a naive word-by-word
+  diff.
+- `tools/redline_pdf.py`: the original Python/reportlab version this was
+  ported from. Kept for reference; not actively used anymore.
 
 ## Status
 
