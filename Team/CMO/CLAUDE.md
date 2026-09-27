@@ -12,6 +12,7 @@ website copy).
 
 ## Skills
 
+- `Team/CMO/skills/ada-character-image/` — reference-locked Ada image generation and editing from a human pose or verbal direction; preserves her animated identity, body ratios, charcoal/red outfit, exact chest and leg branding, and stages candidates in `Team/CMO/Review ToDo/`.
 - `Team/CMO/skills/westretch-core/` — shared brand personas, strategic thesis, and
   guardrails other CMO skills depend on; load this first.
 - `Team/CMO/skills/ada-stretching-phone-image/` — Ada (brand character) stretching

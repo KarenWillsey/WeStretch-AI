@@ -7,7 +7,8 @@ that project's own `Memory.md` under `Ideas/`, `In Progress/`, or `Ready/`).
 ## Review ToDo → Image Catalogue approval flow (set 2026-08-28, Karen)
 
 Source-image generation skills (`female-actor-01-image-generator`,
-`male-actor-01-image-generator`, `westretch-ada-image-gen`) save every
+`male-actor-01-image-generator`, `westretch-ada-image-gen`, and
+`ada-character-image`) save every
 reviewed candidate to `Team/CMO/Review ToDo/` by default, unchanged. What's
 new: once Karen approves a candidate there, move the file into
 `Team/CMO/Image Catalogue/` — a standing source-image archive, not a
@@ -18,7 +19,7 @@ future generations/compositing can pull from a trusted set instead of
 searching `Review ToDo/` (which mixes approved and rejected candidates over
 time).
 
-**How to apply:** Applies only to the three general-purpose source-image
+**How to apply:** Applies only to the four general-purpose source-image
 skills above. `ada-stretching-phone-image` and `app-store-image-creation`
 keep their own project-specific staging (`waiting for approval/`, `output/`,
 `assets/approved-exemplars/`) — those pipelines produce finished, sized App

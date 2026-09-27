@@ -36,6 +36,10 @@ Take the user's pose photo or verbal pose description, output use, dimensions, c
 
 For a pose photo, map left/right limbs, foot stance, joint bends, hand contact, torso lean and rotation, and gaze. Preserve Ada's anatomy rather than stretching or shrinking her body to fit a human reference. For an edit, list the exact change region and preserve all unmentioned people, scene objects, framing, text, and lighting. The user's background choice overrides the original WeStretch gym.
 
+## Output location
+
+Save every generated or edited Ada candidate to `Team/CMO/Review ToDo/` before reporting completion. Use a descriptive filename such as `YYYY-MM-DD_ada-short-description_v01.png`. Never save generated candidates inside this skill's `assets/` folders; those contain canonical references only. Do not place a candidate in `Team/CMO/Image Catalogue/` until Karen approves it. Report the exact saved path with the preview.
+
 ## Production workflow
 
 1. **Select references.** View the target/pose image and canonical Ada images. Use a full-body and a face reference plus a relevant angle. Include the chest artwork as an input when supported. State each image's role.
@@ -43,7 +47,7 @@ For a pose photo, map left/right limbs, foot stance, joint bends, hand contact, 
 3. **Inspect at two scales.** At full frame check pose, perspective, integration and relative scale. At close crop check face, hands, shoes, fabric trim, chest letters, leg `WE` and dots. Compare to the closest original view. If Ada looks human or has a different face, revise using `Ada_1.png` and `Ada_front.png`.
 4. **Fix branding.** Generators can invent letters. Prefer placing the original transparent chest and leg artwork over the garment with a localized edit or deterministic compositing, transforming scale and perspective to follow the fabric. Do not redraw lettering. Visually verify every element and never claim a generated mark is exact without inspection.
 5. **Verify output.** Run `python scripts/check_png.py OUTPUT.png --transparent` for a cutout. It checks actual alpha, transparent corners, and border leakage. For nontransparent PNG, run it without the flag. Inspect edges visually too. Verify dimensions against the request.
-6. **Review and deliver.** Revise material identity, proportion, outfit, pose, branding, or transparency failure. Keep the accepted output as the direct target for small follow-up edits. When exact fidelity remains uncertain, describe the specific issue rather than reporting 100% compliance.
+6. **Review and stage.** Revise material identity, proportion, outfit, pose, branding, or transparency failure. Save the reviewed candidate in `Team/CMO/Review ToDo/` and report its exact path. Keep the staged output as the direct target for small follow-up edits. When exact fidelity remains uncertain, describe the specific issue rather than reporting 100% compliance.
 
 ## Prompt pattern
 
