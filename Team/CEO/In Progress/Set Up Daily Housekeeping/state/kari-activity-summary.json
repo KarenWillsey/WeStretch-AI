@@ -1,14 +1,18 @@
 {
-  "last_report_sent_at": "2026-09-27T11:07:22Z",
+  "last_report_sent_at": "2026-09-28T11:06:42Z",
   "last_message_ids": [
-    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTtZ1AAA="
+    "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAEKAAA4GEZ4wuTSTK2aQmrJgkxzAAuDQkRLAAA="
   ],
   "last_inbox_snapshot": [
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflWAAA=", "subject": "Tasks summary for 9/27/2026", "sender": "donotreply@managebuilding.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflVAAA=", "subject": "AppStance - Apple Ads Daily Summary - Sep 26, 2026 - We Bananas Software Inc.", "sender": "notifications@appstance.com"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflUAAA=", "subject": "Your Pay Statement is Available", "sender": "no-reply@payworks.ca"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuDQhctAAA=", "subject": "AppStance - Apple Ads Weekly Summary - Sep 21, 2026 to Sep 27, 2026 - We Bananas Software Inc.", "sender": "notifications@appstance.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuDQhcsAAA=", "subject": "Tasks summary for 9/28/2026", "sender": "donotreply@managebuilding.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuDO53YAAA=", "subject": "Your payment method has expired", "sender": "donotreply@fedex.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuDO53XAAA=", "subject": "Invoice INV-015", "sender": "noreply@wise.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflcAAA=", "subject": "AppStance - Apple Ads Daily Summary - Sep 27, 2026 - We Bananas Software Inc.", "sender": "notifications@appstance.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflbAAA=", "subject": "Your multi-factor authentication settings have been changed", "sender": "noreply@tm.openai.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflaAAA=", "subject": "Your temporary ChatGPT login code", "sender": "noreply@tm.openai.com"},
+    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflZAAA=", "subject": "KASA Advisory Board Agenda - Sept 29,2026", "sender": "jennifer.wood05@gmail.com"},
     {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflTAAA=", "subject": "VC &MON need to complete right away.", "sender": "logistics@gpboyschoir.org"},
-    {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuCTflRAAA=", "subject": "A great BEMER Summary!", "sender": "bethegoldie@gmail.com"},
     {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuAQSGWAAA=", "subject": "RE: Board agenda", "sender": "kevin@kasa.ca"},
     {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuAQSF6AAA=", "subject": "Agentic Marketing Department", "sender": "jkroon@disruptiveedge.com"},
     {"id": "AAMkADJmMDk0OGNmLTA4OGItNGJmMy04YzQ5LWMyOWRmN2M3Y2RlNABGAAAAAABzMqhJq5guSKqETQGZ7cLGBwA4GEZ4wuTSTK2aQmrJgkxzAAAAAAENAAA4GEZ4wuTSTK2aQmrJgkxzAAuAQSFgAAA=", "subject": "Bear Lake Campout update", "sender": "logistics@gpboyschoir.org"},
