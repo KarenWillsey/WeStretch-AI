@@ -1,0 +1,9 @@
+﻿The WeStretch daily brief did NOT complete.
+
+When:   2026-10-07 05:00
+Reason: The run exited with code 1. Check the log for an auth or connector failure.
+
+There is no brief in your inbox for this morning.
+Full detail: C:\Users\karen\Documents\WeStretch AI\WeStretch-AI\Team\CEO\In Progress\Set Up Daily Housekeeping\state\last-run.log
+
+This file deletes itself the next time the brief runs clean.

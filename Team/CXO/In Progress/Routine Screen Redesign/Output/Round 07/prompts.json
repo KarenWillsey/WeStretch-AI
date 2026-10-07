@@ -1,0 +1,13 @@
+{
+  "mode": "built-in imagegen",
+  "images": [
+    {
+      "file": "01-paused-menu.png",
+      "prompt": "Precisely edit the attached app mockup. Keep the entire portrait screen, Ada, gym, counters, all icon shapes and positions, dark grey circle fills and .75 speed unchanged. Make ONLY these changes:\n1. Blue hand-drawn rectangle is a GUIDE for caption safe area (approximately x205 to665,y60 to235 on851x1847). Remove ALL blue strokes, handwritten text and blue dot. Remove old empty grey caption plate at very top. Put a subtle dark charcoal rounded caption panel INSIDE that guide area, between the two counters, no overlap. White Inter semibold caption on two lines: \"Tilt left.\" then \"Rotate left.\" Entire text and panel must remain within x210..660,y65..230. Center text in that area, clearly readable. There must be NO caption panel or text above this new area.\n2. Change the small green L beside the next-pose figure to pure brand white #FFFFFF, same size and position.\n3. Replace both lines \"Starting position\" and \"Standing\" beneath standing figure with just ONE word \"Current\", white, same font and label baseline as \".75 speed\" and \"Next Up:\". No second line.\nKeep Mute circle and label, CC circle and CC on label, and bottom-right outlined PLAY triangle visible. Preserve everything else. Do not add annotations or borders in blue."
+    },
+    {
+      "file": "02-playing.png",
+      "prompt": "Edit ONLY three bottom-right items in this exact app screen. Remove the Mute circular button AND its \"Mute\" label completely, restoring the dark floor behind them. Remove the CC circular button AND its \"CC on\" label completely, restoring dark floor behind them. In the remaining bottom-right grey PLAY circle replace the white triangle with a white PAUSE symbol consisting of two slim parallel vertical bars. Keep that circle same size, color and position. Preserve ALL other image content exactly, especially the caption panel between counters, text \"Tilt left.\" / \"Rotate left.\", white L, Current label, .75 speed gauge and label, Next Up:, gym and Ada. Do not hide the captions themselves. No extra edits."
+    }
+  ]
+}

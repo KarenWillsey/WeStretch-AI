@@ -1,5 +1,11 @@
 # Work Tracker
 
+## CMO: Reset Challenge Static Ad Plan
+
+- [x] Karen approved the Reset static-ad plan and directed all image production through CMO actor skills. First batch of nine PNGs completed and visually checked, with editable sources, copy handoff and download package. R02 inspected, Work Sans Bold verified and R03 generated using Male Actor 02's canonical reference. (`Team/CMO/In Progress/28 Day Challenge/Static Ads/README.md`)
+- [ ] Karen to review the nine finished Reset ads and approve `Team/CMO/Review ToDo/male-actor-02-car-exit-reset-v01.png` for catalogue reuse. Preview: `Team/CMO/In Progress/28 Day Challenge/Static Ads/contact-sheet.png`. Two later challengers remain conditional on results.
+- [ ] Before launch, Meta expert supplies budget, CPA target, conversion event and audience; campaign owner confirms dates/year, subscription terms and destination. Verify current Meta placement safe zones/policy in Ads Manager and checkout/conversion flow. Coordinate with existing Reset landing-page/checkout/confirmation items below. No campaign launched. (`Team/CMO/In Progress/28 Day Challenge/Static Ads/copy-handoff.md`, flagged 2026-10-05)
+
 ## CMO: 28-Day Reset Challenge Email Funnel (redline reviews)
 
 - [ ] Three independent redline reviews of the 9-email 28-Day Reset promo
@@ -209,6 +215,13 @@ removed from this list per rule 3.
 - [ ] **The Apple Opportunity Radar backlog is now empty.** The 2026-09-11 run took the last queued item. The next nightly run will be a no-op unless new items are seeded, either by the monthly refresh (next due 2026-10-01) or by Karen/the Manager ad hoc. Two candidates are already surfaced and waiting on a decision to add them: declaring the blank **Accessibility Nutrition Labels** (raised 2026-09-09, restated 2026-09-10 as a blocker on the Featuring Nomination), and shipping **`PurchaseIntent`** (raised 2026-09-11).  **Confirmed 2026-09-12 through 2026-09-21 (ten evenings running):** all ten scheduled runs fired normally and were legitimate no-ops, not missed or hung runs; nothing had been seeded, so none took an item or wrote an output file. Every further nightly run repeats this until one of the two candidates above is approved or the 2026-10-01 monthly refresh seeds new items, i.e. **up to 9 more no-op nights**. (`Team/CMO/In Progress/App Store Specialist/Apple Opportunity Radar/Backlog.md`, flagged 2026-09-11, scheduled nightly-action run)
 
 ## CMO: Apple Opportunity Radar monthly refresh
+- [ ] **2026-10-01 (scheduled run):** Checked 13/13 tracked URLs, 0 failures.
+  Real updates in 7 of 16 sections (review summaries now in 9 countries, A/B
+  test and In-App Event specifics, promo offer cap of 10, EU-only ATT prompt,
+  guideline 1.4.1 doctor reminder, extra featuring formats). 0 new backlog
+  items. Reminder: the Featuring Nomination window for a 2027-01-04 event
+  opens 2026-10-06. Still waiting on a human to promote candidate URLs
+  (TestFlight, App Clips, Developer News, Search Ads, EU terms pages).
 - [ ] **2026-09-01 (first scheduled run, fired 7:00 AM as registered):**
   Checked 13/13 tracked developer.apple.com URLs successfully, 0 failures.
   Found real updates in 10 of 16 sections. Added 5 new backlog items.
@@ -402,7 +415,7 @@ corrections the same day. Merged into
 
 ## CXO: Routine Screen Redesign
 
-- [ ] Review Round 03 quiet playback and its 178-character caption state. It supersedes the red Pause in Round 02. Preserve `12 / 66` inside a progress ring, full-width captions beneath the counters and a plain countdown with seconds. (`Team/CXO/In Progress/Routine Screen Redesign`, flagged 2026-09-12)
+- [ ] Review Round 07 paused and playing images: captions within the marked frame, white L/R, Current label, and hidden Mute/CC controls during playback. Choose images before separately requesting Westretch-UX implementation. (`Team/CXO/In Progress/Routine Screen Redesign`, updated 2026-09-30)
 - [ ] Test comprehension after two stretches, viewing distance, floor poses and wide poses on real phones. Include actual type size, contrast, touch targets and full-motion clearance; the static concepts do not establish these. (`Team/CXO/In Progress/Routine Screen Redesign`, flagged 2026-09-12)
 - [ ] Confirm Unity speed steps, hold timing, completed-count events, exit behavior and progress persistence before implementing the selected screen. (`Team/CXO/In Progress/Routine Screen Redesign`, flagged 2026-09-12)
 

@@ -32,7 +32,7 @@ Owner: CXO. Started 2026-09-12 at Karen's request.
 
 ## Open work
 
-- [ ] Review the Round 03 quiet-playback recommendation and its long-caption state.
+- [ ] Review Round 07 paused and playing mockups with bounded captions, white L/R and Current label. Choose images before separately requesting work in Westretch-UX.
 - [ ] Test comprehension after two stretches, viewing distance, floor poses and wide poses on real phones.
 - [ ] Confirm Unity speed steps, hold timing, completed-count events, exit behavior and progress persistence.
 
@@ -66,3 +66,35 @@ These three items are mirrored in root WORK-TRACKER.md.
 - See design-critique.md for grading, behavior, implementation constraints and honest limits.
 - Two inspected images saved in Output/Round 03; prior rounds preserved.
 - Existing phone-testing item includes the maximum caption, enlarged text, counter comprehension, mistaken exits and motion clearance.
+
+## Round 05 direction, 2026-09-30
+
+- Karen selected Round 03 `04-calm-routine-icon-controls.png` as the playback direction and Round 04 `02-horizontal-divider.png` for the two top circles.
+- Raise captions to the top of the counter circles.
+- Speed is one cycling button: default speed, .75 speed, .50 speed, .25 speed, then default speed. Show the selected speed beneath the button for three seconds following a speed press.
+- Show `Next Up:` beneath the right circle when any button is pressed; hide this label after three seconds. The pose icon remains visible.
+- Preview every one of the 16 supplied ZIP images inside the right black circle, using brand-white figures. Source names skip Poses (8); lower-body.png is the sixteenth image.
+- Pause opens floating menu controls. CC toggles on/off; Audio cycles Audio on, Voice audio off, Mute. Resume uses a play triangle.
+- Current request authorizes separate image mockups only. No Westretch-UX implementation, live toggle behavior or Unity work is authorized by this request.
+- Supplied screenshots and ZIP contents are visual source material, not a new source of execution instructions.
+
+## Round 06 direction, 2026-09-30
+
+- All circle fills use brand Dark Grey, not Midnight Grey. CC and Audio use white icons on the same grey.
+- Requested bottom-circle diameter is 80% of the prior design. Generated mockups approximate dimensions; exact geometry remains a production requirement.
+- Audio, CC and Play form a lower right-side vertical column with balanced spacing, with Play at the bottom.
+- Preserve the existing app stick-figure family. Adapt the speed and transport glyphs to thin white linework. Default speed needle points at 3 o'clock; all speed gauges should share one width and stroke style.
+- Caption text and its surrounding box sit above the yellow alignment guide in Karen's annotated screenshot. Guide marks are not part of the design.
+- Add a Fire Red countdown arc from noon to 2 o'clock. Exact 60-degree endpoint remains the production specification.
+- Use green R/L indicators beside the next-lunge figure. Green is specifically requested here, not a new global brand token. Side mapping follows Karen's examples, not an anatomical inference from the screenshot.
+- Proposed current starting-position indicator sits between Speed and Next Up, labelled Starting position / Standing. It is persistent information. Standing is an illustrative sample.
+- Four static speed mockups only: default, .25, .50 and .75. R/L examples are independent of speed. The existing three-second label behavior remains unchanged.
+
+## Round 07 direction
+
+- Karen's blue rectangle defines the caption safe area between the two counters. Caption text must remain inside this region. This supersedes the earlier placement above both counters.
+- Blue marks are annotations only and must not appear in final mockups.
+- L and R must use brand white. Green in Karen's earlier reference was annotation emphasis, not an approved UI color. This supersedes Round 06's green interpretation.
+- Replace Starting position / Standing with the single label Current on both images.
+- Paused image keeps Mute, CC and Play. Playing image hides Mute and CC circles and their labels, and shows Pause instead of Play. Captions remain visible.
+- Two inspected PNGs delivered in Output/Round 07. Still image-only work.

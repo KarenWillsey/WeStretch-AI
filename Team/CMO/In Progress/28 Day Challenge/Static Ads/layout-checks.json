@@ -1,0 +1,506 @@
+[
+  {
+    "name": "reset-r01-v01-1080x1080",
+    "width": 1080,
+    "height": 1080,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 90,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 158.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 185,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 219
+      },
+      {
+        "text": "Another morning of “slept wrong.”",
+        "x": 90,
+        "y": 255,
+        "width": 510,
+        "height": 341.0625,
+        "right": 600,
+        "bottom": 596.0625
+      },
+      {
+        "text": "Start the day with guided stretching.",
+        "x": 90,
+        "y": 628.0625,
+        "width": 495,
+        "height": 100,
+        "right": 585,
+        "bottom": 728.0625
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 888,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 992
+      }
+    ]
+  },
+  {
+    "name": "reset-r01-v01-1080x1350",
+    "width": 1080,
+    "height": 1350,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 90,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 158.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 185,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 219
+      },
+      {
+        "text": "Another morning of “slept wrong.”",
+        "x": 90,
+        "y": 275,
+        "width": 510,
+        "height": 391,
+        "right": 600,
+        "bottom": 666
+      },
+      {
+        "text": "Start the day with guided stretching.",
+        "x": 90,
+        "y": 698,
+        "width": 495,
+        "height": 100,
+        "right": 585,
+        "bottom": 798
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 1150,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 1254
+      }
+    ]
+  },
+  {
+    "name": "reset-r01-v01-1080x1920",
+    "width": 1080,
+    "height": 1920,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 280,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 348.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 373,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 407
+      },
+      {
+        "text": "Another morning of “slept wrong.”",
+        "x": 90,
+        "y": 440,
+        "width": 900,
+        "height": 368.15625,
+        "right": 990,
+        "bottom": 808.15625
+      },
+      {
+        "text": "Start the day with guided stretching.",
+        "x": 90,
+        "y": 840.15625,
+        "width": 850,
+        "height": 53.75,
+        "right": 940,
+        "bottom": 893.90625
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 1030,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 1134
+      }
+    ]
+  },
+  {
+    "name": "reset-r02-v01-1080x1080",
+    "width": 1080,
+    "height": 1080,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 90,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 158.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 185,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 219
+      },
+      {
+        "text": "Less working around stiffness. More getting on with the day.",
+        "x": 90,
+        "y": 255,
+        "width": 510,
+        "height": 270.375,
+        "right": 600,
+        "bottom": 525.375
+      },
+      {
+        "text": "28 days of guided stretching, one day at a time.",
+        "x": 90,
+        "y": 557.375,
+        "width": 495,
+        "height": 150,
+        "right": 585,
+        "bottom": 707.375
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 888,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 992
+      }
+    ]
+  },
+  {
+    "name": "reset-r02-v01-1080x1350",
+    "width": 1080,
+    "height": 1350,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 90,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 158.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 185,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 219
+      },
+      {
+        "text": "Less working around stiffness. More getting on with the day.",
+        "x": 90,
+        "y": 275,
+        "width": 510,
+        "height": 486.65625,
+        "right": 600,
+        "bottom": 761.65625
+      },
+      {
+        "text": "28 days of guided stretching, one day at a time.",
+        "x": 90,
+        "y": 793.65625,
+        "width": 495,
+        "height": 150,
+        "right": 585,
+        "bottom": 943.65625
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 1150,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 1254
+      }
+    ]
+  },
+  {
+    "name": "reset-r02-v01-1080x1920",
+    "width": 1080,
+    "height": 1920,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 280,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 348.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 373,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 407
+      },
+      {
+        "text": "Less working around stiffness. More getting on with the day.",
+        "x": 90,
+        "y": 440,
+        "width": 900,
+        "height": 378.5,
+        "right": 990,
+        "bottom": 818.5
+      },
+      {
+        "text": "28 days of guided stretching, one day at a time.",
+        "x": 90,
+        "y": 850.5,
+        "width": 850,
+        "height": 107.5,
+        "right": 940,
+        "bottom": 958
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 1030,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 1134
+      }
+    ]
+  },
+  {
+    "name": "reset-r03-v01-1080x1080",
+    "width": 1080,
+    "height": 1080,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 90,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 158.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 185,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 219
+      },
+      {
+        "text": "Getting out of the car shouldn't be the hard part.",
+        "x": 90,
+        "y": 255,
+        "width": 510,
+        "height": 307.8125,
+        "right": 600,
+        "bottom": 562.8125
+      },
+      {
+        "text": "Make time for movement with the 28-Day Reset.",
+        "x": 90,
+        "y": 594.8125,
+        "width": 495,
+        "height": 100,
+        "right": 585,
+        "bottom": 694.8125
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 888,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 992
+      }
+    ]
+  },
+  {
+    "name": "reset-r03-v01-1080x1350",
+    "width": 1080,
+    "height": 1350,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 90,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 158.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 185,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 219
+      },
+      {
+        "text": "Getting out of the car shouldn't be the hard part.",
+        "x": 90,
+        "y": 275,
+        "width": 510,
+        "height": 431.5625,
+        "right": 600,
+        "bottom": 706.5625
+      },
+      {
+        "text": "Make time for movement with the 28-Day Reset.",
+        "x": 90,
+        "y": 738.5625,
+        "width": 495,
+        "height": 100,
+        "right": 585,
+        "bottom": 838.5625
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 1150,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 1254
+      }
+    ]
+  },
+  {
+    "name": "reset-r03-v01-1080x1920",
+    "width": 1080,
+    "height": 1920,
+    "fonts": {
+      "display": true,
+      "ui": true
+    },
+    "text": [
+      {
+        "text": "WeStretch",
+        "x": 90,
+        "y": 280,
+        "width": 300,
+        "height": 68.6875,
+        "right": 390,
+        "bottom": 348.6875
+      },
+      {
+        "text": "28-DAY RESET CHALLENGE",
+        "x": 90,
+        "y": 373,
+        "width": 400.046875,
+        "height": 34,
+        "right": 490.046875,
+        "bottom": 407
+      },
+      {
+        "text": "Getting out of the car shouldn't be the hard part.",
+        "x": 90,
+        "y": 440,
+        "width": 900,
+        "height": 318.234375,
+        "right": 990,
+        "bottom": 758.234375
+      },
+      {
+        "text": "Make time for movement with the 28-Day Reset.",
+        "x": 90,
+        "y": 790.234375,
+        "width": 850,
+        "height": 107.5,
+        "right": 940,
+        "bottom": 897.734375
+      },
+      {
+        "text": "JOIN THE RESET CHALLENGE",
+        "x": 90,
+        "y": 1030,
+        "width": 900,
+        "height": 104,
+        "right": 990,
+        "bottom": 1134
+      }
+    ]
+  }
+]

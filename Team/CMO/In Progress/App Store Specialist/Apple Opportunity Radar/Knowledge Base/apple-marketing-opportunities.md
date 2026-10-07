@@ -14,6 +14,7 @@ fetches against, not a reason to switch to manual updates.
 
 ## Changelog
 
+- **2026-10-01 (monthly refresh)**: Third monthly run (scheduled task). Fetched all 13 tracked source URLs successfully (0 failures), plus the 2 EU-terms URLs flagged on 2026-09-05 (still untracked; they confirm the unified EU terms effective today, no change to the existing entry). Real changes in 7 sections: Ratings and Reviews, App Store A/B Testing, App Store Events, Subscriptions and Free Trials, Privacy and Customer Accounts, Health and Fitness Claims, Getting Featured by Apple. No change: App Store Listing, Screenshots and Videos, Custom Product Pages, Revenue and Apple Commissions, Accessibility, App Review and Releases. 0 new backlog items. Detail in `../state/monthly-refresh-log.json`.
 - **2026-09-01 (monthly refresh)**: Second live monthly-refresh run (first
   run via the actual scheduled task, not a manual test). Fetched all 13
   confirmed source URLs successfully (0 failures). Found real, actionable
@@ -129,6 +130,10 @@ Source: https://developer.apple.com/app-store/product-page/
 - **[2026-09-01]** Direct reviewers reporting download errors or billing
   issues to Apple Support rather than trying to resolve those in a public
   reply.
+- **[2026-10-01]** CORRECTION to the review-summaries bullet above: AI review
+  summaries now cover English in the US, Australia, Canada, India, Ireland,
+  New Zealand, Singapore, South Africa and the UK (not US-only), refreshed
+  regularly. Responding to reviews needs the Admin or Customer Support role.
 
 Source: https://developer.apple.com/app-store/ratings-and-reviews/
 
@@ -184,6 +189,11 @@ Source: https://developer.apple.com/app-store/custom-product-pages/
   for review independently of a new app version; icon-variant tests cannot.
 - **[2026-09-01]** Localized treatments may take longer to reach a
   significant result. The comparison baseline can be changed at any time.
+- **[2026-10-01]** Test name max 64 characters; requires iOS/iPadOS 15+ (below
+  WeStretch's 15.2 floor, so fine). Pre-order pages can be tested too. A test
+  cannot be modified once started, and applying a treatment while the test is
+  running ends the test. Each treatment inherits the original
+  icon/screenshots/previews by default, so change one element per treatment.
 
 Source: https://developer.apple.com/app-store/product-page-optimization/
 
@@ -211,6 +221,16 @@ Source: https://developer.apple.com/app-store/product-page-optimization/
   punctuation, no borders/gradients (Apple applies these automatically).
 - Promote event links through email, social media, and advertising.
 - Submit events independently of app updates.
+- **[2026-10-01]** Media specs: card image/video 16:9, 1920x1080 to
+  3840x2160 (.jpg/.jpeg/.png; video .mov/.m4v/.mp4 at 30 or 60 fps); detail
+  page image/video 9:16, 1080x1920 to 2160x3840. Event name in Title Case,
+  descriptions in sentence case. Required fields include badge, start/end,
+  regions, deep link (universal link recommended, no URL shorteners), event
+  purpose (all users / new users / active users / lapsed users) and a cost
+  indication if an in-app purchase is needed. Optional: priority (high shows
+  before normal); the product page orders events by start time. Not good
+  candidates: repetitive daily tasks, price promos without new content,
+  general awareness, anything without a limited-time aspect.
 
 Source: https://developer.apple.com/app-store/in-app-events/
 
@@ -226,6 +246,11 @@ Source: https://developer.apple.com/app-store/in-app-events/
 - Offer monthly and annual plans when appropriate.
 - Use introductory offers for eligible new subscribers.
 - Use promotional offers to retain or recover subscribers.
+  - **[2026-10-01]** Promotional offers: up to 10 per subscription, developer
+    decides eligibility, for existing or former subscribers. Introductory
+    offers: one per subscription group per customer, new subscribers only.
+    Offer codes: 18-digit one-time or custom codes, now also on macOS; existing
+    subscribers can redeem only an upgrade or same-level code.
 - Use win-back offers for former subscribers.
 - Use offer codes for campaigns, partnerships, and customer recovery.
 - Track which offers produce paid conversions and long-term retention.
@@ -487,6 +512,12 @@ Source: https://developer.apple.com/videos/play/tech-talks/111433/
   the public label inaccurate.
 - **[2026-09-01]** Developers can offer a separate consent control for local
   privacy-law compliance (e.g. GDPR, ePrivacy) distinct from the ATT prompt.
+- **[2026-10-01]** EU-only ATT variant (iOS/iPadOS 27.2+): an alternative
+  system prompt with an optional "Additional Information" button; apps may
+  re-prompt one year after the user's last choice (not if the user disabled
+  "Allow Apps to Request to Link Your Activity Across Companies"). Mandatory
+  only in Germany, France, Italy, Poland and Romania. Not relevant while
+  WeStretch declares no tracking.
 - Provide in-app account deletion if users can create accounts.
 - Allow account deletion regardless of the customer's location.
 - Explain that account deletion does not automatically cancel an Apple subscription.
@@ -510,6 +541,10 @@ Sources:
   even implicitly (e.g. no "detects your pain level" framed as a sensor
   measurement).
 - Substantiate claims such as "physiotherapist-approved."
+- **[2026-10-01]** Guideline 1.4.1 also expects medical-type apps to remind
+  users to check with a doctor before making medical decisions, and to disclose
+  data and methodology behind any accuracy claim. Worth a one-line check that
+  WeStretch's pain-relief framing carries that reminder.
 - Make safety guidance easy to understand.
 - Encourage users to avoid painful movements.
 - Explain how users can skip poses or avoid specific joints.
@@ -603,6 +638,10 @@ Sources:
   with its own badge shown on the product page).
 - **[2026-09-01]** Eligibility isn't restricted by app category, no need to
   read prior guidance as fitness-specific.
+- **[2026-10-01]** Two more featuring formats Apple lists: Stories (developer
+  spotlights, tips; Today tab) and Collections (topic/theme groupings), plus
+  Pre-orders. Nominations notify Admin, App Manager and Marketing roles when
+  selected for consideration; Apple may ask for promotional artwork.
 
 Source: https://developer.apple.com/app-store/getting-featured/
 

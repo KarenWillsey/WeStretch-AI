@@ -3,19 +3,71 @@
     "run_at": "2026-08-21T00:00:00-06:00",
     "run_type": "manual_test",
     "urls_checked": [
-      {"url": "https://developer.apple.com/app-store/product-page/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/app-store/ratings-and-reviews/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/custom-product-pages/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/product-page-optimization/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/app-store/in-app-events/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/subscriptions/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/small-business-program/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/videos/play/tech-talks/111433/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/user-privacy-and-data-use/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/app-store/review/guidelines/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/distribute/app-review/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/getting-featured/", "status": "ok", "changed": true}
+      {
+        "url": "https://developer.apple.com/app-store/product-page/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/ratings-and-reviews/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/custom-product-pages/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/product-page-optimization/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/in-app-events/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/subscriptions/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/small-business-program/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/videos/play/tech-talks/111433/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/review/guidelines/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/distribute/app-review/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/getting-featured/",
+        "status": "ok",
+        "changed": true
+      }
     ],
     "changes_found": [
       "Ratings and Reviews: marketing use of star rating/reviews requires accuracy/permission; report concerns via Report a Concern",
@@ -47,19 +99,71 @@
     "run_at": "2026-09-01T07:00:00-06:00",
     "run_type": "scheduled",
     "urls_checked": [
-      {"url": "https://developer.apple.com/app-store/product-page/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/ratings-and-reviews/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/custom-product-pages/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/app-store/product-page-optimization/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/in-app-events/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/app-store/subscriptions/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/small-business-program/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/videos/play/tech-talks/111433/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/app-store/user-privacy-and-data-use/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/review/guidelines/", "status": "ok", "changed": false},
-      {"url": "https://developer.apple.com/distribute/app-review/", "status": "ok", "changed": true},
-      {"url": "https://developer.apple.com/app-store/getting-featured/", "status": "ok", "changed": true}
+      {
+        "url": "https://developer.apple.com/app-store/product-page/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/ratings-and-reviews/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/custom-product-pages/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/product-page-optimization/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/in-app-events/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/subscriptions/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/small-business-program/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/videos/play/tech-talks/111433/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/review/guidelines/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/distribute/app-review/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/getting-featured/",
+        "status": "ok",
+        "changed": true
+      }
     ],
     "changes_found": [
       "App Store Listing: in-app purchase/subscription showcase on product page (up to 20 items, 35/55-char name/description limits)",
@@ -82,6 +186,95 @@
     ],
     "candidate_urls_found": [
       "https://developer.apple.com/app-store/promote/ (Apple Search Ads / \"Promoting your apps\" -- solid on-domain candidate, better than the searchads.apple.com off-domain option found 2026-08-21)"
+    ]
+  },
+  {
+    "run_at": "2026-10-01T07:00:00-06:00",
+    "urls_checked": [
+      {
+        "url": "https://developer.apple.com/app-store/product-page/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/ratings-and-reviews/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/custom-product-pages/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/product-page-optimization/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/in-app-events/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/subscriptions/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/app-store/small-business-program/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/videos/play/tech-talks/111433/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/review/guidelines/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/distribute/app-review/",
+        "status": "ok",
+        "changed": false
+      },
+      {
+        "url": "https://developer.apple.com/app-store/getting-featured/",
+        "status": "ok",
+        "changed": true
+      },
+      {
+        "url": "https://developer.apple.com/support/apps-in-the-eu/",
+        "status": "ok",
+        "changed": false,
+        "note": "extra, untracked; confirms unified EU terms effective 2026-10-01, matches existing KB entry"
+      }
+    ],
+    "changes_found": [
+      "Ratings and Reviews: AI review summaries now live in 9 English-language countries (US, AU, CA, IN, IE, NZ, SG, ZA, UK), not US-only",
+      "App Store A/B Testing: test name 64 chars, iOS 15+, tests cannot be modified once started, applying a treatment ends a running test",
+      "App Store Events: media specs (16:9 card, 9:16 detail), required fields, event purpose categories, priority/ordering, non-candidate event types",
+      "Subscriptions: promotional offers capped at 10 per subscription; intro offer one per group; offer code redemption rules",
+      "Privacy: EU-only alternative ATT prompt (iOS 27.2+), 1-year re-prompt rule, mandatory only in DE/FR/IT/PL/RO",
+      "Health and Fitness Claims: guideline 1.4.1 doctor-reminder and methodology disclosure expectation",
+      "Getting Featured: Stories, Collections and Pre-orders formats; notification roles"
+    ],
+    "new_backlog_items": [],
+    "candidate_urls_found": [
+      "No new candidates. Still awaiting human promotion: developer.apple.com/testflight/, /app-clips/, /news/, /app-store/promote/ (Search Ads); EU terms pages (support/apps-in-the-eu, support/dma-and-apps-in-the-eu) also untracked."
     ]
   }
 ]

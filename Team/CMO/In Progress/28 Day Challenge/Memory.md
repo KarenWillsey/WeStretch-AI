@@ -1,5 +1,14 @@
 # 28 Day Challenge; Memory
 
+## 2026-10-05: everyday-frustration Meta static plan
+
+- Karen requested a plan using the supplied Meta expert's three concepts and `westretch-core`, then an explicit pause before production.
+- Plan: `meta-static-ad-plan.md`. Recommended first batch is three concepts in three sizes, nine images. Two follow-up challengers are conditional on results, not part of the initial build.
+- Core strategy/copy review completed with one revision cycle and two grading passes. Proposed wording remains unapproved. No images, renderer, campaign or paid generation created.
+- Resolved on Karen's subsequent "please proceed": plan/copy and photo directions approved for production, with all new photography required to use CMO female-actor or male-actor skills. Nine PNGs are now in `Static Ads/Output/`; see `Static Ads/README.md`. R02 was inspected, Work Sans Bold obtained and verified, and R03 generated with Male Actor 02's canonical reference and skill.
+- Open before launch: Meta expert to supply budget, target CPA, conversion event and audience; campaign owner to confirm dates, year, terms and destination. Existing landing-page approval, checkout and confirmation work remains open. Detailed Meta safe-zone/policy pages were login/rate-limit blocked, so verify in Ads Manager before launch.
+- Production is complete. Karen's review of the finished ads and new R03 source remains open. Launch dependencies above remain open and are also recorded in `WORK-TRACKER.md`. No campaign launched.
+
 No durable decisions recorded yet. The review in this folder is a first pass;
 once Karen signs off on which rewritten sections to keep, log standing
 decisions here (e.g. if the physio-informed FAQ addition or the How It Works

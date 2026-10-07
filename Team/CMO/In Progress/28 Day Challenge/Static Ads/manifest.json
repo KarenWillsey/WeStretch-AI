@@ -1,0 +1,42 @@
+{
+  "campaign": "28-DAY RESET CHALLENGE",
+  "cta": "JOIN THE RESET CHALLENGE",
+  "primaryText": "Join the 28-Day Reset Challenge with WeStretch. Follow guided, physio-informed stretching for 15 minutes a day and see what feels different. A WeStretch subscription is required.",
+  "metaHeadline": "Join the 28-Day Reset Challenge",
+  "metaDescription": "15 minutes a day for 28 days",
+  "nativeButton": "Learn More",
+  "concepts": [
+    {
+      "id": "r01",
+      "name": "Slept Wrong",
+      "headline": "Another morning of “slept wrong.”",
+      "support": "Start the day with guided stretching.",
+      "photo": "Team/CMO/Image Catalogue/female-actor-02-standing-side-bend-scandinavian-bedroom.png",
+      "skill": "Team/CMO/skills/female-actor-02-image-generator/SKILL.md",
+      "sourceStatus": "Existing approved catalogue photo",
+      "verticalPosition": "center top"
+    },
+    {
+      "id": "r02",
+      "name": "Stiff, Sore + Tight",
+      "headline": "Less working around stiffness. More getting on with the day.",
+      "support": "28 days of guided stretching, one day at a time.",
+      "photo": "Team/CMO/Image Catalogue/female-actor-03-seated-forward-fold-living-room.png",
+      "skill": "Team/CMO/skills/female-actor-03-image-generator/SKILL.md",
+      "sourceStatus": "Existing approved catalogue photo; visually inspected during production",
+      "verticalPosition": "center 76%"
+    },
+    {
+      "id": "r03",
+      "name": "There's Always Something",
+      "headline": "Getting out of the car shouldn't be the hard part.",
+      "support": "Make time for movement with the 28-Day Reset.",
+      "photo": "Team/CMO/Review ToDo/male-actor-02-car-exit-reset-v01.png",
+      "skill": "Team/CMO/skills/male-actor-02-image-generator/SKILL.md",
+      "canonicalReference": "Team/CMO/skills/male-actor-02-image-generator/assets/male-actor-02-reference.png",
+      "referenceNote": "Tool could not read the full-size canonical PNG. Attached a 1536 x 2048 resized copy of that same reference, with no identity edits.",
+      "sourceStatus": "New reference-locked source, visually checked; pending Karen's catalogue approval",
+      "verticalPosition": "center top"
+    }
+  ]
+}
